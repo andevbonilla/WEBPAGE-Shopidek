@@ -7,7 +7,7 @@ import FaqSection from "../components/FaqSection";
 import FootprintTracker from "../components/FootprintTracker";
 import {
   Sparkles,
-  ShoppingCart,
+  ShoppingCart, 
   Star,
   Zap,
   Shield,
