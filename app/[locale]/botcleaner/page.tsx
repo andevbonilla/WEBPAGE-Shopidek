@@ -109,7 +109,7 @@ export default async function BotCleanerPage({ params }: PageProps) {
     let text = dict[key] || "";
     if (values) {
       Object.keys(values).forEach((k) => {
-        text = text.replace(`{${k}}`, values[k]);
+        text = text.replace(`{${k}}`, String(values[k]));
       });
     }
     return text;
