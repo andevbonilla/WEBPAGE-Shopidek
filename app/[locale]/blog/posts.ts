@@ -60,3 +60,4 @@ export function getPosts(locale: string): Post[] {
 export function getPostBySlug(slug: string, locale: string): Post | undefined {
   return getPosts(locale).find((post) => post.id === slug);
 }
+

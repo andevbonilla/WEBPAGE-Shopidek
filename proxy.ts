@@ -7,13 +7,9 @@ const defaultLocale = 'en';
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Keep one canonical public hostname for SEO and shared links.
-  if (request.nextUrl.hostname === 'www.shopideck.com') {
-    const canonicalUrl = new URL(request.url);
-    canonicalUrl.hostname = 'shopideck.com';
-    canonicalUrl.protocol = 'https:';
-    return NextResponse.redirect(canonicalUrl, 308);
-  }
+  // Host canonicalization is intentionally handled by the Vercel domain
+  // configuration. Redirecting www here can conflict with Vercel's own
+  // redirect and create a loop, so this proxy only handles locale paths.
 
   // 1. Check if the pathname already has a supported locale prefix
   const pathnameHasLocale = locales.some(
@@ -43,3 +39,4 @@ export const config = {
   // Match only internationalized pathnames, skipping internal files and public assets
   matcher: ['/((?!_next|api|static|favicon.ico|.*\\..*).*)']
 };
+

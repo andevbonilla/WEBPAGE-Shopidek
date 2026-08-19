@@ -153,10 +153,11 @@ export default function Footer() {
           <p>
             {dict.copyright.replace("{year}", new Date().getFullYear().toString())}
           </p>
-          <span className="text-brand-bg/60">support@shopideck.com</span>
+          <span className="text-brand-bg/60">team@shopideck.com</span>
         </div>
 
       </div>
     </footer>
   );
 }
+

@@ -106,3 +106,4 @@ export default function ShareButtons({ title, locale }: ShareButtonsProps) {
     </div>
   );
 }
+

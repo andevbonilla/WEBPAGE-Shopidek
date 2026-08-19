@@ -84,3 +84,4 @@ export default function TestimonialCarousel({ testimonials, opinionLabel }: Test
     </div>
   );
 }
+

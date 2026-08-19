@@ -18,3 +18,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/es${path}`, lastModified, alternates: { languages: { en: `${SITE_URL}${path || "/"}`, es: `${SITE_URL}/es${path}` } } },
   ]);
 }
+

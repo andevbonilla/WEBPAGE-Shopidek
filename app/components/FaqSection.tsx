@@ -53,3 +53,4 @@ export default function FaqSection({ faqs }: FaqSectionProps) {
     </div>
   );
 }
+

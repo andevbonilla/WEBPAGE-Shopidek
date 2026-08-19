@@ -34,7 +34,7 @@ const en = {
   intro: "This policy explains how ShopiDeck processes merchant, Shopify, Klaviyo, support, and operational data for the public website and Klaviyo Bot Cleaner.",
   responsible: "Responsible entity and jurisdiction",
   responsibleText: "Responsible entity: ShopiDeck. The registered legal name, legal address, country, and governing jurisdiction must be confirmed and published before production launch. This policy does not designate a formal DPO.",
-  requests: "For access, correction, deletion, portability, or privacy questions, email privacy@shopideck.com. Include the store domain and enough information to identify the request, but do not send passwords, API keys, or access tokens.",
+  requests: "For access, correction, deletion, portability, or privacy questions, email team@shopideck.com. Include the store domain and enough information to identify the request, but do not send passwords, API keys, or access tokens.",
   roles: "Roles",
   rolesText: "When processing end-customer profile data at a merchant's direction, the merchant generally acts as controller and ShopiDeck acts as processor. ShopiDeck may act as controller for merchant accounts, billing, support, security, and direct product usage.",
   data: "Specific data processed by Klaviyo Bot Cleaner",
@@ -80,7 +80,7 @@ const es = {
   intro: "Esta política explica cómo ShopiDeck procesa datos del comerciante, Shopify, Klaviyo, soporte y operación para el sitio público y Klaviyo Bot Cleaner.",
   responsible: "Entidad responsable y jurisdicción",
   responsibleText: "Entidad responsable: ShopiDeck. El nombre legal registrado, la dirección legal, el país y la jurisdicción aplicable deben confirmarse y publicarse antes del lanzamiento en producción. Esta política no designa un DPO formal.",
-  requests: "Para solicitudes de acceso, corrección, borrado, portabilidad o preguntas de privacidad, escribe a privacy@shopideck.com. Incluye el dominio de la tienda y la información necesaria para identificar la solicitud, pero no envíes contraseñas, API keys ni tokens de acceso.",
+  requests: "Para solicitudes de acceso, corrección, borrado, portabilidad o preguntas de privacidad, escribe a team@shopideck.com. Incluye el dominio de la tienda y la información necesaria para identificar la solicitud, pero no envíes contraseñas, API keys ni tokens de acceso.",
   roles: "Roles",
   rolesText: "Cuando procesa datos de perfiles de clientes finales siguiendo las instrucciones del comerciante, el comerciante normalmente actúa como responsable y ShopiDeck como encargado. ShopiDeck puede actuar como responsable para cuentas del comerciante, facturación, soporte, seguridad y uso directo del producto.",
   data: "Datos específicos procesados por Klaviyo Bot Cleaner",
@@ -154,3 +154,4 @@ export default async function PrivacyPage({ params }: PageProps) {
     </div>
   );
 }
+

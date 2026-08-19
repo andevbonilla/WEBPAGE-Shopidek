@@ -109,8 +109,8 @@ const faqEN: FAQItem[] = [
     id: "support",
     category: "getting-started",
     title: "How do I contact support?",
-    excerpt: "Use the form or email support@shopideck.com during published support hours.",
-    content: "Send a request through the form on this page or email support@shopideck.com. Include your store domain, app, steps to reproduce the issue, and relevant screenshots. Do not include API keys, passwords, access tokens, or full customer lists. See the privacy policy for how support data is handled.",
+    excerpt: "Use the form or email team@shopideck.com during published support hours.",
+    content: "Send a request through the form on this page or email team@shopideck.com. Include your store domain, app, steps to reproduce the issue, and relevant screenshots. Do not include API keys, passwords, access tokens, or full customer lists. See the privacy policy for how support data is handled.",
   },
 ];
 
@@ -217,11 +217,12 @@ const faqES: FAQItem[] = [
     id: "support",
     category: "getting-started",
     title: "¿Cómo contacto al soporte?",
-    excerpt: "Usa el formulario o escribe a support@shopideck.com durante el horario publicado.",
-    content: "Envía una solicitud mediante el formulario de esta página o escribe a support@shopideck.com. Incluye el dominio de tu tienda, la app, los pasos para reproducir el problema y capturas relevantes. No incluyas API keys, contraseñas, tokens de acceso ni listas completas de clientes. Consulta la política de privacidad para conocer el tratamiento de los datos de soporte.",
+    excerpt: "Usa el formulario o escribe a team@shopideck.com durante el horario publicado.",
+    content: "Envía una solicitud mediante el formulario de esta página o escribe a team@shopideck.com. Incluye el dominio de tu tienda, la app, los pasos para reproducir el problema y capturas relevantes. No incluyas API keys, contraseñas, tokens de acceso ni listas completas de clientes. Consulta la política de privacidad para conocer el tratamiento de los datos de soporte.",
   },
 ];
 
 export function getFaqs(locale: string): FAQItem[] {
   return locale === "es" ? faqES : faqEN;
 }
+

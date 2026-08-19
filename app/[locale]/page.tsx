@@ -10,7 +10,6 @@ import {
   Shield,
   CheckCircle2,
   ArrowRight,
-  Lock,
   Coins,
   Target,
   Headphones
@@ -83,7 +82,7 @@ export default async function Home({
       ],
       brandColor: "bg-indigo-50 text-indigo-400 border-indigo-200/60",
       accentBg: "bg-indigo-300",
-      link: "mailto:support@shopideck.com?subject=Early%20Access%20Request%20-%20Cart%20Recovery",
+      link: "/help",
       coverImage: "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=600&q=80",
       active: false
     },
@@ -100,7 +99,7 @@ export default async function Home({
       ],
       brandColor: "bg-emerald-50 text-emerald-400 border-emerald-200/60",
       accentBg: "bg-emerald-300",
-      link: "mailto:support@shopideck.com?subject=Early%20Access%20Request%20-%20Review%20Booster",
+      link: "/help",
       coverImage: "https://images.unsplash.com/photo-1618005198143-e5283b519a7f?auto=format&fit=crop&w=600&q=80",
       active: false
     }
@@ -265,7 +264,7 @@ export default async function Home({
                         {prod.name}
                       </h3>
                       <span className="text-[10px] font-bold text-brand-muted uppercase tracking-wider block mt-1">
-                        {prod.active ? t("activeStatus") : (prod.id === "cart-recovery" ? (currentLocale === "en" ? "Private beta" : "Beta privada") : (currentLocale === "en" ? "Planned product" : "Producto planeado"))}
+                        {t("comingSoon")}
                       </span>
                     </div>
 
@@ -291,7 +290,7 @@ export default async function Home({
                           className="w-full flex-1 inline-flex items-center justify-center gap-2 bg-[#F2F2F0] hover:bg-[#d7d7d5] text-black text-xs font-bold py-3.5 px-4 rounded-xl transition-colors"
                         >
                           <Image src="/shopify-logo-png-transparent.png" alt="Shopify Icon" width={20} height={20} />
-                          <span className="truncate">{currentLocale === "en" ? "Check availability" : "Ver disponibilidad"}</span>
+                          <span className="truncate">{currentLocale === "en" ? "Install on Shopify" : "Instalar en Shopify"}</span>
                         </a>
                         {/* White details button with thin border */}
                         <Link
@@ -303,15 +302,8 @@ export default async function Home({
                         </Link>
                       </div>
                     ) : (
-                      /* Beta App: White button with grey border */
-                      <div>
-                        <a
-                          href={prod.link}
-                          className="w-full inline-flex items-center justify-center gap-1.5 bg-brand-card hover:bg-zinc-50 text-brand-secondary text-xs font-bold py-3.5 px-4 rounded-xl border border-brand-border/80 transition-colors uppercase"
-                        >
-                          <Lock className="w-3.5 h-3.5 flex-shrink-0 text-brand-muted" />
-                          <span className="truncate">{currentLocale === "en" ? "Request Beta Access" : "Solicitar acceso beta"}</span>
-                        </a>
+                      <div className="w-full inline-flex items-center justify-center bg-brand-card text-brand-muted text-xs font-bold py-3.5 px-4 rounded-xl border border-brand-border/80 uppercase">
+                        <span className="truncate">{t("comingSoon")}</span>
                       </div>
                     )}
                   </div>
@@ -328,12 +320,12 @@ export default async function Home({
             <p className="text-xs sm:text-sm text-brand-secondary leading-relaxed font-light">
               {t("ideaDesc")}
             </p>
-            <a 
-              href="mailto:support@shopideck.com" 
+            <Link
+              href="/help#contact-form-anchor"
               className="mt-2 bg-brand-accent hover:bg-brand-accent-hover text-brand-main px-8 py-3 rounded-2xl text-xs font-bold border border-brand-main/15 transition-colors duration-200"
             >
               {t("ideaCta")}
-            </a>
+            </Link>
           </div>
 
         </div>
@@ -430,3 +422,4 @@ export default async function Home({
     </div>
   );
 }
+

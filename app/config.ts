@@ -1,6 +1,7 @@
 export const SITE_URL = "https://shopideck.com";
-export const SUPPORT_EMAIL = "support@shopideck.com";
-export const PRIVACY_EMAIL = "privacy@shopideck.com";
+export const TEAM_EMAIL = "team@shopideck.com";
+export const SUPPORT_EMAIL = TEAM_EMAIL;
+export const PRIVACY_EMAIL = TEAM_EMAIL;
 export const PRODUCT_NAME = "ShopiDeck: Klaviyo Bot Cleaner";
 
 // Set NEXT_PUBLIC_SHOPIFY_APP_STORE_URL only after Shopify has assigned the
@@ -15,3 +16,4 @@ export function localizedPath(locale: "en" | "es", path = "/") {
   if (locale === "es") return `/es${path === "/" ? "" : path}`;
   return path;
 }
+

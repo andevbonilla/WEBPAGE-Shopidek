@@ -202,7 +202,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                   rel={SHOPIFY_APP_STORE_URL.startsWith("http") ? "noopener noreferrer" : undefined}
                   className="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-brand-accent hover:bg-brand-accent-hover text-brand-main font-bold py-3.5 px-6 rounded-xl border border-brand-main/15 transition-colors duration-200 text-xs uppercase"
                 >
-                  <span>{currentLocale === "en" ? "Check availability" : "Ver disponibilidad"}</span>
+                  <span>{currentLocale === "en" ? "Install on Shopify" : "Instalar en Shopify"}</span>
                   <ExternalLink className="w-4 h-4" />
                 </a>
               </div>
@@ -217,3 +217,4 @@ export default async function BlogPostPage({ params }: PageProps) {
     </div>
   );
 }
+

@@ -35,7 +35,7 @@ const en = {
   responsibility: "Merchant responsibility",
   responsibilityText: "You are responsible for your Shopify and Klaviyo accounts, lawful consent, domain authentication, segmentation, campaign review, and the decisions you make from audit results. Do not submit secrets or full customer lists through support forms.",
   availability: "Availability and changes",
-  availabilityText: "We may change, suspend, or discontinue a feature, plan, or product. Product status and limits will be updated on the public site when known. Upcoming suite products may be private beta or planned and are not included in Klaviyo Bot Cleaner unless stated otherwise.",
+  availabilityText: "We may change, suspend, or discontinue a feature, plan, or product. Product status and limits will be updated on the public site when known. Upcoming suite products are coming soon and are not included in Klaviyo Bot Cleaner unless stated otherwise.",
   jurisdiction: "Legal entity and governing law",
   jurisdictionText: "The registered legal entity, address, country, and governing jurisdiction must be confirmed with legal counsel before publication. No specific country or court is designated by these terms until that verification is complete.",
 };
@@ -59,7 +59,7 @@ const es = {
   responsibility: "Responsabilidad del comerciante",
   responsibilityText: "Eres responsable de tus cuentas de Shopify y Klaviyo, el consentimiento legal, la autenticación del dominio, la segmentación, la revisión de campañas y las decisiones que tomes a partir de los resultados. No envíes secretos ni listas completas de clientes mediante los formularios de soporte.",
   availability: "Disponibilidad y cambios",
-  availabilityText: "Podemos cambiar, suspender o descontinuar una función, plan o producto. El estado y los límites se actualizarán en el sitio público cuando se conozcan. Los próximos productos de la suite pueden estar en beta privada o planeados y no están incluidos en Klaviyo Bot Cleaner salvo que se indique lo contrario.",
+  availabilityText: "Podemos cambiar, suspender o descontinuar una función, plan o producto. El estado y los límites se actualizarán en el sitio público cuando se conozcan. Los próximos productos de la suite estarán disponibles próximamente y no están incluidos en Klaviyo Bot Cleaner salvo que se indique lo contrario.",
   jurisdiction: "Entidad legal y ley aplicable",
   jurisdictionText: "La entidad legal registrada, dirección, país y jurisdicción aplicable deben confirmarse con asesoría legal antes de publicar. Estos términos no designan un país o tribunal específico hasta completar esa verificación.",
 };
@@ -88,3 +88,5 @@ export default async function TermsPage({ params }: PageProps) {
     </div>
   );
 }
+
+
