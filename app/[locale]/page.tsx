@@ -2,18 +2,14 @@ import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import TestimonialCarousel from "../components/TestimonialCarousel";
 import FaqSection from "../components/FaqSection";
 import FootprintTracker from "../components/FootprintTracker";
+import { PRODUCT_NAME, SHOPIFY_APP_STORE_URL } from "../config";
 import {
-  Sparkles,
-  ShoppingCart, 
-  Star,
   Zap,
   Shield,
   CheckCircle2,
   ArrowRight,
-  Check,
   Lock,
   Coins,
   Target,
@@ -21,8 +17,21 @@ import {
 } from "lucide-react";
 import es from "@/messages/es.json";
 import en from "@/messages/en.json";
+import type { Metadata } from "next";
+import { SITE_URL, localizedPath } from "../config";
 
 const dictionaries = { en, es };
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const currentLocale = locale === "es" ? "es" : "en";
+  const path = localizedPath(currentLocale);
+  const title = currentLocale === "en" ? "ShopiDeck | Focused tools for Shopify merchants" : "ShopiDeck | Herramientas enfocadas para Shopify";
+  const description = currentLocale === "en"
+    ? "Focused tools for Shopify merchants who want cleaner data, smarter marketing, and better growth decisions."
+    : "Herramientas enfocadas para comerciantes de Shopify que quieren datos más limpios, marketing más inteligente y mejores decisiones de crecimiento.";
+  return { metadataBase: new URL(SITE_URL), title, description, alternates: { canonical: path, languages: { en: "/", es: "/es", "x-default": "/" } }, openGraph: { title, description, url: `${SITE_URL}${path}`, siteName: "ShopiDeck", type: "website" } };
+}
 
 export default async function Home({
   params,
@@ -33,11 +42,11 @@ export default async function Home({
   const currentLocale = (locale as "en" | "es") || "en";
   const dict = dictionaries[currentLocale].Home;
 
-  const t = (key: string, values?: any) => {
-    let text = (dict as any)[key] || "";
+  const t = (key: string, values?: Record<string, string | number>) => {
+    let text = (dict as Record<string, string>)[key] || "";
     if (values) {
       Object.keys(values).forEach((k) => {
-        text = text.replace(`{${k}}`, values[k]);
+        text = text.replace(`{${k}}`, String(values[k]));
       });
     }
     return text;
@@ -46,7 +55,7 @@ export default async function Home({
   const products = [
     {
       id: "botcleaner",
-      name: "Klaviyo Bot Cleaner",
+      name: PRODUCT_NAME,
       initials: "Bc",
       icon: "/favicons-botcleaner/android-chrome-192x192.png",
       description: t("prodBotDesc"),
@@ -143,8 +152,8 @@ export default async function Home({
       icon: Target,
     },
     {
-      titleKey: "valSupport247",
-      descKey: "valSupport247Desc",
+      titleKey: "valSupport",
+      descKey: "valSupportDesc",
       icon: Headphones,
     },
   ];
@@ -191,7 +200,7 @@ export default async function Home({
           <div className="mt-4">
             <a
               href="#features"
-              className="inline-block bg-brand-accent hover:bg-brand-accent-hover text-brand-main text-center px-10 py-4.5 rounded-2xl font-bold shadow-soft border border-brand-main/15 transition-all duration-200 hover:-translate-y-0.5 text-base"
+              className="inline-block bg-brand-accent hover:bg-brand-accent-hover text-brand-main text-center px-10 py-4.5 rounded-2xl font-bold border border-brand-main/15 transition-colors duration-200 text-base"
             >
               {t("activeApps")}
             </a>
@@ -203,9 +212,6 @@ export default async function Home({
       <section id="features" className="py-20 md:py-28 bg-brand-card border-y border-brand-border">
         <div className="layout-container">
           <div className="text-center max-w-3xl mx-auto flex flex-col gap-4 mb-16">
-            <span className="font-display font-extrabold text-xs text-brand-accent bg-brand-main px-4 py-1.5 rounded-full self-center uppercase tracking-widest">
-              {t("portfolioBadge")}
-            </span>
             <h2 className="font-display font-black text-2xl md:text-3xl text-brand-main tracking-tight uppercase">
               {t("portfolioTitle")}
             </h2>
@@ -219,7 +225,7 @@ export default async function Home({
             {products.map((prod) => (
               <div
                 key={prod.id}
-                className={`bg-brand-card rounded-3xl border border-brand-border/60 flex flex-col justify-between hover:shadow-premium transition-all duration-300 relative group overflow-hidden ${!prod.active ? "opacity-90" : ""
+                className={`bg-brand-card rounded-3xl border border-brand-border/60 flex flex-col justify-between relative group overflow-hidden ${!prod.active ? "opacity-90" : ""
                   }`}
               >
                 {/* Full-width Cover Image (Adobe Style - Sleek Smaller Height) */}
@@ -259,7 +265,7 @@ export default async function Home({
                         {prod.name}
                       </h3>
                       <span className="text-[10px] font-bold text-brand-muted uppercase tracking-wider block mt-1">
-                        {prod.active ? (currentLocale === "en" ? "Active App" : "Aplicación Activa") : (currentLocale === "en" ? "Suite Beta" : "Beta de la Suite")}
+                        {prod.active ? t("activeStatus") : (prod.id === "cart-recovery" ? (currentLocale === "en" ? "Private beta" : "Beta privada") : (currentLocale === "en" ? "Planned product" : "Producto planeado"))}
                       </span>
                     </div>
 
@@ -275,22 +281,22 @@ export default async function Home({
                     <hr className="border-brand-border/60 mb-5" />
 
                     {prod.active ? (
-                      /* Active App: Dual Buttons side-by-side */
+                       /* Product status: availability and details */
                       <div className="flex flex-col items-center gap-3">
                         {/* Green Shopify Install Button */}
                         <a
-                          href="https://apps.shopify.com/klaviyo-bot-cleaner"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="w-full flex-1 inline-flex items-center justify-center gap-2 bg-[#F2F2F0] hover:bg-[#d7d7d5] text-black text-xs font-bold py-3.5 px-4 rounded-xl transition-colors shadow-soft"
+                          href={SHOPIFY_APP_STORE_URL}
+                          target={SHOPIFY_APP_STORE_URL.startsWith("http") ? "_blank" : undefined}
+                          rel={SHOPIFY_APP_STORE_URL.startsWith("http") ? "noopener noreferrer" : undefined}
+                          className="w-full flex-1 inline-flex items-center justify-center gap-2 bg-[#F2F2F0] hover:bg-[#d7d7d5] text-black text-xs font-bold py-3.5 px-4 rounded-xl transition-colors"
                         >
                           <Image src="/shopify-logo-png-transparent.png" alt="Shopify Icon" width={20} height={20} />
-                          <span className="truncate">{currentLocale === "en" ? "Install on Shopify" : "Instalar en Shopify"}</span>
+                          <span className="truncate">{currentLocale === "en" ? "Check availability" : "Ver disponibilidad"}</span>
                         </a>
                         {/* White details button with thin border */}
                         <Link
                           href={prod.link}
-                          className="w-full inline-flex items-center justify-center gap-1.5 bg-brand-card hover:bg-zinc-50 border border-brand-border text-brand-main text-xs font-bold py-3.5 px-4 rounded-xl transition-all shadow-soft group/details"
+                          className="w-full inline-flex items-center justify-center gap-1.5 bg-brand-card hover:bg-zinc-50 border border-brand-border text-brand-main text-xs font-bold py-3.5 px-4 rounded-xl transition-colors group/details"
                         >
                           <span className="truncate">{currentLocale === "en" ? "View Details" : "Ver detalles"}</span>
                           <ArrowRight className="w-3.5 h-3.5 flex-shrink-0 transform group-hover/details:translate-x-0.5 transition-transform" />
@@ -301,7 +307,7 @@ export default async function Home({
                       <div>
                         <a
                           href={prod.link}
-                          className="w-full inline-flex items-center justify-center gap-1.5 bg-brand-card hover:bg-zinc-50 text-brand-secondary text-xs font-bold py-3.5 px-4 rounded-xl border border-brand-border/80 transition-all shadow-soft uppercase"
+                          className="w-full inline-flex items-center justify-center gap-1.5 bg-brand-card hover:bg-zinc-50 text-brand-secondary text-xs font-bold py-3.5 px-4 rounded-xl border border-brand-border/80 transition-colors uppercase"
                         >
                           <Lock className="w-3.5 h-3.5 flex-shrink-0 text-brand-muted" />
                           <span className="truncate">{currentLocale === "en" ? "Request Beta Access" : "Solicitar acceso beta"}</span>
@@ -315,7 +321,7 @@ export default async function Home({
           </div>
 
           {/* Centered Idea Suggestion Card at the bottom of Products */}
-          <div className="mt-16 bg-brand-card p-8 rounded-3xl border border-brand-border/60 shadow-soft max-w-2xl mx-auto text-center flex flex-col items-center gap-4 hover:shadow-premium transition-all duration-300">
+          <div className="mt-16 bg-brand-card p-8 rounded-3xl border border-brand-border/60 shadow-soft max-w-2xl mx-auto text-center flex flex-col items-center gap-4">
             <h4 className="font-display font-black text-lg text-brand-main uppercase tracking-tight">
               {t("ideaTitle")}
             </h4>
@@ -324,7 +330,7 @@ export default async function Home({
             </p>
             <a 
               href="mailto:support@shopideck.com" 
-              className="mt-2 bg-brand-accent hover:bg-brand-accent-hover text-brand-main px-8 py-3 rounded-2xl text-xs font-bold border border-brand-main/15 shadow-soft transition-all duration-200 hover:-translate-y-0.5"
+              className="mt-2 bg-brand-accent hover:bg-brand-accent-hover text-brand-main px-8 py-3 rounded-2xl text-xs font-bold border border-brand-main/15 transition-colors duration-200"
             >
               {t("ideaCta")}
             </a>
@@ -339,9 +345,6 @@ export default async function Home({
           
           {/* Centered Headers */}
           <div className="text-center max-w-3xl mx-auto flex flex-col gap-4 mb-16">
-            <span className="font-display font-extrabold text-xs text-brand-muted bg-brand-cream border border-brand-border px-3.5 py-1.5 rounded-full self-center uppercase tracking-wider">
-              {t("whyBadge")}
-            </span>
             <h2 className="font-display font-black text-2xl md:text-3xl text-brand-main tracking-tight uppercase leading-tight">
               {t("whyTitle")}
             </h2>
@@ -357,7 +360,7 @@ export default async function Home({
               return (
                 <div 
                   key={idx}
-                  className="bg-brand-card p-8 rounded-3xl border border-brand-border/60 shadow-soft hover:shadow-premium hover:-translate-y-1 transition-all duration-300 flex flex-col gap-4 group"
+                  className="bg-brand-card p-8 rounded-3xl border border-brand-border/60 shadow-soft flex flex-col gap-4 group"
                 >
                   <div className="w-12 h-12 rounded-2xl bg-brand-cream border border-brand-border/60 flex items-center justify-center text-brand-accent shadow-soft group-hover:scale-105 transition-transform duration-300">
                     <IconComponent className="w-5 h-5 text-brand-accent-hover" />
@@ -382,9 +385,6 @@ export default async function Home({
       <section id="faq" className="py-20 md:py-28 bg-brand-card border-t border-brand-border">
         <div className="layout-container">
           <div className="text-center max-w-2xl mx-auto flex flex-col gap-4 mb-16">
-            <span className="font-display font-extrabold text-xs text-brand-muted bg-brand-bg border border-brand-border px-3.5 py-1.5 rounded-full self-center uppercase tracking-wider">
-              {t("faqBadge")}
-            </span>
             <h2 className="font-display font-black text-2xl md:text-3xl text-brand-main tracking-tight uppercase">
               {t("faqTitle")}
             </h2>
@@ -411,13 +411,13 @@ export default async function Home({
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
             <a
               href="#features"
-              className="bg-brand-accent hover:bg-brand-accent-hover text-brand-main px-8 py-4 rounded-2xl font-bold border border-brand-main/15 shadow-premium transition-all duration-200 hover:-translate-y-0.5 text-base"
+              className="bg-brand-accent hover:bg-brand-accent-hover text-brand-main px-8 py-4 rounded-2xl font-bold border border-brand-main/15 transition-colors duration-200 text-base"
             >
               {t("ctaButton")}
             </a>
             <Link
               href="/help"
-              className="bg-brand-card hover:bg-zinc-50 text-brand-main px-8 py-4 rounded-2xl font-semibold border border-brand-border shadow-soft transition-all duration-200 hover:-translate-y-0.5 text-base"
+              className="bg-brand-card hover:bg-zinc-50 text-brand-main px-8 py-4 rounded-2xl font-semibold border border-brand-border transition-colors duration-200 text-base"
             >
               {t("ctaHelp")}
             </Link>

@@ -10,7 +10,6 @@ import {
 } from "lucide-react";
 
 interface ProblemSolutionWorkflowProps {
-  locale: "en" | "es";
   // Problem section props (4 Boxes Timeline)
   probBadge: string;
   probTitle: string;
@@ -26,7 +25,6 @@ interface ProblemSolutionWorkflowProps {
 }
 
 export default function ProblemSolutionWorkflow({
-  locale,
   probBadge,
   probTitle,
   probDesc,
@@ -60,7 +58,7 @@ export default function ProblemSolutionWorkflow({
           
           {/* Box 1 */}
           <div className="relative group">
-            <div className="h-full bg-[#FCFBF9] p-6 rounded-3xl border border-brand-border shadow-soft hover:shadow-premium hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+            <div className="h-full bg-[#FCFBF9] p-6 rounded-3xl border border-brand-border shadow-soft flex flex-col justify-between">
               <div>
                 <div className="w-10 h-10 rounded-xl bg-amber-100 border border-amber-200 flex items-center justify-center mb-6">
                   <Sparkles className="w-5 h-5 text-amber-600" />
@@ -85,7 +83,7 @@ export default function ProblemSolutionWorkflow({
 
           {/* Box 2 */}
           <div className="relative group">
-            <div className="h-full bg-[#FCFBF9] p-6 rounded-3xl border border-brand-border shadow-soft hover:shadow-premium hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+            <div className="h-full bg-[#FCFBF9] p-6 rounded-3xl border border-brand-border shadow-soft flex flex-col justify-between">
               <div>
                 <div className="w-10 h-10 rounded-xl bg-red-100 border border-red-200 flex items-center justify-center mb-6">
                   <Mail className="w-5 h-5 text-red-600" />
@@ -110,7 +108,7 @@ export default function ProblemSolutionWorkflow({
 
           {/* Box 3 */}
           <div className="relative group">
-            <div className="h-full bg-[#FCFBF9] p-6 rounded-3xl border border-brand-border shadow-soft hover:shadow-premium hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+            <div className="h-full bg-[#FCFBF9] p-6 rounded-3xl border border-brand-border shadow-soft flex flex-col justify-between">
               <div>
                 <div className="w-10 h-10 rounded-xl bg-rose-100 border border-rose-200 flex items-center justify-center mb-6">
                   <ShieldAlert className="w-5 h-5 text-rose-600" />
@@ -135,7 +133,7 @@ export default function ProblemSolutionWorkflow({
 
           {/* Box 4 */}
           <div className="relative group">
-            <div className="h-full bg-brand-cream p-6 rounded-3xl border border-brand-accent/50 shadow-soft hover:shadow-premium hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+            <div className="h-full bg-brand-cream p-6 rounded-3xl border border-brand-accent/50 shadow-soft flex flex-col justify-between">
               <div>
                 <div className="w-10 h-10 rounded-xl bg-emerald-100 border border-emerald-200 flex items-center justify-center mb-6">
                   <CheckCircle2 className="w-5 h-5 text-emerald-600" />

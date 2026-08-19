@@ -10,38 +10,6 @@ import en from "@/messages/en.json";
 
 const dictionaries = { en, es };
 
-const LinkedinIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    {...props}
-  >
-    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-    <rect width="4" height="12" x="2" y="9" />
-    <circle cx="4" cy="4" r="2" />
-  </svg>
-);
-
-const InstagramIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    {...props}
-  >
-    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-  </svg>
-);
-
 export default function Footer() {
   const pathname = usePathname();
   const router = useRouter();
@@ -145,11 +113,12 @@ export default function Footer() {
             <div className="relative">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="bg-brand-bg/10 hover:bg-brand-bg/15 text-brand-bg hover:text-brand-accent px-4 py-3 rounded-2xl border border-brand-bg/15 font-bold text-xs flex items-center justify-between gap-2 transition-all w-full md:w-48 text-left"
+                aria-expanded={isOpen}
+                aria-haspopup="listbox"
+                className="bg-brand-bg/10 hover:bg-brand-bg/15 text-brand-bg hover:text-brand-accent px-4 py-3 rounded-2xl border border-brand-bg/15 font-bold text-xs flex items-center justify-between gap-2 transition-colors w-full md:w-48 text-left"
               >
                 <span className="flex items-center gap-2">
                   <Globe className="w-3.5 h-3.5 text-brand-bg/60" />
-                  <span>{activeLanguage.flag}</span>
                   <span>{activeLanguage.name}</span>
                 </span>
                 <ChevronDown className={`w-3.5 h-3.5 text-brand-bg/60 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`} />
@@ -166,7 +135,6 @@ export default function Footer() {
                           }`}
                       >
                         <span className="flex items-center gap-2">
-                          <span>{lang.flag}</span>
                           <span>{lang.name}</span>
                         </span>
                         {currentLocale === lang.code && <Check className="w-3.5 h-3.5 text-brand-accent" />}
@@ -185,28 +153,7 @@ export default function Footer() {
           <p>
             {dict.copyright.replace("{year}", new Date().getFullYear().toString())}
           </p>
-          <div className="flex items-center gap-6">
-            <div className="flex gap-4">
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-brand-accent transition-colors flex items-center"
-                title="LinkedIn"
-              >
-                <LinkedinIcon className="w-4 h-4" />
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-brand-accent transition-colors flex items-center"
-                title="Instagram"
-              >
-                <InstagramIcon className="w-4 h-4" />
-              </a>
-            </div>
-          </div>
+          <span className="text-brand-bg/60">support@shopideck.com</span>
         </div>
 
       </div>

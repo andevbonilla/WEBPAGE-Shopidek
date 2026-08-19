@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Share2, Link as LinkIcon, Check } from "lucide-react";
 
 interface ShareButtonsProps {
@@ -10,19 +10,12 @@ interface ShareButtonsProps {
 
 export default function ShareButtons({ title, locale }: ShareButtonsProps) {
   const [copied, setCopied] = useState(false);
-  const [shareUrl, setShareUrl] = useState("");
-  const [supportsNativeShare, setSupportsNativeShare] = useState(false);
-
-  useEffect(() => {
-    setShareUrl(window.location.href);
-    if (typeof navigator !== "undefined" && !!(navigator as any).share) {
-      setSupportsNativeShare(true);
-    }
-  }, []);
+  const shareUrl = typeof window !== "undefined" ? window.location.href : "";
+  const supportsNativeShare = typeof navigator !== "undefined" && typeof navigator.share === "function";
 
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText(shareUrl || window.location.href);
+      await navigator.clipboard.writeText(window.location.href);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
@@ -31,9 +24,9 @@ export default function ShareButtons({ title, locale }: ShareButtonsProps) {
   };
 
   const handleNativeShare = async () => {
-    if (typeof navigator !== "undefined" && !!(navigator as any).share) {
+    if (typeof navigator !== "undefined" && typeof navigator.share === "function") {
       try {
-        await (navigator as any).share({
+        await navigator.share({
           title: title,
           url: shareUrl || window.location.href,
         });
@@ -57,7 +50,7 @@ export default function ShareButtons({ title, locale }: ShareButtonsProps) {
         {/* Copy Link Button */}
         <button
           onClick={handleCopy}
-          className="p-2 rounded-xl border border-brand-border bg-brand-bg hover:bg-zinc-100 text-brand-secondary transition-all hover:scale-[1.03] active:scale-[0.97] duration-200 flex items-center justify-center gap-1.5 cursor-pointer shadow-soft"
+          className="p-2 rounded-xl border border-brand-border bg-brand-bg hover:bg-zinc-100 text-brand-secondary transition-colors duration-200 flex items-center justify-center gap-1.5 cursor-pointer"
           title={locale === "en" ? "Copy link" : "Copiar enlace"}
         >
           {copied ? (
@@ -78,7 +71,7 @@ export default function ShareButtons({ title, locale }: ShareButtonsProps) {
           href={twitterShareUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="p-2 rounded-xl border border-brand-border bg-brand-bg hover:bg-zinc-100 text-brand-secondary transition-all hover:scale-[1.03] active:scale-[0.97] duration-200 flex items-center justify-center cursor-pointer shadow-soft"
+          className="p-2 rounded-xl border border-brand-border bg-brand-bg hover:bg-zinc-100 text-brand-secondary transition-colors duration-200 flex items-center justify-center cursor-pointer"
           title="Share on Twitter / X"
         >
           <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
@@ -91,7 +84,7 @@ export default function ShareButtons({ title, locale }: ShareButtonsProps) {
           href={facebookShareUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="p-2 rounded-xl border border-brand-border bg-brand-bg hover:bg-zinc-100 text-brand-secondary transition-all hover:scale-[1.03] active:scale-[0.97] duration-200 flex items-center justify-center cursor-pointer shadow-soft"
+          className="p-2 rounded-xl border border-brand-border bg-brand-bg hover:bg-zinc-100 text-brand-secondary transition-colors duration-200 flex items-center justify-center cursor-pointer"
           title="Share on Facebook"
         >
           <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
@@ -103,7 +96,7 @@ export default function ShareButtons({ title, locale }: ShareButtonsProps) {
         {supportsNativeShare && (
           <button
             onClick={handleNativeShare}
-            className="p-2 rounded-xl border border-brand-border bg-brand-bg hover:bg-zinc-100 text-brand-secondary transition-all hover:scale-[1.03] active:scale-[0.97] duration-200 flex items-center justify-center cursor-pointer shadow-soft"
+            className="p-2 rounded-xl border border-brand-border bg-brand-bg hover:bg-zinc-100 text-brand-secondary transition-colors duration-200 flex items-center justify-center cursor-pointer"
             title="More share options"
           >
             <Share2 className="w-3.5 h-3.5" />

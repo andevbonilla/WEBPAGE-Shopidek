@@ -1,13 +1,26 @@
+import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { getPosts } from "./posts";
-import { BookOpen, Clock, ArrowRight, User } from "lucide-react";
+import { Clock } from "lucide-react";
 import es from "@/messages/es.json";
 import en from "@/messages/en.json";
+import { SITE_URL, localizedPath } from "../../config";
 
 const dictionaries = { en, es };
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const currentLocale = locale === "es" ? "es" : "en";
+  const path = localizedPath(currentLocale, "/blog");
+  const title = currentLocale === "en" ? "ShopiDeck Blog | Practical Shopify guides" : "Blog de ShopiDeck | Guías prácticas para Shopify";
+  const description = currentLocale === "en"
+    ? "Practical guides for reviewing suspicious Klaviyo profiles and building clearer Shopify growth workflows."
+    : "Guías prácticas para revisar perfiles sospechosos de Klaviyo y construir flujos de crecimiento más claros en Shopify.";
+  return { metadataBase: new URL(SITE_URL), title, description, alternates: { canonical: path, languages: { en: "/blog", es: "/es/blog", "x-default": "/blog" } }, openGraph: { title, description, url: `${SITE_URL}${path}`, siteName: "ShopiDeck", type: "website" } };
+}
 
 export default async function BlogPage({
   params,
@@ -16,13 +29,13 @@ export default async function BlogPage({
 }) {
   const { locale } = await params;
   const currentLocale = (locale as "en" | "es") || "en";
-  const dict = dictionaries[currentLocale].Blog;
+  const dict = dictionaries[currentLocale].Blog as Record<string, string>;
   
-  const t = (key: string, values?: any) => {
-    let text = (dict as any)[key] || "";
+  const t = (key: string, values?: Record<string, string | number>) => {
+    let text = dict[key] || "";
     if (values) {
       Object.keys(values).forEach((k) => {
-        text = text.replace(`{${k}}`, values[k]);
+        text = text.replace(`{${k}}`, String(values[k]));
       });
     }
     return text;
@@ -40,12 +53,8 @@ export default async function BlogPage({
       {/* BLOG MAIN HEADER */}
       <section className="pt-16 pb-12 bg-gradient-to-b from-brand-bg to-brand-cream/30 border-b border-brand-border">
         <div className="layout-container text-left flex flex-col gap-3">
-          <span className="inline-flex items-center gap-1.5 self-start px-3 py-1 rounded-full text-[10px] font-bold bg-brand-warning text-brand-main border border-brand-accent/20 tracking-wider uppercase">
-            <BookOpen className="w-3 h-3 text-brand-accent-hover" />
-            <span>{t("badge")}</span>
-          </span>
           <h1 className="font-display font-black text-4xl sm:text-5xl leading-none text-brand-main tracking-tight uppercase">
-            {currentLocale === "en" ? "ShopiDeck Journal" : "Diario ShopiDeck"}
+            {currentLocale === "en" ? "Practical Shopify guides" : "Guías prácticas para Shopify"}
           </h1>
           <p className="text-sm md:text-base text-brand-secondary max-w-2xl font-light leading-relaxed">
             {t("subtitle")}
@@ -63,7 +72,7 @@ export default async function BlogPage({
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
                 
                 {/* Left Side: Massive Image Aspect Ratio 16:9 */}
-                <div className="lg:col-span-7 relative min-h-[300px] md:min-h-[400px] bg-zinc-100 rounded-3xl overflow-hidden border border-brand-border group shadow-soft hover:shadow-premium transition-all duration-300">
+                <div className="lg:col-span-7 relative min-h-[300px] md:min-h-[400px] bg-zinc-100 rounded-3xl overflow-hidden border border-brand-border group shadow-soft">
                   <Link href={`/blog/${featuredPost.id}`} className="absolute inset-0 block">
                     <Image
                       src={featuredPost.image}
@@ -80,10 +89,6 @@ export default async function BlogPage({
                 <div className="lg:col-span-5 flex flex-col justify-between py-2">
                   <div className="flex flex-col gap-4">
                     <div className="flex items-center gap-3 text-[11px] font-bold tracking-wider uppercase text-brand-muted">
-                      <span className="bg-brand-warning text-brand-main px-2.5 py-1 rounded-lg border border-brand-accent/25">
-                        {featuredPost.category}
-                      </span>
-                      <span>&bull;</span>
                       <span>{featuredPost.date}</span>
                     </div>
 
@@ -101,9 +106,6 @@ export default async function BlogPage({
                   <div className="flex flex-col gap-4 mt-6 border-t border-brand-border/60 pt-6">
                     {/* Author Badge */}
                     <div className="flex items-center gap-3">
-                      <div className="w-9 h-9 rounded-full bg-brand-bg border border-brand-border flex items-center justify-center font-bold text-brand-main text-xs uppercase">
-                        {featuredPost.author[0]}
-                      </div>
                       <div>
                         <p className="text-xs font-bold text-brand-main">{featuredPost.author}</p>
                         <p className="text-[9px] text-brand-muted uppercase font-bold tracking-wider">{featuredPost.authorRole}</p>
@@ -114,13 +116,6 @@ export default async function BlogPage({
                       <span className="flex items-center gap-1.5 text-brand-muted font-medium">
                         <Clock className="w-3.5 h-3.5" /> {featuredPost.readTime}
                       </span>
-                      <Link 
-                        href={`/blog/${featuredPost.id}`} 
-                        className="inline-flex items-center gap-1 hover:text-brand-accent-hover group/link transition-colors"
-                      >
-                        <span>{t("readFull")}</span>
-                        <ArrowRight className="w-4 h-4 transform group-hover/link:translate-x-0.5 transition-transform" />
-                      </Link>
                     </div>
                   </div>
 
@@ -141,7 +136,7 @@ export default async function BlogPage({
                 {remainingPosts.map((post) => (
                   <article 
                     key={post.id}
-                    className="bg-brand-bg rounded-3xl border border-brand-border p-6 flex flex-col justify-between shadow-soft hover:shadow-premium transition-all duration-300 transform hover:-translate-y-0.5 group"
+                    className="bg-brand-bg rounded-3xl border border-brand-border p-6 flex flex-col justify-between shadow-soft group"
                   >
                     <div>
                       {/* Image container */}
@@ -158,9 +153,6 @@ export default async function BlogPage({
                       </div>
 
                       <div className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-wider text-brand-muted mb-3">
-                        <span className="bg-brand-card border border-brand-border px-2.5 py-0.5 rounded-md font-bold text-brand-secondary">
-                          {post.category}
-                        </span>
                         <span>{post.date}</span>
                       </div>
 
@@ -177,9 +169,6 @@ export default async function BlogPage({
                     <div className="flex flex-col gap-4 border-t border-brand-border/50 pt-4">
                       {/* Author */}
                       <div className="flex items-center gap-2">
-                        <div className="w-7 h-7 rounded-full bg-brand-card border border-brand-border flex items-center justify-center font-bold text-brand-main text-[10px] uppercase">
-                          {post.author[0]}
-                        </div>
                         <div>
                           <p className="text-[10px] font-bold text-brand-main">{post.author}</p>
                           <p className="text-[8px] text-brand-muted uppercase font-bold tracking-wider leading-none">{post.authorRole}</p>
@@ -190,13 +179,6 @@ export default async function BlogPage({
                         <span className="flex items-center gap-1 text-brand-muted font-medium">
                           <Clock className="w-3.5 h-3.5" /> {post.readTime}
                         </span>
-                        <Link
-                          href={`/blog/${post.id}`}
-                          className="hover:text-brand-accent-hover flex items-center gap-1 transition-colors group/link"
-                        >
-                          <span>{t("readFull")}</span>
-                          <ArrowRight className="w-4 h-4 transform group-hover/link:translate-x-0.5 transition-transform" />
-                        </Link>
                       </div>
                     </div>
                   </article>

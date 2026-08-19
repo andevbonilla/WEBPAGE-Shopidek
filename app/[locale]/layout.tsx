@@ -16,10 +16,14 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "ShopiDeck | Smarter Tools for Shopify Store Growth",
-  description: "ShopiDeck is a growing suite of simple, focused Shopify tools that help merchants improve data quality, recover lost cart revenue, and automate store operations.",
-  keywords: "Shopify apps, Shopify growth tools, Shopify marketing tools, Shopify data cleanup, Shopify cart recovery, ecommerce tools",
+  title: "ShopiDeck | Focused tools for Shopify merchants",
+  description: "ShopiDeck builds focused tools for Shopify merchants who want cleaner data, smarter marketing, and better growth decisions.",
+  keywords: "Shopify tools, Klaviyo profile audit, ecommerce operations, merchant growth tools",
   metadataBase: new URL("https://shopideck.com"),
+  alternates: {
+    canonical: "/",
+    languages: { en: "/", es: "/es", "x-default": "/" },
+  },
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
@@ -30,8 +34,8 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   openGraph: {
-    title: "ShopiDeck | Smarter Tools for Shopify Store Growth",
-    description: "ShopiDeck is a growing suite of simple, focused Shopify tools that help merchants improve data quality, recover lost cart revenue, and automate store operations.",
+    title: "ShopiDeck | Focused tools for Shopify merchants",
+    description: "ShopiDeck builds focused tools for Shopify merchants who want cleaner data, smarter marketing, and better growth decisions.",
     url: "https://shopideck.com",
     siteName: "ShopiDeck",
     images: [
@@ -47,8 +51,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ShopiDeck | Smarter Tools for Shopify Store Growth",
-    description: "ShopiDeck is a growing suite of simple, focused Shopify tools that help merchants improve data quality, recover lost cart revenue, and automate store operations.",
+    title: "ShopiDeck | Focused tools for Shopify merchants",
+    description: "ShopiDeck builds focused tools for Shopify merchants who want cleaner data, smarter marketing, and better growth decisions.",
     images: ["/android-chrome-512x512.png"],
   },
 };

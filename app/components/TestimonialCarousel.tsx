@@ -39,7 +39,7 @@ export default function TestimonialCarousel({ testimonials, opinionLabel }: Test
       <div 
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className="bg-brand-card rounded-3xl border border-brand-border/60 shadow-premium p-8 md:p-10 transition-all duration-300 hover:scale-[1.01] relative min-h-[250px] flex flex-col justify-between"
+        className="bg-brand-card rounded-3xl border border-brand-border/60 shadow-premium p-8 md:p-10 relative min-h-[250px] flex flex-col justify-between"
       >
         <div>
           <div className="flex gap-1 mb-4">

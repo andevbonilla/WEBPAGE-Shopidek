@@ -7,6 +7,14 @@ const defaultLocale = 'en';
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  // Keep one canonical public hostname for SEO and shared links.
+  if (request.nextUrl.hostname === 'www.shopideck.com') {
+    const canonicalUrl = new URL(request.url);
+    canonicalUrl.hostname = 'shopideck.com';
+    canonicalUrl.protocol = 'https:';
+    return NextResponse.redirect(canonicalUrl, 308);
+  }
+
   // 1. Check if the pathname already has a supported locale prefix
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`

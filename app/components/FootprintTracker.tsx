@@ -41,7 +41,7 @@ export default function FootprintTracker() {
 
         // Place track after moving 55 pixels
         if (distance > 55) {
-          let angle = Math.atan2(dy, dx) * (180 / Math.PI) + 90;
+          const angle = Math.atan2(dy, dx) * (180 / Math.PI) + 90;
           const isLeft = !lastPlaced.current.isLeft;
 
           // Double trail offset physics

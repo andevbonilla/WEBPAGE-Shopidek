@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link as LinkIcon, Check } from "lucide-react";
 
 interface CopyLinkButtonProps {
@@ -9,15 +9,10 @@ interface CopyLinkButtonProps {
 
 export default function CopyLinkButton({ locale }: CopyLinkButtonProps) {
   const [copied, setCopied] = useState(false);
-  const [currentUrl, setCurrentUrl] = useState("");
-
-  useEffect(() => {
-    setCurrentUrl(window.location.href);
-  }, []);
 
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText(currentUrl || window.location.href);
+      await navigator.clipboard.writeText(window.location.href);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
@@ -32,7 +27,7 @@ export default function CopyLinkButton({ locale }: CopyLinkButtonProps) {
       </p>
       <button
         onClick={handleCopy}
-        className="w-full p-2.5 rounded-xl border border-brand-border bg-brand-bg hover:bg-zinc-100 text-brand-secondary transition-all hover:scale-[1.02] active:scale-[0.98] duration-200 flex items-center justify-center gap-2 cursor-pointer shadow-soft text-xs font-bold"
+        className="w-full p-2.5 rounded-xl border border-brand-border bg-brand-bg hover:bg-zinc-100 text-brand-secondary transition-colors duration-200 flex items-center justify-center gap-2 cursor-pointer text-xs font-bold"
         title={locale === "en" ? "Copy page link" : "Copiar enlace de la página"}
       >
         {copied ? (
