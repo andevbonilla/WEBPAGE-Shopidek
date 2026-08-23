@@ -4,7 +4,17 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import FaqSection from "../components/FaqSection";
 import FootprintTracker from "../components/FootprintTracker";
-import { PRODUCT_NAME, SHOPIFY_APP_STORE_URL } from "../config";
+import {
+  PRODUCT_NAME,
+  BOTCLEANER_ICON,
+  SHOPIFY_APP_STORE_URL,
+  SITE_LOGO,
+  SITE_LOGO_ALT,
+  SITE_LOGO_HEIGHT,
+  SITE_LOGO_WIDTH,
+  SITE_URL,
+  localizedPath,
+} from "../config";
 import {
   Zap,
   Shield,
@@ -17,7 +27,6 @@ import {
 import es from "@/messages/es.json";
 import en from "@/messages/en.json";
 import type { Metadata } from "next";
-import { SITE_URL, localizedPath } from "../config";
 
 const dictionaries = { en, es };
 
@@ -29,7 +38,21 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const description = currentLocale === "en"
     ? "Focused tools for Shopify merchants who want cleaner data, smarter marketing, and better growth decisions."
     : "Herramientas enfocadas para comerciantes de Shopify que quieren datos más limpios, marketing más inteligente y mejores decisiones de crecimiento.";
-  return { metadataBase: new URL(SITE_URL), title, description, alternates: { canonical: path, languages: { en: "/", es: "/es", "x-default": "/" } }, openGraph: { title, description, url: `${SITE_URL}${path}`, siteName: "ShopiDeck", type: "website" } };
+  return {
+    metadataBase: new URL(SITE_URL),
+    title,
+    description,
+    alternates: { canonical: path, languages: { en: "/", es: "/es", "x-default": "/" } },
+    openGraph: {
+      title,
+      description,
+      url: `${SITE_URL}${path}`,
+      siteName: "ShopiDeck",
+      type: "website",
+      images: [{ url: SITE_LOGO, width: SITE_LOGO_WIDTH, height: SITE_LOGO_HEIGHT, alt: SITE_LOGO_ALT }],
+    },
+    twitter: { card: "summary_large_image", title, description, images: [SITE_LOGO] },
+  };
 }
 
 export default async function Home({
@@ -56,7 +79,7 @@ export default async function Home({
       id: "botcleaner",
       name: PRODUCT_NAME,
       initials: "Bc",
-      icon: "/favicons-botcleaner/android-chrome-192x192.png",
+      icon: BOTCLEANER_ICON,
       description: t("prodBotDesc"),
       benefits: [
         t("prodBotB1"),
@@ -250,7 +273,7 @@ export default async function Home({
                             alt={`${prod.name} Icon`}
                             width={56}
                             height={56}
-                            className="object-cover w-full h-full"
+                            className="object-contain w-full h-full p-1 bg-brand-bg"
                           />
                         ) : (
                           <span className="text-xl">?</span>

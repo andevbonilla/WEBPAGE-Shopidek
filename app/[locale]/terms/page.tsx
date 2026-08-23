@@ -3,7 +3,7 @@ import { Link } from "@/i18n/navigation";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import CopyLinkButton from "../../components/CopyLinkButton";
-import { SITE_URL, localizedPath } from "../../config";
+import { SITE_LOGO, SITE_LOGO_ALT, SITE_LOGO_HEIGHT, SITE_LOGO_WIDTH, SITE_URL, localizedPath } from "../../config";
 
 interface PageProps { params: Promise<{ locale: string }> }
 
@@ -13,7 +13,21 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = localizedPath(currentLocale, "/terms");
   const title = currentLocale === "en" ? "Terms of Use | ShopiDeck" : "Términos de Uso | ShopiDeck";
   const description = currentLocale === "en" ? "Terms for using ShopiDeck and Klaviyo Bot Cleaner." : "Términos para usar ShopiDeck y Klaviyo Bot Cleaner.";
-  return { metadataBase: new URL(SITE_URL), title, description, alternates: { canonical: path, languages: { en: "/terms", es: "/es/terms", "x-default": "/terms" } }, openGraph: { title, description, url: `${SITE_URL}${path}`, siteName: "ShopiDeck", type: "article" } };
+  return {
+    metadataBase: new URL(SITE_URL),
+    title,
+    description,
+    alternates: { canonical: path, languages: { en: "/terms", es: "/es/terms", "x-default": "/terms" } },
+    openGraph: {
+      title,
+      description,
+      url: `${SITE_URL}${path}`,
+      siteName: "ShopiDeck",
+      type: "article",
+      images: [{ url: SITE_LOGO, width: SITE_LOGO_WIDTH, height: SITE_LOGO_HEIGHT, alt: SITE_LOGO_ALT }],
+    },
+    twitter: { card: "summary_large_image", title, description, images: [SITE_LOGO] },
+  };
 }
 
 const en = {

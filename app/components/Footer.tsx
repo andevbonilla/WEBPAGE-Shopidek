@@ -7,6 +7,7 @@ import { ChevronDown, Check, Globe } from "lucide-react";
 import Image from "next/image";
 import es from "@/messages/es.json";
 import en from "@/messages/en.json";
+import { SITE_LOGO, SITE_LOGO_ALT, SITE_LOGO_HEIGHT, SITE_LOGO_WIDTH } from "../config";
 
 const dictionaries = { en, es };
 
@@ -39,17 +40,14 @@ export default function Footer() {
 
           {/* Col 1: Brand details */}
           <div className="md:col-span-4 flex flex-col gap-4">
-            <Link href="/" className="flex items-center gap-2">
+            <Link href="/" className="inline-flex items-center" aria-label={SITE_LOGO_ALT}>
               <Image
-                src="/android-chrome-512x512.png"
-                alt="ShopiDeck Logo"
-                width={32}
-                height={32}
-                className="rounded-lg shadow-soft"
+                src={SITE_LOGO}
+                alt={SITE_LOGO_ALT}
+                width={SITE_LOGO_WIDTH}
+                height={SITE_LOGO_HEIGHT}
+                className="h-12 w-auto object-contain rounded-lg"
               />
-              <span className="font-display font-black text-xl text-brand-bg tracking-tight">
-                ShopiDeck
-              </span>
             </Link>
             <p className="text-xs text-brand-bg/60 leading-relaxed max-w-xs">
               {dict.desc}

@@ -5,6 +5,7 @@ import { useParams } from "next/navigation";
 import Image from "next/image";
 import es from "@/messages/es.json";
 import en from "@/messages/en.json";
+import { SITE_LOGO, SITE_LOGO_ALT, SITE_LOGO_HEIGHT, SITE_LOGO_WIDTH } from "../config";
 
 const dictionaries = { en, es };
 
@@ -16,17 +17,15 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-brand-bg/95 backdrop-blur-md border-b border-brand-border">
       <div className="layout-container h-20 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 group">
+        <Link href="/" className="flex items-center gap-2 group" aria-label={SITE_LOGO_ALT}>
           <Image
-            src="/android-chrome-512x512.png"
-            alt="ShopiDeck Logo"
-            width={40}
-            height={40}
-            className="rounded-xl shadow-soft border border-brand-border/40 transform group-hover:scale-105 transition-transform duration-200"
+            src={SITE_LOGO}
+            alt={SITE_LOGO_ALT}
+            width={SITE_LOGO_WIDTH}
+            height={SITE_LOGO_HEIGHT}
+            priority
+            className="h-12 w-auto object-contain transform group-hover:scale-[1.02] transition-transform duration-200"
           />
-          <span className="font-display font-black text-2xl tracking-tight text-brand-main">
-            ShopiDeck
-          </span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">

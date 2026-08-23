@@ -8,7 +8,13 @@ import es from "@/messages/es.json";
 import en from "@/messages/en.json";
 import {
   PRODUCT_NAME,
+  BOTCLEANER_ICON,
   SHOPIFY_APP_STORE_URL,
+  SITE_LOGO,
+  SITE_LOGO_ALT,
+  SITE_LOGO_HEIGHT,
+  SITE_LOGO_URL,
+  SITE_LOGO_WIDTH,
   SITE_URL,
   localizedPath,
 } from "../../config";
@@ -58,17 +64,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       locale: currentLocale === "en" ? "en_US" : "es_ES",
       type: "website",
       images: [{
-        url: "/favicons-botcleaner/android-chrome-512x512.png",
-        width: 512,
-        height: 512,
-        alt: PRODUCT_NAME,
+        url: SITE_LOGO,
+        width: SITE_LOGO_WIDTH,
+        height: SITE_LOGO_HEIGHT,
+        alt: SITE_LOGO_ALT,
       }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: ["/favicons-botcleaner/android-chrome-512x512.png"],
+      images: [SITE_LOGO],
     },
   };
 }
@@ -206,6 +212,12 @@ export default async function BotCleanerPage({ params }: PageProps) {
     name: PRODUCT_NAME,
     applicationCategory: "BusinessApplication",
     operatingSystem: "Shopify Admin",
+    image: SITE_LOGO_URL,
+    publisher: {
+      "@type": "Organization",
+      name: "ShopiDeck",
+      logo: { "@type": "ImageObject", url: SITE_LOGO_URL, width: SITE_LOGO_WIDTH, height: SITE_LOGO_HEIGHT },
+    },
     description: currentLocale === "en"
       ? "A merchant-controlled audit and suppression workflow for existing Klaviyo profiles."
       : "Un flujo controlado por el comerciante para auditar y suprimir perfiles existentes de Klaviyo.",
@@ -254,7 +266,7 @@ export default async function BotCleanerPage({ params }: PageProps) {
             </div>
             <div className="lg:col-span-5 bg-brand-card rounded-3xl border border-brand-border p-6 shadow-premium">
               <div className="flex items-center gap-3 mb-6">
-                <Image src="/favicons-botcleaner/android-chrome-192x192.png" alt={PRODUCT_NAME} width={48} height={48} className="rounded-xl" />
+                <Image src={BOTCLEANER_ICON} alt={`${PRODUCT_NAME} icon`} width={48} height={48} className="rounded-xl object-cover" />
                 <div>
                   <p className="font-display font-black text-lg">{t("dashboardTitle")}</p>
                   <p className="text-xs text-brand-muted">{t("dashboardDesc")}</p>

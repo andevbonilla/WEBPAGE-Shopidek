@@ -7,7 +7,7 @@ import { getPosts } from "./posts";
 import { Clock } from "lucide-react";
 import es from "@/messages/es.json";
 import en from "@/messages/en.json";
-import { SITE_URL, localizedPath } from "../../config";
+import { SITE_LOGO, SITE_LOGO_ALT, SITE_LOGO_HEIGHT, SITE_LOGO_WIDTH, SITE_URL, localizedPath } from "../../config";
 
 const dictionaries = { en, es };
 
@@ -19,7 +19,21 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const description = currentLocale === "en"
     ? "Practical guides for reviewing suspicious Klaviyo profiles and building clearer Shopify growth workflows."
     : "Guías prácticas para revisar perfiles sospechosos de Klaviyo y construir flujos de crecimiento más claros en Shopify.";
-  return { metadataBase: new URL(SITE_URL), title, description, alternates: { canonical: path, languages: { en: "/blog", es: "/es/blog", "x-default": "/blog" } }, openGraph: { title, description, url: `${SITE_URL}${path}`, siteName: "ShopiDeck", type: "website" } };
+  return {
+    metadataBase: new URL(SITE_URL),
+    title,
+    description,
+    alternates: { canonical: path, languages: { en: "/blog", es: "/es/blog", "x-default": "/blog" } },
+    openGraph: {
+      title,
+      description,
+      url: `${SITE_URL}${path}`,
+      siteName: "ShopiDeck",
+      type: "website",
+      images: [{ url: SITE_LOGO, width: SITE_LOGO_WIDTH, height: SITE_LOGO_HEIGHT, alt: SITE_LOGO_ALT }],
+    },
+    twitter: { card: "summary_large_image", title, description, images: [SITE_LOGO] },
+  };
 }
 
 export default async function BlogPage({

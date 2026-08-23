@@ -3,7 +3,7 @@ import { Clock } from "lucide-react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import CopyLinkButton from "../../components/CopyLinkButton";
-import { PRIVACY_EMAIL, SITE_URL, localizedPath } from "../../config";
+import { PRIVACY_EMAIL, SITE_LOGO, SITE_LOGO_ALT, SITE_LOGO_HEIGHT, SITE_LOGO_WIDTH, SITE_URL, localizedPath } from "../../config";
 
 interface PageProps {
   params: Promise<{ locale: string }>;
@@ -22,7 +22,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title,
     description,
     alternates: { canonical: path, languages: { en: "/privacy", es: "/es/privacy", "x-default": "/privacy" } },
-    openGraph: { title, description, url: `${SITE_URL}${path}`, siteName: "ShopiDeck", type: "article" },
+    openGraph: {
+      title,
+      description,
+      url: `${SITE_URL}${path}`,
+      siteName: "ShopiDeck",
+      type: "article",
+      images: [{ url: SITE_LOGO, width: SITE_LOGO_WIDTH, height: SITE_LOGO_HEIGHT, alt: SITE_LOGO_ALT }],
+    },
+    twitter: { card: "summary_large_image", title, description, images: [SITE_LOGO] },
   };
 }
 

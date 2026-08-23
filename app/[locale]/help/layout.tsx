@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SITE_URL, localizedPath } from "../../config";
+import { SITE_LOGO, SITE_LOGO_ALT, SITE_LOGO_HEIGHT, SITE_LOGO_WIDTH, SITE_URL, localizedPath } from "../../config";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -9,7 +9,21 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const description = currentLocale === "en"
     ? "Practical help for Klaviyo Bot Cleaner, OAuth, audits, suppression, billing, privacy, and support."
     : "Ayuda práctica sobre OAuth, auditorías, supresión, facturación, privacidad y soporte de Klaviyo Bot Cleaner.";
-  return { metadataBase: new URL(SITE_URL), title, description, alternates: { canonical: path, languages: { en: "/help", es: "/es/help", "x-default": "/help" } }, openGraph: { title, description, url: `${SITE_URL}${path}`, siteName: "ShopiDeck", type: "website" } };
+  return {
+    metadataBase: new URL(SITE_URL),
+    title,
+    description,
+    alternates: { canonical: path, languages: { en: "/help", es: "/es/help", "x-default": "/help" } },
+    openGraph: {
+      title,
+      description,
+      url: `${SITE_URL}${path}`,
+      siteName: "ShopiDeck",
+      type: "website",
+      images: [{ url: SITE_LOGO, width: SITE_LOGO_WIDTH, height: SITE_LOGO_HEIGHT, alt: SITE_LOGO_ALT }],
+    },
+    twitter: { card: "summary_large_image", title, description, images: [SITE_LOGO] },
+  };
 }
 
 export default function HelpLayout({ children }: { children: React.ReactNode }) {

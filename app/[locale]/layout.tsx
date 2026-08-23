@@ -1,6 +1,15 @@
 import type { Metadata } from "next";
 import { Montserrat, Open_Sans } from "next/font/google";
 import { notFound } from "next/navigation";
+import {
+  SITE_LOGO,
+  SITE_LOGO_ALT,
+  SITE_LOGO_HEIGHT,
+  SITE_LOGO_URL,
+  SITE_LOGO_WIDTH,
+  SITE_ICON,
+  SITE_URL,
+} from "../config";
 import "../globals.css";
 
 const montserrat = Montserrat({
@@ -19,7 +28,7 @@ export const metadata: Metadata = {
   title: "ShopiDeck | Focused tools for Shopify merchants",
   description: "ShopiDeck builds focused tools for Shopify merchants who want cleaner data, smarter marketing, and better growth decisions.",
   keywords: "Shopify tools, Klaviyo profile audit, ecommerce operations, merchant growth tools",
-  metadataBase: new URL("https://shopideck.com"),
+  metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: "/",
     languages: { en: "/", es: "/es", "x-default": "/" },
@@ -28,6 +37,7 @@ export const metadata: Metadata = {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: SITE_ICON, sizes: "512x512", type: "image/png" },
     ],
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
@@ -36,14 +46,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ShopiDeck | Focused tools for Shopify merchants",
     description: "ShopiDeck builds focused tools for Shopify merchants who want cleaner data, smarter marketing, and better growth decisions.",
-    url: "https://shopideck.com",
+    url: SITE_URL,
     siteName: "ShopiDeck",
     images: [
       {
-        url: "/android-chrome-512x512.png",
-        width: 512,
-        height: 512,
-        alt: "ShopiDeck Logo",
+        url: SITE_LOGO,
+        width: SITE_LOGO_WIDTH,
+        height: SITE_LOGO_HEIGHT,
+        alt: SITE_LOGO_ALT,
       },
     ],
     locale: "en_US",
@@ -53,8 +63,22 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ShopiDeck | Focused tools for Shopify merchants",
     description: "ShopiDeck builds focused tools for Shopify merchants who want cleaner data, smarter marketing, and better growth decisions.",
-    images: ["/android-chrome-512x512.png"],
+    images: [SITE_LOGO],
   },
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "ShopiDeck",
+  url: SITE_URL,
+  logo: {
+    "@type": "ImageObject",
+    url: SITE_LOGO_URL,
+    width: SITE_LOGO_WIDTH,
+    height: SITE_LOGO_HEIGHT,
+  },
+  image: SITE_LOGO_URL,
 };
 
 export default async function LocaleLayout({
@@ -77,6 +101,10 @@ export default async function LocaleLayout({
       className={`${montserrat.variable} ${openSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-brand-bg text-brand-main font-sans">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd).replace(/</g, "\\u003c") }}
+        />
         {children}
       </body>
     </html>
