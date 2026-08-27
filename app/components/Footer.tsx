@@ -97,6 +97,16 @@ export default function Footer() {
                   {dict.terms}
                 </Link>
               </li>
+              <li>
+                <Link href="/dpa" className="hover:text-brand-accent transition-colors">
+                  {currentLocale === "es" ? "Anexo de tratamiento" : "Data Processing Addendum"}
+                </Link>
+              </li>
+              <li>
+                <Link href="/subprocessors" className="hover:text-brand-accent transition-colors">
+                  {currentLocale === "es" ? "Subencargados" : "Subprocessors"}
+                </Link>
+              </li>
             </ul>
           </div>
 

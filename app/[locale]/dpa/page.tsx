@@ -14,11 +14,11 @@ function getLocale(locale: string): Locale {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params;
   const currentLocale = getLocale(locale);
-  return legalMetadata(legalDocuments.privacy[currentLocale], currentLocale, "/privacy");
+  return legalMetadata(legalDocuments.dpa[currentLocale], currentLocale, "/dpa");
 }
 
-export default async function PrivacyPage({ params }: PageProps) {
+export default async function DpaPage({ params }: PageProps) {
   const { locale } = await params;
   const currentLocale = getLocale(locale);
-  return <LegalDocumentPage document={legalDocuments.privacy[currentLocale]} locale={currentLocale} />;
+  return <LegalDocumentPage document={legalDocuments.dpa[currentLocale]} locale={currentLocale} />;
 }
