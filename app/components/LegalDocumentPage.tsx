@@ -120,7 +120,6 @@ export default function LegalDocumentPage({ document, locale }: Props) {
                   <a href="mailto:team@shopideck.com" className="mt-2 block break-all text-sm font-semibold text-brand-main underline decoration-brand-accent decoration-2 underline-offset-4">
                     team@shopideck.com
                   </a>
-                  <p className="mt-2 text-xs leading-5 text-brand-secondary">+57 301 890 9090</p>
                 </div>
 
                 <nav className="mt-6 hidden lg:block" aria-label={pageLabel}>

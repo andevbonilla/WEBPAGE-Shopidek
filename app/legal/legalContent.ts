@@ -38,7 +38,6 @@ export type Subprocessor = {
 };
 
 const LEGAL_EMAIL = "team@shopideck.com";
-const PHONE = "+57 301 890 9090";
 const ADDRESS = "Cra. 79A # 6-04, Bogotá D.C., Colombia";
 const PRODUCT = "ShopiDeck: Klaviyo Bot Cleaner";
 const APP_URL = "https://klaviyobotcleaner.shopideck.com";
@@ -93,7 +92,7 @@ const privacyEn: LegalDocument = {
       title: "2. Controller identity and contact",
       paragraphs: [
         `ShopiDeck is a trade name operated by Andres Camilo Bonilla Carreño, a Colombian individual merchant based at ${ADDRESS}.`,
-        `Privacy, legal, support, and security incident contact: ${LEGAL_EMAIL}. Public telephone: ${PHONE}. The internal privacy contact is Andres Camilo Bonilla Carreño at ${LEGAL_EMAIL} and ${PHONE}; this contact is not described as a formal DPO.`,
+        `Privacy, legal, support, and security incident contact: ${LEGAL_EMAIL}. The internal privacy contact is Andres Camilo Bonilla Carreño at ${LEGAL_EMAIL}; this contact is not described as a formal DPO.`,
       ],
     },
     {
@@ -400,7 +399,7 @@ const privacyEn: LegalDocument = {
     {
       id: "contact",
       title: "34. Contact",
-      paragraphs: [`For privacy, legal, support, or security questions, contact ${LEGAL_EMAIL} or ${PHONE}. Legal-notice address: ${ADDRESS}.`],
+      paragraphs: [`For privacy, legal, support, or security questions, contact ${LEGAL_EMAIL}. Legal-notice address: ${ADDRESS}.`],
     },
     {
       id: "authority",
@@ -436,7 +435,7 @@ const privacyEs: LegalDocument = {
       title: "2. Identidad del responsable y contacto",
       paragraphs: [
         `ShopiDeck es un nombre comercial operado por Andres Camilo Bonilla Carreño, persona natural comerciante colombiana domiciliada en ${ADDRESS}.`,
-        `Contacto de privacidad, legal, soporte e incidentes de seguridad: ${LEGAL_EMAIL}. Teléfono público: ${PHONE}. El contacto interno de privacidad es Andres Camilo Bonilla Carreño en ${LEGAL_EMAIL} y ${PHONE}; este contacto no se describe como DPO formal.`,
+        `Contacto de privacidad, legal, soporte e incidentes de seguridad: ${LEGAL_EMAIL}. El contacto interno de privacidad es Andres Camilo Bonilla Carreño en ${LEGAL_EMAIL}; este contacto no se describe como DPO formal.`,
       ],
     },
     {
@@ -743,7 +742,7 @@ const privacyEs: LegalDocument = {
     {
       id: "contact",
       title: "34. Contacto",
-      paragraphs: [`Para preguntas de privacidad, asuntos legales, soporte o seguridad, escribe a ${LEGAL_EMAIL} o llama al ${PHONE}. Dirección para notificaciones legales: ${ADDRESS}.`],
+      paragraphs: [`Para preguntas de privacidad, asuntos legales, soporte o seguridad, escribe a ${LEGAL_EMAIL}. Dirección para notificaciones legales: ${ADDRESS}.`],
     },
     {
       id: "authority",
@@ -766,7 +765,7 @@ const termsEn: LegalDocument = {
   lastUpdated: "September 1, 2026",
   intro: `These Terms govern access to and use of ${PRODUCT} by Shopify merchants. The service is available through Shopify Admin and the embedded app at ${APP_URL}.`,
   sections: [
-    { id: "identity", title: "1. Provider identity", paragraphs: [`These Terms form an agreement between the merchant and Andres Camilo Bonilla Carreño, a Colombian individual merchant operating under the ShopiDeck trade name and based at ${ADDRESS}. Contact: ${LEGAL_EMAIL}; phone: ${PHONE}.`] },
+    { id: "identity", title: "1. Provider identity", paragraphs: [`These Terms form an agreement between the merchant and Andres Camilo Bonilla Carreño, a Colombian individual merchant operating under the ShopiDeck trade name and based at ${ADDRESS}. Contact: ${LEGAL_EMAIL}.`] },
     { id: "effective", title: "2. Effective date", paragraphs: ["These Terms are effective on September 1, 2026 and were last updated on September 1, 2026."] },
     { id: "acceptance", title: "3. Acceptance", paragraphs: ["By installing, accessing, or using the app, the merchant accepts these Terms, the Privacy Policy, the applicable Shopify App Pricing information, and any terms expressly incorporated into the service. If the merchant does not agree, it must not use the app."] },
     { id: "capacity", title: "4. Capacity and authority", paragraphs: ["The person accepting these Terms represents that they can bind the merchant and have authority over the Shopify store and the Klaviyo account connected to the service. The merchant must keep its account information accurate and authorize only appropriate users."] },
@@ -807,7 +806,7 @@ const termsEn: LegalDocument = {
     { id: "waiver", title: "39. No waiver", paragraphs: ["A failure to enforce a provision is not a waiver of the right to enforce it later."] },
     { id: "entire-agreement", title: "40. Entire agreement", paragraphs: ["These Terms, the Privacy Policy, the applicable Shopify App Pricing information, and terms expressly incorporated in writing describe the service agreement. No unlisted promise is added by implication."] },
     { id: "language", title: "41. Prevailing language", paragraphs: ["The Spanish version is the prevailing version. The English version is a translation. Where legally permitted and there is a contradiction, the Spanish version prevails without removing mandatory rights applicable to the merchant."] },
-    { id: "contact", title: "42. Contact", paragraphs: [`For questions about these Terms, contact ${LEGAL_EMAIL} or ${PHONE}. Legal-notice address: ${ADDRESS}.`] },
+    { id: "contact", title: "42. Contact", paragraphs: [`For questions about these Terms, contact ${LEGAL_EMAIL}. Legal-notice address: ${ADDRESS}.`] },
   ],
 };
 
@@ -818,7 +817,7 @@ const termsEs: LegalDocument = {
   lastUpdated: "1 de septiembre de 2026",
   intro: `Estos Términos regulan el acceso y uso de ${PRODUCT} por comerciantes de Shopify. El servicio está disponible desde Shopify Admin y la app incrustada en ${APP_URL}.`,
   sections: [
-    { id: "identity", title: "1. Identidad del proveedor", paragraphs: [`Estos Términos constituyen un acuerdo entre el comerciante y Andres Camilo Bonilla Carreño, persona natural comerciante colombiana que opera bajo el nombre comercial ShopiDeck y tiene domicilio en ${ADDRESS}. Contacto: ${LEGAL_EMAIL}; teléfono: ${PHONE}.`] },
+    { id: "identity", title: "1. Identidad del proveedor", paragraphs: [`Estos Términos constituyen un acuerdo entre el comerciante y Andres Camilo Bonilla Carreño, persona natural comerciante colombiana que opera bajo el nombre comercial ShopiDeck y tiene domicilio en ${ADDRESS}. Contacto: ${LEGAL_EMAIL}.`] },
     { id: "effective", title: "2. Fecha de vigencia", paragraphs: ["Estos Términos entran en vigor el 1 de septiembre de 2026 y fueron actualizados por última vez el 1 de septiembre de 2026."] },
     { id: "acceptance", title: "3. Aceptación", paragraphs: ["Al instalar, acceder o usar la app, el comerciante acepta estos Términos, la Política de Privacidad, la información aplicable de Shopify App Pricing y los términos incorporados expresamente al servicio. Si no está de acuerdo, no debe usar la app."] },
     { id: "capacity", title: "4. Capacidad y autoridad", paragraphs: ["La persona que acepta estos Términos declara que puede obligar al comerciante y que tiene autoridad sobre la tienda Shopify y la cuenta Klaviyo conectada al servicio. El comerciante debe mantener actualizada la información de su cuenta y autorizar únicamente a usuarios apropiados."] },
@@ -859,7 +858,7 @@ const termsEs: LegalDocument = {
     { id: "waiver", title: "39. No renuncia", paragraphs: ["No hacer valer una disposición no implica renunciar al derecho de hacerla valer posteriormente."] },
     { id: "entire-agreement", title: "40. Acuerdo completo", paragraphs: ["Estos Términos, la Política de Privacidad, la información aplicable de Shopify App Pricing y los términos incorporados expresamente por escrito describen el acuerdo del servicio. Ninguna promesa no incluida se agrega por implicación."] },
     { id: "language", title: "41. Idioma prevalente", paragraphs: ["La versión en español prevalece. La versión en inglés es una traducción. Cuando legalmente sea posible y exista una contradicción, prevalece la versión española sin eliminar derechos imperativos aplicables al comerciante."] },
-    { id: "contact", title: "42. Contacto", paragraphs: [`Para preguntas sobre estos Términos, escribe a ${LEGAL_EMAIL} o llama al ${PHONE}. Dirección para notificaciones legales: ${ADDRESS}.`] },
+    { id: "contact", title: "42. Contacto", paragraphs: [`Para preguntas sobre estos Términos, escribe a ${LEGAL_EMAIL}. Dirección para notificaciones legales: ${ADDRESS}.`] },
   ],
 };
 
@@ -885,7 +884,7 @@ const dpaEn: LegalDocument = {
     { id: "deletion", title: "13. Deletion or return", paragraphs: ["When the merchant disconnects Klaviyo, the OAuth tokens and connection are removed while retained history may remain. On uninstall, account deletion, and shop/redact, ShopiDeck follows the implemented deletion flows. Local records are removed according to the retention periods and flows in the Privacy Policy. Shopify and Klaviyo may retain data independently."] },
     { id: "merchant", title: "14. Merchant obligations", bullets: ["Maintain a lawful basis and appropriate notices for customer data.", "Give lawful and documented instructions.", "Have authority over the Shopify and Klaviyo accounts.", "Review and confirm suppressions.", "Respond to data-subject requests and complaints as controller.", "Do not send sensitive data, credentials, API keys, or passwords through the service or support channels inappropriately."] },
     { id: "measures", title: "15. Technical and organizational measures", paragraphs: ["The service's measures include access control through Shopify authentication, protected routes, encrypted OAuth tokens, HTTPS, server-side secret handling, webhook verification, backend validation, ownership verification for critical actions, backend usage limits, suppression confirmation, and encrypted privacy-request exports. These measures may be updated as the service evolves without reducing the obligations of the parties under applicable law."] },
-    { id: "contact", title: "16. Contact", paragraphs: [`For this DPA, contact ${LEGAL_EMAIL}, ${PHONE}, or ${ADDRESS}.`] },
+    { id: "contact", title: "16. Contact", paragraphs: [`For this DPA, contact ${LEGAL_EMAIL} or write to ${ADDRESS}.`] },
   ],
 };
 
@@ -911,7 +910,7 @@ const dpaEs: LegalDocument = {
     { id: "deletion", title: "13. Eliminación o devolución", paragraphs: ["Al desconectar Klaviyo, se eliminan los tokens OAuth y la conexión, mientras puede permanecer el historial conservado. Durante la desinstalación, eliminación de cuenta y shop/redact, ShopiDeck sigue los flujos de eliminación implementados. Los registros locales se eliminan según los periodos y flujos de la Política de Privacidad. Shopify y Klaviyo pueden conservar datos de forma independiente."] },
     { id: "merchant", title: "14. Obligaciones del comerciante", bullets: ["Mantener una base jurídica y avisos apropiados para los datos de clientes.", "Dar instrucciones lícitas y documentadas.", "Tener autoridad sobre las cuentas de Shopify y Klaviyo.", "Revisar y confirmar las supresiones.", "Atender solicitudes y reclamos de titulares como responsable.", "No enviar datos sensibles, credenciales, API keys ni contraseñas mediante el servicio o canales de soporte de forma inapropiada."] },
     { id: "measures", title: "15. Medidas técnicas y organizativas", paragraphs: ["Las medidas del servicio incluyen control de acceso mediante autenticación de Shopify, rutas protegidas, tokens OAuth cifrados, HTTPS, gestión de secretos en servidor, verificación de webhooks, validación de backend, verificación de propiedad para acciones críticas, límites de uso en backend, confirmación de supresiones y exportaciones de solicitudes de privacidad cifradas. Estas medidas pueden actualizarse a medida que evolucione el servicio sin reducir las obligaciones de las partes bajo la ley aplicable."] },
-    { id: "contact", title: "16. Contacto", paragraphs: [`Para este DPA, escribe a ${LEGAL_EMAIL}, llama al ${PHONE} o usa la dirección ${ADDRESS}.`] },
+    { id: "contact", title: "16. Contacto", paragraphs: [`Para este DPA, escribe a ${LEGAL_EMAIL} o usa la dirección ${ADDRESS}.`] },
   ],
 };
 

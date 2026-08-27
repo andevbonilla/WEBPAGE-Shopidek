@@ -42,7 +42,6 @@ export default function SubprocessorsPage({ locale, items }: Props) {
                 <div className="rounded-2xl border border-brand-border bg-brand-bg p-5">
                   <p className="text-[10px] font-bold uppercase tracking-wider text-brand-muted">{isEs ? "Contacto" : "Contact"}</p>
                   <a href="mailto:team@shopideck.com" className="mt-2 block break-all text-sm font-semibold underline decoration-brand-accent decoration-2 underline-offset-4">team@shopideck.com</a>
-                  <p className="mt-2 text-xs leading-5 text-brand-secondary">+57 301 890 9090</p>
                 </div>
                 <nav className="mt-6 space-y-2 text-xs" aria-label={isEs ? "Páginas legales" : "Legal pages"}>
                   <a href={localizedPath(locale, "/privacy")} className="block text-brand-secondary underline decoration-brand-accent decoration-2 underline-offset-4">{isEs ? "Política de Privacidad" : "Privacy Policy"}</a>
@@ -80,4 +79,3 @@ export default function SubprocessorsPage({ locale, items }: Props) {
     </div>
   );
 }
-
