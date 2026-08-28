@@ -5,7 +5,7 @@ import { useParams } from "next/navigation";
 import Image from "next/image";
 import es from "@/messages/es.json";
 import en from "@/messages/en.json";
-import { SITE_LOGO, SITE_LOGO_ALT, SITE_LOGO_HEIGHT, SITE_LOGO_WIDTH } from "../config";
+import { NAVBAR_LOGO, NAVBAR_LOGO_HEIGHT, NAVBAR_LOGO_WIDTH, SITE_LOGO_ALT } from "../config";
 
 const dictionaries = { en, es };
 
@@ -19,10 +19,10 @@ export default function Navbar() {
       <div className="layout-container h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group" aria-label={SITE_LOGO_ALT}>
           <Image
-            src={SITE_LOGO}
+            src={NAVBAR_LOGO}
             alt={SITE_LOGO_ALT}
-            width={SITE_LOGO_WIDTH}
-            height={SITE_LOGO_HEIGHT}
+            width={NAVBAR_LOGO_WIDTH}
+            height={NAVBAR_LOGO_HEIGHT}
             priority
             className="h-12 w-auto object-contain transform group-hover:scale-[1.02] transition-transform duration-200"
           />

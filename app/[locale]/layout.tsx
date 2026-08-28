@@ -7,7 +7,14 @@ import {
   SITE_LOGO_HEIGHT,
   SITE_LOGO_URL,
   SITE_LOGO_WIDTH,
+  SITE_APPLE_TOUCH_ICON,
+  SITE_FAVICON_ICO,
+  SITE_FAVICON_PNG,
+  SITE_FAVICON_SVG,
   SITE_ICON,
+  SITE_MARK_HEIGHT,
+  SITE_MARK_URL,
+  SITE_MARK_WIDTH,
   SITE_URL,
 } from "../config";
 import "../globals.css";
@@ -35,12 +42,12 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: SITE_FAVICON_SVG, type: "image/svg+xml" },
+      { url: SITE_FAVICON_PNG, sizes: "96x96", type: "image/png" },
       { url: SITE_ICON, sizes: "512x512", type: "image/png" },
     ],
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    shortcut: SITE_FAVICON_ICO,
+    apple: SITE_APPLE_TOUCH_ICON,
   },
   manifest: "/site.webmanifest",
   openGraph: {
@@ -74,9 +81,9 @@ const organizationJsonLd = {
   url: SITE_URL,
   logo: {
     "@type": "ImageObject",
-    url: SITE_LOGO_URL,
-    width: SITE_LOGO_WIDTH,
-    height: SITE_LOGO_HEIGHT,
+    url: SITE_MARK_URL,
+    width: SITE_MARK_WIDTH,
+    height: SITE_MARK_HEIGHT,
   },
   image: SITE_LOGO_URL,
 };

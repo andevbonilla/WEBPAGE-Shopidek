@@ -7,7 +7,7 @@ import { ChevronDown, Check, Globe } from "lucide-react";
 import Image from "next/image";
 import es from "@/messages/es.json";
 import en from "@/messages/en.json";
-import { SITE_LOGO, SITE_LOGO_ALT, SITE_LOGO_HEIGHT, SITE_LOGO_WIDTH } from "../config";
+import { FOOTER_LOGO, SITE_LOGO_ALT } from "../config";
 
 const dictionaries = { en, es };
 
@@ -40,13 +40,13 @@ export default function Footer() {
 
           {/* Col 1: Brand details */}
           <div className="md:col-span-4 flex flex-col gap-4">
-            <Link href="/" className="inline-flex items-center" aria-label={SITE_LOGO_ALT}>
+            <Link href="/" className="relative block h-14 w-72 max-w-full overflow-hidden" aria-label={SITE_LOGO_ALT}>
               <Image
-                src={SITE_LOGO}
+                src={FOOTER_LOGO}
                 alt={SITE_LOGO_ALT}
-                width={SITE_LOGO_WIDTH}
-                height={SITE_LOGO_HEIGHT}
-                className="h-12 w-auto object-contain rounded-lg"
+                fill
+                sizes="288px"
+                className="object-cover object-[center_42%]"
               />
             </Link>
             <p className="text-xs text-brand-bg/60 leading-relaxed max-w-xs">

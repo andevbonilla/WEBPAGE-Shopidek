@@ -9,12 +9,14 @@ import en from "@/messages/en.json";
 import {
   PRODUCT_NAME,
   BOTCLEANER_ICON,
+  BOTCLEANER_LOGO,
+  BOTCLEANER_LOGO_HEIGHT,
+  BOTCLEANER_LOGO_URL,
+  BOTCLEANER_LOGO_WIDTH,
   SHOPIFY_APP_STORE_URL,
-  SITE_LOGO,
-  SITE_LOGO_ALT,
-  SITE_LOGO_HEIGHT,
-  SITE_LOGO_URL,
-  SITE_LOGO_WIDTH,
+  SITE_MARK_HEIGHT,
+  SITE_MARK_URL,
+  SITE_MARK_WIDTH,
   SITE_URL,
   localizedPath,
 } from "../../config";
@@ -64,17 +66,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       locale: currentLocale === "en" ? "en_US" : "es_ES",
       type: "website",
       images: [{
-        url: SITE_LOGO,
-        width: SITE_LOGO_WIDTH,
-        height: SITE_LOGO_HEIGHT,
-        alt: SITE_LOGO_ALT,
+        url: BOTCLEANER_LOGO,
+        width: BOTCLEANER_LOGO_WIDTH,
+        height: BOTCLEANER_LOGO_HEIGHT,
+        alt: PRODUCT_NAME,
       }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [SITE_LOGO],
+      images: [BOTCLEANER_LOGO],
     },
   };
 }
@@ -212,11 +214,11 @@ export default async function BotCleanerPage({ params }: PageProps) {
     name: PRODUCT_NAME,
     applicationCategory: "BusinessApplication",
     operatingSystem: "Shopify Admin",
-    image: SITE_LOGO_URL,
+    image: BOTCLEANER_LOGO_URL,
     publisher: {
       "@type": "Organization",
       name: "ShopiDeck",
-      logo: { "@type": "ImageObject", url: SITE_LOGO_URL, width: SITE_LOGO_WIDTH, height: SITE_LOGO_HEIGHT },
+      logo: { "@type": "ImageObject", url: SITE_MARK_URL, width: SITE_MARK_WIDTH, height: SITE_MARK_HEIGHT },
     },
     description: currentLocale === "en"
       ? "A merchant-controlled audit and suppression workflow for existing Klaviyo profiles."
