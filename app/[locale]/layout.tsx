@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ShopiDeck | Focused tools for Shopify merchants",
     description: "ShopiDeck builds focused tools for Shopify merchants who want cleaner data, smarter marketing, and better growth decisions.",
-    images: [SITE_LOGO],
+    images: [{ url: SITE_LOGO, alt: SITE_LOGO_ALT }],
   },
 };
 

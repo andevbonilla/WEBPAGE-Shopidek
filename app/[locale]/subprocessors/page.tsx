@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       type: "article",
       images: [{ url: SITE_LOGO, width: SITE_LOGO_WIDTH, height: SITE_LOGO_HEIGHT, alt: SITE_LOGO_ALT }],
     },
-    twitter: { card: "summary_large_image", title, description, images: [SITE_LOGO] },
+    twitter: { card: "summary_large_image", title, description, images: [{ url: SITE_LOGO, alt: SITE_LOGO_ALT }] },
   };
 }
 
@@ -41,4 +41,3 @@ export default async function SubprocessorsRoute({ params }: PageProps) {
   const currentLocale = getLocale(locale);
   return <SubprocessorsPage locale={currentLocale} items={subprocessors[currentLocale]} />;
 }
-

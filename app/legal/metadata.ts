@@ -24,8 +24,7 @@ export function legalMetadata(document: LegalDocument, locale: Locale, path: str
       card: "summary_large_image",
       title: `${document.title} | ShopiDeck`,
       description: document.intro,
-      images: [SITE_LOGO],
+      images: [{ url: SITE_LOGO, alt: SITE_LOGO_ALT }],
     },
   };
 }
-

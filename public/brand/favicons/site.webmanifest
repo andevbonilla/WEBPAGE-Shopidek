@@ -3,13 +3,13 @@
   "short_name": "ShopiDeck",
   "icons": [
     {
-      "src": "/shopidecks%20logo/favicon/web-app-manifest-192x192.png",
+      "src": "/brand/favicons/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/shopidecks%20logo/favicon/web-app-manifest-512x512.png",
+      "src": "/brand/favicons/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

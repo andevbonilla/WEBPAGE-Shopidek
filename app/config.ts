@@ -1,32 +1,33 @@
 export const SITE_URL = "https://shopideck.com";
-export const BRAND_ASSET_BASE = "/shopidecks%20logo";
+export const BRAND_ASSET_BASE = "/brand";
 
-// The compact legacy wordmark is intentionally kept in the navbar because it
-// has the tight horizontal crop needed at navigation height.
-export const NAVBAR_LOGO = "/shopideck_logo.png";
-export const NAVBAR_LOGO_WIDTH = 595;
-export const NAVBAR_LOGO_HEIGHT = 222;
+export const NAVBAR_LOGO = `${BRAND_ASSET_BASE}/logos/shopideck-logo-horizontal-light.png`;
+export const NAVBAR_LOGO_WIDTH = 1896;
+export const NAVBAR_LOGO_HEIGHT = 518;
+export const NAVBAR_LOGO_DISPLAY_WIDTH = 183;
 
-// Brand variants from the shared logo library.
-export const SITE_LOGO = `${BRAND_ASSET_BASE}/ShopiDeck_logo_horizontal.png`;
+export const SITE_LOGO = `${BRAND_ASSET_BASE}/logos/shopideck-logo-horizontal-light.png`;
 export const SITE_LOGO_URL = `${SITE_URL}${SITE_LOGO}`;
-export const SITE_LOGO_WIDTH = 2000;
-export const SITE_LOGO_HEIGHT = 2000;
+export const SITE_LOGO_WIDTH = 1896;
+export const SITE_LOGO_HEIGHT = 518;
 export const SITE_LOGO_ALT = "ShopiDeck";
-export const FOOTER_LOGO = `${BRAND_ASSET_BASE}/ShopiDeck_logo_horizontal_fondo_negro.png`;
-export const SITE_MARK = `${BRAND_ASSET_BASE}/ShopiDeck_square_icon.png`;
+export const FOOTER_LOGO = `${BRAND_ASSET_BASE}/logos/shopideck-logo-horizontal-dark.png`;
+export const FOOTER_LOGO_WIDTH = 478;
+export const FOOTER_LOGO_HEIGHT = 133;
+export const FOOTER_LOGO_DISPLAY_WIDTH = 230;
+export const SITE_MARK = `${BRAND_ASSET_BASE}/icons/shopideck-icon.png`;
 export const SITE_MARK_URL = `${SITE_URL}${SITE_MARK}`;
 export const SITE_MARK_WIDTH = 2000;
 export const SITE_MARK_HEIGHT = 2000;
 
-export const SITE_FAVICON_SVG = `${BRAND_ASSET_BASE}/favicon/favicon.svg`;
-export const SITE_FAVICON_PNG = `${BRAND_ASSET_BASE}/favicon/favicon-96x96.png`;
-export const SITE_FAVICON_ICO = `${BRAND_ASSET_BASE}/favicon/favicon.ico`;
-export const SITE_APPLE_TOUCH_ICON = `${BRAND_ASSET_BASE}/favicon/apple-touch-icon.png`;
-export const SITE_ICON = `${BRAND_ASSET_BASE}/favicon/web-app-manifest-512x512.png`;
+export const SITE_FAVICON_SVG = `${BRAND_ASSET_BASE}/favicons/favicon.svg`;
+export const SITE_FAVICON_PNG = `${BRAND_ASSET_BASE}/favicons/favicon-96x96.png`;
+export const SITE_FAVICON_ICO = `${BRAND_ASSET_BASE}/favicons/favicon.ico`;
+export const SITE_APPLE_TOUCH_ICON = `${BRAND_ASSET_BASE}/favicons/apple-touch-icon.png`;
+export const SITE_ICON = `${BRAND_ASSET_BASE}/favicons/web-app-manifest-512x512.png`;
 
-export const BOTCLEANER_ICON = `${BRAND_ASSET_BASE}/ShopiDeck_square_icon_app_botcleaner.png`;
-export const BOTCLEANER_LOGO = `${BRAND_ASSET_BASE}/ShopiDeck_logo_app_botcleaner.png`;
+export const BOTCLEANER_ICON = `${BRAND_ASSET_BASE}/products/bot-cleaner/shopideck-klaviyo-bot-cleaner-icon.png`;
+export const BOTCLEANER_LOGO = `${BRAND_ASSET_BASE}/products/bot-cleaner/shopideck-klaviyo-bot-cleaner-logo-light.png`;
 export const BOTCLEANER_LOGO_URL = `${SITE_URL}${BOTCLEANER_LOGO}`;
 export const BOTCLEANER_LOGO_WIDTH = 1935;
 export const BOTCLEANER_LOGO_HEIGHT = 506;

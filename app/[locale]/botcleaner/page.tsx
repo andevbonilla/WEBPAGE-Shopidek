@@ -76,7 +76,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       card: "summary_large_image",
       title,
       description,
-      images: [BOTCLEANER_LOGO],
+      images: [{ url: BOTCLEANER_LOGO, alt: PRODUCT_NAME }],
     },
   };
 }
@@ -268,7 +268,13 @@ export default async function BotCleanerPage({ params }: PageProps) {
             </div>
             <div className="lg:col-span-5 bg-brand-card rounded-3xl border border-brand-border p-6 shadow-premium">
               <div className="flex items-center gap-3 mb-6">
-                <Image src={BOTCLEANER_ICON} alt={`${PRODUCT_NAME} icon`} width={48} height={48} className="rounded-xl object-cover" />
+                <Image
+                  src={BOTCLEANER_ICON}
+                  alt={`${PRODUCT_NAME} app icon`}
+                  width={48}
+                  height={48}
+                  sizes="48px"
+                />
                 <div>
                   <p className="font-display font-black text-lg">{t("dashboardTitle")}</p>
                   <p className="text-xs text-brand-muted">{t("dashboardDesc")}</p>
