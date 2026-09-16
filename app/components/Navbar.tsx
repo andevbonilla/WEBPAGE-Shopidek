@@ -56,7 +56,7 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <Link 
             href="/#features" 
-            className="bg-brand-accent hover:bg-brand-accent-hover text-brand-main px-6 py-2.5 rounded-full font-bold transition-colors duration-200 border border-brand-main/10 text-sm"
+            className="shrink-0 whitespace-nowrap bg-brand-accent hover:bg-brand-accent-hover text-brand-main px-4 py-2.5 rounded-full font-bold transition-colors duration-200 border border-brand-main/10 text-xs sm:px-6 sm:text-sm"
           >
             {dict.cta}
           </Link>

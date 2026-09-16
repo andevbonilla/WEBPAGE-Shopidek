@@ -3,11 +3,9 @@ import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import FaqSection from "../components/FaqSection";
-import FootprintTracker from "../components/FootprintTracker";
 import {
   PRODUCT_NAME,
   BOTCLEANER_ICON,
-  BOTCLEANER_INTERFACE,
   SHOPIFY_APP_STORE_URL,
   SITE_LOGO,
   SITE_LOGO_ALT,
@@ -23,7 +21,10 @@ import {
   ArrowRight,
   Coins,
   Target,
-  Headphones
+  Headphones,
+  Bot,
+  DollarSign,
+  TrendingUp,
 } from "lucide-react";
 import es from "@/messages/es.json";
 import en from "@/messages/en.json";
@@ -90,10 +91,6 @@ export default async function Home({
       brandColor: "bg-[#ffbd59]/10 text-[#ffbd59] border-[#ffbd59]/30",
       accentBg: "bg-[#ffbd59]",
       link: "/botcleaner",
-      coverImage: BOTCLEANER_INTERFACE,
-      coverAlt: currentLocale === "en"
-        ? "ShopiDeck Klaviyo Bot Cleaner profile audit interface"
-        : "Interfaz de auditoría de perfiles de ShopiDeck Klaviyo Bot Cleaner",
       active: true
     },
     {
@@ -110,8 +107,6 @@ export default async function Home({
       brandColor: "bg-brand-cream text-brand-main border-brand-accent/50",
       accentBg: "bg-brand-accent",
       link: "/help",
-      coverImage: "",
-      coverAlt: "",
       active: false
     },
     {
@@ -128,8 +123,6 @@ export default async function Home({
       brandColor: "bg-brand-main text-brand-accent border-brand-main",
       accentBg: "bg-brand-accent",
       link: "/help",
-      coverImage: "",
-      coverAlt: "",
       active: false
     }
   ];
@@ -186,52 +179,100 @@ export default async function Home({
     },
   ];
 
+  const heroCards = [
+    {
+      label: currentLocale === "en" ? "Cleaner data" : "Datos más limpios",
+      icon: Bot,
+      cardClass: "bg-brand-accent text-brand-main border-brand-main/10",
+      columnClass: "bg-brand-accent/30 border-brand-accent/50",
+      rotationClass: "-rotate-6",
+      offsetClass: "lg:translate-y-7",
+    },
+    {
+      label: currentLocale === "en" ? "Faster workflows" : "Flujos más rápidos",
+      icon: Zap,
+      cardClass: "bg-brand-main text-brand-accent border-brand-main",
+      columnClass: "bg-brand-main/15 border-brand-main/15",
+      rotationClass: "rotate-3",
+      offsetClass: "lg:-translate-y-2",
+    },
+    {
+      label: currentLocale === "en" ? "Lower waste" : "Menos desperdicio",
+      icon: DollarSign,
+      cardClass: "bg-brand-card text-brand-main border-brand-accent/60",
+      columnClass: "bg-brand-cream border-brand-accent/35",
+      rotationClass: "-rotate-2",
+      offsetClass: "lg:translate-y-10",
+    },
+    {
+      label: currentLocale === "en" ? "Smarter growth" : "Crecimiento inteligente",
+      icon: TrendingUp,
+      cardClass: "bg-brand-cream text-brand-main border-brand-main/10",
+      columnClass: "bg-brand-accent/25 border-brand-accent/40",
+      rotationClass: "rotate-5",
+      offsetClass: "lg:translate-y-1",
+    },
+    {
+      label: currentLocale === "en" ? "Merchant control" : "Control del comercio",
+      icon: Shield,
+      cardClass: "bg-brand-accent text-brand-main border-brand-main/10",
+      columnClass: "bg-brand-main/10 border-brand-main/15",
+      rotationClass: "-rotate-4",
+      offsetClass: "lg:translate-y-8",
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-brand-bg flex flex-col font-sans">
       {/* HEADER / NAVIGATION */}
       <Navbar />
 
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden w-full h-[90vh] min-h-[500px] flex items-center justify-center py-20 md:py-28 bg-brand-bg border-b border-brand-border/60 select-none">
-        {/* Passive Visual Footprint layer (isolated client-side mouse tracker) */}
-        <FootprintTracker />
+      <section className="relative overflow-hidden border-b border-brand-border/60 bg-brand-bg py-16 sm:py-20 lg:py-24">
+        <div aria-hidden="true" className="absolute left-1/2 top-16 h-72 w-72 -translate-x-1/2 rounded-full bg-brand-accent/10 blur-3xl sm:h-96 sm:w-96" />
 
-        {/* Static Background Stars/Sparkles in the Corners (Replacing the Hands) */}
-        {/* Top-Right set of 30% transparent stars */}
-        <div className="absolute top-10 right-10 md:top-16 md:right-16 flex gap-4 pointer-events-none select-none opacity-30 z-0">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" className="text-brand-main animate-pulse">
-            <path d="M12 2L14.8 9.2L22 12L14.8 14.8L12 22L9.2 14.8L2 12L9.2 9.2Z" />
-          </svg>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className="text-brand-main translate-y-6 -translate-x-2">
-            <path d="M12 2L14.8 9.2L22 12L14.8 14.8L12 22L9.2 14.8L2 12L9.2 9.2Z" />
-          </svg>
-        </div>
-
-        {/* Bottom-Left set of 30% transparent stars */}
-        <div className="absolute bottom-10 left-10 md:bottom-16 md:left-16 flex gap-4 pointer-events-none select-none opacity-30 z-0">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" className="text-brand-main animate-pulse">
-            <path d="M12 2L14.8 9.2L22 12L14.8 14.8L12 22L9.2 14.8L2 12L9.2 9.2Z" />
-          </svg>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className="text-brand-main -translate-y-6 translate-x-2">
-            <path d="M12 2L14.8 9.2L22 12L14.8 14.8L12 22L9.2 14.8L2 12L9.2 9.2Z" />
-          </svg>
-        </div>
-
-        {/* Main Centered Content (100% Server Component, perfect for SEO!) */}
-        <div className="layout-container relative z-20 flex flex-col items-center text-center gap-6 max-w-4xl px-4 pointer-events-auto">
-          <h1 className="font-display font-black text-2xl sm:text-4xl md:text-5xl leading-[1.25] tracking-tight text-brand-main max-w-3xl">
+        <div className="layout-container relative z-10 flex flex-col items-center text-center">
+          <span className="mb-5 rounded-full border border-brand-accent/50 bg-brand-cream px-4 py-2 text-[10px] font-black uppercase tracking-[0.2em] text-brand-main sm:text-xs">
+            {currentLocale === "en" ? "Built for Shopify merchants" : "Creado para comercios Shopify"}
+          </span>
+          <h1 className="max-w-4xl font-display text-4xl font-black leading-[1.05] tracking-tight text-brand-main sm:text-5xl lg:text-6xl">
             {t("heroTitle")}
           </h1>
-          <p className="text-sm md:text-base text-brand-secondary/90 leading-relaxed max-w-2xl font-light lowercase">
+          <p className="mt-6 max-w-2xl text-sm font-light leading-relaxed text-brand-secondary sm:text-base">
             {t("heroSubtitle")}
           </p>
-          <div className="mt-4">
-            <a
-              href="#features"
-              className="inline-block bg-brand-accent hover:bg-brand-accent-hover text-brand-main text-center px-10 py-4.5 rounded-2xl font-bold border border-brand-main/15 transition-colors duration-200 text-base"
-            >
-              {t("activeApps")}
-            </a>
+          <a
+            href="#features"
+            className="mt-8 inline-flex items-center justify-center rounded-2xl border border-brand-main/15 bg-brand-accent px-8 py-4 text-sm font-bold text-brand-main transition-colors duration-200 hover:bg-brand-accent-hover sm:px-10 sm:text-base"
+          >
+            {t("activeApps")}
+            <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
+          </a>
+
+          <div className="mt-12 grid w-full max-w-6xl grid-cols-2 gap-x-3 gap-y-6 sm:mt-16 sm:grid-cols-3 sm:gap-5 lg:grid-cols-5 lg:items-end lg:gap-7">
+            {heroCards.map((card, index) => {
+              const Icon = card.icon;
+              return (
+                <div
+                  key={card.label}
+                  tabIndex={0}
+                  className={`group relative flex min-h-44 items-end justify-center outline-none ${card.offsetClass} ${index === heroCards.length - 1 ? "col-span-2 mx-auto w-full max-w-[13rem] sm:col-span-1 sm:max-w-none" : ""}`}
+                >
+                  <div
+                    aria-hidden="true"
+                    className={`absolute bottom-2 h-5 w-[72%] rounded-b-3xl border transition-[height,transform] duration-300 ease-out group-hover:h-16 group-focus-visible:h-16 motion-reduce:transition-none ${card.columnClass}`}
+                  />
+                  <div
+                    className={`relative z-10 flex min-h-32 w-full max-w-[13rem] flex-col items-center justify-center gap-3 rounded-[2rem] border p-5 shadow-premium transition-[transform,box-shadow] duration-300 ease-out group-hover:-translate-y-11 group-hover:shadow-[0_24px_45px_-22px_rgba(17,17,17,0.4)] group-focus-visible:-translate-y-11 group-focus-visible:shadow-[0_24px_45px_-22px_rgba(17,17,17,0.4)] motion-reduce:transition-none motion-reduce:group-hover:translate-y-0 motion-reduce:group-focus-visible:translate-y-0 ${card.cardClass} ${card.rotationClass}`}
+                  >
+                    <Icon className="h-9 w-9 stroke-[2.2] sm:h-10 sm:w-10" aria-hidden="true" />
+                    <span className="max-w-32 text-center text-xs font-black uppercase leading-tight tracking-[0.08em] sm:text-sm">
+                      {card.label}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -256,38 +297,6 @@ export default async function Home({
                 className={`bg-brand-card rounded-3xl border border-brand-border/60 flex flex-col justify-between relative group overflow-hidden ${!prod.active ? "opacity-90" : ""
                   }`}
               >
-                {/* Full-width Cover Image (Adobe Style - Sleek Smaller Height) */}
-                <div className={`relative w-full overflow-hidden border-b border-brand-border/50 ${prod.id === "botcleaner" ? "aspect-[1528/969] bg-zinc-100" : "h-[140px]"}`}>
-                  {prod.coverImage ? (
-                    <Image
-                      src={prod.coverImage}
-                      alt={prod.coverAlt}
-                      fill
-                      sizes="(max-width: 1024px) 100vw, 33vw"
-                      className="object-cover transition-transform duration-500 group-hover:scale-103"
-                    />
-                  ) : (
-                    <div className={`absolute inset-0 isolate flex items-center justify-center overflow-hidden ${prod.id === "review-booster" ? "bg-brand-main text-brand-bg" : "bg-brand-cream text-brand-main"}`}>
-                      <span
-                        aria-hidden="true"
-                        className="absolute -left-8 -top-12 h-32 w-32 rounded-full bg-brand-accent/70"
-                      />
-                      <span
-                        aria-hidden="true"
-                        className={`absolute -bottom-12 -right-8 h-28 w-28 rotate-12 rounded-3xl border-2 ${prod.id === "review-booster" ? "border-brand-accent/50" : "border-brand-main/10"}`}
-                      />
-                      <div className="relative flex flex-col items-center gap-2 px-6 text-center">
-                        <span className={`rounded-full border px-3 py-1 text-[9px] font-black uppercase tracking-[0.2em] ${prod.id === "review-booster" ? "border-brand-accent/40 bg-brand-accent/15 text-brand-accent" : "border-brand-main/10 bg-brand-card/70 text-brand-secondary"}`}>
-                          ShopiDeck
-                        </span>
-                        <span className="font-display text-2xl font-black uppercase tracking-tight">
-                          {t("comingSoon")}
-                        </span>
-                      </div>
-                    </div>
-                  )}
-                </div>
-
                 {/* Card Content Area */}
                 <div className="p-6 md:p-8 flex flex-col flex-grow justify-between">
                   <div>

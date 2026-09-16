@@ -243,43 +243,86 @@ export default async function BotCleanerPage({ params }: PageProps) {
       <Navbar />
 
       <main className="flex-1">
-        <section className="py-16 md:py-24 bg-gradient-to-b from-brand-bg to-brand-cream/50">
-          <div className="layout-container grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-7 flex flex-col gap-6">
-              <h1 className="font-display font-black text-3xl sm:text-5xl leading-tight text-brand-main tracking-tight">
+        <section className="relative overflow-hidden bg-brand-bg pb-16 pt-16 md:pb-24 md:pt-24">
+          <div className="layout-container relative z-10 flex flex-col items-center text-center">
+            <div className="flex max-w-4xl flex-col items-center gap-6">
+              <h1 className="font-display text-4xl font-black leading-[1.05] tracking-tight text-brand-main sm:text-5xl lg:text-6xl">
                 {t("title")}
               </h1>
-              <p className="text-base md:text-lg text-brand-secondary leading-relaxed max-w-2xl">
+              <p className="max-w-2xl text-base leading-relaxed text-brand-secondary md:text-lg">
                 {t("subtitle")}
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row">
                 <a
                   href={SHOPIFY_APP_STORE_URL}
                   target={isExternalUrl(SHOPIFY_APP_STORE_URL) ? "_blank" : undefined}
                   rel={isExternalUrl(SHOPIFY_APP_STORE_URL) ? "noopener noreferrer" : undefined}
-                  className="inline-flex items-center justify-center gap-2 bg-brand-accent hover:bg-brand-accent-hover text-brand-main px-7 py-4 rounded-2xl font-bold border border-brand-main/15 transition-colors"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-main/15 bg-brand-main px-7 py-3.5 font-bold text-brand-bg transition-colors hover:bg-brand-secondary"
                 >
                   {t("install")}
                   <ExternalLink className="w-4 h-4" />
                 </a>
-                <a href="#how-it-works" className="inline-flex items-center justify-center bg-brand-card hover:bg-brand-bg text-brand-main px-7 py-4 rounded-2xl font-bold border border-brand-border transition-colors">
+                <a href="#how-it-works" className="inline-flex items-center justify-center rounded-full border border-brand-main bg-brand-card px-7 py-3.5 font-bold text-brand-main transition-colors hover:bg-brand-cream">
                   {t("trySimulator")}
                 </a>
               </div>
               <p className="text-xs text-brand-muted">{t("note")}</p>
             </div>
-            <div className="lg:col-span-5 overflow-hidden rounded-3xl border border-brand-border bg-[#f1f1f1] shadow-premium">
-              <Image
-                src={BOTCLEANER_INTERFACE}
-                alt={currentLocale === "en"
-                  ? "ShopiDeck Klaviyo Bot Cleaner profile audit dashboard"
-                  : "Panel de auditoría de perfiles de ShopiDeck Klaviyo Bot Cleaner"}
-                width={BOTCLEANER_INTERFACE_WIDTH}
-                height={BOTCLEANER_INTERFACE_HEIGHT}
-                sizes="(max-width: 1024px) 92vw, 38vw"
-                className="block h-auto w-full"
-                priority
-              />
+
+            <div className="relative mt-12 w-full max-w-6xl md:mt-16">
+              <div aria-hidden="true" className="absolute inset-x-[8%] bottom-4 top-[18%] rounded-t-[50%] bg-brand-cream" />
+              <div aria-hidden="true" className="absolute inset-x-[16%] bottom-7 top-[28%] rounded-t-[50%] border border-brand-accent/35" />
+
+              <div className="absolute left-0 top-[18%] z-20 hidden w-44 -rotate-2 rounded-3xl border border-brand-border bg-brand-card p-4 text-left shadow-premium lg:block">
+                <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-brand-muted">OAuth</span>
+                <p className="mt-1 font-display text-lg font-black text-brand-main">
+                  {currentLocale === "en" ? "Secure connection" : "Conexión segura"}
+                </p>
+              </div>
+              <div className="absolute right-0 top-[22%] z-20 hidden w-48 rotate-2 rounded-3xl border border-brand-accent/50 bg-brand-accent p-4 text-left shadow-premium lg:block">
+                <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-brand-main/60">
+                  {currentLocale === "en" ? "Risk signals" : "Señales de riesgo"}
+                </span>
+                <p className="mt-1 font-display text-xl font-black text-brand-main">
+                  {currentLocale === "en" ? "Explainable" : "Explicables"}
+                </p>
+              </div>
+              <div className="absolute bottom-[12%] left-[2%] z-20 hidden w-48 rounded-3xl border border-brand-main bg-brand-main p-4 text-left text-brand-bg shadow-premium lg:block">
+                <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-brand-bg/55">
+                  {currentLocale === "en" ? "Workflow" : "Flujo"}
+                </span>
+                <p className="mt-1 font-display text-xl font-black">
+                  {currentLocale === "en" ? "Review first" : "Revisa primero"}
+                </p>
+              </div>
+              <div className="absolute bottom-[16%] right-[1%] z-20 hidden w-48 rounded-3xl border border-brand-border bg-brand-card p-4 text-left shadow-premium lg:block">
+                <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-brand-muted">
+                  {currentLocale === "en" ? "Decisions" : "Decisiones"}
+                </span>
+                <p className="mt-1 font-display text-lg font-black text-brand-main">
+                  {currentLocale === "en" ? "Merchant controlled" : "Control del comercio"}
+                </p>
+              </div>
+
+              <div className="relative z-10 mx-auto w-full max-w-4xl px-1 sm:px-8 lg:px-20">
+                <div className="rounded-[1.6rem] border-[6px] border-brand-main bg-brand-main p-1.5 shadow-[0_30px_80px_-28px_rgba(17,17,17,0.45)] sm:border-[10px] sm:p-2">
+                  <div className="overflow-hidden rounded-[0.9rem] bg-[#f1f1f1]">
+                    <Image
+                      src={BOTCLEANER_INTERFACE}
+                      alt={currentLocale === "en"
+                        ? "ShopiDeck Klaviyo Bot Cleaner profile audit dashboard displayed on a desktop monitor"
+                        : "Panel de auditoría de perfiles de ShopiDeck Klaviyo Bot Cleaner mostrado en un monitor de escritorio"}
+                      width={BOTCLEANER_INTERFACE_WIDTH}
+                      height={BOTCLEANER_INTERFACE_HEIGHT}
+                      sizes="(max-width: 1024px) 92vw, 760px"
+                      className="block h-auto w-full"
+                      priority
+                    />
+                  </div>
+                </div>
+                <div aria-hidden="true" className="mx-auto h-12 w-24 bg-brand-main sm:h-16 sm:w-32" />
+                <div aria-hidden="true" className="mx-auto h-3 w-48 rounded-full bg-brand-main shadow-soft sm:w-64" />
+              </div>
             </div>
           </div>
         </section>
