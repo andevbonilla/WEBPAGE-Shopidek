@@ -184,7 +184,6 @@ export default async function Home({
       label: currentLocale === "en" ? "Cleaner data" : "Datos más limpios",
       icon: Bot,
       cardClass: "bg-brand-accent text-brand-main border-brand-main/10",
-      columnClass: "bg-brand-accent/30 border-brand-accent/50",
       rotationClass: "-rotate-6",
       offsetClass: "lg:translate-y-7",
     },
@@ -192,7 +191,6 @@ export default async function Home({
       label: currentLocale === "en" ? "Faster workflows" : "Flujos más rápidos",
       icon: Zap,
       cardClass: "bg-brand-main text-brand-accent border-brand-main",
-      columnClass: "bg-brand-main/15 border-brand-main/15",
       rotationClass: "rotate-3",
       offsetClass: "lg:-translate-y-2",
     },
@@ -200,7 +198,6 @@ export default async function Home({
       label: currentLocale === "en" ? "Lower waste" : "Menos desperdicio",
       icon: DollarSign,
       cardClass: "bg-brand-card text-brand-main border-brand-accent/60",
-      columnClass: "bg-brand-cream border-brand-accent/35",
       rotationClass: "-rotate-2",
       offsetClass: "lg:translate-y-10",
     },
@@ -208,15 +205,13 @@ export default async function Home({
       label: currentLocale === "en" ? "Smarter growth" : "Crecimiento inteligente",
       icon: TrendingUp,
       cardClass: "bg-brand-cream text-brand-main border-brand-main/10",
-      columnClass: "bg-brand-accent/25 border-brand-accent/40",
       rotationClass: "rotate-5",
       offsetClass: "lg:translate-y-1",
     },
     {
-      label: currentLocale === "en" ? "Merchant control" : "Control del comercio",
+      label: currentLocale === "en" ? "Merchant control" : "Control del comerciante",
       icon: Shield,
       cardClass: "bg-brand-accent text-brand-main border-brand-main/10",
-      columnClass: "bg-brand-main/10 border-brand-main/15",
       rotationClass: "-rotate-4",
       offsetClass: "lg:translate-y-8",
     },
@@ -232,9 +227,6 @@ export default async function Home({
         <div aria-hidden="true" className="absolute left-1/2 top-16 h-72 w-72 -translate-x-1/2 rounded-full bg-brand-accent/10 blur-3xl sm:h-96 sm:w-96" />
 
         <div className="layout-container relative z-10 flex flex-col items-center text-center">
-          <span className="mb-5 rounded-full border border-brand-accent/50 bg-brand-cream px-4 py-2 text-[10px] font-black uppercase tracking-[0.2em] text-brand-main sm:text-xs">
-            {currentLocale === "en" ? "Built for Shopify merchants" : "Creado para comercios Shopify"}
-          </span>
           <h1 className="max-w-4xl font-display text-4xl font-black leading-[1.05] tracking-tight text-brand-main sm:text-5xl lg:text-6xl">
             {t("heroTitle")}
           </h1>
@@ -255,16 +247,12 @@ export default async function Home({
               return (
                 <div
                   key={card.label}
-                  tabIndex={0}
+                  role="img"
                   aria-label={card.label}
-                  className={`group relative flex min-h-44 items-end justify-center outline-none ${card.offsetClass} ${index === heroCards.length - 1 ? "col-span-2 mx-auto w-full max-w-[13rem] sm:col-span-1 sm:max-w-none" : ""}`}
+                  className={`relative flex min-h-44 items-end justify-center ${card.offsetClass} ${index === heroCards.length - 1 ? "col-span-2 mx-auto w-full max-w-[13rem] sm:col-span-1 sm:max-w-none" : ""}`}
                 >
                   <div
-                    aria-hidden="true"
-                    className={`absolute bottom-2 h-5 w-[72%] rounded-b-3xl border transition-[height,transform] duration-300 ease-out group-hover:h-16 group-focus-visible:h-16 motion-reduce:transition-none ${card.columnClass}`}
-                  />
-                  <div
-                    className={`relative z-10 flex min-h-32 w-full max-w-[13rem] items-center justify-center rounded-[2rem] border p-5 shadow-premium transition-[transform,box-shadow] duration-300 ease-out group-hover:-translate-y-11 group-hover:shadow-[0_24px_45px_-22px_rgba(17,17,17,0.4)] group-focus-visible:-translate-y-11 group-focus-visible:shadow-[0_24px_45px_-22px_rgba(17,17,17,0.4)] motion-reduce:transition-none motion-reduce:group-hover:translate-y-0 motion-reduce:group-focus-visible:translate-y-0 ${card.cardClass} ${card.rotationClass}`}
+                    className={`relative z-10 flex min-h-32 w-full max-w-[13rem] items-center justify-center rounded-[2rem] border p-5 shadow-premium ${card.cardClass} ${card.rotationClass}`}
                   >
                     <Icon className="h-14 w-14 stroke-[2.1] sm:h-16 sm:w-16" aria-hidden="true" />
                   </div>
@@ -411,7 +399,7 @@ export default async function Home({
                   key={idx}
                   className="bg-brand-card p-8 rounded-3xl border border-brand-border/60 shadow-soft flex flex-col gap-4 group"
                 >
-                  <div className="w-12 h-12 rounded-2xl bg-brand-cream border border-brand-border/60 flex items-center justify-center text-brand-accent shadow-soft group-hover:scale-105 transition-transform duration-300">
+                  <div className="w-12 h-12 rounded-2xl bg-brand-cream border border-brand-border/60 flex items-center justify-center text-brand-accent shadow-soft">
                     <IconComponent className="w-5 h-5 text-brand-accent-hover" />
                   </div>
                   <div>

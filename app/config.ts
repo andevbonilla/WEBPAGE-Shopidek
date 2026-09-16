@@ -39,11 +39,11 @@ export const SUPPORT_EMAIL = TEAM_EMAIL;
 export const PRIVACY_EMAIL = TEAM_EMAIL;
 export const PRODUCT_NAME = "ShopiDeck: Klaviyo Bot Cleaner";
 
-// Set NEXT_PUBLIC_SHOPIFY_APP_STORE_URL only after Shopify has assigned the
-// published app listing URL. Until then, visitors get a useful waitlist/help
-// destination instead of a broken or unrelated App Store link.
+// Replace the fallback search with the exact listing as soon as Shopify assigns
+// the public app URL. Installation CTAs must always stay on Shopify App Store.
 export const SHOPIFY_APP_STORE_URL =
-  process.env.NEXT_PUBLIC_SHOPIFY_APP_STORE_URL || "/help";
+  process.env.NEXT_PUBLIC_SHOPIFY_APP_STORE_URL ||
+  "https://apps.shopify.com/search?q=ShopiDeck%20Klaviyo%20Bot%20Cleaner";
 
 export const SUPPORT_HOURS = "Email support during published support hours";
 

@@ -7,7 +7,17 @@ import { getPosts } from "./posts";
 import { Clock } from "lucide-react";
 import es from "@/messages/es.json";
 import en from "@/messages/en.json";
-import { SITE_LOGO, SITE_LOGO_ALT, SITE_LOGO_HEIGHT, SITE_LOGO_WIDTH, SITE_URL, localizedPath } from "../../config";
+import {
+  SITE_LOGO,
+  SITE_LOGO_ALT,
+  SITE_LOGO_HEIGHT,
+  SITE_LOGO_WIDTH,
+  SITE_MARK_HEIGHT,
+  SITE_MARK_URL,
+  SITE_MARK_WIDTH,
+  SITE_URL,
+  localizedPath,
+} from "../../config";
 
 const dictionaries = { en, es };
 
@@ -17,8 +27,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const path = localizedPath(currentLocale, "/blog");
   const title = currentLocale === "en" ? "ShopiDeck Blog | Practical Shopify guides" : "Blog de ShopiDeck | Guías prácticas para Shopify";
   const description = currentLocale === "en"
-    ? "Practical guides for reviewing suspicious Klaviyo profiles and building clearer Shopify growth workflows."
-    : "Guías prácticas para revisar perfiles sospechosos de Klaviyo y construir flujos de crecimiento más claros en Shopify.";
+    ? "Practical Shopify guides about fake Klaviyo profiles, safe suppression, list hygiene, and merchant-controlled growth workflows."
+    : "Guías prácticas para Shopify sobre perfiles falsos de Klaviyo, supresión segura, higiene de listas y flujos de crecimiento controlados por el comerciante.";
   return {
     metadataBase: new URL(SITE_URL),
     title,
@@ -58,9 +68,43 @@ export default async function BlogPage({
   const posts = getPosts(currentLocale);
   const featuredPost = posts[0];
   const remainingPosts = posts.slice(1);
+  const blogUrl = `${SITE_URL}${localizedPath(currentLocale, "/blog")}`;
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "@id": `${blogUrl}#blog`,
+    url: blogUrl,
+    name: t("title"),
+    description: t("subtitle"),
+    inLanguage: currentLocale,
+    publisher: {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      name: "ShopiDeck",
+      url: SITE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: SITE_MARK_URL,
+        width: SITE_MARK_WIDTH,
+        height: SITE_MARK_HEIGHT,
+      },
+    },
+    blogPost: posts.map((post) => ({
+      "@type": "BlogPosting",
+      headline: post.title,
+      description: post.excerpt,
+      datePublished: post.publishedAt,
+      url: `${SITE_URL}${localizedPath(currentLocale, `/blog/${post.id}`)}`,
+      inLanguage: currentLocale,
+    })),
+  };
 
   return (
     <div className="min-h-screen bg-brand-bg flex flex-col font-sans">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema).replace(/</g, "\\u003c") }}
+      />
       {/* HEADER */}
       <Navbar />
 
@@ -102,7 +146,8 @@ export default async function BlogPage({
                 {/* Right Side: Editorial Information */}
                 <div className="lg:col-span-5 flex flex-col justify-between py-2">
                   <div className="flex flex-col gap-4">
-                    <div className="flex items-center gap-3 text-[11px] font-bold tracking-wider uppercase text-brand-muted">
+                    <div className="flex flex-wrap items-center gap-3 text-[11px] font-bold tracking-wider uppercase text-brand-muted">
+                      <span className="rounded-full bg-brand-cream px-3 py-1 text-brand-main">{featuredPost.category}</span>
                       <span>{featuredPost.date}</span>
                     </div>
 
@@ -143,7 +188,7 @@ export default async function BlogPage({
           {remainingPosts.length > 0 && (
             <div>
               <h3 className="font-display font-black text-lg text-brand-main uppercase tracking-widest border-b-2 border-brand-main pb-3 mb-8">
-                {currentLocale === "en" ? "More Tech News" : "Más Artículos"}
+                {currentLocale === "en" ? "More articles" : "Más artículos"}
               </h3>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
@@ -166,7 +211,8 @@ export default async function BlogPage({
                         </Link>
                       </div>
 
-                      <div className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-wider text-brand-muted mb-3">
+                      <div className="flex flex-wrap items-center gap-3 text-[10px] font-bold uppercase tracking-wider text-brand-muted mb-3">
+                        <span className="rounded-full bg-brand-cream px-2.5 py-1 text-brand-main">{post.category}</span>
                         <span>{post.date}</span>
                       </div>
 

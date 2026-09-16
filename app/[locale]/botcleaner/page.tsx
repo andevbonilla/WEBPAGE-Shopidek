@@ -306,7 +306,7 @@ export default async function BotCleanerPage({ params }: PageProps) {
                   {currentLocale === "en" ? "Decisions" : "Decisiones"}
                 </span>
                 <p className="mt-1 font-display text-lg font-black text-brand-main">
-                  {currentLocale === "en" ? "Merchant controlled" : "Control del comercio"}
+                  {currentLocale === "en" ? "Merchant control" : "Control del comerciante"}
                 </p>
               </div>
 
@@ -342,8 +342,7 @@ export default async function BotCleanerPage({ params }: PageProps) {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
               {[1, 2, 3, 4].map((number) => (
                 <article key={number} className={`rounded-3xl p-6 border shadow-soft ${number === 4 ? "bg-brand-cream border-brand-accent/50" : "bg-brand-bg border-brand-border"}`}>
-                  <span className="text-xs font-bold text-brand-muted">{number}/4</span>
-                  <h3 className="font-display font-black text-lg mt-4 mb-3">{t(`probBox${number}Title`)}</h3>
+                  <h3 className="font-display font-black text-lg mb-3">{t(`probBox${number}Title`)}</h3>
                   <p className="text-sm text-brand-secondary leading-relaxed">{t(`probBox${number}Desc`)}</p>
                 </article>
               ))}

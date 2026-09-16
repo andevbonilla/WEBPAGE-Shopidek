@@ -1,23 +1,36 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "./config";
+import { getPosts } from "./[locale]/blog/posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date("2026-09-01T00:00:00.000Z");
-  const paths = [
+  const siteLastModified = new Date("2026-09-15T00:00:00.000Z");
+  const staticPaths = [
     "",
     "/botcleaner",
     "/help",
     "/blog",
-    "/blog/klaviyo-deliverability-hygiene",
     "/privacy",
     "/terms",
     "/dpa",
     "/subprocessors",
   ];
+  const paths = [
+    ...staticPaths.map((path) => ({ path, lastModified: siteLastModified })),
+    ...getPosts("en").map((post) => ({
+      path: `/blog/${post.id}`,
+      lastModified: new Date(post.publishedAt),
+    })),
+  ];
 
-  return paths.flatMap((path) => [
-    { url: `${SITE_URL}${path || "/"}`, lastModified, alternates: { languages: { en: `${SITE_URL}${path || "/"}`, es: `${SITE_URL}/es${path}` } } },
-    { url: `${SITE_URL}/es${path}`, lastModified, alternates: { languages: { en: `${SITE_URL}${path || "/"}`, es: `${SITE_URL}/es${path}` } } },
-  ]);
+  return paths.flatMap(({ path, lastModified }) => {
+    const englishUrl = `${SITE_URL}${path || "/"}`;
+    const spanishUrl = `${SITE_URL}/es${path}`;
+    const languages = { en: englishUrl, es: spanishUrl, "x-default": englishUrl };
+
+    return [
+      { url: englishUrl, lastModified, alternates: { languages } },
+      { url: spanishUrl, lastModified, alternates: { languages } },
+    ];
+  });
 }
 

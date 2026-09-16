@@ -16,9 +16,9 @@ as the reply-to address.
 
 ## Shopify installation link
 
-Until Shopify assigns the public listing URL, installation CTAs go to the Help
-Center. After publication, set the Vercel variable below to the real App Store
-URL and redeploy:
+Until Shopify assigns the public listing URL, installation CTAs open a focused
+search inside Shopify App Store. After publication, set the Vercel variable
+below to the exact App Store URL and redeploy:
 
 ```text
 NEXT_PUBLIC_SHOPIFY_APP_STORE_URL=https://apps.shopify.com/your-real-listing

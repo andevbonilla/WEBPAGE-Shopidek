@@ -86,7 +86,6 @@ export default function HelpCenterPage() {
       <main className="flex-1">
         <section className="relative py-16 md:py-24 bg-gradient-to-b from-brand-bg to-brand-cream/60 border-b border-brand-border">
           <div className="layout-container max-w-4xl mx-auto text-center flex flex-col gap-6 items-center">
-            <span className="rounded-full bg-brand-main text-brand-accent px-4 py-1.5 text-xs font-bold uppercase tracking-widest">{t("badge")}</span>
             <h1 className="font-display font-black text-3xl sm:text-5xl leading-tight tracking-tight">{t("title")}</h1>
             <p className="text-sm md:text-base text-brand-secondary max-w-2xl leading-relaxed">{t("subtitle")}</p>
             <div className="w-full max-w-2xl relative">

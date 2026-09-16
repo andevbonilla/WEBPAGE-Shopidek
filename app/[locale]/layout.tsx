@@ -75,8 +75,8 @@ export const metadata: Metadata = {
 };
 
 const organizationJsonLd = {
-  "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": `${SITE_URL}/#organization`,
   name: "ShopiDeck",
   url: SITE_URL,
   logo: {
@@ -102,6 +102,24 @@ export default async function LocaleLayout({
     notFound();
   }
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      organizationJsonLd,
+      {
+        "@type": "WebSite",
+        "@id": `${SITE_URL}/#website`,
+        url: SITE_URL,
+        name: "ShopiDeck",
+        description: locale === "en"
+          ? "A growing suite of focused tools for Shopify merchants."
+          : "Una suite en crecimiento de herramientas enfocadas para comerciantes de Shopify.",
+        inLanguage: ["en", "es"],
+        publisher: { "@id": `${SITE_URL}/#organization` },
+      },
+    ],
+  };
+
   return (
     <html
       lang={locale}
@@ -110,7 +128,7 @@ export default async function LocaleLayout({
       <body className="min-h-full flex flex-col bg-brand-bg text-brand-main font-sans">
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd).replace(/</g, "\\u003c") }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }}
         />
         {children}
       </body>
