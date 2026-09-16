@@ -257,10 +257,16 @@ export default async function BotCleanerPage({ params }: PageProps) {
                   href={SHOPIFY_APP_STORE_URL}
                   target={isExternalUrl(SHOPIFY_APP_STORE_URL) ? "_blank" : undefined}
                   rel={isExternalUrl(SHOPIFY_APP_STORE_URL) ? "noopener noreferrer" : undefined}
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-main/15 bg-brand-main px-7 py-3.5 font-bold text-brand-bg transition-colors hover:bg-brand-secondary"
+                  className="inline-flex items-center justify-center gap-3 rounded-2xl bg-[#f1f1ef] px-7 py-3.5 font-bold text-black transition-colors hover:bg-[#e3e3e0]"
                 >
+                  <Image
+                    src="/shopify-logo-png-transparent.png"
+                    alt=""
+                    width={30}
+                    height={34}
+                    className="h-8 w-auto"
+                  />
                   {t("install")}
-                  <ExternalLink className="w-4 h-4" />
                 </a>
                 <a href="#how-it-works" className="inline-flex items-center justify-center rounded-full border border-brand-main bg-brand-card px-7 py-3.5 font-bold text-brand-main transition-colors hover:bg-brand-cream">
                   {t("trySimulator")}

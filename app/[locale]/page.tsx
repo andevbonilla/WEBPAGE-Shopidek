@@ -256,6 +256,7 @@ export default async function Home({
                 <div
                   key={card.label}
                   tabIndex={0}
+                  aria-label={card.label}
                   className={`group relative flex min-h-44 items-end justify-center outline-none ${card.offsetClass} ${index === heroCards.length - 1 ? "col-span-2 mx-auto w-full max-w-[13rem] sm:col-span-1 sm:max-w-none" : ""}`}
                 >
                   <div
@@ -263,12 +264,9 @@ export default async function Home({
                     className={`absolute bottom-2 h-5 w-[72%] rounded-b-3xl border transition-[height,transform] duration-300 ease-out group-hover:h-16 group-focus-visible:h-16 motion-reduce:transition-none ${card.columnClass}`}
                   />
                   <div
-                    className={`relative z-10 flex min-h-32 w-full max-w-[13rem] flex-col items-center justify-center gap-3 rounded-[2rem] border p-5 shadow-premium transition-[transform,box-shadow] duration-300 ease-out group-hover:-translate-y-11 group-hover:shadow-[0_24px_45px_-22px_rgba(17,17,17,0.4)] group-focus-visible:-translate-y-11 group-focus-visible:shadow-[0_24px_45px_-22px_rgba(17,17,17,0.4)] motion-reduce:transition-none motion-reduce:group-hover:translate-y-0 motion-reduce:group-focus-visible:translate-y-0 ${card.cardClass} ${card.rotationClass}`}
+                    className={`relative z-10 flex min-h-32 w-full max-w-[13rem] items-center justify-center rounded-[2rem] border p-5 shadow-premium transition-[transform,box-shadow] duration-300 ease-out group-hover:-translate-y-11 group-hover:shadow-[0_24px_45px_-22px_rgba(17,17,17,0.4)] group-focus-visible:-translate-y-11 group-focus-visible:shadow-[0_24px_45px_-22px_rgba(17,17,17,0.4)] motion-reduce:transition-none motion-reduce:group-hover:translate-y-0 motion-reduce:group-focus-visible:translate-y-0 ${card.cardClass} ${card.rotationClass}`}
                   >
-                    <Icon className="h-9 w-9 stroke-[2.2] sm:h-10 sm:w-10" aria-hidden="true" />
-                    <span className="max-w-32 text-center text-xs font-black uppercase leading-tight tracking-[0.08em] sm:text-sm">
-                      {card.label}
-                    </span>
+                    <Icon className="h-14 w-14 stroke-[2.1] sm:h-16 sm:w-16" aria-hidden="true" />
                   </div>
                 </div>
               );
