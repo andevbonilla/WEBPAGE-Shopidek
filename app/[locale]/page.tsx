@@ -7,6 +7,7 @@ import FootprintTracker from "../components/FootprintTracker";
 import {
   PRODUCT_NAME,
   BOTCLEANER_ICON,
+  BOTCLEANER_INTERFACE,
   SHOPIFY_APP_STORE_URL,
   SITE_LOGO,
   SITE_LOGO_ALT,
@@ -89,7 +90,10 @@ export default async function Home({
       brandColor: "bg-[#ffbd59]/10 text-[#ffbd59] border-[#ffbd59]/30",
       accentBg: "bg-[#ffbd59]",
       link: "/botcleaner",
-      coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80",
+      coverImage: BOTCLEANER_INTERFACE,
+      coverAlt: currentLocale === "en"
+        ? "ShopiDeck Klaviyo Bot Cleaner profile audit interface"
+        : "Interfaz de auditoría de perfiles de ShopiDeck Klaviyo Bot Cleaner",
       active: true
     },
     {
@@ -103,10 +107,11 @@ export default async function Home({
         t("prodCartB2"),
         t("prodCartB3")
       ],
-      brandColor: "bg-indigo-50 text-indigo-400 border-indigo-200/60",
-      accentBg: "bg-indigo-300",
+      brandColor: "bg-brand-cream text-brand-main border-brand-accent/50",
+      accentBg: "bg-brand-accent",
       link: "/help",
-      coverImage: "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=600&q=80",
+      coverImage: "",
+      coverAlt: "",
       active: false
     },
     {
@@ -120,10 +125,11 @@ export default async function Home({
         t("prodRevB2"),
         t("prodRevB3")
       ],
-      brandColor: "bg-emerald-50 text-emerald-400 border-emerald-200/60",
-      accentBg: "bg-emerald-300",
+      brandColor: "bg-brand-main text-brand-accent border-brand-main",
+      accentBg: "bg-brand-accent",
       link: "/help",
-      coverImage: "https://images.unsplash.com/photo-1618005198143-e5283b519a7f?auto=format&fit=crop&w=600&q=80",
+      coverImage: "",
+      coverAlt: "",
       active: false
     }
   ];
@@ -251,14 +257,35 @@ export default async function Home({
                   }`}
               >
                 {/* Full-width Cover Image (Adobe Style - Sleek Smaller Height) */}
-                <div className="relative h-[140px] w-full overflow-hidden bg-zinc-100 border-b border-brand-border/50">
-                  <Image
-                    src={prod.coverImage}
-                    alt={prod.name}
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 33vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-103"
-                  />
+                <div className={`relative w-full overflow-hidden border-b border-brand-border/50 ${prod.id === "botcleaner" ? "aspect-[1528/969] bg-zinc-100" : "h-[140px]"}`}>
+                  {prod.coverImage ? (
+                    <Image
+                      src={prod.coverImage}
+                      alt={prod.coverAlt}
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 33vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-103"
+                    />
+                  ) : (
+                    <div className={`absolute inset-0 isolate flex items-center justify-center overflow-hidden ${prod.id === "review-booster" ? "bg-brand-main text-brand-bg" : "bg-brand-cream text-brand-main"}`}>
+                      <span
+                        aria-hidden="true"
+                        className="absolute -left-8 -top-12 h-32 w-32 rounded-full bg-brand-accent/70"
+                      />
+                      <span
+                        aria-hidden="true"
+                        className={`absolute -bottom-12 -right-8 h-28 w-28 rotate-12 rounded-3xl border-2 ${prod.id === "review-booster" ? "border-brand-accent/50" : "border-brand-main/10"}`}
+                      />
+                      <div className="relative flex flex-col items-center gap-2 px-6 text-center">
+                        <span className={`rounded-full border px-3 py-1 text-[9px] font-black uppercase tracking-[0.2em] ${prod.id === "review-booster" ? "border-brand-accent/40 bg-brand-accent/15 text-brand-accent" : "border-brand-main/10 bg-brand-card/70 text-brand-secondary"}`}>
+                          ShopiDeck
+                        </span>
+                        <span className="font-display text-2xl font-black uppercase tracking-tight">
+                          {t("comingSoon")}
+                        </span>
+                      </div>
+                    </div>
+                  )}
                 </div>
 
                 {/* Card Content Area */}
@@ -270,10 +297,10 @@ export default async function Home({
                         {prod.icon ? (
                           <Image
                             src={prod.icon}
-                            alt={`${prod.name} Icon`}
+                            alt={`${prod.name} app icon`}
                             width={56}
                             height={56}
-                            className="object-contain w-full h-full p-1 bg-brand-bg"
+                            sizes="56px"
                           />
                         ) : (
                           <span className="text-xl">?</span>

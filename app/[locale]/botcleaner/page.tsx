@@ -3,12 +3,14 @@ import Image from "next/image";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import FaqSection from "../../components/FaqSection";
-import { Check, ExternalLink, ShieldCheck } from "lucide-react";
+import { Check, ExternalLink } from "lucide-react";
 import es from "@/messages/es.json";
 import en from "@/messages/en.json";
 import {
   PRODUCT_NAME,
-  BOTCLEANER_ICON,
+  BOTCLEANER_INTERFACE,
+  BOTCLEANER_INTERFACE_HEIGHT,
+  BOTCLEANER_INTERFACE_WIDTH,
   BOTCLEANER_LOGO,
   BOTCLEANER_LOGO_HEIGHT,
   BOTCLEANER_LOGO_URL,
@@ -266,37 +268,18 @@ export default async function BotCleanerPage({ params }: PageProps) {
               </div>
               <p className="text-xs text-brand-muted">{t("note")}</p>
             </div>
-            <div className="lg:col-span-5 bg-brand-card rounded-3xl border border-brand-border p-6 shadow-premium">
-              <div className="flex items-center gap-3 mb-6">
-                <Image
-                  src={BOTCLEANER_ICON}
-                  alt={`${PRODUCT_NAME} app icon`}
-                  width={48}
-                  height={48}
-                  sizes="48px"
-                />
-                <div>
-                  <p className="font-display font-black text-lg">{t("dashboardTitle")}</p>
-                  <p className="text-xs text-brand-muted">{t("dashboardDesc")}</p>
-                </div>
-              </div>
-              <div className="grid grid-cols-2 gap-3">
-                <div className="rounded-2xl bg-brand-bg p-4 border border-brand-border">
-                  <p className="text-[10px] text-brand-muted font-bold tracking-wider">{t("total")}</p>
-                  <p className="text-2xl font-display font-black mt-2">—</p>
-                </div>
-                <div className="rounded-2xl bg-brand-cream p-4 border border-brand-accent/40">
-                  <p className="text-[10px] text-brand-muted font-bold tracking-wider">{t("filtered")}</p>
-                  <p className="text-2xl font-display font-black mt-2">—</p>
-                </div>
-              </div>
-              <div className="mt-4 rounded-2xl border border-brand-border p-4 flex items-center gap-3">
-                <ShieldCheck className="w-5 h-5 text-brand-accent-hover" />
-                <div>
-                  <p className="text-sm font-bold">{t("recent")}</p>
-                  <p className="text-xs text-brand-muted">{t("synchronized")}</p>
-                </div>
-              </div>
+            <div className="lg:col-span-5 overflow-hidden rounded-3xl border border-brand-border bg-[#f1f1f1] shadow-premium">
+              <Image
+                src={BOTCLEANER_INTERFACE}
+                alt={currentLocale === "en"
+                  ? "ShopiDeck Klaviyo Bot Cleaner profile audit dashboard"
+                  : "Panel de auditoría de perfiles de ShopiDeck Klaviyo Bot Cleaner"}
+                width={BOTCLEANER_INTERFACE_WIDTH}
+                height={BOTCLEANER_INTERFACE_HEIGHT}
+                sizes="(max-width: 1024px) 92vw, 38vw"
+                className="block h-auto w-full"
+                priority
+              />
             </div>
           </div>
         </section>
