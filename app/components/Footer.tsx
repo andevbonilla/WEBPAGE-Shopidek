@@ -130,7 +130,7 @@ export default function Footer() {
                 onClick={() => setIsOpen(!isOpen)}
                 aria-expanded={isOpen}
                 aria-haspopup="listbox"
-                className="bg-brand-bg/10 hover:bg-brand-bg/15 text-brand-bg hover:text-brand-accent px-4 py-3 rounded-2xl border border-brand-bg/15 font-bold text-xs flex items-center justify-between gap-2 transition-colors w-full md:w-48 text-left"
+                className="bg-brand-bg/10 hover:bg-brand-bg/15 text-brand-bg hover:text-brand-accent px-4 py-3 rounded-2xl border border-brand-bg/15 font-bold text-xs flex items-center justify-between gap-2 transition-colors w-full max-w-full md:w-48 text-left"
               >
                 <span className="flex items-center gap-2">
                   <Globe className="w-3.5 h-3.5 text-brand-bg/60" />
@@ -140,7 +140,7 @@ export default function Footer() {
               </button>
 
               {isOpen && (
-                <div className="absolute bottom-full mb-2 left-0 w-full md:w-48 bg-brand-card text-brand-main rounded-2xl border border-brand-border shadow-premium overflow-hidden z-30 animate-fadeIn">
+                <div className="absolute bottom-full mb-2 left-0 w-full max-w-full md:w-48 bg-brand-card text-brand-main rounded-2xl border border-brand-border shadow-premium overflow-hidden z-30 animate-fadeIn">
                   <div className="py-1">
                     {languages.map((lang) => (
                       <button

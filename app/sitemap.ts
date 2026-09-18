@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPaths = [
     "",
     "/botcleaner",
+    "/social-marketing",
     "/help",
     "/blog",
     "/privacy",
@@ -15,7 +16,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/subprocessors",
   ];
   const paths = [
-    ...staticPaths.map((path) => ({ path, lastModified: siteLastModified })),
+    ...staticPaths.map((path) => ({
+      path,
+      lastModified: ["", "/help", "/social-marketing"].includes(path)
+        ? new Date("2026-09-18T00:00:00.000Z")
+        : siteLastModified,
+    })),
     ...getPosts("en").map((post) => ({
       path: `/blog/${post.id}`,
       lastModified: new Date(post.publishedAt),

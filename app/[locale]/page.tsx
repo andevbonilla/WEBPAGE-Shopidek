@@ -6,6 +6,8 @@ import FaqSection from "../components/FaqSection";
 import {
   PRODUCT_NAME,
   BOTCLEANER_ICON,
+  SOCIAL_MARKETING_NAME,
+  SOCIAL_MARKETING_ICON_SMALL,
   SHOPIFY_APP_STORE_URL,
   SITE_LOGO,
   SITE_LOGO_ALT,
@@ -91,7 +93,21 @@ export default async function Home({
       brandColor: "bg-[#ffbd59]/10 text-[#ffbd59] border-[#ffbd59]/30",
       accentBg: "bg-[#ffbd59]",
       link: "/botcleaner",
-      active: true
+      active: true,
+      hasLanding: true,
+    },
+    {
+      id: "social-marketing",
+      name: SOCIAL_MARKETING_NAME,
+      initials: "Sm",
+      icon: SOCIAL_MARKETING_ICON_SMALL,
+      description: t("prodSocialDesc"),
+      benefits: [t("prodSocialB1"), t("prodSocialB2"), t("prodSocialB3")],
+      brandColor: "bg-[#f2eaff] text-[#6b35c8] border-[#8b5cf6]/30",
+      accentBg: "bg-[#8b5cf6]",
+      link: "/social-marketing",
+      active: false,
+      hasLanding: true,
     },
     {
       id: "cart-recovery",
@@ -107,7 +123,8 @@ export default async function Home({
       brandColor: "bg-brand-cream text-brand-main border-brand-accent/50",
       accentBg: "bg-brand-accent",
       link: "/help",
-      active: false
+      active: false,
+      hasLanding: false,
     },
     {
       id: "review-booster",
@@ -123,7 +140,8 @@ export default async function Home({
       brandColor: "bg-brand-main text-brand-accent border-brand-main",
       accentBg: "bg-brand-accent",
       link: "/help",
-      active: false
+      active: false,
+      hasLanding: false,
     }
   ];
 
@@ -276,7 +294,7 @@ export default async function Home({
           </div>
 
           {/* Adobe-Style App Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
             {products.map((prod) => (
               <div
                 key={prod.id}
@@ -292,7 +310,7 @@ export default async function Home({
                         {prod.icon ? (
                           <Image
                             src={prod.icon}
-                            alt={`${prod.name} app icon`}
+                            alt={currentLocale === "en" ? `${prod.name} app icon` : `Icono de la app ${prod.name}`}
                             width={56}
                             height={56}
                             sizes="56px"
@@ -346,6 +364,13 @@ export default async function Home({
                           <ArrowRight className="w-3.5 h-3.5 flex-shrink-0 transform group-hover/details:translate-x-0.5 transition-transform" />
                         </Link>
                       </div>
+                    ) : prod.hasLanding ? (
+                      <Link
+                        href={prod.link}
+                        className="w-full inline-flex items-center justify-center gap-2 rounded-xl border border-[#8b5cf6]/30 bg-[#f2eaff] px-4 py-3.5 text-xs font-bold text-[#5a2aa8] transition-colors hover:bg-[#e8d9ff]"
+                      >
+                        {t("details")} <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
+                      </Link>
                     ) : (
                       <div className="w-full inline-flex items-center justify-center bg-brand-card text-brand-muted text-xs font-bold py-3.5 px-4 rounded-xl border border-brand-border/80 uppercase">
                         <span className="truncate">{t("comingSoon")}</span>

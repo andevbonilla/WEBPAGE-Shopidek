@@ -1,6 +1,18 @@
 
 # ShopiDeck public website
 
+## Social Marketing product page
+
+The public product concept is available at `/social-marketing` in English and
+`/es/social-marketing` in Spanish. Its localized copy lives in
+`app/[locale]/social-marketing/content.ts`; optimized icons and the preserved
+original are in `public/brand/products/social-marketing/`.
+
+Social Marketing is presented as in development. Early-access CTAs open an
+email to `team@shopideck.com`; they do not enroll visitors automatically. The
+five-minute campaign claim is an approximate product goal. This repository
+does not implement campaign generation or social publishing integrations.
+
 ## Support form
 
 The Help Center form sends a structured support request to `team@shopideck.com`

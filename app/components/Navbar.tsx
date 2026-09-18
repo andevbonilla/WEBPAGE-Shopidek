@@ -35,7 +35,7 @@ export default function Navbar() {
           />
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-5 text-sm xl:gap-8 xl:text-base">
           <Link href="/#features" className="font-medium text-brand-secondary hover:text-brand-main transition-colors duration-200">
             {dict.apps}
           </Link>

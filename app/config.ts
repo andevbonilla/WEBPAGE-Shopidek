@@ -38,6 +38,10 @@ export const TEAM_EMAIL = "team@shopideck.com";
 export const SUPPORT_EMAIL = TEAM_EMAIL;
 export const PRIVACY_EMAIL = TEAM_EMAIL;
 export const PRODUCT_NAME = "ShopiDeck: Klaviyo Bot Cleaner";
+export const SOCIAL_MARKETING_NAME = "ShopiDeck: Social Marketing";
+export const SOCIAL_MARKETING_ICON = `${BRAND_ASSET_BASE}/products/social-marketing/shopideck-social-marketing-app-icon.webp`;
+export const SOCIAL_MARKETING_ICON_SMALL = `${BRAND_ASSET_BASE}/products/social-marketing/shopideck-social-marketing-app-icon-small.webp`;
+export const SOCIAL_MARKETING_ICON_SIZE = 512;
 
 // Replace the fallback search with the exact listing as soon as Shopify assigns
 // the public app URL. Installation CTAs must always stay on Shopify App Store.
