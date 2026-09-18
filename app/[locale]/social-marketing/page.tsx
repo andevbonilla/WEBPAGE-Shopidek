@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import {
-  ArrowRight,
   CalendarDays,
   Check,
   Heart,
@@ -16,11 +15,11 @@ import {
   SOCIAL_MARKETING_ICON_SMALL,
   SOCIAL_MARKETING_ICON_SIZE,
   SOCIAL_MARKETING_NAME,
-  TEAM_EMAIL,
   localizedPath,
 } from "../../config";
 import { getMessages, localeInfo, resolveLocale } from "@/i18n/messages";
 import { ProductPage, ProductHero, ProductFaq, ProductMonitor } from "../../components/products/ProductPage";
+import { EarlyAccessButton } from "../../components/products/EarlyAccessButton";
 
 type PageProps = { params: Promise<{ locale: string }> };
 
@@ -62,7 +61,6 @@ export default async function SocialMarketingPage({ params }: PageProps) {
   const currentLocale = resolveLocale(locale);
   const copy = getMessages(currentLocale, "LessTimeMarketing");
   const canonicalUrl = `${SITE_URL}${localizedPath(currentLocale, "/social-marketing")}`;
-  const contactUrl = `mailto:${TEAM_EMAIL}?subject=${encodeURIComponent(copy.contactSubject)}`;
   const benefitIcons = [Megaphone, ShoppingBag, CalendarDays, ShieldCheck];
   const campaignIcons = [ShoppingBag, Heart, Sparkles];
   const cardColors = ["bg-app-soft text-app-ink", "bg-brand-main text-app-border", "bg-brand-accent text-brand-main"];
@@ -107,7 +105,7 @@ export default async function SocialMarketingPage({ params }: PageProps) {
           note={copy.timingNote}
           pillars={copy.pillars}
           actions={<>
-            <a href={contactUrl} className="product-primary-button">{copy.primaryCta}<ArrowRight className="cta-arrow h-4 w-4" aria-hidden="true" /></a>
+            <EarlyAccessButton label={copy.primaryCta} />
             <a href="#campaign-concept" className="product-secondary-button">{copy.secondaryCta}</a>
           </>}
           visual={
@@ -288,7 +286,7 @@ export default async function SocialMarketingPage({ params }: PageProps) {
             <Sparkles className="mb-5 h-8 w-8 text-app-ink" aria-hidden="true" />
             <h2 className="product-section-title">{copy.closingTitle}</h2>
             <p className="mt-5 max-w-xl text-sm leading-relaxed text-brand-secondary sm:text-base">{copy.closingDescription}</p>
-            <a href={contactUrl} className="product-primary-button mt-7">{copy.primaryCta}<ArrowRight className="cta-arrow h-4 w-4" aria-hidden="true" /></a>
+            <EarlyAccessButton label={copy.primaryCta} className="mt-7" />
           </div>
         </section>
       </ProductPage>

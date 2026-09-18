@@ -11,8 +11,17 @@ The public product concept is available at `/social-marketing` in English and
 `messages/en.json` and `messages/es.json` (LessTimeMarketing namespace); optimized icons and the preserved
 original are in `public/brand/products/social-marketing/`.
 
-SD: Less Time Marketing is presented as in development. Early-access CTAs open an
-email to `team@shopideck.com`; they do not enroll visitors automatically. The
+SD: Less Time Marketing is presented as in development. Both early-access CTAs
+use `app/components/products/EarlyAccessButton.tsx` to open Tally form `9qe6yp`
+in a centered modal. The widget loads only on this landing, after hydration,
+and Next.js deduplicates it across CTAs. The supplied wave animation, immediate
+close after submission (`auto-close=0`), and form-event forwarding are preserved.
+If JavaScript is disabled or the widget fails to load, the links open the public
+form at `https://tally.so/r/9qe6yp`. Responses are handled by Tally; no API key or
+backend integration is required here. Button labels use the EN/ES catalogs;
+form wording, translations, design, and response notifications are managed in
+Tally, not translated automatically by the website. Requesting early access does
+not create a product account or guarantee access. The
 five-minute campaign claim is an approximate product goal. This repository
 does not implement campaign generation or social publishing integrations.
 Positioning focuses on marketing while you sleep, quality, and practicality.
