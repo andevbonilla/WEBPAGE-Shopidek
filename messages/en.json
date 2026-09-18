@@ -103,6 +103,7 @@
     "faq4A": "Email support is available at team@shopideck.com during published support hours. Please include your store domain, the product involved, steps to reproduce the issue, and screenshots without API keys, passwords, tokens, or full customer lists. See our privacy policy for information about submitted data."
   },
   "BotCleaner": {
+    "heroLines": ["Find suspicious Klaviyo profiles.", "Before they inflate your list."],
     "badge": "Shopify App Store publication pending",
     "title": "Find suspicious Klaviyo profiles before they inflate your list.",
     "subtitle": "Connect Klaviyo with OAuth, scan existing profiles, understand why they are flagged, and suppress selected profiles after your review.",

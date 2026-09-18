@@ -62,7 +62,7 @@ export default function TestimonialCarousel({ testimonials, opinionLabel }: Test
               <p className="text-[9px] text-brand-muted uppercase font-bold tracking-wider">{testimonials[activeReview].role}</p>
             </div>
           </div>
-          <span className="text-xs font-mono font-medium text-brand-muted bg-brand-bg px-2.5 py-1 rounded-full border border-brand-border/40">
+          <span className="text-xs font-medium text-brand-muted">
             {getOpinionString(activeReview + 1, testimonials.length)}
           </span>
         </div>

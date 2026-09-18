@@ -101,9 +101,6 @@ export default function LegalDocumentPage({ document, locale }: Props) {
         <div className="layout-container max-w-7xl">
           <article>
             <header className="max-w-4xl space-y-5">
-              <span className="inline-block rounded-md border border-brand-accent/30 bg-brand-warning px-3 py-1 text-xs font-extrabold uppercase tracking-wider text-brand-main">
-                {document.category}
-              </span>
               <h1 className="font-display text-3xl font-black tracking-tight text-brand-main sm:text-5xl">
                 {document.title}
               </h1>

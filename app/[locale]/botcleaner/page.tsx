@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Check, ExternalLink, Bot, Coins, Target, ShieldCheck } from "lucide-react";
-import { Link } from "@/i18n/navigation";
 import { getMessages, getTranslations, localeInfo, resolveLocale } from "@/i18n/messages";
-import { ProductPage, ProductHero, ProductHeading, ProductFaq } from "../../components/products/ProductPage";
+import { ProductPage, ProductHero, ProductHeading, ProductFaq, ProductMonitor } from "../../components/products/ProductPage";
 import {
   PRODUCT_NAME, BOTCLEANER_INTERFACE, BOTCLEANER_INTERFACE_HEIGHT,
   BOTCLEANER_INTERFACE_WIDTH, BOTCLEANER_LOGO, BOTCLEANER_LOGO_HEIGHT,
@@ -37,22 +36,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     twitter: { card: "summary", title: t("seoTitle"), description: t("seoDescription"), images: [{ url: BOTCLEANER_LOGO, alt: t("iconAlt") }] },
   };
-}
-
-function DesktopPreview({ alt, priority = false }: { alt: string; priority?: boolean }) {
-  return (
-    <div className="mx-auto w-full max-w-4xl">
-      <div className="rounded-[1.6rem] border-[6px] border-brand-main bg-brand-main p-1.5 shadow-premium sm:border-[10px] sm:p-2">
-        <div className="overflow-hidden rounded-[0.9rem] bg-brand-card">
-          <Image src={BOTCLEANER_INTERFACE} alt={alt} width={BOTCLEANER_INTERFACE_WIDTH} height={BOTCLEANER_INTERFACE_HEIGHT}
-            sizes={priority ? "(max-width: 1024px) 80vw, 430px" : "(max-width: 1024px) 85vw, 860px"}
-            className="block h-auto w-full" priority={priority} />
-        </div>
-      </div>
-      <div aria-hidden="true" className="mx-auto h-10 w-20 bg-brand-main sm:h-12 sm:w-24" />
-      <div aria-hidden="true" className="mx-auto h-2.5 w-36 rounded-full bg-brand-main sm:w-48" />
-    </div>
-  );
 }
 
 export default async function BotCleanerPage({ params }: PageProps) {
@@ -100,15 +83,20 @@ export default async function BotCleanerPage({ params }: PageProps) {
     <ProductPage theme="botcleaner">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
       <ProductHero
-        name={PRODUCT_NAME} icon={BOTCLEANER_LOGO} iconAlt={t("iconAlt")} badge={t("badge")}
-        lines={[t("title")]} description={t("subtitle")} note={t("note")} pillars={copy.pillars}
+        name={PRODUCT_NAME} icon={BOTCLEANER_LOGO} iconAlt={t("iconAlt")}
+        lines={copy.heroLines} description={t("subtitle")} note={t("note")} pillars={copy.pillars}
         actions={<>
           <a href={SHOPIFY_APP_STORE_URL} {...storeLinkProps} className="product-primary-button">
             <Image src="/shopify-logo-png-transparent.png" alt="" width={22} height={25} />{t("install")}
           </a>
           <a href="#how-it-works" className="product-secondary-button">{t("trySimulator")}</a>
         </>}
-        visual={<DesktopPreview alt={t("interfaceAlt")} priority />}
+        visual={
+          <ProductMonitor>
+            <Image src={BOTCLEANER_INTERFACE} alt={t("interfaceAlt")} width={BOTCLEANER_INTERFACE_WIDTH} height={BOTCLEANER_INTERFACE_HEIGHT}
+              sizes="(max-width: 1024px) 85vw, 860px" className="block h-auto w-full" priority />
+          </ProductMonitor>
+        }
       />
 
       <section className="product-section bg-brand-card">
@@ -125,15 +113,6 @@ export default async function BotCleanerPage({ params }: PageProps) {
                 </article>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      <section className="product-section border-y border-app-border bg-app-wash">
-        <div className="layout-container">
-          <ProductHeading eyebrow={t("previewBadge")} title={t("previewTitle")} description={t("previewDescription")} centered />
-          <div className="mx-auto max-w-5xl rounded-[2rem] border border-app-border bg-app-soft p-5 sm:p-8 lg:p-10">
-            <DesktopPreview alt={t("interfaceAlt")} />
           </div>
         </div>
       </section>
@@ -176,7 +155,6 @@ export default async function BotCleanerPage({ params }: PageProps) {
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
             {pricingPlans.map((plan) => (
               <article key={plan.name} className={`flex flex-col rounded-3xl border bg-brand-card p-6 sm:p-7 ${plan.popular ? "border-app-ink ring-1 ring-app-ink" : "border-brand-border"}`}>
-                {plan.popular && <p className="mb-4 w-fit rounded-full bg-app-soft px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-app-ink">{t("pricingPopular")}</p>}
                 <h3 className="font-display text-2xl font-black">{plan.name}</h3>
                 <p className="mt-3 min-h-12 text-sm leading-relaxed text-brand-secondary">{plan.description}</p>
                 <div className="my-6 flex items-baseline gap-2"><span className="font-display text-5xl font-black">{plan.price}</span><span className="text-xs text-brand-muted">/ {plan.period}</span></div>
@@ -187,7 +165,7 @@ export default async function BotCleanerPage({ params }: PageProps) {
               </article>
             ))}
           </div>
-          <p className="mx-auto mt-8 max-w-3xl rounded-2xl border border-brand-accent/40 bg-brand-warning p-4 text-center text-sm leading-relaxed text-brand-secondary">{t("savingsNote")}</p>
+          <p className="mx-auto mt-8 max-w-3xl text-center text-xs leading-relaxed text-brand-muted">{t("savingsNote")}</p>
         </div>
       </section>
 
@@ -198,8 +176,7 @@ export default async function BotCleanerPage({ params }: PageProps) {
           <ShieldCheck className="mb-5 h-8 w-8 text-app-ink" aria-hidden="true" />
           <h2 className="product-section-title">{t("ctaTitle")}</h2>
           <p className="mt-5 max-w-xl text-sm leading-relaxed text-brand-secondary sm:text-base">{t("ctaDesc")}</p>
-          <a href={SHOPIFY_APP_STORE_URL} {...storeLinkProps} className="product-primary-button mt-7">{t("ctaBtn")}<ExternalLink className="h-4 w-4" aria-hidden="true" /></a>
-          <Link href="/#features" className="mt-6 text-xs font-bold underline decoration-app-accent underline-offset-4">{t("suiteLink")}</Link>
+          <a href={SHOPIFY_APP_STORE_URL} {...storeLinkProps} className="product-primary-button mt-7">{t("ctaBtn")}<ExternalLink className="cta-arrow h-4 w-4" aria-hidden="true" /></a>
         </div>
       </section>
     </ProductPage>

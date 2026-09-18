@@ -78,9 +78,6 @@ export default function Footer() {
               <li>
                 <Link href="/blog" className="hover:text-brand-accent transition-colors flex items-center gap-1.5">
                   {dict.blogLink}
-                  <span className="bg-brand-accent/20 text-brand-accent text-[9px] px-1.5 py-0.5 rounded-full font-bold">
-                    {dict.newBadge}
-                  </span>
                 </Link>
               </li>
             </ul>

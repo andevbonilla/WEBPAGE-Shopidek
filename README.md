@@ -21,11 +21,17 @@ unverified claims about named competitors.
 
 ## Suite design and localization
 
-App landing pages share ProductPage, ProductHero, ProductHeading, and ProductFaq
+App landing pages share ProductPage, ProductHero, ProductMonitor, ProductHeading, and ProductFaq
 in `app/components/products/ProductPage.tsx`. Only the icon-based theme and
 product content vary: blue for Bot Cleaner and purple for Less Time Marketing.
 Typography, spacing, card radii, and suite-orange primary buttons are shared.
 Bot Cleaner pricing and limits are unchanged.
+Heroes use centered, two-tone headings with a desktop monitor below the copy,
+not a side panel. Bot Cleaner displays its dashboard only once; upcoming apps
+use a themed screen with localized Coming soon text.
+Catalog details buttons share one neutral style. CTA arrow icons use the
+`cta-arrow` class for a one-shot hover/focus nudge that returns to its origin
+and is disabled for reduced-motion preferences.
 
 `i18n/messages.ts` resolves typed EN/ES catalogs and interpolated messages.
 Public copy, accessibility labels, pricing, and metadata come from catalogs,

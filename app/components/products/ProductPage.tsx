@@ -25,7 +25,6 @@ type HeroProps = {
   name: string;
   icon: string;
   iconAlt: string;
-  badge: string;
   lines: string[];
   description: string;
   note: string;
@@ -34,30 +33,29 @@ type HeroProps = {
   pillars: string[];
 };
 
-export function ProductHero({ name, icon, iconAlt, badge, lines, description, note, actions, visual, pillars }: HeroProps) {
+export function ProductHero({ name, icon, iconAlt, lines, description, note, actions, visual, pillars }: HeroProps) {
   return (
-    <section className="overflow-hidden border-b border-brand-border py-14 sm:py-20 lg:py-24">
-      <div className="layout-container grid items-center gap-12 lg:grid-cols-[1.15fr_1fr] lg:gap-16">
-        <div>
-          <div className="mb-6 flex items-center gap-3">
+    <section className="overflow-hidden border-b border-brand-border pt-14 sm:pt-20 lg:pt-24">
+      <div className="layout-container">
+        <div className="mx-auto flex max-w-5xl flex-col items-center text-center">
+          <div className="mb-6 flex items-center justify-center gap-3">
             <Image src={icon} alt={iconAlt} width={44} height={44} sizes="44px" className="rounded-xl" />
             <p className="text-xs font-bold tracking-wide text-app-ink sm:text-sm">{name}</p>
           </div>
-          <p className="mb-5 inline-flex rounded-full border border-app-border bg-app-soft px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-app-ink">{badge}</p>
           <h1 className="font-display text-4xl font-black leading-[1.09] tracking-tight sm:text-5xl xl:text-6xl">
             {lines.map((line, index) => <span key={line} className={`block ${index === 1 ? "text-app-ink" : ""}`}>{line}</span>)}
           </h1>
-          <p className="mt-6 max-w-xl text-sm leading-relaxed text-brand-secondary sm:text-base">{description}</p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">{actions}</div>
-          <p className="mt-5 max-w-xl text-xs leading-relaxed text-brand-muted">{note}</p>
+          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-brand-secondary sm:text-base">{description}</p>
+          <div className="mt-8 flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row sm:flex-wrap">{actions}</div>
+          <p className="mt-5 max-w-2xl text-xs leading-relaxed text-brand-muted">{note}</p>
         </div>
-        <div className="relative mx-auto flex w-full max-w-lg flex-col items-center rounded-[2.5rem] border border-app-border bg-app-soft px-6 py-10 sm:px-10 sm:py-14">
-          <div aria-hidden="true" className="absolute left-7 top-7 h-16 w-16 rounded-full border border-app-border sm:h-24 sm:w-24" />
-          <div aria-hidden="true" className="absolute bottom-8 right-8 h-24 w-24 rounded-full border border-app-border sm:h-36 sm:w-36" />
-          <div className="relative z-10 w-full">{visual}</div>
-          <div className="relative z-10 mt-9 flex flex-wrap justify-center gap-2">
+      </div>
+      <div className="mt-12 bg-app-wash py-10 sm:mt-16 sm:py-14">
+        <div className="layout-container">
+          {visual}
+          <div className="mt-7 flex flex-wrap justify-center gap-x-5 gap-y-3">
             {pillars.map((pillar) => (
-              <span key={pillar} className="inline-flex items-center gap-1.5 rounded-full border border-white bg-white/85 px-3 py-2 text-[11px] font-bold text-app-ink">
+              <span key={pillar} className="inline-flex items-center gap-1.5 text-[11px] font-bold text-app-ink">
                 <Check className="h-3.5 w-3.5" aria-hidden="true" />{pillar}
               </span>
             ))}
@@ -65,6 +63,18 @@ export function ProductHero({ name, icon, iconAlt, badge, lines, description, no
         </div>
       </div>
     </section>
+  );
+}
+
+export function ProductMonitor({ children }: { children: ReactNode }) {
+  return (
+    <div className="product-monitor mx-auto w-full max-w-4xl">
+      <div className="rounded-[1.6rem] border-[6px] border-brand-main bg-brand-main p-1.5 shadow-premium sm:border-[10px] sm:p-2">
+        <div className="overflow-hidden rounded-[0.9rem]">{children}</div>
+      </div>
+      <div aria-hidden="true" className="mx-auto h-10 w-20 bg-brand-main sm:h-12 sm:w-24" />
+      <div aria-hidden="true" className="mx-auto h-2.5 w-36 rounded-full bg-brand-main sm:w-48" />
+    </div>
   );
 }
 

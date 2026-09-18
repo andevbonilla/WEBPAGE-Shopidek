@@ -43,7 +43,7 @@ export default function ProblemSolutionWorkflow({
         
         {/* PROBLEM & SOLUTION PROCESS TIMELINE (4 BOXES) */}
         <div className="text-center max-w-3xl mx-auto flex flex-col gap-4">
-          <span className="font-display font-extrabold text-xs text-red-600 bg-red-50 border border-red-200 px-4 py-1.5 rounded-full self-center uppercase tracking-widest">
+          <span className="font-display font-extrabold text-xs text-brand-muted self-center uppercase tracking-widest">
             {probBadge}
           </span>
           <h2 className="font-display font-black text-2xl md:text-3xl text-brand-main tracking-tight uppercase leading-tight">

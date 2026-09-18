@@ -146,7 +146,7 @@ export default async function BlogPage({
                 <div className="lg:col-span-5 flex flex-col justify-between py-2">
                   <div className="flex flex-col gap-4">
                     <div className="flex flex-wrap items-center gap-3 text-[11px] font-bold tracking-wider uppercase text-brand-muted">
-                      <span className="rounded-full bg-brand-cream px-3 py-1 text-brand-main">{featuredPost.category}</span>
+                      <span className="text-brand-muted">{featuredPost.category}</span>
                       <span>{featuredPost.date}</span>
                     </div>
 
@@ -211,7 +211,7 @@ export default async function BlogPage({
                       </div>
 
                       <div className="flex flex-wrap items-center gap-3 text-[10px] font-bold uppercase tracking-wider text-brand-muted mb-3">
-                        <span className="rounded-full bg-brand-cream px-2.5 py-1 text-brand-main">{post.category}</span>
+                        <span className="text-brand-muted">{post.category}</span>
                         <span>{post.date}</span>
                       </div>
 

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import {
   ArrowRight,
   CalendarDays,
@@ -11,7 +10,6 @@ import {
   Sparkles,
   Target,
 } from "lucide-react";
-import { Link } from "@/i18n/navigation";
 import {
   SITE_URL,
   SOCIAL_MARKETING_ICON,
@@ -22,7 +20,7 @@ import {
   localizedPath,
 } from "../../config";
 import { getMessages, localeInfo, resolveLocale } from "@/i18n/messages";
-import { ProductPage, ProductHero, ProductFaq } from "../../components/products/ProductPage";
+import { ProductPage, ProductHero, ProductFaq, ProductMonitor } from "../../components/products/ProductPage";
 
 type PageProps = { params: Promise<{ locale: string }> };
 
@@ -104,19 +102,20 @@ export default async function SocialMarketingPage({ params }: PageProps) {
           name={SOCIAL_MARKETING_NAME}
           icon={SOCIAL_MARKETING_ICON_SMALL}
           iconAlt={copy.iconAlt}
-          badge={copy.badge}
           lines={copy.heroLines}
           description={copy.heroDescription}
           note={copy.timingNote}
           pillars={copy.pillars}
           actions={<>
-            <a href={contactUrl} className="product-primary-button">{copy.primaryCta}<ArrowRight className="h-4 w-4" aria-hidden="true" /></a>
+            <a href={contactUrl} className="product-primary-button">{copy.primaryCta}<ArrowRight className="cta-arrow h-4 w-4" aria-hidden="true" /></a>
             <a href="#campaign-concept" className="product-secondary-button">{copy.secondaryCta}</a>
           </>}
           visual={
-            <div className="mx-auto w-fit rounded-[2rem] border-[8px] border-white bg-white shadow-premium sm:-rotate-6">
-              <Image src={SOCIAL_MARKETING_ICON} alt={copy.iconAlt} width={SOCIAL_MARKETING_ICON_SIZE} height={SOCIAL_MARKETING_ICON_SIZE} sizes="(max-width: 640px) 220px, 280px" priority className="h-auto w-52 rounded-[1.4rem] sm:w-64" />
-            </div>
+            <ProductMonitor>
+              <div className="flex aspect-[1528/969] items-center justify-center bg-app-accent p-6 text-center">
+                <p className="font-display text-3xl font-black text-white sm:text-5xl">{getMessages(currentLocale, "Home").comingSoon}</p>
+              </div>
+            </ProductMonitor>
           }
         />
 
@@ -130,7 +129,7 @@ export default async function SocialMarketingPage({ params }: PageProps) {
             <div className="mx-auto max-w-6xl rounded-[2rem] border border-app-border bg-app-wash p-5 sm:p-8 lg:p-10">
               <div className="mb-7 flex flex-wrap items-center justify-between gap-3 border-b border-app-border pb-5">
                 <h3 className="font-display text-lg font-black sm:text-xl">{copy.previewCampaign}</h3>
-                <p className="rounded-full bg-white px-3 py-2 text-xs font-bold text-app-ink">{copy.previewRange}</p>
+                <p className="text-xs font-bold text-app-ink">{copy.previewRange}</p>
               </div>
               <div className="grid gap-5 md:grid-cols-3">
                 {copy.previewCards.map((card, index) => {
@@ -289,8 +288,7 @@ export default async function SocialMarketingPage({ params }: PageProps) {
             <Sparkles className="mb-5 h-8 w-8 text-app-ink" aria-hidden="true" />
             <h2 className="product-section-title">{copy.closingTitle}</h2>
             <p className="mt-5 max-w-xl text-sm leading-relaxed text-brand-secondary sm:text-base">{copy.closingDescription}</p>
-            <a href={contactUrl} className="product-primary-button mt-7">{copy.primaryCta}<ArrowRight className="h-4 w-4" aria-hidden="true" /></a>
-            <Link href="/#features" className="mt-6 text-xs font-bold underline decoration-app-accent underline-offset-4">{copy.suiteLink}</Link>
+            <a href={contactUrl} className="product-primary-button mt-7">{copy.primaryCta}<ArrowRight className="cta-arrow h-4 w-4" aria-hidden="true" /></a>
           </div>
         </section>
       </ProductPage>

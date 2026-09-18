@@ -187,7 +187,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             
             {/* Category and Title */}
             <div className="space-y-4">
-              <p className="inline-flex rounded-full bg-brand-cream px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-brand-main">
+              <p className="text-[10px] font-bold uppercase tracking-wider text-brand-muted">
                 {post.category}
               </p>
               <h1 className="font-display font-black text-3xl sm:text-4xl lg:text-5xl leading-[1.1] text-brand-main tracking-tight uppercase">
@@ -313,7 +313,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                   className="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-brand-accent hover:bg-brand-accent-hover text-brand-main font-bold py-3.5 px-6 rounded-xl border border-brand-main/15 transition-colors duration-200 text-xs uppercase"
                 >
                   <span>{getMessages(resolveLocale(currentLocale), "UI").installOnShopify}</span>
-                  <ExternalLink className="w-4 h-4" />
+                  <ExternalLink className="cta-arrow w-4 h-4" aria-hidden="true" />
                 </a>
               </div>
             </div>

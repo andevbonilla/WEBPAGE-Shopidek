@@ -44,9 +44,6 @@ export default function Navbar() {
           </Link>
           <Link href="/blog" className="font-medium text-brand-secondary hover:text-brand-main transition-colors duration-200 flex items-center gap-1.5">
             {dict.blog}
-            <span className="bg-brand-accent/20 text-brand-main text-[9px] px-1.5 py-0.5 rounded-full font-bold">
-              {dict.newBadge}
-            </span>
           </Link>
         </nav>
 

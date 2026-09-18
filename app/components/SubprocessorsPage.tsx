@@ -21,9 +21,6 @@ export default function SubprocessorsPage({ locale, items }: Props) {
         <div className="layout-container max-w-7xl">
           <article>
             <header className="max-w-4xl space-y-5">
-              <span className="inline-block rounded-md border border-brand-accent/30 bg-brand-warning px-3 py-1 text-xs font-extrabold uppercase tracking-wider">
-                {getMessages(resolveLocale(locale), "UI").dataProcessing}
-              </span>
               <h1 className="font-display text-3xl font-black tracking-tight sm:text-5xl">
                 {getMessages(resolveLocale(locale), "UI").subprocessors}
               </h1>

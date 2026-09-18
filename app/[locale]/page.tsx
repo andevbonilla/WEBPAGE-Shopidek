@@ -79,6 +79,7 @@ export default async function Home({
     return text;
   };
 
+  const detailsButtonClass = "w-full inline-flex items-center justify-center gap-1.5 rounded-xl border border-brand-border bg-brand-card px-4 py-3.5 text-xs font-bold text-brand-main transition-colors hover:bg-zinc-50 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-main";
   const products = [
     {
       id: "social-marketing",
@@ -223,7 +224,7 @@ export default async function Home({
             className="mt-8 inline-flex items-center justify-center rounded-2xl border border-brand-main/15 bg-brand-accent px-8 py-4 text-sm font-bold text-brand-main transition-colors duration-200 hover:bg-brand-accent-hover sm:px-10 sm:text-base"
           >
             {t("activeApps")}
-            <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
+            <ArrowRight className="cta-arrow ml-2 h-4 w-4" aria-hidden="true" />
           </a>
 
           <div className="mt-12 grid w-full max-w-6xl grid-cols-2 gap-x-3 gap-y-6 sm:mt-16 sm:grid-cols-3 sm:gap-5 lg:grid-cols-5 lg:items-end lg:gap-7">
@@ -324,23 +325,22 @@ export default async function Home({
                         {/* White details button with thin border */}
                         <Link
                           href={prod.link}
-                          className="w-full inline-flex items-center justify-center gap-1.5 bg-brand-card hover:bg-zinc-50 border border-brand-border text-brand-main text-xs font-bold py-3.5 px-4 rounded-xl transition-colors group/details"
+                          className={detailsButtonClass}
                         >
-                          <span className="truncate">{getMessages(resolveLocale(currentLocale), "UI").viewDetails}</span>
-                          <ArrowRight className="w-3.5 h-3.5 flex-shrink-0 transform group-hover/details:translate-x-0.5 transition-transform" />
+                          <span>{t("details")}</span>
+                          <ArrowRight className="cta-arrow h-3.5 w-3.5 shrink-0" aria-hidden="true" />
                         </Link>
                       </div>
                     ) : prod.hasLanding ? (
                       <Link
                         href={prod.link}
-                        className="w-full inline-flex items-center justify-center gap-2 rounded-xl border border-[#8b5cf6]/30 bg-[#f2eaff] px-4 py-3.5 text-xs font-bold text-[#5a2aa8] transition-colors hover:bg-[#e8d9ff]"
+                        className={detailsButtonClass}
                       >
-                        {t("details")} <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
+                        <span>{t("details")}</span>
+                        <ArrowRight className="cta-arrow h-3.5 w-3.5 shrink-0" aria-hidden="true" />
                       </Link>
                     ) : (
-                      <div className="w-full inline-flex items-center justify-center bg-brand-card text-brand-muted text-xs font-bold py-3.5 px-4 rounded-xl border border-brand-border/80 uppercase">
-                        <span className="truncate">{t("comingSoon")}</span>
-                      </div>
+                      <p className="text-center text-xs text-brand-muted">{t("comingSoon")}</p>
                     )}
                   </div>
                 </div>
