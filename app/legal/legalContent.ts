@@ -39,7 +39,7 @@ export type Subprocessor = {
 
 const LEGAL_EMAIL = "team@shopideck.com";
 const ADDRESS = "Cra. 79A # 6-04, Bogotá D.C., Colombia";
-const PRODUCT = "ShopiDeck: Klaviyo Bot Cleaner";
+const PRODUCT = "SD: Klaviyo Bot Cleaner";
 const APP_URL = "https://klaviyobotcleaner.shopideck.com";
 const SIC_DATA_PROTECTION_URL = "https://www.sic.gov.co/que-es-la-delegatura-datos-personales";
 const SIC_PQRS_URL = "https://servicioslinea.sic.gov.co/servilinea/pqrsf";

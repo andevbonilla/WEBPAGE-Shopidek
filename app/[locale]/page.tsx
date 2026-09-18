@@ -1,3 +1,5 @@
+
+import { getMessages, resolveLocale, getTranslations, localeInfo } from "@/i18n/messages";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
@@ -7,6 +9,7 @@ import {
   PRODUCT_NAME,
   BOTCLEANER_ICON,
   SOCIAL_MARKETING_NAME,
+  SEO_TOOL_NAME,
   SOCIAL_MARKETING_ICON_SMALL,
   SHOPIFY_APP_STORE_URL,
   SITE_LOGO,
@@ -27,27 +30,25 @@ import {
   Bot,
   DollarSign,
   TrendingUp,
+  Search,
 } from "lucide-react";
-import es from "@/messages/es.json";
-import en from "@/messages/en.json";
 import type { Metadata } from "next";
 
-const dictionaries = { en, es };
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
-  const currentLocale = locale === "es" ? "es" : "en";
+  const currentLocale = resolveLocale(locale);
   const path = localizedPath(currentLocale);
-  const title = currentLocale === "en" ? "ShopiDeck | Focused tools for Shopify merchants" : "ShopiDeck | Herramientas enfocadas para Shopify";
-  const description = currentLocale === "en"
-    ? "Focused tools for Shopify merchants who want cleaner data, smarter marketing, and better growth decisions."
-    : "Herramientas enfocadas para comerciantes de Shopify que quieren datos más limpios, marketing más inteligente y mejores decisiones de crecimiento.";
+  const title = getMessages(resolveLocale(currentLocale), "UI").shopideckFocusedToolsForShopifyMerchants;
+  const description = getMessages(resolveLocale(currentLocale), "UI").focusedToolsForShopifyMerchantsWhoWant;
   return {
     metadataBase: new URL(SITE_URL),
     title,
     description,
     alternates: { canonical: path, languages: { en: "/", es: "/es", "x-default": "/" } },
     openGraph: {
+      locale: localeInfo[currentLocale].openGraph,
+      alternateLocale: localeInfo[currentLocale].alternateOpenGraph,
       title,
       description,
       url: `${SITE_URL}${path}`,
@@ -65,8 +66,8 @@ export default async function Home({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const currentLocale = (locale as "en" | "es") || "en";
-  const dict = dictionaries[currentLocale].Home;
+  const currentLocale = resolveLocale(locale);
+  const dict = getMessages(currentLocale, "Home");
 
   const t = (key: string, values?: Record<string, string | number>) => {
     let text = (dict as Record<string, string>)[key] || "";
@@ -80,65 +81,31 @@ export default async function Home({
 
   const products = [
     {
-      id: "botcleaner",
-      name: PRODUCT_NAME,
-      initials: "Bc",
-      icon: BOTCLEANER_ICON,
-      description: t("prodBotDesc"),
-      benefits: [
-        t("prodBotB1"),
-        t("prodBotB2"),
-        t("prodBotB3")
-      ],
-      brandColor: "bg-[#ffbd59]/10 text-[#ffbd59] border-[#ffbd59]/30",
-      accentBg: "bg-[#ffbd59]",
-      link: "/botcleaner",
-      active: true,
-      hasLanding: true,
-    },
-    {
       id: "social-marketing",
       name: SOCIAL_MARKETING_NAME,
-      initials: "Sm",
       icon: SOCIAL_MARKETING_ICON_SMALL,
       description: t("prodSocialDesc"),
-      benefits: [t("prodSocialB1"), t("prodSocialB2"), t("prodSocialB3")],
       brandColor: "bg-[#f2eaff] text-[#6b35c8] border-[#8b5cf6]/30",
-      accentBg: "bg-[#8b5cf6]",
       link: "/social-marketing",
       active: false,
       hasLanding: true,
     },
     {
-      id: "cart-recovery",
-      name: "Cart Recovery",
-      initials: "Cr",
-      icon: "",
-      description: t("prodCartDesc"),
-      benefits: [
-        t("prodCartB1"),
-        t("prodCartB2"),
-        t("prodCartB3")
-      ],
-      brandColor: "bg-brand-cream text-brand-main border-brand-accent/50",
-      accentBg: "bg-brand-accent",
-      link: "/help",
-      active: false,
-      hasLanding: false,
+      id: "botcleaner",
+      name: PRODUCT_NAME,
+      icon: BOTCLEANER_ICON,
+      description: t("prodBotDesc"),
+      brandColor: "bg-[#ffbd59]/10 text-[#ffbd59] border-[#ffbd59]/30",
+      link: "/botcleaner",
+      active: true,
+      hasLanding: true,
     },
     {
-      id: "review-booster",
-      name: "Review Booster",
-      initials: "Rb",
+      id: "seo-that-sells",
+      name: SEO_TOOL_NAME,
       icon: "",
-      description: t("prodRevDesc"),
-      benefits: [
-        t("prodRevB1"),
-        t("prodRevB2"),
-        t("prodRevB3")
-      ],
-      brandColor: "bg-brand-main text-brand-accent border-brand-main",
-      accentBg: "bg-brand-accent",
+      description: t("prodSeoDesc"),
+      brandColor: "bg-brand-cream text-brand-main border-brand-accent/50",
       link: "/help",
       active: false,
       hasLanding: false,
@@ -199,35 +166,35 @@ export default async function Home({
 
   const heroCards = [
     {
-      label: currentLocale === "en" ? "Cleaner data" : "Datos más limpios",
+      label: getMessages(resolveLocale(currentLocale), "UI").cleanerData,
       icon: Bot,
       cardClass: "bg-brand-accent text-brand-main border-brand-main/10",
       rotationClass: "-rotate-6",
       offsetClass: "lg:translate-y-7",
     },
     {
-      label: currentLocale === "en" ? "Faster workflows" : "Flujos más rápidos",
+      label: getMessages(resolveLocale(currentLocale), "UI").fasterWorkflows,
       icon: Zap,
       cardClass: "bg-brand-main text-brand-accent border-brand-main",
       rotationClass: "rotate-3",
       offsetClass: "lg:-translate-y-2",
     },
     {
-      label: currentLocale === "en" ? "Lower waste" : "Menos desperdicio",
+      label: getMessages(resolveLocale(currentLocale), "UI").lowerWaste,
       icon: DollarSign,
       cardClass: "bg-brand-card text-brand-main border-brand-accent/60",
       rotationClass: "-rotate-2",
       offsetClass: "lg:translate-y-10",
     },
     {
-      label: currentLocale === "en" ? "Smarter growth" : "Crecimiento inteligente",
+      label: getMessages(resolveLocale(currentLocale), "UI").smarterGrowth,
       icon: TrendingUp,
       cardClass: "bg-brand-cream text-brand-main border-brand-main/10",
       rotationClass: "rotate-5",
       offsetClass: "lg:translate-y-1",
     },
     {
-      label: currentLocale === "en" ? "Merchant control" : "Control del comerciante",
+      label: getMessages(resolveLocale(currentLocale), "UI").merchantControl,
       icon: Shield,
       cardClass: "bg-brand-accent text-brand-main border-brand-main/10",
       rotationClass: "-rotate-4",
@@ -294,12 +261,11 @@ export default async function Home({
           </div>
 
           {/* Adobe-Style App Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {products.map((prod) => (
               <div
                 key={prod.id}
-                className={`bg-brand-card rounded-3xl border border-brand-border/60 flex flex-col justify-between relative group overflow-hidden ${!prod.active ? "opacity-90" : ""
-                  }`}
+                className="bg-brand-card rounded-3xl border border-brand-border/60 flex flex-col justify-between relative group overflow-hidden"
               >
                 {/* Card Content Area */}
                 <div className="p-6 md:p-8 flex flex-col flex-grow justify-between">
@@ -310,13 +276,13 @@ export default async function Home({
                         {prod.icon ? (
                           <Image
                             src={prod.icon}
-                            alt={currentLocale === "en" ? `${prod.name} app icon` : `Icono de la app ${prod.name}`}
+                            alt={getTranslations(resolveLocale(currentLocale), "UI")("appIcon", { productName: prod.name })}
                             width={56}
                             height={56}
                             sizes="56px"
                           />
                         ) : (
-                          <span className="text-xl">?</span>
+                          <Search className="h-7 w-7" aria-hidden="true" />
                         )}
                       </div>
                     </div>
@@ -332,7 +298,7 @@ export default async function Home({
                     </div>
 
                     {/* Short Description */}
-                    <p className="text-brand-secondary text-xs md:text-sm leading-relaxed mb-6 font-light">
+                    <p className="text-brand-secondary text-sm leading-relaxed mb-6">
                       {prod.description}
                     </p>
                   </div>
@@ -353,14 +319,14 @@ export default async function Home({
                           className="w-full flex-1 inline-flex items-center justify-center gap-2 bg-[#F2F2F0] hover:bg-[#d7d7d5] text-black text-xs font-bold py-3.5 px-4 rounded-xl transition-colors"
                         >
                           <Image src="/shopify-logo-png-transparent.png" alt="Shopify Icon" width={20} height={20} />
-                          <span className="truncate">{currentLocale === "en" ? "Install on Shopify" : "Instalar en Shopify"}</span>
+                          <span className="truncate">{getMessages(resolveLocale(currentLocale), "UI").installOnShopify}</span>
                         </a>
                         {/* White details button with thin border */}
                         <Link
                           href={prod.link}
                           className="w-full inline-flex items-center justify-center gap-1.5 bg-brand-card hover:bg-zinc-50 border border-brand-border text-brand-main text-xs font-bold py-3.5 px-4 rounded-xl transition-colors group/details"
                         >
-                          <span className="truncate">{currentLocale === "en" ? "View Details" : "Ver detalles"}</span>
+                          <span className="truncate">{getMessages(resolveLocale(currentLocale), "UI").viewDetails}</span>
                           <ArrowRight className="w-3.5 h-3.5 flex-shrink-0 transform group-hover/details:translate-x-0.5 transition-transform" />
                         </Link>
                       </div>

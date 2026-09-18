@@ -1,3 +1,5 @@
+
+import { getMessages, resolveLocale, localeInfo } from "@/i18n/messages";
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
@@ -5,8 +7,6 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { getPosts } from "./posts";
 import { Clock } from "lucide-react";
-import es from "@/messages/es.json";
-import en from "@/messages/en.json";
 import {
   SITE_LOGO,
   SITE_LOGO_ALT,
@@ -19,22 +19,21 @@ import {
   localizedPath,
 } from "../../config";
 
-const dictionaries = { en, es };
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
-  const currentLocale = locale === "es" ? "es" : "en";
+  const currentLocale = resolveLocale(locale);
   const path = localizedPath(currentLocale, "/blog");
-  const title = currentLocale === "en" ? "ShopiDeck Blog | Practical Shopify guides" : "Blog de ShopiDeck | Guías prácticas para Shopify";
-  const description = currentLocale === "en"
-    ? "Practical Shopify guides about fake Klaviyo profiles, safe suppression, list hygiene, and merchant-controlled growth workflows."
-    : "Guías prácticas para Shopify sobre perfiles falsos de Klaviyo, supresión segura, higiene de listas y flujos de crecimiento controlados por el comerciante.";
+  const title = getMessages(resolveLocale(currentLocale), "UI").shopideckBlogPracticalShopifyGuides;
+  const description = getMessages(resolveLocale(currentLocale), "UI").practicalShopifyGuidesAboutFakeKlaviyoProfiles;
   return {
     metadataBase: new URL(SITE_URL),
     title,
     description,
     alternates: { canonical: path, languages: { en: "/blog", es: "/es/blog", "x-default": "/blog" } },
     openGraph: {
+      locale: localeInfo[currentLocale].openGraph,
+      alternateLocale: localeInfo[currentLocale].alternateOpenGraph,
       title,
       description,
       url: `${SITE_URL}${path}`,
@@ -52,8 +51,8 @@ export default async function BlogPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const currentLocale = (locale as "en" | "es") || "en";
-  const dict = dictionaries[currentLocale].Blog as Record<string, string>;
+  const currentLocale = resolveLocale(locale);
+  const dict = getMessages(currentLocale, "Blog") as Record<string, string>;
   
   const t = (key: string, values?: Record<string, string | number>) => {
     let text = dict[key] || "";
@@ -112,7 +111,7 @@ export default async function BlogPage({
       <section className="pt-16 pb-12 bg-gradient-to-b from-brand-bg to-brand-cream/30 border-b border-brand-border">
         <div className="layout-container text-left flex flex-col gap-3">
           <h1 className="font-display font-black text-4xl sm:text-5xl leading-none text-brand-main tracking-tight uppercase">
-            {currentLocale === "en" ? "Practical Shopify guides" : "Guías prácticas para Shopify"}
+            {getMessages(resolveLocale(currentLocale), "UI").practicalShopifyGuides}
           </h1>
           <p className="text-sm md:text-base text-brand-secondary max-w-2xl font-light leading-relaxed">
             {t("subtitle")}
@@ -188,7 +187,7 @@ export default async function BlogPage({
           {remainingPosts.length > 0 && (
             <div>
               <h3 className="font-display font-black text-lg text-brand-main uppercase tracking-widest border-b-2 border-brand-main pb-3 mb-8">
-                {currentLocale === "en" ? "More articles" : "Más artículos"}
+                {getMessages(resolveLocale(currentLocale), "UI").moreArticles}
               </h3>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">

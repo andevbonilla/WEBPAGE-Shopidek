@@ -1,12 +1,12 @@
 "use client";
+import { getMessages, resolveLocale } from "@/i18n/messages";
+
 
 import { useState } from "react";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { useParams } from "next/navigation";
 import { ChevronDown, Check, Globe } from "lucide-react";
 import Image from "next/image";
-import es from "@/messages/es.json";
-import en from "@/messages/en.json";
 import {
   FOOTER_LOGO,
   FOOTER_LOGO_DISPLAY_WIDTH,
@@ -15,14 +15,12 @@ import {
   SITE_LOGO_ALT,
 } from "../config";
 
-const dictionaries = { en, es };
-
 export default function Footer() {
   const pathname = usePathname();
   const router = useRouter();
   const params = useParams();
-  const currentLocale = (params?.locale as "es" | "en") || "en";
-  const dict = dictionaries[currentLocale].Footer;
+  const currentLocale = resolveLocale(params?.locale);
+  const dict = getMessages(currentLocale, "Footer");
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -46,7 +44,7 @@ export default function Footer() {
 
           {/* Col 1: Brand details */}
           <div className="md:col-span-4 flex flex-col gap-4">
-            <Link href="/" className="block w-fit" aria-label={`${SITE_LOGO_ALT} home`}>
+            <Link href="/" className="block w-fit" aria-label={dict.homeLabel}>
               <Image
                 src={FOOTER_LOGO}
                 alt={SITE_LOGO_ALT}
@@ -81,7 +79,7 @@ export default function Footer() {
                 <Link href="/blog" className="hover:text-brand-accent transition-colors flex items-center gap-1.5">
                   {dict.blogLink}
                   <span className="bg-brand-accent/20 text-brand-accent text-[9px] px-1.5 py-0.5 rounded-full font-bold">
-                    New
+                    {dict.newBadge}
                   </span>
                 </Link>
               </li>
@@ -106,12 +104,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/dpa" className="hover:text-brand-accent transition-colors">
-                  {currentLocale === "es" ? "Anexo de tratamiento" : "Data Processing Addendum"}
+                  {dict.dpa}
                 </Link>
               </li>
               <li>
                 <Link href="/subprocessors" className="hover:text-brand-accent transition-colors">
-                  {currentLocale === "es" ? "Subencargados" : "Subprocessors"}
+                  {dict.subprocessors}
                 </Link>
               </li>
             </ul>

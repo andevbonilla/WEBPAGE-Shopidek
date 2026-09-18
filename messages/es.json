@@ -6,7 +6,8 @@
     "faq": "Ayuda",
     "blog": "Blog",
     "newBadge": "Nuevo",
-    "cta": "Explorar la suite"
+    "cta": "Explorar la suite",
+    "homeLabel": "Inicio de ShopiDeck"
   },
   "Footer": {
     "desc": "Herramientas enfocadas para comerciantes de Shopify que quieren datos más limpios, marketing más claro y mejores decisiones de crecimiento.",
@@ -20,7 +21,11 @@
     "language": "Idioma",
     "langDesc": "Cambia entre las versiones en inglés y español de esta página.",
     "copyright": "© {year} ShopiDeck • Todos los derechos reservados",
-    "builtWith": "Construido con Next.js"
+    "builtWith": "Construido con Next.js",
+    "dpa": "Anexo de tratamiento",
+    "subprocessors": "Subencargados",
+    "newBadge": "Nuevo",
+    "homeLabel": "Inicio de ShopiDeck"
   },
   "Home": {
     "heroBadge": "Una suite en crecimiento de herramientas enfocadas para comerciantes de Shopify",
@@ -30,11 +35,9 @@
     "heroFooter": "Pensada para comerciantes que prefieren herramientas útiles a la complejidad innecesaria.",
     "quality": "Calidad de lista",
     "excellent": "Lista para revisar",
-    "savedCarts": "Cart Recovery",
-    "newReviews": "Review Booster",
     "activeStatus": "Próximamente",
     "comingSoon": "Próximamente",
-    "activeDesc": "ShopiDeck: Klaviyo Bot Cleaner se está preparando para publicarse en Shopify App Store.",
+    "activeDesc": "SD: Klaviyo Bot Cleaner se está preparando para publicarse en Shopify App Store.",
     "portfolioBadge": "NUESTROS PRODUCTOS",
     "portfolioTitle": "Herramientas enfocadas para problemas prácticos de ecommerce.",
     "portfolioDesc": "ShopiDeck es una suite en crecimiento para comerciantes de Shopify. Cada producto tiene un alcance claro, límites transparentes y un flujo centrado en el control del comerciante.",
@@ -76,22 +79,11 @@
     "prodBotB2": "Auditoría en segundo plano con señales explicables",
     "prodBotB3": "Supresión confirmada por el comerciante",
     "prodBotFeatures": "Próximamente • Publicación en Shopify App Store pendiente",
-    "prodSocialDesc": "Marketing personalizado y automatizado para tus redes sociales. Una app en desarrollo para convertir tu marca y productos en campañas para días o meses, en unos 5 minutos, incluso desde tu cama.",
+    "prodSocialDesc": "Marketing mientras duermes. Configura campañas en unos 5 minutos y planifica semanas o meses de contenido personalizado y de calidad diseñado para vender. En desarrollo, con un enfoque en calidad y practicidad.",
     "prodSocialB1": "Campañas adaptadas a tu marca",
-    "prodSocialB2": "Contenido para días o meses",
+    "prodSocialB2": "Contenido de calidad para semanas o meses",
     "prodSocialB3": "Revisión antes de programar",
-    "prodCartBadge": "Próximamente",
-    "prodCartDesc": "Un próximo producto de ShopiDeck. Todavía no está disponible para instalación.",
-    "prodCartB1": "Publicaremos el alcance del producto",
-    "prodCartB2": "Todavía sin instalación general",
-    "prodCartB3": "Actualizaremos el estado cuando esté disponible",
-    "prodCartFeatures": "Próximamente • No disponible para instalación",
-    "prodRevBadge": "Próximamente",
-    "prodRevDesc": "Un futuro producto de ShopiDeck para flujos de gestión de reseñas. Todavía no está disponible para instalación.",
-    "prodRevB1": "Flujos de reseñas planeados",
-    "prodRevB2": "Todavía sin instalación general",
-    "prodRevB3": "Actualizaremos el estado cuando esté disponible",
-    "prodRevFeatures": "Próximamente • Publicaremos el alcance cuando esté disponible",
+    "prodSeoDesc": "Una próxima app enfocada en SEO para tiendas Shopify: ayuda a clientes potenciales a descubrir tus productos mediante contenido útil y orientado a la compra. El alcance y la disponibilidad se anunciarán en el lanzamiento.",
     "t1Quote": "El estado y las capacidades se publican a medida que están disponibles.",
     "t1Author": "ShopiDeck",
     "t1Role": "Equipo de producto",
@@ -106,12 +98,12 @@
     "faq2Q": "¿Las aplicaciones ralentizan mi tienda de Shopify?",
     "faq2A": "Klaviyo Bot Cleaner opera desde Shopify Admin y APIs de backend. No requiere editar el tema ni añadir scripts frontend a tu tienda. Los demás productos publicarán su alcance técnico cuando estén disponibles.",
     "faq3Q": "¿Cómo accedo a las próximas herramientas de la suite?",
-    "faq3A": "Social Marketing, Cart Recovery y Review Booster estarán disponibles próximamente. No están incluidos en Klaviyo Bot Cleaner ni disponibles para instalación todavía. Visita la página de Social Marketing para solicitar información sobre el acceso anticipado.",
+    "faq3A": "La suite tiene tres herramientas: SD: Less Time Marketing, SD: Klaviyo Bot Cleaner y SD: SEO That Sells. Less Time Marketing y SEO That Sells están en desarrollo y no están incluidos en Klaviyo Bot Cleaner. Visita la página de Less Time Marketing para solicitar información sobre acceso anticipado.",
     "faq4Q": "¿Cómo se maneja el soporte técnico?",
     "faq4A": "El soporte por email está disponible en team@shopideck.com durante el horario publicado. Incluye el dominio de tu tienda, el producto, los pasos para reproducir el problema y capturas sin API keys, contraseñas, tokens ni listas completas de clientes. Consulta la política de privacidad para saber cómo se tratan los datos enviados."
   },
   "BotCleaner": {
-    "badge": "",
+    "badge": "Publicación en Shopify App Store pendiente",
     "title": "Encuentra perfiles sospechosos de Klaviyo antes de que inflen tu lista.",
     "subtitle": "Conecta Klaviyo mediante OAuth, analiza perfiles existentes, entiende por qué fueron marcados y suprime únicamente los perfiles que revises y confirmes.",
     "install": "Instalar en Shopify",
@@ -183,7 +175,80 @@
     "faqQuestion7": "¿Necesito modificar el tema?",
     "faqAnswer7": "No. La app opera desde Shopify Admin y APIs de backend. No requiere archivos Liquid ni scripts en el storefront.",
     "faqQuestion8": "¿La app configura SPF, DKIM o DMARC?",
-    "faqAnswer8": "No. La autenticación del dominio debe configurarse por separado siguiendo las instrucciones de Klaviyo y de tu proveedor DNS."
+    "faqAnswer8": "No. La autenticación del dominio debe configurarse por separado siguiendo las instrucciones de Klaviyo y de tu proveedor DNS.",
+    "seoTitle": "SD: Klaviyo Bot Cleaner | Revisión de perfiles sospechosos de Klaviyo",
+    "seoDescription": "Audita perfiles sospechosos de Klaviyo mediante OAuth, señales de riesgo explicables, revisión del comerciante y supresión confirmada.",
+    "seoKeywords": "auditoría de perfiles Klaviyo, app Shopify Klaviyo, supresión de perfiles, señales de emails desechables",
+    "schemaDescription": "Un flujo controlado por el comerciante para auditar y suprimir perfiles existentes de Klaviyo.",
+    "iconAlt": "Icono de la app SD: Klaviyo Bot Cleaner con un bot sobre tarjetas de campaña",
+    "interfaceAlt": "Panel de auditoría de perfiles de SD: Klaviyo Bot Cleaner mostrado en un monitor de escritorio",
+    "walkthroughTitle": "Recorrido de SD: Klaviyo Bot Cleaner",
+    "pillars": [
+      "Conexión OAuth",
+      "Señales explicables",
+      "Tu aprobación"
+    ],
+    "previewBadge": "Revisa antes de actuar",
+    "previewTitle": "Una vista más clara de tus perfiles de Klaviyo.",
+    "previewDescription": "Entiende los hallazgos de la auditoría, revisa las razones y elige qué perfiles suprimir. La app no elimina perfiles permanentemente.",
+    "suiteLink": "Volver a la suite de ShopiDeck",
+    "plans": [
+      {
+        "name": "Free Audit",
+        "price": "$0",
+        "period": "auditoría inicial",
+        "description": "Entiende los hallazgos agregados antes de elegir un plan de pago.",
+        "features": [
+          "Una auditoría inicial por tienda Shopify",
+          "Hasta 100.000 perfiles no suprimidos en esa auditoría",
+          "Solo hallazgos agregados",
+          "Sin supresión de perfiles",
+          "Sin exportación CSV"
+        ],
+        "popular": false
+      },
+      {
+        "name": "Starter",
+        "price": "$9",
+        "period": "mes",
+        "description": "Para tiendas que necesitan un flujo recurrente de revisión pequeño.",
+        "features": [
+          "2 escaneos al mes",
+          "Hasta 5.000 perfiles analizados al mes",
+          "Hasta 500 supresiones al mes",
+          "Resultados detallados",
+          "Historial de escaneos y supresiones"
+        ],
+        "popular": false
+      },
+      {
+        "name": "Growth",
+        "price": "$19",
+        "period": "mes",
+        "description": "Para listas en crecimiento y auditorías recurrentes.",
+        "popular": true,
+        "features": [
+          "Prueba de 7 días para nuevas suscripciones Growth elegibles, si está configurada en Shopify",
+          "5 escaneos al mes",
+          "Hasta 25.000 perfiles analizados al mes",
+          "Hasta 5.000 supresiones al mes",
+          "Resultados completos, exportación CSV e historial"
+        ]
+      },
+      {
+        "name": "Pro",
+        "price": "$49",
+        "period": "mes",
+        "description": "Para marcas y agencias con un volumen de revisión mayor.",
+        "features": [
+          "15 escaneos al mes",
+          "Hasta 100.000 perfiles analizados al mes",
+          "Hasta 25.000 supresiones al mes",
+          "Resultados completos, exportación CSV e historial"
+        ],
+        "popular": false
+      }
+    ]
   },
   "Help": {
     "title": "¿Cómo podemos ayudarte?",
@@ -225,6 +290,240 @@
     "sharedBy": "Compartido por el equipo de ShopiDeck",
     "return": "Regresar",
     "readFull": ""
+  },
+  "LessTimeMarketing": {
+    "seoTitle": "SD: Less Time Marketing | Marketing mientras duermes",
+    "seoDescription": "Marketing mientras duermes para tiendas Shopify. Planifica semanas o meses de contenido de calidad con unos 5 minutos de configuración. App en desarrollo; solicita acceso anticipado.",
+    "badge": "Próximamente · En desarrollo",
+    "eyebrow": "SD: Less Time Marketing",
+    "heroLines": [
+      "Marketing que trabaja.",
+      "Mientras tú duermes."
+    ],
+    "heroDescription": "Unos 5 minutos para configurar tus campañas. Semanas o meses de contenido personalizado y de calidad diseñado para vender. Estamos construyendo marketing automatizado para las redes sociales de tu tienda Shopify, con un enfoque en calidad y practicidad, no solo más publicaciones.",
+    "primaryCta": "Solicitar acceso anticipado",
+    "secondaryCta": "Explorar el concepto",
+    "timingNote": "5 minutos es un objetivo aproximado del producto, no un tiempo de finalización garantizado. La app está en desarrollo; las funciones finales y la disponibilidad se anunciarán en el lanzamiento.",
+    "iconAlt": "Icono de la app SD: Less Time Marketing con tarjetas de campaña y un megáfono",
+    "pillars": [
+      "~5 minutos de configuración",
+      "Semanas o meses",
+      "Calidad primero"
+    ],
+    "previewLabel": "Vista conceptual",
+    "previewTitle": "Una idea. Toda una campaña.",
+    "previewDescription": "De un producto que te encanta a una historia que vale la pena compartir, en un calendario que funciona para ti.",
+    "previewCampaign": "Tu próxima colección",
+    "previewRange": "30 días · Una voz de marca",
+    "previewCards": [
+      {
+        "label": "Descubrir",
+        "title": "Conoce tu nuevo favorito.",
+        "caption": "Presenta el producto y lo que lo hace especial."
+      },
+      {
+        "label": "Conectar",
+        "title": "Hay una historia detrás.",
+        "caption": "Comparte los detalles, valores y personas detrás de tu marca."
+      },
+      {
+        "label": "Invitar",
+        "title": "Hazlo parte de tu día.",
+        "caption": "Dale a tu audiencia una razón clara para explorar tu tienda."
+      }
+    ],
+    "calendarLabel": "Una campaña, no solo una publicación",
+    "calendarDays": [
+      "L",
+      "M",
+      "X",
+      "J",
+      "V",
+      "S",
+      "D"
+    ],
+    "calendarLegend": "Descubrir · Conectar · Invitar",
+    "previewNote": "Campaña únicamente ilustrativa. No es una captura de un producto lanzado ni una promesa de canales compatibles.",
+    "benefitsEyebrow": "Pensada alrededor de tu tienda",
+    "benefitsTitle": "Calidad antes que cantidad. Practicidad antes que complejidad.",
+    "benefitsDescription": "Un calendario lleno no es suficiente. Nos enfocamos en contenido útil con un propósito de venta, una voz de marca coherente y un flujo que te deje tiempo para gestionar tu tienda.",
+    "benefits": [
+      {
+        "title": "Suena como tu marca",
+        "description": "Adapta las ideas de campaña a tu tono, audiencia y objetivos, en lugar de mensajes genéricos que podrían pertenecer a cualquier tienda."
+      },
+      {
+        "title": "Dales una razón para comprar",
+        "description": "Explica el valor de tus productos, responde preguntas de compra y conecta cada mensaje con un siguiente paso claro. Contenido diseñado para vender, no solo para llenar un feed."
+      },
+      {
+        "title": "Piensa en semanas o meses",
+        "description": "Construye un calendario de campaña conectado en lugar de decidir qué publicar una publicación a la vez. Define tu dirección, revisa el contenido y deja que el plan aprobado haga el trabajo repetitivo."
+      },
+      {
+        "title": "Automatiza con aprobación",
+        "description": "Revisa y ajusta la campaña antes de aprobar el flujo previsto de publicación automatizada. Tu marca sigue en tus manos."
+      }
+    ],
+    "comparisonEyebrow": "Compara tus opciones",
+    "comparisonTitle": "Menos trabajo repetitivo. Más intención en cada campaña.",
+    "comparisonDescription": "En lugar de competir por el número de publicaciones, nuestro enfoque propuesto reúne contexto de marca, intención de compra y un flujo práctico de campañas.",
+    "comparisonHeaders": [
+      "Lo que importa",
+      "Crear todo manualmente",
+      "Generar publicaciones en masa",
+      "SD: Less Time Marketing"
+    ],
+    "comparisonRows": [
+      {
+        "criterion": "Calidad",
+        "manual": "Tú escribes y compruebas cada pieza.",
+        "volume": "Un lote grande sigue necesitando comprobaciones de relevancia y calidad.",
+        "shopideck": "El contexto de marca y producto guía los borradores; tú revisas la calidad antes de aprobar."
+      },
+      {
+        "criterion": "Practicidad",
+        "manual": "Las ideas, la redacción y el calendario son tareas separadas.",
+        "volume": "Las publicaciones por sí solas no definen una campaña ni un plan de publicación.",
+        "shopideck": "Un solo flujo guiado: un resumen breve, una campaña, revisión y un calendario aprobado."
+      },
+      {
+        "criterion": "Propósito de venta",
+        "manual": "Tú conectas cada mensaje con un producto y un siguiente paso.",
+        "volume": "Más publicaciones por sí solas no crean una razón para comprar.",
+        "shopideck": "El valor del producto, las preguntas de compra y llamadas a la acción claras dan forma a la campaña."
+      },
+      {
+        "criterion": "Tiempo",
+        "manual": "Cada nueva publicación requiere más trabajo directo.",
+        "volume": "Generar borradores es solo una parte del trabajo.",
+        "shopideck": "Unos 5 minutos de configuración inicial es el objetivo; planifica semanas o meses, con tiempo para revisar."
+      }
+    ],
+    "comparisonNote": "Comparación de enfoques de trabajo, no una evaluación verificada de competidores específicos. Otras herramientas pueden ofrecer funciones similares. La columna SD describe el diseño previsto del producto, no funciones lanzadas. El tiempo de configuración y las ventas no están garantizados.",
+    "workflowEyebrow": "El flujo previsto",
+    "workflowTitle": "De tu tienda a tu próxima campaña.",
+    "workflowDescription": "Un camino simple desde un breve resumen de marca hasta una campaña que puedes revisar y preparar para publicar.",
+    "steps": [
+      {
+        "title": "Cuenta la historia de tu marca",
+        "description": "Describe tu audiencia, tono y lo que quieres lograr con la campaña."
+      },
+      {
+        "title": "Elige productos y un periodo",
+        "description": "Selecciona los productos que quieres destacar y planifica contenido para días, semanas o meses."
+      },
+      {
+        "title": "Crea y revisa la campaña",
+        "description": "Prepara un borrador de campaña personalizado. Ajusta los mensajes y comprueba los detalles del producto antes de aprobar."
+      },
+      {
+        "title": "Aprueba y planifica la publicación",
+        "description": "Define el calendario y aprueba la automatización en las redes compatibles. Las integraciones finales se confirmarán en el lanzamiento."
+      }
+    ],
+    "controlTitle": "Más automatización. Tu voz, intacta.",
+    "controlDescription": "Ahorrar tiempo no debería significar perder el control de tu marca. El flujo propuesto pone la revisión antes de la publicación.",
+    "controlPoints": [
+      "Revisa los mensajes y afirmaciones sobre productos antes de aprobar.",
+      "Ajusta el tono, los objetivos de campaña y los horarios.",
+      "Confirma las redes compatibles y los permisos en el lanzamiento.",
+      "Sin promesas de alcance, ventas o ingresos garantizados."
+    ],
+    "faqTitle": "Antes de unirte a la próxima campaña.",
+    "faqs": [
+      {
+        "question": "¿Puedo instalar SD: Less Time Marketing ahora?",
+        "answer": "Todavía no. SD: Less Time Marketing está en desarrollo. Puedes escribir al equipo de ShopiDeck para solicitar información sobre acceso anticipado. Esto no crea una cuenta ni garantiza el acceso."
+      },
+      {
+        "question": "¿Una campaña siempre tomará exactamente 5 minutos?",
+        "answer": "No. Unos 5 minutos es un objetivo del producto para preparar una campaña inicial, no una garantía medida. La configuración, duración de campaña, información disponible y tu revisión pueden requerir tiempo adicional."
+      },
+      {
+        "question": "¿Qué redes sociales serán compatibles?",
+        "answer": "La lista final de redes sociales compatibles e integraciones de publicación no está confirmada. La publicaremos antes de que la instalación esté disponible."
+      },
+      {
+        "question": "¿Publicará sin mi revisión?",
+        "answer": "El flujo propuesto incluye revisión y aprobación del comerciante antes de la publicación automatizada. Los controles y permisos finales se documentarán en el lanzamiento."
+      },
+      {
+        "question": "¿Cuánto costará?",
+        "answer": "Los precios, límites de los planes y cualquier prueba no se han anunciado. Publicaremos esos detalles cuando el producto esté disponible; solicitar información no crea una suscripción."
+      }
+    ],
+    "closingTitle": "Tu tienda mantiene su historia. Tú recuperas tu tiempo.",
+    "closingDescription": "¿Te interesa un marketing que encaje con tu tienda y con tu vida? Pregúntanos por SD: Less Time Marketing y el acceso anticipado.",
+    "contactSubject": "Información de acceso anticipado a SD: Less Time Marketing",
+    "suiteLink": "Volver a la suite de ShopiDeck"
+  },
+  "Site": {
+    "title": "ShopiDeck | Herramientas enfocadas para comerciantes de Shopify",
+    "description": "ShopiDeck crea herramientas enfocadas para comerciantes de Shopify que quieren datos más limpios, marketing más inteligente y mejores decisiones de crecimiento.",
+    "keywords": "herramientas Shopify, auditoría de perfiles Klaviyo, operaciones ecommerce, herramientas de crecimiento para comerciantes",
+    "schemaDescription": "Una suite en crecimiento de herramientas enfocadas para comerciantes de Shopify."
+  },
+  "UI": {
+    "resourceLabels": { "Terms": "Términos", "Privacy": "Privacidad", "DPA": "DPA" },
+    "pageLink": "Enlace de la Página",
+    "copyPageLink": "Copiar enlace de la página",
+    "linkCopied": "¡Enlace Copiado!",
+    "copyUrl": "Copiar URL",
+    "dataProcessingAddendum": "Anexo de tratamiento",
+    "subprocessors": "Subencargados",
+    "onThisPage": "Contenido de esta página",
+    "legalContact": "Contacto legal",
+    "lastUpdated": "Última actualización",
+    "effective": "En vigor desde",
+    "shareArticle": "Compartir artículo",
+    "copyLink": "Copiar enlace",
+    "copied": "¡Copiado!",
+    "copy": "Copiar",
+    "shareOnX": "Compartir en X",
+    "shareOnFacebook": "Compartir en Facebook",
+    "moreShareOptions": "Más opciones para compartir",
+    "dataProcessing": "Tratamiento de datos",
+    "thisPageIdentifiesTheProvidersThatMay": "Esta página identifica los proveedores que pueden tratar datos para prestar SD: Klaviyo Bot Cleaner y resume su servicio, finalidad, región y documentos públicos. Prisma es una biblioteca ORM y no es un subencargado independiente.",
+    "september12026": "1 de septiembre de 2026",
+    "contact": "Contacto",
+    "legalPages": "Páginas legales",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfUse": "Términos de Uso",
+    "dataProcessingAddendum2": "Anexo de Tratamiento de Datos",
+    "service": "Servicio",
+    "purpose": "Finalidad",
+    "countryOrRegion": "País o región",
+    "shopideckBlogPracticalShopifyGuides": "Blog de ShopiDeck | Guías prácticas para Shopify",
+    "practicalShopifyGuidesAboutFakeKlaviyoProfiles": "Guías prácticas para Shopify sobre perfiles falsos de Klaviyo, supresión segura, higiene de listas y flujos de crecimiento controlados por el comerciante.",
+    "practicalShopifyGuides": "Guías prácticas para Shopify",
+    "moreArticles": "Más artículos",
+    "blog": "Blog",
+    "backToAllArticles": "Volver a todos los artículos",
+    "publishedBy": "Publicado por",
+    "frequentlyAskedQuestions": "Preguntas frecuentes",
+    "turnProfileHygieneIntoAReviewfirstWorkflow": "Convierte la higiene de perfiles en un flujo con revisión previa.",
+    "startWithConsentDomainAuthenticationAndHealthy": "Empieza por el consentimiento, la autenticación del dominio y segmentos saludables. Cuando ya existan perfiles sospechosos en Klaviyo, usa SD: Klaviyo Bot Cleaner para revisar señales y confirmar supresiones seleccionadas.",
+    "installOnShopify": "Instalar en Shopify",
+    "helpCenterShopideck": "Centro de Ayuda | ShopiDeck",
+    "practicalHelpForKlaviyoBotCleanerOauth": "Ayuda práctica sobre OAuth, auditorías, supresión, facturación, privacidad y soporte de Klaviyo Bot Cleaner.",
+    "pleaseEnterAValidEmailAddress": "Ingresa un email válido.",
+    "pleaseCompleteTheNameStoreDomainSubject": "Completa los campos de nombre, dominio de tienda, asunto y mensaje.",
+    "supportRequestCouldNotBeSent": "No se pudo enviar la solicitud de soporte.",
+    "sending": "Enviando...",
+    "doNotIncludeApiKeysPasswordsAccess": "No incluyas API keys, contraseñas, tokens de acceso ni listas completas de clientes. Las preguntas de privacidad pueden enviarse a ",
+    "aGrowingSuiteOfFocusedToolsFor": "Una suite en crecimiento de herramientas enfocadas para comerciantes de Shopify.",
+    "shopideckFocusedToolsForShopifyMerchants": "ShopiDeck | Herramientas enfocadas para Shopify",
+    "focusedToolsForShopifyMerchantsWhoWant": "Herramientas enfocadas para comerciantes de Shopify que quieren datos más limpios, marketing más inteligente y mejores decisiones de crecimiento.",
+    "cleanerData": "Datos más limpios",
+    "fasterWorkflows": "Flujos más rápidos",
+    "lowerWaste": "Menos desperdicio",
+    "smarterGrowth": "Crecimiento inteligente",
+    "merchantControl": "Control del comerciante",
+    "appIcon": "Icono de la app {productName}",
+    "viewDetails": "Ver detalles",
+    "subprocessorsShopideck": "Subencargados | ShopiDeck",
+    "shopideckSubprocessorListForKlaviyoBotCleaner": "Lista de subencargados de SD: Klaviyo Bot Cleaner, servicios, finalidades, regiones y documentos públicos."
   }
 }
 

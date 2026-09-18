@@ -1,22 +1,21 @@
 "use client";
+import { getMessages, resolveLocale } from "@/i18n/messages";
 
-import { useMemo, useState } from "react";
+
+import { useState } from "react";
 import { useParams } from "next/navigation";
 import { AlertTriangle, ArrowRight, CheckCircle, Clock, HelpCircle, Search } from "lucide-react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { getFaqs } from "./faqData";
-import es from "@/messages/es.json";
-import en from "@/messages/en.json";
-import { TEAM_EMAIL, PRODUCT_NAME, SOCIAL_MARKETING_NAME } from "../../config";
+import { TEAM_EMAIL, PRODUCT_NAME, SOCIAL_MARKETING_NAME, SEO_TOOL_NAME } from "../../config";
 
-const dictionaries = { en, es };
 type Locale = "en" | "es";
 
 export default function HelpCenterPage() {
   const params = useParams();
-  const locale: Locale = params?.locale === "es" ? "es" : "en";
-  const dict = dictionaries[locale].Help as Record<string, string>;
+  const locale: Locale = resolveLocale(params?.locale);
+  const dict = getMessages(locale, "Help") as Record<string, string>;
   const t = (key: string, values?: Record<string, string | number>) => {
     let value = dict[key] || "";
     Object.entries(values || {}).forEach(([keyName, replacement]) => {
@@ -41,24 +40,21 @@ export default function HelpCenterPage() {
     honeypot: "",
   });
 
-  const filteredArticles = useMemo(() => {
-    const query = searchQuery.trim().toLowerCase();
-    if (!query) return allFaqs;
-    return allFaqs.filter((article) =>
-      `${article.title} ${article.excerpt} ${article.content} ${article.category}`.toLowerCase().includes(query),
-    );
-  }, [allFaqs, searchQuery]);
+  const query = searchQuery.trim().toLowerCase();
+  const filteredArticles = allFaqs.filter((article) =>
+    `${article.title} ${article.excerpt} ${article.content} ${article.category}`.toLowerCase().includes(query),
+  );
 
   const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setFormError(null);
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(contactForm.email)) {
-      setFormError(locale === "en" ? "Please enter a valid email address." : "Ingresa un email válido.");
+      setFormError(getMessages(resolveLocale(locale), "UI").pleaseEnterAValidEmailAddress);
       return;
     }
     if (contactForm.name.trim().length < 2 || contactForm.storeDomain.trim().length < 3 || contactForm.subject.trim().length < 4 || contactForm.message.trim().length < 10) {
-      setFormError(locale === "en" ? "Please complete the name, store domain, subject, and message fields." : "Completa los campos de nombre, dominio de tienda, asunto y mensaje.");
+      setFormError(getMessages(resolveLocale(locale), "UI").pleaseCompleteTheNameStoreDomainSubject);
       return;
     }
 
@@ -74,7 +70,7 @@ export default function HelpCenterPage() {
       setFormSubmitted(true);
       setContactForm({ name: "", email: "", storeDomain: "", app: "general", subject: "", message: "", honeypot: "" });
     } catch (error) {
-      setFormError(error instanceof Error ? error.message : (locale === "en" ? "Support request could not be sent." : "No se pudo enviar la solicitud de soporte."));
+      setFormError(error instanceof Error ? error.message : (getMessages(resolveLocale(locale), "UI").supportRequestCouldNotBeSent));
     } finally {
       setIsSending(false);
     }
@@ -176,12 +172,12 @@ export default function HelpCenterPage() {
                       <label className="space-y-2"><span className="block text-xs font-bold uppercase tracking-wider">{t("fieldStoreDomain")}</span><input required placeholder="your-store.myshopify.com" value={contactForm.storeDomain} onChange={(event) => setContactForm({ ...contactForm, storeDomain: event.target.value })} className="w-full bg-brand-bg border border-brand-border p-3.5 rounded-xl text-sm focus:outline-none focus:border-brand-accent" /></label>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <label className="space-y-2"><span className="block text-xs font-bold uppercase tracking-wider">{t("fieldApp")}</span><select value={contactForm.app} onChange={(event) => setContactForm({ ...contactForm, app: event.target.value })} className="w-full bg-brand-bg border border-brand-border p-3.5 rounded-xl text-sm focus:outline-none focus:border-brand-accent"><option value="general">{t("general")}</option><option value="botcleaner">{PRODUCT_NAME}</option><option value="social-marketing">{SOCIAL_MARKETING_NAME}</option><option value="cart-recovery">Cart Recovery</option><option value="review-booster">Review Booster</option></select></label>
+                      <label className="space-y-2"><span className="block text-xs font-bold uppercase tracking-wider">{t("fieldApp")}</span><select value={contactForm.app} onChange={(event) => setContactForm({ ...contactForm, app: event.target.value })} className="w-full bg-brand-bg border border-brand-border p-3.5 rounded-xl text-sm focus:outline-none focus:border-brand-accent"><option value="general">{t("general")}</option><option value="social-marketing">{SOCIAL_MARKETING_NAME}</option><option value="botcleaner">{PRODUCT_NAME}</option><option value="seo-that-sells">{SEO_TOOL_NAME}</option></select></label>
                       <label className="space-y-2"><span className="block text-xs font-bold uppercase tracking-wider">{t("fieldSubject")}</span><input required value={contactForm.subject} onChange={(event) => setContactForm({ ...contactForm, subject: event.target.value })} className="w-full bg-brand-bg border border-brand-border p-3.5 rounded-xl text-sm focus:outline-none focus:border-brand-accent" /></label>
                     </div>
                     <label className="space-y-2 block"><span className="block text-xs font-bold uppercase tracking-wider">{t("fieldMessage")}</span><textarea required rows={6} value={contactForm.message} placeholder={t("fieldMessagePlaceholder")} onChange={(event) => setContactForm({ ...contactForm, message: event.target.value })} className="w-full bg-brand-bg border border-brand-border p-3.5 rounded-xl text-sm focus:outline-none focus:border-brand-accent" /></label>
-                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 pt-2"><span className="flex items-center gap-2 text-xs text-brand-muted"><Clock className="w-4 h-4 text-brand-accent-hover" />{t("supportHours")}</span><button type="submit" disabled={isSending} className="w-full sm:w-auto bg-brand-accent hover:bg-brand-accent-hover disabled:bg-zinc-300 text-brand-main font-bold px-7 py-3.5 rounded-xl border border-brand-main/15">{isSending ? (locale === "en" ? "Sending..." : "Enviando..." ) : t("submit")}</button></div>
-                    <p className="text-xs text-brand-muted border-t border-brand-border pt-4">{locale === "en" ? "Do not include API keys, passwords, access tokens, or full customer lists in this form. Privacy questions can be sent to " : "No incluyas API keys, contraseñas, tokens de acceso ni listas completas de clientes. Las preguntas de privacidad pueden enviarse a "}<strong>{TEAM_EMAIL}</strong>.</p>
+                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 pt-2"><span className="flex items-center gap-2 text-xs text-brand-muted"><Clock className="w-4 h-4 text-brand-accent-hover" />{t("supportHours")}</span><button type="submit" disabled={isSending} className="w-full sm:w-auto bg-brand-accent hover:bg-brand-accent-hover disabled:bg-zinc-300 text-brand-main font-bold px-7 py-3.5 rounded-xl border border-brand-main/15">{isSending ? (getMessages(resolveLocale(locale), "UI").sending ) : t("submit")}</button></div>
+                    <p className="text-xs text-brand-muted border-t border-brand-border pt-4">{getMessages(resolveLocale(locale), "UI").doNotIncludeApiKeysPasswordsAccess}<strong>{TEAM_EMAIL}</strong>.</p>
                   </form>
                 </>
               )}

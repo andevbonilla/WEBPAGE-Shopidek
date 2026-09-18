@@ -1,3 +1,4 @@
+import { localeInfo } from "@/i18n/messages";
 import type { Metadata } from "next";
 import { SITE_LOGO, SITE_LOGO_ALT, SITE_LOGO_HEIGHT, SITE_LOGO_WIDTH, SITE_URL, localizedPath } from "../config";
 import type { LegalDocument, Locale } from "./legalContent";
@@ -13,6 +14,8 @@ export function legalMetadata(document: LegalDocument, locale: Locale, path: str
       languages: { en: path, es: `/es${path}`, "x-default": path },
     },
     openGraph: {
+      locale: localeInfo[locale].openGraph,
+      alternateLocale: localeInfo[locale].alternateOpenGraph,
       title: `${document.title} | ShopiDeck`,
       description: document.intro,
       url: `${SITE_URL}${localized}`,

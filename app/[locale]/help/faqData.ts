@@ -1,3 +1,4 @@
+import { resolveLocale } from "@/i18n/messages";
 export interface FAQItem {
   id: string;
   category: "botcleaner" | "getting-started" | "billing";
@@ -222,7 +223,9 @@ const faqES: FAQItem[] = [
   },
 ];
 
+const faqsByLocale = { en: faqEN, es: faqES };
+
 export function getFaqs(locale: string): FAQItem[] {
-  return locale === "es" ? faqES : faqEN;
+  return faqsByLocale[resolveLocale(locale)];
 }
 

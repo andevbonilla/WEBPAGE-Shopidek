@@ -1,3 +1,5 @@
+
+import { getMessages, resolveLocale, localeInfo } from "@/i18n/messages";
 import type { Metadata } from "next";
 import { SITE_LOGO, SITE_LOGO_ALT, SITE_LOGO_HEIGHT, SITE_LOGO_WIDTH, SITE_URL, localizedPath } from "../../config";
 
@@ -5,16 +7,16 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const currentLocale = locale === "es" ? "es" : "en";
   const path = localizedPath(currentLocale, "/help");
-  const title = currentLocale === "en" ? "Help Center | ShopiDeck" : "Centro de Ayuda | ShopiDeck";
-  const description = currentLocale === "en"
-    ? "Practical help for Klaviyo Bot Cleaner, OAuth, audits, suppression, billing, privacy, and support."
-    : "Ayuda práctica sobre OAuth, auditorías, supresión, facturación, privacidad y soporte de Klaviyo Bot Cleaner.";
+  const title = getMessages(resolveLocale(currentLocale), "UI").helpCenterShopideck;
+  const description = getMessages(resolveLocale(currentLocale), "UI").practicalHelpForKlaviyoBotCleanerOauth;
   return {
     metadataBase: new URL(SITE_URL),
     title,
     description,
     alternates: { canonical: path, languages: { en: "/help", es: "/es/help", "x-default": "/help" } },
     openGraph: {
+      locale: localeInfo[currentLocale].openGraph,
+      alternateLocale: localeInfo[currentLocale].alternateOpenGraph,
       title,
       description,
       url: `${SITE_URL}${path}`,

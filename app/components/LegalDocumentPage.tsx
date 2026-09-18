@@ -1,3 +1,5 @@
+
+import { getMessages, resolveLocale } from "@/i18n/messages";
 import { ExternalLink } from "lucide-react";
 import CopyLinkButton from "./CopyLinkButton";
 import Footer from "./Footer";
@@ -88,9 +90,9 @@ function LegalSectionContent({ section, locale }: { section: LegalSection; local
 }
 
 export default function LegalDocumentPage({ document, locale }: Props) {
-  const pageLabel = locale === "es" ? "Contenido de esta página" : "On this page";
-  const contactLabel = locale === "es" ? "Contacto legal" : "Legal contact";
-  const lastUpdatedLabel = locale === "es" ? "Última actualización" : "Last updated";
+  const pageLabel = getMessages(resolveLocale(locale), "UI").onThisPage;
+  const contactLabel = getMessages(resolveLocale(locale), "UI").legalContact;
+  const lastUpdatedLabel = getMessages(resolveLocale(locale), "UI").lastUpdated;
 
   return (
     <div className="min-h-screen bg-brand-bg font-sans text-brand-main">
@@ -107,7 +109,7 @@ export default function LegalDocumentPage({ document, locale }: Props) {
               </h1>
               <p className="text-base leading-8 text-brand-secondary sm:text-lg">{document.intro}</p>
               <div className="flex flex-wrap items-center gap-x-3 gap-y-2 border-y border-brand-border py-4 text-xs font-medium text-brand-muted">
-                <span>{locale === "es" ? "En vigor desde" : "Effective"}: {document.effectiveDate}</span>
+                <span>{getMessages(resolveLocale(locale), "UI").effective}: {document.effectiveDate}</span>
                 <span aria-hidden="true">•</span>
                 <span>{lastUpdatedLabel}: {document.lastUpdated}</span>
               </div>

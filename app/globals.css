@@ -32,6 +32,13 @@
   --color-brand-cream: var(--brand-cream);
   --color-brand-border: var(--brand-border);
   --color-brand-warning: var(--brand-warning);
+  --color-app-accent: var(--app-accent);
+  --color-app-ink: var(--app-ink);
+  --color-app-hover: var(--app-hover);
+  --color-app-soft: var(--app-soft);
+  --color-app-wash: var(--app-wash);
+  --color-app-border: var(--app-border);
+  --color-app-deep: var(--app-deep);
   
   --font-sans: var(--font-open-sans), system-ui, -apple-system, sans-serif;
   --font-display: var(--font-montserrat), system-ui, -apple-system, sans-serif;
@@ -47,6 +54,54 @@ body {
 
 @utility border-soft {
   border: 1px solid var(--brand-border);
+}
+
+@utility product-section {
+  padding-block: 4rem;
+  @media (min-width: 640px) { padding-block: 6rem; }
+}
+
+@utility product-section-title {
+  font-family: var(--font-montserrat), system-ui, sans-serif;
+  font-size: 1.875rem;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  @media (min-width: 640px) { font-size: 2.25rem; }
+}
+
+@utility product-primary-button {
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  background: var(--brand-accent);
+  color: var(--brand-main);
+  font-size: 0.875rem;
+  font-weight: 700;
+  transition: background-color 150ms;
+  &:hover { background: var(--brand-accent-hover); }
+  &:focus-visible { outline: 2px solid var(--app-ink); outline-offset: 4px; }
+}
+
+@utility product-secondary-button {
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--brand-border);
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  background: var(--brand-card);
+  color: var(--brand-main);
+  font-size: 0.875rem;
+  font-weight: 700;
+  transition: background-color 150ms;
+  &:hover { background: var(--brand-cream); }
+  &:focus-visible { outline: 2px solid var(--app-ink); outline-offset: 4px; }
 }
 
 @utility shadow-soft {

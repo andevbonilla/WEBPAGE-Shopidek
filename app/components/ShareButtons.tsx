@@ -1,4 +1,6 @@
 "use client";
+import { getMessages, resolveLocale } from "@/i18n/messages";
+
 
 import { useState } from "react";
 import { Share2, Link as LinkIcon, Check } from "lucide-react";
@@ -44,24 +46,24 @@ export default function ShareButtons({ title, locale, url }: ShareButtonsProps) 
   return (
     <div className="flex flex-col gap-3">
       <p className="text-[10px] font-bold text-brand-muted uppercase tracking-wider">
-        {locale === "en" ? "Share article" : "Compartir artículo"}
+        {getMessages(resolveLocale(locale), "UI").shareArticle}
       </p>
       <div className="flex items-center gap-2">
         {/* Copy Link Button */}
         <button
           onClick={handleCopy}
           className="p-2 rounded-xl border border-brand-border bg-brand-bg hover:bg-zinc-100 text-brand-secondary transition-colors duration-200 flex items-center justify-center gap-1.5 cursor-pointer"
-          title={locale === "en" ? "Copy link" : "Copiar enlace"}
+          title={getMessages(resolveLocale(locale), "UI").copyLink}
         >
           {copied ? (
             <>
               <Check className="w-3.5 h-3.5 text-emerald-600 animate-pulse" />
-              <span className="text-[10px] font-bold text-emerald-600">{locale === "en" ? "Copied!" : "¡Copiado!"}</span>
+              <span className="text-[10px] font-bold text-emerald-600">{getMessages(resolveLocale(locale), "UI").copied}</span>
             </>
           ) : (
             <>
               <LinkIcon className="w-3.5 h-3.5" />
-              <span className="text-[10px] font-bold">{locale === "en" ? "Copy" : "Copiar"}</span>
+              <span className="text-[10px] font-bold">{getMessages(resolveLocale(locale), "UI").copy}</span>
             </>
           )}
         </button>
@@ -72,7 +74,7 @@ export default function ShareButtons({ title, locale, url }: ShareButtonsProps) 
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 rounded-xl border border-brand-border bg-brand-bg hover:bg-zinc-100 text-brand-secondary transition-colors duration-200 flex items-center justify-center cursor-pointer"
-          title={locale === "en" ? "Share on X" : "Compartir en X"}
+          title={getMessages(resolveLocale(locale), "UI").shareOnX}
         >
           <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
@@ -85,7 +87,7 @@ export default function ShareButtons({ title, locale, url }: ShareButtonsProps) 
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 rounded-xl border border-brand-border bg-brand-bg hover:bg-zinc-100 text-brand-secondary transition-colors duration-200 flex items-center justify-center cursor-pointer"
-          title={locale === "en" ? "Share on Facebook" : "Compartir en Facebook"}
+          title={getMessages(resolveLocale(locale), "UI").shareOnFacebook}
         >
           <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
             <path fillRule="evenodd" clipRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
@@ -96,7 +98,7 @@ export default function ShareButtons({ title, locale, url }: ShareButtonsProps) 
         <button
           onClick={handleNativeShare}
           className="p-2 rounded-xl border border-brand-border bg-brand-bg hover:bg-zinc-100 text-brand-secondary transition-colors duration-200 flex items-center justify-center cursor-pointer"
-          title={locale === "en" ? "More share options" : "Más opciones para compartir"}
+          title={getMessages(resolveLocale(locale), "UI").moreShareOptions}
         >
           <Share2 className="w-3.5 h-3.5" />
         </button>

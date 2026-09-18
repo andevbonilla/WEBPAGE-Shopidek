@@ -6,7 +6,8 @@
     "faq": "Help",
     "blog": "Blog",
     "newBadge": "New",
-    "cta": "Explore the suite"
+    "cta": "Explore the suite",
+    "homeLabel": "ShopiDeck home"
   },
   "Footer": {
     "desc": "Focused tools for Shopify merchants who want cleaner data, smarter marketing, and better growth decisions.",
@@ -20,7 +21,11 @@
     "language": "Language",
     "langDesc": "Switch between the English and Spanish versions of this page.",
     "copyright": "© {year} ShopiDeck • All rights reserved",
-    "builtWith": "Built with Next.js"
+    "builtWith": "Built with Next.js",
+    "dpa": "Data Processing Addendum",
+    "subprocessors": "Subprocessors",
+    "newBadge": "New",
+    "homeLabel": "ShopiDeck home"
   },
   "Home": {
     "heroBadge": "A growing suite of focused tools for Shopify merchants",
@@ -30,11 +35,9 @@
     "heroFooter": "Built for merchants who prefer useful tools over unnecessary complexity.",
     "quality": "List quality",
     "excellent": "Review ready",
-    "savedCarts": "Cart Recovery",
-    "newReviews": "Review Booster",
     "activeStatus": "Coming soon",
     "comingSoon": "Coming soon",
-    "activeDesc": "ShopiDeck: Klaviyo Bot Cleaner is being prepared for Shopify App Store publication.",
+    "activeDesc": "SD: Klaviyo Bot Cleaner is being prepared for Shopify App Store publication.",
     "portfolioBadge": "OUR PRODUCTS",
     "portfolioTitle": "Focused tools for practical ecommerce problems.",
     "portfolioDesc": "ShopiDeck is a growing suite for Shopify merchants. Each product has a clear scope, transparent limits, and a workflow designed around merchant control.",
@@ -76,22 +79,11 @@
     "prodBotB2": "Background audit with explainable signals",
     "prodBotB3": "Merchant-confirmed suppression",
     "prodBotFeatures": "Coming soon • Shopify App Store publication pending",
-    "prodSocialDesc": "Personalized, automated social media marketing. A planned app to turn your brand and products into campaigns for days or months, in around 5 minutes—even from your bed.",
+    "prodSocialDesc": "Marketing while you sleep. Set up campaigns in around 5 minutes and plan weeks or months of personalized, quality content designed to sell. In development, with a focus on quality and practicality.",
     "prodSocialB1": "Campaigns tailored to your brand",
-    "prodSocialB2": "Content for days or months",
+    "prodSocialB2": "Quality content for weeks or months",
     "prodSocialB3": "Review before scheduling",
-    "prodCartBadge": "Coming soon",
-    "prodCartDesc": "An upcoming ShopiDeck product. It is not available for installation yet.",
-    "prodCartB1": "Product scope will be published",
-    "prodCartB2": "No general installation yet",
-    "prodCartB3": "Status will be updated when available",
-    "prodCartFeatures": "Coming soon • Not available for installation",
-    "prodRevBadge": "Coming soon",
-    "prodRevDesc": "A future ShopiDeck product for review-management workflows. It is not available for installation yet.",
-    "prodRevB1": "Review workflows planned",
-    "prodRevB2": "No general installation yet",
-    "prodRevB3": "Status will be updated when available",
-    "prodRevFeatures": "Coming soon • Scope will be published when available",
+    "prodSeoDesc": "An upcoming app focused on SEO for Shopify stores: help potential customers discover your products through useful, purchase-oriented content. Scope and availability will be announced at launch.",
     "t1Quote": "Product status and capabilities are published as they become available.",
     "t1Author": "ShopiDeck",
     "t1Role": "Product team",
@@ -106,12 +98,12 @@
     "faq2Q": "Do the apps slow down my Shopify store?",
     "faq2A": "Klaviyo Bot Cleaner operates through Shopify Admin and backend APIs. It does not require editing your storefront theme or adding frontend scripts to your store. Other suite products will publish their technical scope when available.",
     "faq3Q": "How do I access upcoming suite tools?",
-    "faq3A": "Social Marketing, Cart Recovery, and Review Booster are coming soon. They are not included in Klaviyo Bot Cleaner and are not available for installation yet. Visit the Social Marketing page to request early access information.",
+    "faq3A": "The suite has three tools: SD: Less Time Marketing, SD: Klaviyo Bot Cleaner, and SD: SEO That Sells. Less Time Marketing and SEO That Sells are in development and are not included in Klaviyo Bot Cleaner. Visit the Less Time Marketing page to request early access information.",
     "faq4Q": "How is technical support handled?",
     "faq4A": "Email support is available at team@shopideck.com during published support hours. Please include your store domain, the product involved, steps to reproduce the issue, and screenshots without API keys, passwords, tokens, or full customer lists. See our privacy policy for information about submitted data."
   },
   "BotCleaner": {
-    "badge": "",
+    "badge": "Shopify App Store publication pending",
     "title": "Find suspicious Klaviyo profiles before they inflate your list.",
     "subtitle": "Connect Klaviyo with OAuth, scan existing profiles, understand why they are flagged, and suppress selected profiles after your review.",
     "install": "Install on Shopify",
@@ -183,7 +175,80 @@
     "faqQuestion7": "Do I need to modify my theme?",
     "faqAnswer7": "No. The app operates from Shopify Admin and backend APIs. It does not require Liquid files or storefront scripts.",
     "faqQuestion8": "Does the app configure SPF, DKIM, or DMARC?",
-    "faqAnswer8": "No. Domain authentication must be configured separately using Klaviyo's instructions and your DNS provider."
+    "faqAnswer8": "No. Domain authentication must be configured separately using Klaviyo's instructions and your DNS provider.",
+    "seoTitle": "SD: Klaviyo Bot Cleaner | Review suspicious Klaviyo profiles",
+    "seoDescription": "Audit suspicious Klaviyo profiles with OAuth, explainable risk signals, merchant review, and confirmed suppression.",
+    "seoKeywords": "Klaviyo profile audit, Shopify Klaviyo app, profile suppression, disposable email signals",
+    "schemaDescription": "A merchant-controlled audit and suppression workflow for existing Klaviyo profiles.",
+    "iconAlt": "SD: Klaviyo Bot Cleaner app icon with a bot on campaign cards",
+    "interfaceAlt": "SD: Klaviyo Bot Cleaner profile audit dashboard displayed on a desktop monitor",
+    "walkthroughTitle": "SD: Klaviyo Bot Cleaner walkthrough",
+    "pillars": [
+      "OAuth connection",
+      "Explainable signals",
+      "Your approval"
+    ],
+    "previewBadge": "Review before taking action",
+    "previewTitle": "A clearer view of your Klaviyo profiles.",
+    "previewDescription": "Understand the audit findings, review the reasons, and choose which profiles to suppress. The app does not permanently delete profiles.",
+    "suiteLink": "Back to the ShopiDeck suite",
+    "plans": [
+      {
+        "name": "Free Audit",
+        "price": "$0",
+        "period": "initial audit",
+        "description": "Understand the aggregate findings before choosing a paid plan.",
+        "features": [
+          "One initial audit per Shopify store",
+          "Up to 100,000 unsuppressed profiles in that initial audit",
+          "Aggregate findings only",
+          "No profile suppression",
+          "No CSV export"
+        ],
+        "popular": false
+      },
+      {
+        "name": "Starter",
+        "price": "$9",
+        "period": "month",
+        "description": "For stores that need a small recurring review workflow.",
+        "features": [
+          "2 scans per month",
+          "Up to 5,000 profiles scanned per month",
+          "Up to 500 suppressions per month",
+          "Detailed results",
+          "Scan and suppression history"
+        ],
+        "popular": false
+      },
+      {
+        "name": "Growth",
+        "price": "$19",
+        "period": "month",
+        "description": "For growing lists and recurring profile audits.",
+        "popular": true,
+        "features": [
+          "7-day trial for eligible new Growth subscriptions, if configured in Shopify",
+          "5 scans per month",
+          "Up to 25,000 profiles scanned per month",
+          "Up to 5,000 suppressions per month",
+          "Full results, CSV export, and history"
+        ]
+      },
+      {
+        "name": "Pro",
+        "price": "$49",
+        "period": "month",
+        "description": "For larger brands and agencies with higher review volume.",
+        "features": [
+          "15 scans per month",
+          "Up to 100,000 profiles scanned per month",
+          "Up to 25,000 suppressions per month",
+          "Full results, CSV export, and history"
+        ],
+        "popular": false
+      }
+    ]
   },
   "Help": {
     "title": "How can we help?",
@@ -225,6 +290,240 @@
     "sharedBy": "Shared by the ShopiDeck team",
     "return": "Return",
     "readFull": ""
+  },
+  "LessTimeMarketing": {
+    "seoTitle": "SD: Less Time Marketing | Marketing while you sleep",
+    "seoDescription": "Marketing while you sleep for Shopify stores. Plan weeks or months of quality social content with around 5 minutes of setup. App in development; request early access.",
+    "badge": "Coming soon · In development",
+    "eyebrow": "SD: Less Time Marketing",
+    "heroLines": [
+      "Marketing that works.",
+      "While you sleep."
+    ],
+    "heroDescription": "Around 5 minutes to set up your campaigns. Weeks or months of personalized, quality content designed to sell. We are building automated social media marketing for your Shopify store, with a focus on quality and practicality—not just more posts.",
+    "primaryCta": "Request early access",
+    "secondaryCta": "Explore the concept",
+    "timingNote": "5 minutes is an approximate product goal, not a guaranteed completion time. The app is in development; final features and availability will be announced at launch.",
+    "iconAlt": "SD: Less Time Marketing app icon with campaign cards and a megaphone",
+    "pillars": [
+      "~5-minute setup",
+      "Weeks or months",
+      "Quality first"
+    ],
+    "previewLabel": "Concept preview",
+    "previewTitle": "One idea. A whole campaign.",
+    "previewDescription": "From a product you love to a story worth sharing, across a calendar that works for you.",
+    "previewCampaign": "Your next collection",
+    "previewRange": "30 days · One brand voice",
+    "previewCards": [
+      {
+        "label": "Discover",
+        "title": "Meet your new favorite.",
+        "caption": "Introduce the product and what makes it special."
+      },
+      {
+        "label": "Connect",
+        "title": "There is a story behind it.",
+        "caption": "Share the details, values, and people behind your brand."
+      },
+      {
+        "label": "Invite",
+        "title": "Make it part of your day.",
+        "caption": "Give your audience a clear reason to explore your store."
+      }
+    ],
+    "calendarLabel": "A campaign, not just a post",
+    "calendarDays": [
+      "M",
+      "T",
+      "W",
+      "T",
+      "F",
+      "S",
+      "S"
+    ],
+    "calendarLegend": "Discover · Connect · Invite",
+    "previewNote": "Illustrative campaign only. This is not a screenshot of a released product or a promise of supported channels.",
+    "benefitsEyebrow": "Built around your store",
+    "benefitsTitle": "Quality over quantity. Practicality over complexity.",
+    "benefitsDescription": "A full calendar is not enough. We focus on useful content with a sales purpose, a consistent brand voice, and a workflow that leaves you time to run your store.",
+    "benefits": [
+      {
+        "title": "Sound like your brand",
+        "description": "Shape campaign ideas around your tone, audience, and goals instead of generic messages that could belong to any store."
+      },
+      {
+        "title": "Give people a reason to buy",
+        "description": "Explain your products' value, answer purchase questions, and connect each message to a clear next step. Content designed to sell, not just fill a feed."
+      },
+      {
+        "title": "Think in weeks or months",
+        "description": "Build a connected campaign calendar instead of deciding what to publish one post at a time. Set your direction, review the content, and let the approved plan do the repetitive work."
+      },
+      {
+        "title": "Automate with approval",
+        "description": "Review and adjust the campaign before approving the planned automated publishing workflow. Your brand stays in your hands."
+      }
+    ],
+    "comparisonEyebrow": "Compare your options",
+    "comparisonTitle": "Less busywork. More intention in every campaign.",
+    "comparisonDescription": "Instead of competing on the number of posts, our proposed approach brings brand context, purchase intent, and a practical campaign workflow together.",
+    "comparisonHeaders": [
+      "What matters",
+      "Creating everything manually",
+      "Generating posts in bulk",
+      "SD: Less Time Marketing"
+    ],
+    "comparisonRows": [
+      {
+        "criterion": "Quality",
+        "manual": "You write and check each piece yourself.",
+        "volume": "A large batch still needs relevance and quality checks.",
+        "shopideck": "Brand and product context guide drafts; you review quality before approval."
+      },
+      {
+        "criterion": "Practicality",
+        "manual": "Ideas, writing, and the calendar are separate tasks.",
+        "volume": "Posts alone do not define a campaign or a publishing plan.",
+        "shopideck": "One guided workflow: a short brief, a campaign, review, and an approved calendar."
+      },
+      {
+        "criterion": "Sales purpose",
+        "manual": "You connect each message to a product and a next step.",
+        "volume": "More posts alone do not create a reason to buy.",
+        "shopideck": "Product value, purchase questions, and clear calls to action shape the campaign."
+      },
+      {
+        "criterion": "Time",
+        "manual": "Each new post asks for more hands-on work.",
+        "volume": "Generating drafts is only one part of the job.",
+        "shopideck": "Around 5 minutes of initial setup is the goal; plan weeks or months, with time for review."
+      }
+    ],
+    "comparisonNote": "Comparison of working approaches, not a verified review of specific competitors. Other tools may offer similar features. The SD column describes the intended product design, not released functionality. Setup time and sales are not guaranteed.",
+    "workflowEyebrow": "The planned workflow",
+    "workflowTitle": "From your store to your next campaign.",
+    "workflowDescription": "A simple path from a short brand brief to a campaign you can review and prepare for publication.",
+    "steps": [
+      {
+        "title": "Tell your brand's story",
+        "description": "Describe your audience, tone, and what you want the campaign to achieve."
+      },
+      {
+        "title": "Choose products and a timeframe",
+        "description": "Select the products to highlight and plan content for days, weeks, or months."
+      },
+      {
+        "title": "Create and review the campaign",
+        "description": "Prepare a personalized campaign draft. Adjust the messages and check product details before approval."
+      },
+      {
+        "title": "Approve and plan publication",
+        "description": "Set the calendar and approve the automation on supported networks. Final integrations will be confirmed at launch."
+      }
+    ],
+    "controlTitle": "More automation. Still your voice.",
+    "controlDescription": "Time saved should not mean losing control of your brand. The proposed workflow puts review before publication.",
+    "controlPoints": [
+      "Review messages and product claims before approval.",
+      "Adjust tone, campaign goals, and timing.",
+      "Confirm supported networks and permissions at launch.",
+      "No promises of guaranteed reach, sales, or revenue."
+    ],
+    "faqTitle": "Before you join the next campaign.",
+    "faqs": [
+      {
+        "question": "Can I install SD: Less Time Marketing now?",
+        "answer": "Not yet. SD: Less Time Marketing is in development. You can email the ShopiDeck team to request early access information. This does not create an account or guarantee access."
+      },
+      {
+        "question": "Will a campaign always take exactly 5 minutes?",
+        "answer": "No. Around 5 minutes is a product goal for preparing an initial campaign, not a measured guarantee. Setup, campaign length, available inputs, and your review can take additional time."
+      },
+      {
+        "question": "Which social networks will it support?",
+        "answer": "The final list of supported social networks and publishing integrations has not been confirmed. We will publish it before installation becomes available."
+      },
+      {
+        "question": "Will it publish without my review?",
+        "answer": "The proposed workflow includes merchant review and approval before automated publication. The final controls and permissions will be documented at launch."
+      },
+      {
+        "question": "How much will it cost?",
+        "answer": "Pricing, plan limits, and any trial have not been announced. We will publish those details when the product is available; requesting information does not create a subscription."
+      }
+    ],
+    "closingTitle": "Your store keeps its story. You get your time back.",
+    "closingDescription": "Interested in marketing that fits your store—and your life? Ask us about SD: Less Time Marketing and early access.",
+    "contactSubject": "SD: Less Time Marketing early access information",
+    "suiteLink": "Back to the ShopiDeck suite"
+  },
+  "Site": {
+    "title": "ShopiDeck | Focused tools for Shopify merchants",
+    "description": "ShopiDeck builds focused tools for Shopify merchants who want cleaner data, smarter marketing, and better growth decisions.",
+    "keywords": "Shopify tools, Klaviyo profile audit, ecommerce operations, merchant growth tools",
+    "schemaDescription": "A growing suite of focused tools for Shopify merchants."
+  },
+  "UI": {
+    "resourceLabels": { "Terms": "Terms", "Privacy": "Privacy", "DPA": "DPA" },
+    "pageLink": "Page Link",
+    "copyPageLink": "Copy page link",
+    "linkCopied": "Link Copied!",
+    "copyUrl": "Copy URL",
+    "dataProcessingAddendum": "Data Processing Addendum",
+    "subprocessors": "Subprocessors",
+    "onThisPage": "On this page",
+    "legalContact": "Legal contact",
+    "lastUpdated": "Last updated",
+    "effective": "Effective",
+    "shareArticle": "Share article",
+    "copyLink": "Copy link",
+    "copied": "Copied!",
+    "copy": "Copy",
+    "shareOnX": "Share on X",
+    "shareOnFacebook": "Share on Facebook",
+    "moreShareOptions": "More share options",
+    "dataProcessing": "Data processing",
+    "thisPageIdentifiesTheProvidersThatMay": "This page identifies the providers that may process data to provide SD: Klaviyo Bot Cleaner and summarizes their service, purpose, region, and public documents. Prisma is an ORM library and is not an independent subprocessor.",
+    "september12026": "September 1, 2026",
+    "contact": "Contact",
+    "legalPages": "Legal pages",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use",
+    "dataProcessingAddendum2": "Data Processing Addendum",
+    "service": "Service",
+    "purpose": "Purpose",
+    "countryOrRegion": "Country or region",
+    "shopideckBlogPracticalShopifyGuides": "ShopiDeck Blog | Practical Shopify guides",
+    "practicalShopifyGuidesAboutFakeKlaviyoProfiles": "Practical Shopify guides about fake Klaviyo profiles, safe suppression, list hygiene, and merchant-controlled growth workflows.",
+    "practicalShopifyGuides": "Practical Shopify guides",
+    "moreArticles": "More articles",
+    "blog": "Blog",
+    "backToAllArticles": "Back to all articles",
+    "publishedBy": "Published by",
+    "frequentlyAskedQuestions": "Frequently asked questions",
+    "turnProfileHygieneIntoAReviewfirstWorkflow": "Turn profile hygiene into a review-first workflow.",
+    "startWithConsentDomainAuthenticationAndHealthy": "Start with consent, domain authentication, and healthy segments. When suspicious profiles are already in Klaviyo, use SD: Klaviyo Bot Cleaner to review signals and confirm selected suppressions.",
+    "installOnShopify": "Install on Shopify",
+    "helpCenterShopideck": "Help Center | ShopiDeck",
+    "practicalHelpForKlaviyoBotCleanerOauth": "Practical help for Klaviyo Bot Cleaner, OAuth, audits, suppression, billing, privacy, and support.",
+    "pleaseEnterAValidEmailAddress": "Please enter a valid email address.",
+    "pleaseCompleteTheNameStoreDomainSubject": "Please complete the name, store domain, subject, and message fields.",
+    "supportRequestCouldNotBeSent": "Support request could not be sent.",
+    "sending": "Sending...",
+    "doNotIncludeApiKeysPasswordsAccess": "Do not include API keys, passwords, access tokens, or full customer lists in this form. Privacy questions can be sent to ",
+    "aGrowingSuiteOfFocusedToolsFor": "A growing suite of focused tools for Shopify merchants.",
+    "shopideckFocusedToolsForShopifyMerchants": "ShopiDeck | Focused tools for Shopify merchants",
+    "focusedToolsForShopifyMerchantsWhoWant": "Focused tools for Shopify merchants who want cleaner data, smarter marketing, and better growth decisions.",
+    "cleanerData": "Cleaner data",
+    "fasterWorkflows": "Faster workflows",
+    "lowerWaste": "Lower waste",
+    "smarterGrowth": "Smarter growth",
+    "merchantControl": "Merchant control",
+    "appIcon": "{productName} app icon",
+    "viewDetails": "View Details",
+    "subprocessorsShopideck": "Subprocessors | ShopiDeck",
+    "shopideckSubprocessorListForKlaviyoBotCleaner": "ShopiDeck subprocessor list for Klaviyo Bot Cleaner, including services, purposes, regions, and public documents."
   }
 }
 

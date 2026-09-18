@@ -1,3 +1,5 @@
+
+import { getMessages, resolveLocale, localeInfo } from "@/i18n/messages";
 import { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -49,6 +51,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     keywords: post.keywords,
     openGraph: {
+      locale: localeInfo[currentLocale].openGraph,
+      alternateLocale: localeInfo[currentLocale].alternateOpenGraph,
       title: post.title,
       description: post.excerpt,
       type: "article",
@@ -135,7 +139,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       {
         "@type": "ListItem",
         position: 2,
-        name: currentLocale === "en" ? "Blog" : "Blog",
+        name: getMessages(resolveLocale(currentLocale), "UI").blog,
         item: `${SITE_URL}${localizedPath(currentLocale, "/blog")}`,
       },
       { "@type": "ListItem", position: 3, name: post.title, item: canonicalUrl },
@@ -178,7 +182,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               href="/blog"
               className="inline-flex text-xs font-bold text-brand-secondary underline decoration-brand-accent decoration-2 underline-offset-4 hover:text-brand-main"
             >
-              ← {currentLocale === "en" ? "Back to all articles" : "Volver a todos los artículos"}
+              ← {getMessages(resolveLocale(currentLocale), "UI").backToAllArticles}
             </Link>
             
             {/* Category and Title */}
@@ -229,7 +233,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               <div className="lg:col-span-3 flex flex-col gap-6 lg:sticky lg:top-28 self-start border-t lg:border-t-0 border-brand-border pt-6 lg:pt-0">
                 <div>
                   <p className="text-[10px] font-bold text-brand-muted uppercase tracking-wider mb-2">
-                    {currentLocale === "en" ? "Published by" : "Publicado por"}
+                    {getMessages(resolveLocale(currentLocale), "UI").publishedBy}
                   </p>
                   <p className="text-xs font-bold text-brand-main">{post.author}</p>
                   <p className="text-[10px] text-brand-secondary leading-tight mt-0.5">{post.authorRole}</p>
@@ -274,7 +278,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                 {post.faq && post.faq.length > 0 && (
                   <section className="mt-10 border-t border-brand-border pt-8" aria-labelledby="article-faq-title">
                     <h2 id="article-faq-title" className="font-display text-2xl font-black leading-tight text-brand-main md:text-3xl">
-                      {currentLocale === "en" ? "Frequently asked questions" : "Preguntas frecuentes"}
+                      {getMessages(resolveLocale(currentLocale), "UI").frequentlyAskedQuestions}
                     </h2>
                     <div className="mt-6 space-y-4">
                       {post.faq.map((item) => (
@@ -294,14 +298,10 @@ export default async function BlogPostPage({ params }: PageProps) {
             <div className="mt-16 border-t border-brand-border pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
               <div className="space-y-3 max-w-2xl">
                 <h3 className="font-display font-black text-xl md:text-2xl text-brand-main uppercase tracking-tight leading-tight">
-                  {currentLocale === "en" 
-                    ? "Turn profile hygiene into a review-first workflow."
-                    : "Convierte la higiene de perfiles en un flujo con revisión previa."}
+                  {getMessages(resolveLocale(currentLocale), "UI").turnProfileHygieneIntoAReviewfirstWorkflow}
                 </h3>
                 <p className="text-xs text-brand-secondary font-light leading-relaxed">
-                  {currentLocale === "en"
-                    ? "Start with consent, domain authentication, and healthy segments. When suspicious profiles are already in Klaviyo, use ShopiDeck: Klaviyo Bot Cleaner to review signals and confirm selected suppressions."
-                    : "Empieza por el consentimiento, la autenticación del dominio y segmentos saludables. Cuando ya existan perfiles sospechosos en Klaviyo, usa ShopiDeck: Klaviyo Bot Cleaner para revisar señales y confirmar supresiones seleccionadas."}
+                  {getMessages(resolveLocale(currentLocale), "UI").startWithConsentDomainAuthenticationAndHealthy}
                 </p>
               </div>
 
@@ -312,7 +312,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                   rel={SHOPIFY_APP_STORE_URL.startsWith("http") ? "noopener noreferrer" : undefined}
                   className="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-brand-accent hover:bg-brand-accent-hover text-brand-main font-bold py-3.5 px-6 rounded-xl border border-brand-main/15 transition-colors duration-200 text-xs uppercase"
                 >
-                  <span>{currentLocale === "en" ? "Install on Shopify" : "Instalar en Shopify"}</span>
+                  <span>{getMessages(resolveLocale(currentLocale), "UI").installOnShopify}</span>
                   <ExternalLink className="w-4 h-4" />
                 </a>
               </div>

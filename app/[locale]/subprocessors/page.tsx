@@ -1,3 +1,5 @@
+
+import { getMessages, resolveLocale, localeInfo } from "@/i18n/messages";
 import type { Metadata } from "next";
 import SubprocessorsPage from "../../components/SubprocessorsPage";
 import { subprocessors, type Locale } from "../../legal/legalContent";
@@ -14,10 +16,8 @@ function getLocale(locale: string): Locale {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params;
   const currentLocale = getLocale(locale);
-  const title = currentLocale === "es" ? "Subencargados | ShopiDeck" : "Subprocessors | ShopiDeck";
-  const description = currentLocale === "es"
-    ? "Lista de subencargados de ShopiDeck: Klaviyo Bot Cleaner, servicios, finalidades, regiones y documentos públicos."
-    : "ShopiDeck subprocessor list for Klaviyo Bot Cleaner, including services, purposes, regions, and public documents.";
+  const title = getMessages(resolveLocale(currentLocale), "UI").subprocessorsShopideck;
+  const description = getMessages(resolveLocale(currentLocale), "UI").shopideckSubprocessorListForKlaviyoBotCleaner;
   const path = localizedPath(currentLocale, "/subprocessors");
   return {
     metadataBase: new URL(SITE_URL),
@@ -25,6 +25,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description,
     alternates: { canonical: path, languages: { en: "/subprocessors", es: "/es/subprocessors", "x-default": "/subprocessors" } },
     openGraph: {
+      locale: localeInfo[currentLocale].openGraph,
+      alternateLocale: localeInfo[currentLocale].alternateOpenGraph,
       title,
       description,
       url: `${SITE_URL}${path}`,

@@ -1,3 +1,5 @@
+
+import { getMessages, resolveLocale } from "@/i18n/messages";
 import { ExternalLink } from "lucide-react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
@@ -11,7 +13,7 @@ type Props = {
 };
 
 export default function SubprocessorsPage({ locale, items }: Props) {
-  const isEs = locale === "es";
+  const resourceLabels: Record<string, string> = getMessages(locale, "UI").resourceLabels;
   return (
     <div className="min-h-screen bg-brand-bg font-sans text-brand-main">
       <Navbar />
@@ -20,33 +22,31 @@ export default function SubprocessorsPage({ locale, items }: Props) {
           <article>
             <header className="max-w-4xl space-y-5">
               <span className="inline-block rounded-md border border-brand-accent/30 bg-brand-warning px-3 py-1 text-xs font-extrabold uppercase tracking-wider">
-                {isEs ? "Tratamiento de datos" : "Data processing"}
+                {getMessages(resolveLocale(locale), "UI").dataProcessing}
               </span>
               <h1 className="font-display text-3xl font-black tracking-tight sm:text-5xl">
-                {isEs ? "Subencargados" : "Subprocessors"}
+                {getMessages(resolveLocale(locale), "UI").subprocessors}
               </h1>
               <p className="max-w-4xl text-base leading-8 text-brand-secondary sm:text-lg">
-                {isEs
-                  ? "Esta página identifica los proveedores que pueden tratar datos para prestar ShopiDeck: Klaviyo Bot Cleaner y resume su servicio, finalidad, región y documentos públicos. Prisma es una biblioteca ORM y no es un subencargado independiente."
-                  : "This page identifies the providers that may process data to provide ShopiDeck: Klaviyo Bot Cleaner and summarizes their service, purpose, region, and public documents. Prisma is an ORM library and is not an independent subprocessor."}
+                {getMessages(resolveLocale(locale), "UI").thisPageIdentifiesTheProvidersThatMay}
               </p>
               <div className="flex flex-wrap items-center gap-x-3 gap-y-2 border-y border-brand-border py-4 text-xs font-medium text-brand-muted">
-                <span>{isEs ? "En vigor desde" : "Effective"}: {isEs ? "1 de septiembre de 2026" : "September 1, 2026"}</span>
+                <span>{getMessages(resolveLocale(locale), "UI").effective}: {getMessages(resolveLocale(locale), "UI").september12026}</span>
                 <span aria-hidden="true">•</span>
-                <span>{isEs ? "Última actualización" : "Last updated"}: {isEs ? "1 de septiembre de 2026" : "September 1, 2026"}</span>
+                <span>{getMessages(resolveLocale(locale), "UI").lastUpdated}: {getMessages(resolveLocale(locale), "UI").september12026}</span>
               </div>
             </header>
 
             <div className="mt-10 grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
               <aside className="self-start lg:sticky lg:top-28 lg:col-span-3">
                 <div className="rounded-2xl border border-brand-border bg-brand-bg p-5">
-                  <p className="text-[10px] font-bold uppercase tracking-wider text-brand-muted">{isEs ? "Contacto" : "Contact"}</p>
+                  <p className="text-[10px] font-bold uppercase tracking-wider text-brand-muted">{getMessages(resolveLocale(locale), "UI").contact}</p>
                   <a href="mailto:team@shopideck.com" className="mt-2 block break-all text-sm font-semibold underline decoration-brand-accent decoration-2 underline-offset-4">team@shopideck.com</a>
                 </div>
-                <nav className="mt-6 space-y-2 text-xs" aria-label={isEs ? "Páginas legales" : "Legal pages"}>
-                  <a href={localizedPath(locale, "/privacy")} className="block text-brand-secondary underline decoration-brand-accent decoration-2 underline-offset-4">{isEs ? "Política de Privacidad" : "Privacy Policy"}</a>
-                  <a href={localizedPath(locale, "/terms")} className="block text-brand-secondary underline decoration-brand-accent decoration-2 underline-offset-4">{isEs ? "Términos de Uso" : "Terms of Use"}</a>
-                  <a href={localizedPath(locale, "/dpa")} className="block text-brand-secondary underline decoration-brand-accent decoration-2 underline-offset-4">{isEs ? "Anexo de Tratamiento de Datos" : "Data Processing Addendum"}</a>
+                <nav className="mt-6 space-y-2 text-xs" aria-label={getMessages(resolveLocale(locale), "UI").legalPages}>
+                  <a href={localizedPath(locale, "/privacy")} className="block text-brand-secondary underline decoration-brand-accent decoration-2 underline-offset-4">{getMessages(resolveLocale(locale), "UI").privacyPolicy}</a>
+                  <a href={localizedPath(locale, "/terms")} className="block text-brand-secondary underline decoration-brand-accent decoration-2 underline-offset-4">{getMessages(resolveLocale(locale), "UI").termsOfUse}</a>
+                  <a href={localizedPath(locale, "/dpa")} className="block text-brand-secondary underline decoration-brand-accent decoration-2 underline-offset-4">{getMessages(resolveLocale(locale), "UI").dataProcessingAddendum2}</a>
                 </nav>
                 <div className="mt-6"><CopyLinkButton locale={locale} /></div>
               </aside>
@@ -56,14 +56,14 @@ export default function SubprocessorsPage({ locale, items }: Props) {
                   <section key={item.name} className="rounded-3xl border border-brand-border bg-brand-bg p-6 sm:p-8" aria-labelledby={`${item.name.toLowerCase()}-heading`}>
                     <h2 id={`${item.name.toLowerCase()}-heading`} className="font-display text-2xl font-black tracking-tight">{item.name}</h2>
                     <dl className="mt-6 grid gap-5 text-sm sm:grid-cols-2">
-                      <div><dt className="font-bold text-brand-main">{isEs ? "Servicio" : "Service"}</dt><dd className="mt-1 leading-6 text-brand-secondary">{item.service}</dd></div>
-                      <div><dt className="font-bold text-brand-main">{isEs ? "Finalidad" : "Purpose"}</dt><dd className="mt-1 leading-6 text-brand-secondary">{item.purpose}</dd></div>
-                      <div className="sm:col-span-2"><dt className="font-bold text-brand-main">{isEs ? "País o región" : "Country or region"}</dt><dd className="mt-1 leading-6 text-brand-secondary">{item.region}</dd></div>
+                      <div><dt className="font-bold text-brand-main">{getMessages(resolveLocale(locale), "UI").service}</dt><dd className="mt-1 leading-6 text-brand-secondary">{item.service}</dd></div>
+                      <div><dt className="font-bold text-brand-main">{getMessages(resolveLocale(locale), "UI").purpose}</dt><dd className="mt-1 leading-6 text-brand-secondary">{item.purpose}</dd></div>
+                      <div className="sm:col-span-2"><dt className="font-bold text-brand-main">{getMessages(resolveLocale(locale), "UI").countryOrRegion}</dt><dd className="mt-1 leading-6 text-brand-secondary">{item.region}</dd></div>
                     </dl>
                     <div className="mt-6 flex flex-wrap gap-x-5 gap-y-3 border-t border-brand-border pt-5 text-sm">
                       {item.links.map((link) => (
                         <a key={`${item.name}-${link.label}`} href={link.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 font-semibold text-brand-main underline decoration-brand-accent decoration-2 underline-offset-4 hover:text-brand-accent-hover">
-                          {isEs && link.label === "Terms" ? "Términos" : isEs && link.label === "Privacy" ? "Privacidad" : isEs && link.label === "DPA" ? "DPA" : link.label}
+                          {resourceLabels[link.label] ?? link.label}
                           <ExternalLink aria-hidden="true" className="h-3.5 w-3.5" />
                         </a>
                       ))}

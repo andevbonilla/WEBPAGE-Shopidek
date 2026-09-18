@@ -1,3 +1,4 @@
+import { resolveLocale } from "@/i18n/messages";
 export interface Post {
   id: string;
   title: string;
@@ -54,7 +55,7 @@ export const postsEN: Post[] = [
       "3. Check the reason and context for each flagged profile. A signal is not proof, and a real customer can share one suspicious characteristic.",
       "4. Select only the profiles you want to act on and confirm the batch before sending a suppression request to Klaviyo.",
       "5. Keep consent, domain authentication, form protection, audience strategy, and campaign hygiene as separate parts of the broader deliverability workflow.",
-      "## How ShopiDeck: Klaviyo Bot Cleaner helps",
+      "## How SD: Klaviyo Bot Cleaner helps",
       "Bot Cleaner connects through Klaviyo OAuth, audits existing profiles in the background, and presents a risk score, category, and human-readable reasons. The merchant stays in control: nothing is suppressed until selected profiles are reviewed and the action is confirmed.",
       "The current workflow uses suppression, not permanent deletion. Suppression prevents future marketing sends to the selected profiles while preserving a review-first process. Install the app from Shopify to run an initial audit and understand what may be hiding inside your Klaviyo list.",
     ],
@@ -65,7 +66,7 @@ export const postsEN: Post[] = [
       },
       {
         question: "Does Klaviyo suppression permanently delete a profile?",
-        answer: "No. Suppression prevents marketing sends. ShopiDeck: Klaviyo Bot Cleaner does not permanently delete profiles in its current version.",
+        answer: "No. Suppression prevents marketing sends. SD: Klaviyo Bot Cleaner does not permanently delete profiles in its current version.",
       },
       {
         question: "How does Bot Cleaner identify suspicious profiles?",
@@ -144,7 +145,7 @@ export const postsES: Post[] = [
       "3. Comprueba la razón y el contexto de cada perfil marcado. Una señal no es una prueba y un cliente real puede compartir alguna característica sospechosa.",
       "4. Selecciona únicamente los perfiles sobre los que quieres actuar y confirma el lote antes de enviar la solicitud de supresión a Klaviyo.",
       "5. Mantén el consentimiento, la autenticación del dominio, la protección de formularios, la estrategia de audiencias y la higiene de campañas como partes separadas de un flujo más amplio de entregabilidad.",
-      "## Cómo ayuda ShopiDeck: Klaviyo Bot Cleaner",
+      "## Cómo ayuda SD: Klaviyo Bot Cleaner",
       "Bot Cleaner se conecta mediante OAuth de Klaviyo, audita los perfiles existentes en segundo plano y muestra una puntuación, una categoría y razones fáciles de entender. El comerciante conserva el control: nada se suprime hasta revisar los perfiles seleccionados y confirmar la acción.",
       "El flujo actual utiliza supresión, no eliminación permanente. La supresión evita futuros envíos de marketing a los perfiles seleccionados y mantiene un proceso de revisión previa. Instala la app desde Shopify para ejecutar una auditoría inicial y conocer qué puede estar oculto dentro de tu lista de Klaviyo.",
     ],
@@ -155,7 +156,7 @@ export const postsES: Post[] = [
       },
       {
         question: "¿La supresión de Klaviyo elimina permanentemente un perfil?",
-        answer: "No. La supresión evita envíos de marketing. ShopiDeck: Klaviyo Bot Cleaner no elimina perfiles permanentemente en su versión actual.",
+        answer: "No. La supresión evita envíos de marketing. SD: Klaviyo Bot Cleaner no elimina perfiles permanentemente en su versión actual.",
       },
       {
         question: "¿Cómo identifica Bot Cleaner los perfiles sospechosos?",
@@ -196,8 +197,10 @@ export const postsES: Post[] = [
   },
 ];
 
+const postsByLocale = { en: postsEN, es: postsES };
+
 export function getPosts(locale: string): Post[] {
-  return locale === "es" ? postsES : postsEN;
+  return postsByLocale[resolveLocale(locale)];
 }
 
 export function getPostBySlug(slug: string, locale: string): Post | undefined {

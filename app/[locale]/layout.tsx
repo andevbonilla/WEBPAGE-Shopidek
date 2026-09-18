@@ -1,3 +1,5 @@
+
+import { getMessages, getTranslations, localeInfo, resolveLocale } from "@/i18n/messages";
 import type { Metadata } from "next";
 import { Montserrat, Open_Sans } from "next/font/google";
 import { notFound } from "next/navigation";
@@ -16,6 +18,7 @@ import {
   SITE_MARK_URL,
   SITE_MARK_WIDTH,
   SITE_URL,
+  localizedPath,
 } from "../config";
 import "../globals.css";
 
@@ -31,13 +34,17 @@ const openSans = Open_Sans({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "ShopiDeck | Focused tools for Shopify merchants",
-  description: "ShopiDeck builds focused tools for Shopify merchants who want cleaner data, smarter marketing, and better growth decisions.",
-  keywords: "Shopify tools, Klaviyo profile audit, ecommerce operations, merchant growth tools",
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const currentLocale = resolveLocale(locale);
+  const t = getTranslations(currentLocale, "Site");
+  return {
+  title: t("title"),
+  description: t("description"),
+  keywords: t("keywords"),
   metadataBase: new URL(SITE_URL),
   alternates: {
-    canonical: "/",
+    canonical: localizedPath(currentLocale),
     languages: { en: "/", es: "/es", "x-default": "/" },
   },
   icons: {
@@ -51,9 +58,9 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   openGraph: {
-    title: "ShopiDeck | Focused tools for Shopify merchants",
-    description: "ShopiDeck builds focused tools for Shopify merchants who want cleaner data, smarter marketing, and better growth decisions.",
-    url: SITE_URL,
+    title: t("title"),
+    description: t("description"),
+    url: `${SITE_URL}${localizedPath(currentLocale)}`,
     siteName: "ShopiDeck",
     images: [
       {
@@ -63,16 +70,18 @@ export const metadata: Metadata = {
         alt: SITE_LOGO_ALT,
       },
     ],
-    locale: "en_US",
+    locale: localeInfo[currentLocale].openGraph,
+    alternateLocale: localeInfo[currentLocale].alternateOpenGraph,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ShopiDeck | Focused tools for Shopify merchants",
-    description: "ShopiDeck builds focused tools for Shopify merchants who want cleaner data, smarter marketing, and better growth decisions.",
+    title: t("title"),
+    description: t("description"),
     images: [{ url: SITE_LOGO, alt: SITE_LOGO_ALT }],
   },
 };
+}
 
 const organizationJsonLd = {
   "@type": "Organization",
@@ -111,9 +120,7 @@ export default async function LocaleLayout({
         "@id": `${SITE_URL}/#website`,
         url: SITE_URL,
         name: "ShopiDeck",
-        description: locale === "en"
-          ? "A growing suite of focused tools for Shopify merchants."
-          : "Una suite en crecimiento de herramientas enfocadas para comerciantes de Shopify.",
+        description: getMessages(resolveLocale(locale), "Site").schemaDescription,
         inLanguage: ["en", "es"],
         publisher: { "@id": `${SITE_URL}/#organization` },
       },
