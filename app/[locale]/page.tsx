@@ -5,6 +5,7 @@ import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import FaqSection from "../components/FaqSection";
+import SuiteDeckCard from "../components/SuiteDeckCard";
 import {
   PRODUCT_NAME,
   BOTCLEANER_ICON,
@@ -227,21 +228,17 @@ export default async function Home({
             <ArrowRight className="cta-arrow ml-2 h-4 w-4" aria-hidden="true" />
           </a>
 
-          <div className="mt-12 grid w-full max-w-6xl grid-cols-2 gap-x-3 gap-y-6 sm:mt-16 sm:grid-cols-3 sm:gap-5 lg:grid-cols-5 lg:items-end lg:gap-7">
+          <div className="mb-10 mt-12 grid w-full max-w-5xl grid-cols-2 gap-x-5 gap-y-8 sm:mt-16 sm:grid-cols-3 sm:gap-7 lg:grid-cols-5 lg:items-end lg:gap-8">
             {heroCards.map((card, index) => {
               const Icon = card.icon;
               return (
                 <div
                   key={card.label}
-                  role="img"
-                  aria-label={card.label}
-                  className={`relative flex min-h-44 items-end justify-center ${card.offsetClass} ${index === heroCards.length - 1 ? "col-span-2 mx-auto w-full max-w-[13rem] sm:col-span-1 sm:max-w-none" : ""}`}
+                  className={`relative flex items-end justify-center ${card.offsetClass} ${card.rotationClass} ${index === heroCards.length - 1 ? "col-span-2 mx-auto w-full max-w-[11rem] sm:col-span-1 sm:max-w-none" : ""}`}
                 >
-                  <div
-                    className={`relative z-10 flex min-h-32 w-full max-w-[13rem] items-center justify-center rounded-[2rem] border p-5 shadow-premium ${card.cardClass} ${card.rotationClass}`}
-                  >
+                  <SuiteDeckCard label={card.label} cardClass={card.cardClass}>
                     <Icon className="h-14 w-14 stroke-[2.1] sm:h-16 sm:w-16" aria-hidden="true" />
-                  </div>
+                  </SuiteDeckCard>
                 </div>
               );
             })}
@@ -294,7 +291,7 @@ export default async function Home({
                         {prod.name}
                       </h3>
                       <span className="text-[10px] font-bold text-brand-muted uppercase tracking-wider block mt-1">
-                        {t("comingSoon")}
+                        {t(prod.active ? "prodBotBadge" : "comingSoon")}
                       </span>
                     </div>
 

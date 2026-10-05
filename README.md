@@ -62,10 +62,6 @@ as the reply-to address.
 
 ## Shopify installation link
 
-Until Shopify assigns the public listing URL, installation CTAs open a focused
-search inside Shopify App Store. After publication, set the Vercel variable
-below to the exact App Store URL and redeploy:
-
-```text
-NEXT_PUBLIC_SHOPIFY_APP_STORE_URL=https://apps.shopify.com/your-real-listing
-```
+All Bot Cleaner installation CTAs share the published listing URL in
+`app/config.ts` (`SHOPIFY_APP_STORE_URL`). Update that constant if the listing
+URL changes, then redeploy.

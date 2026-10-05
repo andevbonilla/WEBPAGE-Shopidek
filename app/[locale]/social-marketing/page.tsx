@@ -38,6 +38,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     metadataBase: new URL(SITE_URL),
     title: copy.seoTitle,
     description: copy.seoDescription,
+    icons: {
+      icon: { url: SOCIAL_MARKETING_ICON_SMALL, type: "image/webp" },
+      shortcut: SOCIAL_MARKETING_ICON_SMALL,
+      apple: SOCIAL_MARKETING_ICON_SMALL,
+    },
     alternates: {
       canonical: path,
       languages: { en: "/social-marketing", es: "/es/social-marketing", "x-default": "/social-marketing" },

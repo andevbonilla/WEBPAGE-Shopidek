@@ -44,11 +44,9 @@ export const SOCIAL_MARKETING_ICON = `${BRAND_ASSET_BASE}/products/social-market
 export const SOCIAL_MARKETING_ICON_SMALL = `${BRAND_ASSET_BASE}/products/social-marketing/shopideck-social-marketing-app-icon-small.webp`;
 export const SOCIAL_MARKETING_ICON_SIZE = 512;
 
-// Replace the fallback search with the exact listing as soon as Shopify assigns
-// the public app URL. Installation CTAs must always stay on Shopify App Store.
+// Published Bot Cleaner listing, shared by every installation CTA.
 export const SHOPIFY_APP_STORE_URL =
-  process.env.NEXT_PUBLIC_SHOPIFY_APP_STORE_URL ||
-  "https://apps.shopify.com/search?q=ShopiDeck%20Klaviyo%20Bot%20Cleaner";
+  "https://apps.shopify.com/shopideck-klaviyo-botcleaner?locale=es&st_source=autocomplete&surface_detail=autocomplete_apps";
 
 export const SUPPORT_HOURS = "Email support during published support hours";
 

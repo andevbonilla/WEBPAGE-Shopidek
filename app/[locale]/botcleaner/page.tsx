@@ -27,6 +27,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: t("seoTitle"),
     description: t("seoDescription"),
     keywords: t("seoKeywords"),
+    icons: {
+      icon: { url: BOTCLEANER_LOGO, type: "image/png" },
+      shortcut: BOTCLEANER_LOGO,
+      apple: BOTCLEANER_LOGO,
+    },
     alternates: { canonical: path, languages: { en: "/botcleaner", es: "/es/botcleaner", "x-default": "/botcleaner" } },
     openGraph: {
       title: t("seoTitle"), description: t("seoDescription"), url: `${SITE_URL}${path}`,
@@ -106,10 +111,19 @@ export default async function BotCleanerPage({ params }: PageProps) {
             {[1, 2, 3, 4].map((number, index) => {
               const Icon = benefitIcons[index];
               return (
-                <article key={number} className="rounded-3xl border border-brand-border bg-brand-bg p-6 sm:p-7">
-                  <div className="mb-6 flex h-11 w-11 items-center justify-center rounded-xl bg-app-soft text-app-ink"><Icon className="h-5 w-5" aria-hidden="true" /></div>
+                <article
+                  key={number}
+                  className={`rounded-3xl border p-6 sm:p-7 ${
+                    number === 4
+                      ? "border-app-ink bg-app-ink text-white"
+                      : "border-brand-border bg-brand-bg"
+                  }`}
+                >
+                  <div className={`mb-6 flex h-11 w-11 items-center justify-center rounded-xl ${
+                    number === 4 ? "bg-white/15 text-white" : "bg-app-soft text-app-ink"
+                  }`}><Icon className="h-5 w-5" aria-hidden="true" /></div>
                   <h3 className="font-display text-lg font-black">{t(`probBox${number}Title` as keyof typeof copy)}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-brand-secondary">{t(`probBox${number}Desc` as keyof typeof copy)}</p>
+                  <p className={`mt-3 text-sm leading-relaxed ${number === 4 ? "text-white/85" : "text-brand-secondary"}`}>{t(`probBox${number}Desc` as keyof typeof copy)}</p>
                 </article>
               );
             })}
