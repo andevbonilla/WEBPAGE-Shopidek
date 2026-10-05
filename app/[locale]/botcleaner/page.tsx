@@ -6,7 +6,7 @@ import { ProductPage, ProductHero, ProductHeading, ProductFaq, ProductMonitor } 
 import {
   PRODUCT_NAME, BOTCLEANER_INTERFACE, BOTCLEANER_INTERFACE_HEIGHT,
   BOTCLEANER_INTERFACE_WIDTH, BOTCLEANER_LOGO, BOTCLEANER_LOGO_HEIGHT,
-  BOTCLEANER_LOGO_URL, BOTCLEANER_LOGO_WIDTH, SHOPIFY_APP_STORE_URL,
+  BOTCLEANER_LOGO_URL, BOTCLEANER_LOGO_WIDTH, getShopifyAppStoreUrl,
   SITE_MARK_HEIGHT, SITE_MARK_URL, SITE_MARK_WIDTH, SITE_URL, localizedPath,
 } from "../../config";
 
@@ -47,6 +47,7 @@ export default async function BotCleanerPage({ params }: PageProps) {
   const { locale } = await params;
   const currentLocale = resolveLocale(locale);
   const copy = getMessages(currentLocale, "BotCleaner");
+  const appStoreUrl = getShopifyAppStoreUrl(currentLocale);
   const t = getTranslations(currentLocale, "BotCleaner");
   const pricingPlans = copy.plans;
   const faqs = [1, 2, 3, 4, 5, 6, 7, 8].map((number) => ({
@@ -91,7 +92,7 @@ export default async function BotCleanerPage({ params }: PageProps) {
         name={PRODUCT_NAME} icon={BOTCLEANER_LOGO} iconAlt={t("iconAlt")}
         lines={copy.heroLines} description={t("subtitle")} note={t("note")} pillars={copy.pillars}
         actions={<>
-          <a href={SHOPIFY_APP_STORE_URL} {...storeLinkProps} className="product-primary-button">
+          <a href={appStoreUrl} {...storeLinkProps} className="product-primary-button">
             <Image src="/shopify-logo-png-transparent.png" alt="" width={22} height={25} />{t("install")}
           </a>
           <a href="#how-it-works" className="product-secondary-button">{t("trySimulator")}</a>
@@ -175,7 +176,7 @@ export default async function BotCleanerPage({ params }: PageProps) {
                 <ul className="flex-1 space-y-3 border-t border-brand-border pt-5 text-sm leading-relaxed text-brand-secondary">
                   {plan.features.map((feature) => <li key={feature} className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 shrink-0 text-app-ink" aria-hidden="true" /><span>{feature}</span></li>)}
                 </ul>
-                <a href={SHOPIFY_APP_STORE_URL} {...storeLinkProps} className={`mt-7 ${plan.popular ? "product-primary-button" : "product-secondary-button"}`}>{t("install")}</a>
+                <a href={appStoreUrl} {...storeLinkProps} className={`mt-7 ${plan.popular ? "product-primary-button" : "product-secondary-button"}`}>{t("install")}</a>
               </article>
             ))}
           </div>
@@ -190,7 +191,7 @@ export default async function BotCleanerPage({ params }: PageProps) {
           <ShieldCheck className="mb-5 h-8 w-8 text-app-ink" aria-hidden="true" />
           <h2 className="product-section-title">{t("ctaTitle")}</h2>
           <p className="mt-5 max-w-xl text-sm leading-relaxed text-brand-secondary sm:text-base">{t("ctaDesc")}</p>
-          <a href={SHOPIFY_APP_STORE_URL} {...storeLinkProps} className="product-primary-button mt-7">{t("ctaBtn")}<ExternalLink className="cta-arrow h-4 w-4" aria-hidden="true" /></a>
+          <a href={appStoreUrl} {...storeLinkProps} className="product-primary-button mt-7">{t("ctaBtn")}<ExternalLink className="cta-arrow h-4 w-4" aria-hidden="true" /></a>
         </div>
       </section>
     </ProductPage>

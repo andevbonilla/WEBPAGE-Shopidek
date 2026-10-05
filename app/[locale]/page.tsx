@@ -12,7 +12,7 @@ import {
   SOCIAL_MARKETING_NAME,
   SEO_TOOL_NAME,
   SOCIAL_MARKETING_ICON_SMALL,
-  SHOPIFY_APP_STORE_URL,
+  getShopifyAppStoreUrl,
   SITE_LOGO,
   SITE_LOGO_ALT,
   SITE_LOGO_HEIGHT,
@@ -69,6 +69,7 @@ export default async function Home({
   const { locale } = await params;
   const currentLocale = resolveLocale(locale);
   const dict = getMessages(currentLocale, "Home");
+  const appStoreUrl = getShopifyAppStoreUrl(currentLocale);
 
   const t = (key: string, values?: Record<string, string | number>) => {
     let text = (dict as Record<string, string>)[key] || "";
@@ -311,9 +312,9 @@ export default async function Home({
                       <div className="flex flex-col items-center gap-3">
                         {/* Green Shopify Install Button */}
                         <a
-                          href={SHOPIFY_APP_STORE_URL}
-                          target={SHOPIFY_APP_STORE_URL.startsWith("http") ? "_blank" : undefined}
-                          rel={SHOPIFY_APP_STORE_URL.startsWith("http") ? "noopener noreferrer" : undefined}
+                          href={appStoreUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="w-full flex-1 inline-flex items-center justify-center gap-2 bg-[#F2F2F0] hover:bg-[#d7d7d5] text-black text-xs font-bold py-3.5 px-4 rounded-xl transition-colors"
                         >
                           <Image src="/shopify-logo-png-transparent.png" alt="Shopify Icon" width={20} height={20} />

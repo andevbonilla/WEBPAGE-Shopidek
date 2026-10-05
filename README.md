@@ -63,5 +63,6 @@ as the reply-to address.
 ## Shopify installation link
 
 All Bot Cleaner installation CTAs share the published listing URL in
-`app/config.ts` (`SHOPIFY_APP_STORE_URL`). Update that constant if the listing
-URL changes, then redeploy.
+`app/config.ts` (`SHOPIFY_APP_STORE_URL`). The `getShopifyAppStoreUrl` helper
+sets the listing language to match the current ShopiDeck page (`en` or `es`).
+Update the constant if the listing URL changes, then redeploy.

@@ -10,7 +10,7 @@ import ShareButtons from "../../../components/ShareButtons";
 import { getPostBySlug, getPosts } from "../posts";
 import { Clock, ExternalLink } from "lucide-react";
 import {
-  SHOPIFY_APP_STORE_URL,
+  getShopifyAppStoreUrl,
   SITE_MARK_HEIGHT,
   SITE_MARK_URL,
   SITE_MARK_WIDTH,
@@ -102,7 +102,8 @@ export default async function BlogPostPage({ params }: PageProps) {
     notFound();
   }
 
-  const currentLocale = (locale as "en" | "es") || "en";
+  const currentLocale = resolveLocale(locale);
+  const appStoreUrl = getShopifyAppStoreUrl(currentLocale);
   const canonicalUrl = `${SITE_URL}${localizedPath(currentLocale, `/blog/${post.id}`)}`;
   const imageUrl = post.image.startsWith("http") ? post.image : `${SITE_URL}${post.image}`;
   const articleSchema = {
@@ -307,9 +308,9 @@ export default async function BlogPostPage({ params }: PageProps) {
 
               <div className="w-full md:w-auto flex-shrink-0">
                 <a
-                  href={SHOPIFY_APP_STORE_URL}
-                  target={SHOPIFY_APP_STORE_URL.startsWith("http") ? "_blank" : undefined}
-                  rel={SHOPIFY_APP_STORE_URL.startsWith("http") ? "noopener noreferrer" : undefined}
+                  href={appStoreUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-brand-accent hover:bg-brand-accent-hover text-brand-main font-bold py-3.5 px-6 rounded-xl border border-brand-main/15 transition-colors duration-200 text-xs uppercase"
                 >
                   <span>{getMessages(resolveLocale(currentLocale), "UI").installOnShopify}</span>

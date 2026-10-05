@@ -46,7 +46,13 @@ export const SOCIAL_MARKETING_ICON_SIZE = 512;
 
 // Published Bot Cleaner listing, shared by every installation CTA.
 export const SHOPIFY_APP_STORE_URL =
-  "https://apps.shopify.com/shopideck-klaviyo-botcleaner?locale=es&st_source=autocomplete&surface_detail=autocomplete_apps";
+  "https://apps.shopify.com/shopideck-klaviyo-botcleaner?st_source=autocomplete&surface_detail=autocomplete_apps";
+
+export function getShopifyAppStoreUrl(locale: "en" | "es") {
+  const url = new URL(SHOPIFY_APP_STORE_URL);
+  url.searchParams.set("locale", locale);
+  return url.toString();
+}
 
 export const SUPPORT_HOURS = "Email support during published support hours";
 
