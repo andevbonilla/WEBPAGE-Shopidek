@@ -133,7 +133,7 @@ export default async function BlogPage({
                   <Link href={`/blog/${featuredPost.id}`} className="absolute inset-0 block">
                     <Image
                       src={featuredPost.image}
-                      alt={featuredPost.title}
+                      alt={featuredPost.imageAlt}
                       fill
                       priority
                       sizes="(max-width: 1024px) 100vw, 60vw"
@@ -202,7 +202,7 @@ export default async function BlogPage({
                         <Link href={`/blog/${post.id}`} className="absolute inset-0 block">
                           <Image
                             src={post.image}
-                            alt={post.title}
+                            alt={post.imageAlt}
                             fill
                             sizes="(max-width: 768px) 100vw, 40vw"
                             className="object-cover group-hover:scale-[1.01] transition-transform duration-500"

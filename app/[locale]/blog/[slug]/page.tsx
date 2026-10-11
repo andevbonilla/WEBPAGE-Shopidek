@@ -7,6 +7,7 @@ import { Link } from "@/i18n/navigation";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 import ShareButtons from "../../../components/ShareButtons";
+import { EarlyAccessButton } from "../../../components/products/EarlyAccessButton";
 import { getPostBySlug, getPosts } from "../posts";
 import { Clock, ExternalLink } from "lucide-react";
 import {
@@ -219,7 +220,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             <div className="relative aspect-[16/9] w-full bg-zinc-100 rounded-3xl overflow-hidden border border-brand-border shadow-soft">
               <Image
                 src={post.image}
-                alt={post.title}
+                alt={post.imageAlt}
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 80vw"
@@ -228,6 +229,12 @@ export default async function BlogPostPage({ params }: PageProps) {
             </div>
 
             {/* Editorial Grid Layout (Left meta column / Right main content) */}
+            <p className="mt-3 text-xs text-brand-muted">
+              {currentLocale === "es" ? "Foto: " : "Photo: "}
+              <a href={post.imageCredit.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-brand-main">{post.imageCredit.name}</a>
+              {" · "}
+              <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-brand-main">{currentLocale === "es" ? "Licencia Unsplash" : "Unsplash License"}</a>
+            </p>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 pt-6">
               
               {/* Left Column (Metadata/Socials) */}
@@ -276,6 +283,21 @@ export default async function BlogPostPage({ params }: PageProps) {
                   );
                 })}
 
+                <section className="border-t border-brand-border pt-6" aria-labelledby="article-sources-title">
+                  <h2 id="article-sources-title" className="font-display text-lg font-bold text-brand-main">{currentLocale === "es" ? "Fuentes y recursos" : "Sources and resources"}</h2>
+                  <ul className="mt-3 space-y-2 text-sm">
+                    {post.sources.map((source) => (
+                      <li key={source.url}>
+                        {source.url.startsWith("/") ? (
+                          <Link href={source.url} className="underline underline-offset-4 hover:text-brand-main">{source.title}</Link>
+                        ) : (
+                          <a href={source.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-brand-main">{source.title}</a>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+
                 {post.faq && post.faq.length > 0 && (
                   <section className="mt-10 border-t border-brand-border pt-8" aria-labelledby="article-faq-title">
                     <h2 id="article-faq-title" className="font-display text-2xl font-black leading-tight text-brand-main md:text-3xl">
@@ -299,23 +321,27 @@ export default async function BlogPostPage({ params }: PageProps) {
             <div className="mt-16 border-t border-brand-border pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
               <div className="space-y-3 max-w-2xl">
                 <h3 className="font-display font-black text-xl md:text-2xl text-brand-main uppercase tracking-tight leading-tight">
-                  {getMessages(resolveLocale(currentLocale), "UI").turnProfileHygieneIntoAReviewfirstWorkflow}
+                  {post.cta.title}
                 </h3>
                 <p className="text-xs text-brand-secondary font-light leading-relaxed">
-                  {getMessages(resolveLocale(currentLocale), "UI").startWithConsentDomainAuthenticationAndHealthy}
+                  {post.cta.description}
                 </p>
               </div>
 
               <div className="w-full md:w-auto flex-shrink-0">
-                <a
-                  href={appStoreUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-brand-accent hover:bg-brand-accent-hover text-brand-main font-bold py-3.5 px-6 rounded-xl border border-brand-main/15 transition-colors duration-200 text-xs uppercase"
-                >
-                  <span>{getMessages(resolveLocale(currentLocale), "UI").installOnShopify}</span>
-                  <ExternalLink className="cta-arrow w-4 h-4" aria-hidden="true" />
-                </a>
+                {post.cta.product === "less-time-marketing" ? (
+                  <EarlyAccessButton label={post.cta.label} className="w-full md:w-auto" />
+                ) : (
+                  <a
+                    href={appStoreUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-brand-accent hover:bg-brand-accent-hover text-brand-main font-bold py-3.5 px-6 rounded-xl border border-brand-main/15 transition-colors duration-200 text-xs uppercase"
+                  >
+                    <span>{post.cta.label}</span>
+                    <ExternalLink className="cta-arrow w-4 h-4" aria-hidden="true" />
+                  </a>
+                )}
               </div>
             </div>
 

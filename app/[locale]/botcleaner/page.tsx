@@ -145,7 +145,7 @@ export default async function BotCleanerPage({ params }: PageProps) {
             ))}
           </ol>
           <div className="mx-auto mt-10 aspect-video w-full max-w-4xl overflow-hidden rounded-3xl border border-brand-border bg-brand-main shadow-soft">
-            <iframe className="h-full w-full border-0" src="https://www.youtube.com/embed/Hf8XvH3ZgKY?si=SJzsG97XkP0aEbnS"
+            <iframe className="h-full w-full border-0" src="https://www.youtube.com/embed/ueb3ocRmZ2A"
               title={t("walkthroughTitle")} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
           </div>
         </div>

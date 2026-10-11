@@ -54,17 +54,17 @@ export default function Footer() {
                 style={{ width: FOOTER_LOGO_DISPLAY_WIDTH, height: "auto", maxWidth: "100%" }}
               />
             </Link>
-            <p className="text-xs text-brand-bg/60 leading-relaxed max-w-xs">
+            <p className="text-[0.825rem] text-brand-bg/60 leading-relaxed max-w-xs">
               {dict.desc}
             </p>
           </div>
 
           {/* Col 2: Company links */}
           <div className="md:col-span-3">
-            <h5 className="font-display font-bold text-brand-bg/90 mb-4 text-sm tracking-wider uppercase">
+            <h5 className="font-display font-bold text-brand-bg/90 mb-4 text-[0.9625rem] tracking-wider uppercase">
               {dict.company}
             </h5>
-            <ul className="space-y-3 text-xs text-brand-bg/70 font-normal">
+            <ul className="space-y-3 text-[0.825rem] text-brand-bg/70 font-normal">
               <li>
                 <Link href="/#features" className="hover:text-brand-accent transition-colors">
                   {dict.pricing}
@@ -85,10 +85,10 @@ export default function Footer() {
 
           {/* Col 3: Legal */}
           <div className="md:col-span-2">
-            <h5 className="font-display font-bold text-brand-bg/90 mb-4 text-sm tracking-wider uppercase">
+            <h5 className="font-display font-bold text-brand-bg/90 mb-4 text-[0.9625rem] tracking-wider uppercase">
               {dict.legal}
             </h5>
-            <ul className="space-y-3 text-xs text-brand-bg/70 font-normal">
+            <ul className="space-y-3 text-[0.825rem] text-brand-bg/70 font-normal">
               <li>
                 <Link href="/privacy" className="hover:text-brand-accent transition-colors">
                   {dict.privacy}
@@ -114,10 +114,10 @@ export default function Footer() {
 
           {/* Col 4: Language switch */}
           <div className="md:col-span-3 flex flex-col gap-4 relative">
-            <h5 className="font-display font-bold text-brand-bg/90 text-sm tracking-wider uppercase">
+            <h5 className="font-display font-bold text-brand-bg/90 text-[0.9625rem] tracking-wider uppercase">
               {dict.language}
             </h5>
-            <p className="text-xs text-brand-bg/60 leading-relaxed max-w-xs">
+            <p className="text-[0.825rem] text-brand-bg/60 leading-relaxed max-w-xs">
               {dict.langDesc}
             </p>
             <div className="relative">
@@ -125,7 +125,7 @@ export default function Footer() {
                 onClick={() => setIsOpen(!isOpen)}
                 aria-expanded={isOpen}
                 aria-haspopup="listbox"
-                className="bg-brand-bg/10 hover:bg-brand-bg/15 text-brand-bg hover:text-brand-accent px-4 py-3 rounded-2xl border border-brand-bg/15 font-bold text-xs flex items-center justify-between gap-2 transition-colors w-full max-w-full md:w-48 text-left"
+                className="bg-brand-bg/10 hover:bg-brand-bg/15 text-brand-bg hover:text-brand-accent px-4 py-3 rounded-2xl border border-brand-bg/15 font-bold text-[0.825rem] flex items-center justify-between gap-2 transition-colors w-full max-w-full md:w-48 text-left"
               >
                 <span className="flex items-center gap-2">
                   <Globe className="w-3.5 h-3.5 text-brand-bg/60" />
@@ -141,7 +141,7 @@ export default function Footer() {
                       <button
                         key={lang.code}
                         onClick={() => handleLanguageChange(lang.code)}
-                        className={`w-full px-4 py-2.5 text-xs text-left hover:bg-brand-cream/80 flex items-center justify-between transition-colors ${currentLocale === lang.code ? "font-bold bg-brand-cream text-brand-accent" : "font-normal text-brand-secondary"
+                        className={`w-full px-4 py-2.5 text-[0.825rem] text-left hover:bg-brand-cream/80 flex items-center justify-between transition-colors ${currentLocale === lang.code ? "font-bold bg-brand-cream text-brand-accent" : "font-normal text-brand-secondary"
                           }`}
                       >
                         <span className="flex items-center gap-2">
@@ -159,7 +159,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom copyright bar */}
-        <div className="border-t border-brand-bg/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-brand-bg/40 font-normal">
+        <div className="border-t border-brand-bg/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[0.825rem] text-brand-bg/40 font-normal">
           <p>
             {dict.copyright.replace("{year}", new Date().getFullYear().toString())}
           </p>

@@ -286,7 +286,7 @@
   "Blog": {
     "badge": "",
     "title": "The ShopiDeck Blog",
-    "subtitle": "Practical guidance for Shopify merchants who want cleaner data, safer reviews, and clearer growth workflows.",
+    "subtitle": "Ideas to save money on Klaviyo, sell more through email, and improve your Shopify store with more consistent marketing.",
     "back": "Back to all articles",
     "sharedBy": "Shared by the ShopiDeck team",
     "return": "Return",
@@ -302,7 +302,7 @@
       "While you sleep."
     ],
     "heroDescription": "Around 5 minutes to set up your campaigns. Weeks or months of personalized, quality content designed to sell. We are building automated social media marketing for your Shopify store, with a focus on quality and practicality—not just more posts.",
-    "primaryCta": "Request early access",
+    "primaryCta": "Join the waitlist",
     "secondaryCta": "Explore the concept",
     "timingNote": "5 minutes is an approximate product goal, not a guaranteed completion time. The app is in development; final features and availability will be announced at launch.",
     "iconAlt": "SD: Less Time Marketing app icon with campaign cards and a megaphone",
@@ -451,11 +451,11 @@
       },
       {
         "question": "How much will it cost?",
-        "answer": "Pricing, plan limits, and any trial have not been announced. We will publish those details when the product is available; requesting information does not create a subscription."
+        "answer": "Pricing and plan limits will be announced at launch. People who join the waitlist will receive their first month of use free when the app becomes available. Signing up does not start a subscription."
       }
     ],
     "closingTitle": "Your store keeps its story. You get your time back.",
-    "closingDescription": "Interested in marketing that fits your store—and your life? Ask us about SD: Less Time Marketing and early access.",
+    "closingDescription": "Join the SD: Less Time Marketing waitlist and get your first month of use free when we launch. Signing up does not start a subscription.",
     "contactSubject": "SD: Less Time Marketing early access information",
     "suiteLink": "Back to the ShopiDeck suite"
   },
@@ -496,7 +496,7 @@
     "purpose": "Purpose",
     "countryOrRegion": "Country or region",
     "shopideckBlogPracticalShopifyGuides": "ShopiDeck Blog | Practical Shopify guides",
-    "practicalShopifyGuidesAboutFakeKlaviyoProfiles": "Practical Shopify guides about fake Klaviyo profiles, safe suppression, list hygiene, and merchant-controlled growth workflows.",
+    "practicalShopifyGuidesAboutFakeKlaviyoProfiles": "Guides to save money on Klaviyo, turn emails into orders, and sell more on Shopify. Marketing advice and Less Time Marketing updates.",
     "practicalShopifyGuides": "Practical Shopify guides",
     "moreArticles": "More articles",
     "blog": "Blog",
