@@ -1,0 +1,2438 @@
+{
+  "general": {
+    "privacy": {
+      "title": "ShopiDeck Privacy Policy",
+      "category": "Legal and privacy",
+      "effectiveDate": "October 21, 2026",
+      "lastUpdated": "October 21, 2026",
+      "intro": "The common privacy framework for shopideck.com and the ShopiDeck suite. Each app has its own addendum describing its data, permissions, providers, retention, and deletion. Using one app does not authorize processing by every other app.",
+      "sections": [
+        {
+          "id": "scope",
+          "title": "1. Scope and app-specific addenda",
+          "paragraphs": [
+            "This policy covers the public marketing website, contact and early-access requests, merchant administration, and common privacy practices. App functionality runs on each product's own surface; this website does not itself connect accounts, audit Klaviyo profiles, generate campaigns, or publish social content.",
+            "Read this policy with the addendum for each app you actually use. Specific addendum rules prevail for that app only; the Data Processing Addendum (DPA) governs processor obligations and mandatory law always prevails. An app's addendum cannot reduce another app's protections or authorize new purposes or data access there.",
+            "The addenda below are the current product documents. Upcoming products, including SEO That Sells, do not inherit another app's permissions or operating rules. Before a new app processes data, its own disclosures must be published and any necessary authorization obtained. Publishing an addendum does not guarantee that a product or every integration is already available."
+          ],
+          "productIndex": "privacy"
+        },
+        {
+          "id": "identity",
+          "title": "2. Operator and privacy contact",
+          "paragraphs": [
+            "ShopiDeck is a trade name operated by Andres Camilo Bonilla Carreño, a Colombian individual merchant, at Cra. 79A # 6-04, Bogotá D.C., Colombia. Contact for privacy, support, legal matters, and security incidents: team@shopideck.com.",
+            "The operator is the internal privacy contact, not a formally appointed DPO. ShopiDeck is not established in the EU or UK and has not identified a formally appointed representative there in these documents. No appointment or exemption from a legal requirement is asserted."
+          ]
+        },
+        {
+          "id": "roles",
+          "title": "3. Roles and separation between apps",
+          "paragraphs": [
+            "ShopiDeck is controller for its website, merchant relationship, billing administration, support, security, abuse prevention, and legal duties. It is processor when handling personal data on a merchant's documented instructions to provide an app. The merchant generally controls customer data and business materials it supplies. Each app addendum and processing schedule specifies the relevant operations and people.",
+            "Installing an app grants only that app's disclosed permissions. Data, OAuth credentials, customer lists, campaign materials, and usage rights are not automatically shared with, combined for, or repurposed by another ShopiDeck app. Optional cross-app features require a disclosed purpose, a lawful basis, and any necessary separate authorization. A common brand or shared provider does not itself grant access.",
+            "Requests are scoped to the identified apps, accounts, stores, and data. A valid request expressly covering several apps is handled across that scope; a no-data response from one app does not mean the entire suite has no data. Common legal, billing, or security records are processed only to the extent necessary and lawful."
+          ]
+        },
+        {
+          "id": "website-data",
+          "title": "4. Website, support, and early-access data",
+          "bullets": [
+            "Website requests may involve IP address, browser/device details, requested pages, timestamps, and limited technical/security logs needed to deliver and protect the site.",
+            "The support form asks for name, email, store domain, selected app, subject, and message; it sends the request through Resend to team@shopideck.com. Do not submit passwords, API keys, tokens, or full customer lists.",
+            "Early-access forms on the Less Time Marketing page are hosted by Tally. When its widget loads or you open the external form, Tally can receive technical information; it receives submitted information under its own privacy notice. A request does not install an app, connect a platform account, or guarantee access.",
+            "App addenda separately describe Shopify account, catalog, Klaviyo profile, social-connection, AI input/output, or credit data. A category listed for one app is not collected by all apps."
+          ],
+          "links": [
+            {
+              "label": "Tally privacy notice",
+              "href": "https://tally.so/help/privacy-policy",
+              "external": true
+            }
+          ]
+        },
+        {
+          "id": "purposes",
+          "title": "5. Purposes and legal bases",
+          "paragraphs": [
+            "We process only data needed for the disclosed purpose. Under Colombian law, authorization is obtained where required, subject to applicable exceptions. GDPR/UK GDPR bases below apply only where those laws govern the processing. The merchant determines the legal basis for data handled on its behalf."
+          ],
+          "table": {
+            "headers": [
+              "Purpose",
+              "Applicable basis"
+            ],
+            "rows": [
+              [
+                "Requested support, early access, installed-app service, and necessary notices",
+                "Contract or steps at your request before a contract, where applicable."
+              ],
+              [
+                "Billing, administration, and statutory records",
+                "Contract and applicable legal duties."
+              ],
+              [
+                "Security and abuse prevention",
+                "Legitimate interests where permitted and applicable legal duties."
+              ],
+              [
+                "Privacy requests",
+                "Applicable legal duties."
+              ],
+              [
+                "Optional marketing or non-essential tracking",
+                "Consent where required or another lawful basis disclosed at collection; withdrawal or objection is available as applicable."
+              ],
+              [
+                "App-specific customer data, AI generation, and publishing",
+                "Lawful documented merchant instructions and the app's disclosed purpose; platform permissions do not replace a legal basis."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "limits-ai",
+          "title": "6. Use restrictions, advertising, and AI",
+          "paragraphs": [
+            "ShopiDeck does not sell personal data, share it for cross-context behavioral advertising, use merchant customer profiles for its own advertising, or use app data to train its own AI models. Generating marketing content at the merchant's request is a Less Time Marketing service function, separate from ShopiDeck advertising.",
+            "Third-party AI use, data, providers, and verified limits are app-specific. ShopiDeck's own no-training commitment is not a guarantee about every vendor's retention or training terms. Bot Cleaner profiles are not authorized inputs for Less Time Marketing's generation providers. Automated action and human-review requirements are defined per app, not universally.",
+            "Apps are for business users aged 18 or older, not children. Do not supply sensitive or children's data incompatibly with law or outside the relevant app's disclosed scope."
+          ]
+        },
+        {
+          "id": "providers-transfers",
+          "title": "7. Recipients and international transfers",
+          "paragraphs": [
+            "Only providers needed for the website function or installed app receive relevant data. The register identifies scope, role, data, and location information. Connected platforms may be independent controllers rather than subprocessors for their own operations. Software libraries such as Prisma are not separate recipients.",
+            "Disclosure may also be necessary for legal duties, legal claims, advisers bound by appropriate duties, or a business transfer subject to continuing privacy obligations and required notice. These situations do not authorize unrelated app use or advertising sales.",
+            "The operator is in Colombia; providers may process abroad. Where required, an applicable lawful transfer mechanism must exist, such as contractual safeguards, applicable standard clauses, or a valid adequacy mechanism. This notice does not execute standard clauses or assert provider certification. Ask team@shopideck.com about locations, recipients, and safeguards."
+          ],
+          "links": [
+            {
+              "label": "Provider register by website and app",
+              "href": "/subprocessors"
+            },
+            {
+              "label": "General DPA",
+              "href": "/dpa"
+            }
+          ]
+        },
+        {
+          "id": "retention",
+          "title": "8. Retention and deletion",
+          "paragraphs": [
+            "Each app addendum specifies its own periods and triggers; there is no suite-wide scan-history period or universal 48-hour deletion promise. Website inquiries and support records are kept while needed to respond, manage the relationship, resolve disputes, and meet legal duties, then deleted or irreversibly anonymized. Technical records are limited to operational and security needs. Ask for applicable periods or deletion at the contact below.",
+            "Disconnection, subscription cancellation, uninstall, and deletion are different actions. Revocation stops new authorized access; local deletion follows the relevant app's flow and legal duties. Backups, statutory records, and minimum privacy/security evidence may need restricted retention and are not reused for unrelated purposes. Linkable pseudonymous hashes remain personal data.",
+            "Independent platforms may retain their own records. Shopify Files and already-published social content may remain after uninstall and must be managed there. Deleting one app's data does not itself cancel or delete another app unless the verified request also covers it."
+          ],
+          "productIndex": "privacy"
+        },
+        {
+          "id": "cookies-security",
+          "title": "9. Cookies, security, and incidents",
+          "paragraphs": [
+            "The site and apps may use necessary session, security, or preference storage; app-specific cookies are described in the relevant addendum. The public site does not currently include Google Analytics, Meta Pixel, or behavioral-advertising tracking. External forms have their own technical processing. Future non-essential tracking requires prior disclosures and consent where required; this policy is not advance consent.",
+            "Measures include HTTPS, restricted access, server-side secrets, input validation, and encrypted stored credentials in relevant apps. Specific measures are in each schedule. No measure guarantees absolute security. Personal-data incidents are investigated; processor notifications to merchants are made without undue delay, and individual/authority notifications follow applicable legal duties and deadlines. Report suspected compromise to team@shopideck.com without sending secrets."
+          ]
+        },
+        {
+          "id": "rights",
+          "title": "10. Rights and requests",
+          "paragraphs": [
+            "Depending on law you may know about use, access, correct, delete, restrict, or port data; withdraw consent/authorization; object; request proof of authorization or review of automated processing; and complain to the competent authority. Rights are free except lawful charges and subject to legal conditions and exceptions.",
+            "Write to team@shopideck.com with your name, relevant app(s), store/account identifier, relationship to it, right requested, and description. Identity and authority are verified proportionately. Do not send passwords, tokens, API keys, full customer lists, or unnecessary identity documents. Identify all apps if the request covers several. Store customers should contact the merchant as controller; ShopiDeck assists for data handled on its behalf.",
+            "Where EU/EEA or UK law applies, rights include access, rectification, erasure, restriction, portability, objection, and complaint to the local supervisory authority. GDPR requests are normally answered within one month, with notice and reasons within that period for any lawful extension. We aim to answer other requests within 30 days unless a different or shorter statutory period applies.",
+            "Where California or other US state law applies, rights may include knowing/accessing, correcting, deleting, portability, using an authorized agent, and non-discrimination. ShopiDeck does not sell personal information or share it for cross-context behavioral advertising. Statutory procedures and deadlines take precedence over our general response target."
+          ],
+          "links": [
+            {
+              "label": "Data deletion instructions",
+              "href": "/data-deletion"
+            }
+          ]
+        },
+        {
+          "id": "colombia",
+          "title": "11. Colombia: inquiries, complaints, and authority",
+          "paragraphs": [
+            "Under Law 1581 of 2012 you may know, update, rectify and access data free of charge, request proof of authorization and information on use, seek deletion or revoke authorization where available, and complain to the Superintendencia de Industria y Comercio (SIC). A legal/contractual retention duty may limit deletion or revocation.",
+            "Inquiries are answered within 10 business days of receipt, with a justified extension of up to 5 additional business days communicated with reasons and a new date where permitted. Complete complaints are answered within 15 business days counted from the day after receipt, with a justified extension of up to 8 additional business days where permitted. Incomplete complaints follow the statutory correction process. Complete the direct inquiry/complaint process before approaching SIC where required."
+          ],
+          "links": [
+            {
+              "label": "SIC — Protección de Datos Personales",
+              "href": "https://www.sic.gov.co/que-es-la-delegatura-datos-personales",
+              "external": true
+            },
+            {
+              "label": "SIC — requests and complaints",
+              "href": "https://servicioslinea.sic.gov.co/servilinea/pqrsf",
+              "external": true
+            }
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "12. Changes and language",
+          "paragraphs": [
+            "The dates identify this version. Material changes are notified through the website, app, or email as appropriate. New consent/authorization required is obtained before changed processing; continued use is not consent where express consent is required. Adding an app addendum changes only that app, unless a separately notified common change applies to others. Spanish prevails over the English translation where legally permitted, preserving mandatory rights. Ask the privacy contact for the version applicable to an earlier period."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "ShopiDeck General Terms of Use",
+      "category": "Legal and privacy",
+      "effectiveDate": "October 21, 2026",
+      "lastUpdated": "October 21, 2026",
+      "intro": "Common conditions for the website and ShopiDeck suite. Each app has separate service terms, permissions, subscription rules, and data disclosures.",
+      "sections": [
+        {
+          "id": "identity-scope",
+          "title": "1. Provider, scope, and authority",
+          "paragraphs": [
+            "These Terms form an agreement with Andres Camilo Bonilla Carreño, a Colombian individual merchant operating as ShopiDeck at Cra. 79A # 6-04, Bogotá D.C., Colombia. Contact: team@shopideck.com.",
+            "They govern the public website and common service conditions. Apps are business services for merchants and authorized adult users. You must have authority to bind the business, administer the relevant store and connected accounts, and provide lawful instructions. Mandatory consumer rights, if applicable, are preserved."
+          ]
+        },
+        {
+          "id": "app-terms",
+          "title": "2. Acceptance and independent agreements",
+          "paragraphs": [
+            "Installing or using an app requires agreement to these Terms, that app's service terms, and its approved plan. Privacy notices describe processing and do not replace required consent. Each app has separate subscriptions, permissions, limits, credits, and retention unless an expressly identified bundle states otherwise. Website use or early access does not install or subscribe you to an app.",
+            "Only the used app's addendum applies. A new app does not inherit Bot Cleaner profile processing or Less Time Marketing publishing permissions. Cancelling, uninstalling, or changing one app does not itself cancel, reprice, or modify another. Credits, quotas, licenses, and approvals do not transfer automatically."
+          ],
+          "productIndex": "terms"
+        },
+        {
+          "id": "precedence",
+          "title": "3. Order of precedence",
+          "paragraphs": [
+            "Mandatory law prevails. A separately signed agreement prevails only where it expressly varies a provision. The general DPA governs processor obligations; an app processing schedule supplements subject matter, categories, measures, providers, and retention without reducing common DPA duties. For other app-specific issues, that app's addendum prevails over general Terms. The Shopify-approved plan governs displayed price, cycle, trial, and approved quantities, without creating data permissions or waiving legal rights. Third-party terms govern your separate platform relationship.",
+            "An addendum cannot amend another app. A change affecting several services must identify them, the common provision changed, effective date, and required notice/acceptance. No commercial term silently expands the processing disclosed in the general and app Privacy Policies."
+          ],
+          "links": [
+            {
+              "label": "Privacy Policy",
+              "href": "/privacy"
+            },
+            {
+              "label": "General DPA",
+              "href": "/dpa"
+            }
+          ]
+        },
+        {
+          "id": "license-content",
+          "title": "4. Service, license, and your materials",
+          "paragraphs": [
+            "App terms specify actual features and limits. Public concepts, roadmaps, and early access do not guarantee release dates, installation access, or unoffered functions. Subject to the applicable agreement and plan, you receive a limited, non-exclusive, non-transferable right to use the service for your business. Do not resell, sublicense, copy, reverse engineer, attack, or circumvent it except where mandatory law permits.",
+            "ShopiDeck retains software, design, documentation, and brand rights. Third-party marks belong to their owners; compatibility does not assert official partnership. You retain rights in your data and materials and grant only permissions needed to provide the app through disclosed providers. AI-output rights and review/automation rules are app-specific. Voluntary feedback may be used without compensation, without disclosing confidential/personal data or taking ownership of it."
+          ]
+        },
+        {
+          "id": "billing",
+          "title": "5. Billing, cancellation, and refunds",
+          "paragraphs": [
+            "Each app defines plans, currency, billing channel, trial, limits, refunds, and cancellation effects. Shopify-administered charges and changes require applicable approval. ShopiDeck does not store payment-card details. Review trial eligibility and renewal before approval; one app's offer does not apply to all apps.",
+            "Cancel the relevant app through its documented flow or uninstall, subject to Shopify billing. Disconnecting a platform may not cancel a plan. Cancellation does not automatically delete data or refund charges. App-specific refund rules and reporting periods remain subject to mandatory law and correction of billing errors. There is no common credit-forfeiture or no-refund clause overriding more favorable app-specific rights."
+          ],
+          "productIndex": "terms"
+        },
+        {
+          "id": "obligations-platforms",
+          "title": "6. Accounts, acceptable use, and platforms",
+          "paragraphs": [
+            "Keep account information current, secure accounts, and authorize suitable users. Hold the rights and legal basis for submitted data/materials, give required notices, respect data-subject rights, and issue lawful instructions. Do not send secrets or full customer lists through support.",
+            "Do not violate law or third-party rights, access without authority, upload malicious code, attack the service, bypass authentication or usage limits, or use outputs misleadingly. Relevant platform terms, permissions, API limits, and app-specific rules apply. A TikTok publishing approval rule or Klaviyo suppression rule does not become a rule for every app. Outages, revoked access, moderation, or platform changes can affect the service."
+          ],
+          "links": [
+            {
+              "label": "Provider register by app",
+              "href": "/subprocessors"
+            }
+          ]
+        },
+        {
+          "id": "changes-termination",
+          "title": "7. Availability, changes, and termination",
+          "paragraphs": [
+            "Services rely on external infrastructure and may need maintenance. Uninterrupted operation, accuracy, or business results are not guaranteed. Material common changes are notified with reasonable advance notice; longer app-specific periods are respected. Notices identify affected services and dates, and required consent/approval is obtained. Urgent legal/security changes may take effect sooner with notice as soon as reasonably possible.",
+            "ShopiDeck may proportionately restrict the relevant service for non-payment, breach, abuse, security, legal duties, or platform requirements, with notice and opportunity to remedy where appropriate. A problem in one app does not automatically terminate another; a wider action needs an independently justified common ground. You may stop use and cancel under the app terms. Accrued payment, lawful confidentiality, IP, and enforceable liability clauses survive where appropriate. Retention and deletion follow the Privacy Policy, DPA, and app schedule."
+          ],
+          "links": [
+            {
+              "label": "Retention and deletion",
+              "href": "/privacy#retention"
+            }
+          ]
+        },
+        {
+          "id": "liability",
+          "title": "8. Warranties and liability",
+          "paragraphs": [
+            "To the extent legally permitted, services are provided as described and as available. ShopiDeck does not guarantee revenue, savings, compliance, detection accuracy, deliverability, audience growth, exclusive AI output, or platform acceptance. Express app commitments apply only to that app.",
+            "To the maximum extent permitted by law, ShopiDeck is not liable for indirect, incidental, special, consequential, exemplary, or punitive loss, or lost profits, revenue, goodwill, data, or opportunities. A financial cap or indemnity applies only if expressly stated for the app or in a signed agreement. Less Time Marketing's 12-month fee cap is not imported into Bot Cleaner or future apps. Nothing limits mandatory rights or legally non-limitable liability, including fraud or gross negligence where applicable."
+          ]
+        },
+        {
+          "id": "law-general",
+          "title": "9. Law, notices, and general provisions",
+          "paragraphs": [
+            "Colombian law governs and competent courts of Bogotá D.C., Colombia hear disputes, without limiting mandatory rights/jurisdiction elsewhere. Contact team@shopideck.com for service disputes, identifying the app; this does not bar competent authorities or courts. App response promises and statutory privacy deadlines apply.",
+            "Notices may be given through the relevant app, Shopify, website, or email on record. Assignment is subject to law, platform rules, and continuing privacy duties. An unenforceable provision is limited to the minimum necessary; the rest continues. Non-enforcement is not waiver. These Terms, applicable app terms/approved plan, DPA where relevant, and express signed variations form the agreement; unrelated addenda are not incorporated by implication. Spanish prevails over English where permitted, preserving mandatory rights. Earlier versions may be requested."
+          ]
+        }
+      ]
+    },
+    "dpa": {
+      "title": "ShopiDeck Data Processing Addendum",
+      "category": "Legal and privacy",
+      "effectiveDate": "October 21, 2026",
+      "lastUpdated": "October 21, 2026",
+      "intro": "Common contractual duties when ShopiDeck processes personal data on a merchant's behalf. Each app's processing schedule defines its data, purposes, duration, safeguards, and providers.",
+      "sections": [
+        {
+          "id": "scope",
+          "title": "1. Parties, scope, and precedence",
+          "paragraphs": [
+            "This DPA is between the merchant as controller (or authorized processor) and Andres Camilo Bonilla Carreño, trading as ShopiDeck, as processor (or subprocessor as applicable). It applies only to personal data handled on the merchant's behalf, not ShopiDeck's own controller activities. It starts with the applicable app agreement and continues while that processing continues.",
+            "Each installed app's schedule specifies subject matter, purposes, operations, data categories, people, duration, measures, and relevant providers by reference to its privacy addendum. No schedule for an unused app is incorporated. This DPA governs processor duties over conflicting general commercial language; app schedules supplement technical details and cannot reduce these common duties or mandatory law."
+          ],
+          "productIndex": "dpa"
+        },
+        {
+          "id": "instructions",
+          "title": "2. Documented instructions and purpose limitation",
+          "paragraphs": [
+            "Instructions comprise the applicable agreement, app schedule, authorized configuration/actions, and lawful written requests, including authorized transfers. ShopiDeck processes only on those instructions unless law requires otherwise, informing the merchant beforehand unless legally prohibited. It informs the merchant if it considers an instruction unlawful and may suspend that processing pending clarification. No sale, own advertising, own model training, or automatic reuse across apps is permitted by this DPA. The merchant warrants lawful authority, notices, legal bases, and rights in submitted materials."
+          ]
+        },
+        {
+          "id": "confidentiality-security",
+          "title": "3. Confidentiality and safeguards",
+          "paragraphs": [
+            "Authorized personnel are bound by confidentiality or an appropriate statutory duty. Access is limited to necessity. ShopiDeck implements measures appropriate to risk, including access control, HTTPS, server-side secrets, input validation, encrypted stored app credentials, and app-specific safeguards in the schedule. Security controls may evolve without materially reducing agreed protection. No absolute-security guarantee is made."
+          ]
+        },
+        {
+          "id": "subprocessors",
+          "title": "4. Providers and subprocessor changes",
+          "paragraphs": [
+            "The merchant gives general authorization only to relevant subprocessors identified for the used app in the register. Independent platforms are not thereby classified as subprocessors for all their activities. ShopiDeck imposes equivalent applicable data-protection obligations on subprocessors and remains responsible for their performance of those duties as required by law.",
+            "Proposed additions or replacements affecting the merchant's processing are notified in advance, normally at least 15 days before access, so the merchant may object on reasonable data-protection grounds at team@shopideck.com. ShopiDeck will seek an alternative or resolution; if none is feasible, the affected processing/service may be ended under applicable terms, without limiting legal rights. Urgent legally necessary or security-driven replacements are notified as soon as possible. Updating a list alone does not authorize a different purpose."
+          ],
+          "links": [
+            {
+              "label": "Provider register and scope",
+              "href": "/subprocessors"
+            }
+          ]
+        },
+        {
+          "id": "transfers",
+          "title": "5. International transfers",
+          "paragraphs": [
+            "Only transfers necessary for the relevant app's instructed purpose are permitted, subject to applicable law and required safeguards. Where standard clauses, UK instruments, or other transfer arrangements are necessary, they must be validly put in place; this public DPA does not by itself claim to execute them or prove provider certification. The merchant may request processing locations, relevant contractual information, and safeguards. A shared provider does not authorize cross-app data pooling."
+          ]
+        },
+        {
+          "id": "assistance-incidents",
+          "title": "6. Rights, assessments, and incidents",
+          "paragraphs": [
+            "Considering the nature of processing and available information, ShopiDeck reasonably assists with data-subject requests, security duties, impact assessments, and supervisory consultations where required. Requests for merchant-controlled data are referred to the merchant unless law requires a direct response. Shopify compliance events are handled for the affected app; a no-data answer from Less Time Marketing does not erase Bot Cleaner's records.",
+            "ShopiDeck notifies the merchant without undue delay after awareness of a personal-data breach affecting instructed processing and provides available information on nature, affected data, likely consequences, mitigation, and contact, with updates as information becomes available. The merchant remains responsible for its controller notifications, with ShopiDeck assistance. Do not send secrets when reporting incidents."
+          ]
+        },
+        {
+          "id": "audits",
+          "title": "7. Information and audits",
+          "paragraphs": [
+            "ShopiDeck makes necessary information available to demonstrate compliance and permits or contributes to proportionate audits required by applicable law, including inspections by the merchant or an authorized auditor. Coordinate at team@shopideck.com, protecting confidentiality, security, and other merchants' data. Public documents do not replace mandatory audit rights; reasonable coordination must not defeat them."
+          ]
+        },
+        {
+          "id": "return-deletion",
+          "title": "8. Return, deletion, and survival",
+          "paragraphs": [
+            "When processing ends, at the merchant's lawful choice ShopiDeck returns or deletes the relevant personal data, including copies, unless law requires retention. Coordinate return before uninstall where platform revocation would prevent export or deletion there. Local records follow the app's documented deletion flow. Backups pending rotation are restricted from ordinary use; statutory exceptions and minimal security/privacy evidence must be justified, limited, and not reused for unrelated purposes.",
+            "Independent Shopify Files, already-published posts, and platform-controlled records may require merchant action at the platform. Ending one app's processing does not end another app's lawful instructions. Confidentiality, justified retention, deletion, and other duties continue while applicable. Contact the general legal address for questions or requests."
+          ],
+          "links": [
+            {
+              "label": "General privacy and contact",
+              "href": "/privacy"
+            }
+          ],
+          "productIndex": "privacy"
+        }
+      ]
+    }
+  },
+  "products": {
+    "klaviyo-bot-cleaner": {
+      "name": "SD: Klaviyo Bot Cleaner",
+      "documents": {
+        "privacy": {
+          "title": "SD: Klaviyo Bot Cleaner — Privacy Addendum",
+          "category": "Legal and privacy",
+          "effectiveDate": "October 21, 2026",
+          "lastUpdated": "October 21, 2026",
+          "intro": "This Privacy Policy explains how SD: Klaviyo Bot Cleaner processes personal data in the embedded Shopify app at https://klaviyobotcleaner.shopideck.com. It describes the current product, its limits, the parties' privacy roles, and the choices available to individuals and merchants.",
+          "sections": [
+            {
+              "id": "app-scope",
+              "title": "Documents applicable to this app",
+              "paragraphs": [
+                "This document supplements the general ShopiDeck documents exclusively for SD: Klaviyo Bot Cleaner. Its data, permissions, providers, retention, pricing, and suppression rules do not apply to Less Time Marketing or other apps. For app-specific differences, this addendum prevails over the general text; the DPA governs processor obligations and mandatory law always prevails."
+              ],
+              "links": [
+                {
+                  "label": "General ShopiDeck document",
+                  "href": "/privacy"
+                },
+                {
+                  "label": "Bot Cleaner privacy",
+                  "href": "/privacy/klaviyo-bot-cleaner"
+                },
+                {
+                  "label": "Bot Cleaner terms",
+                  "href": "/terms/klaviyo-bot-cleaner"
+                },
+                {
+                  "label": "General DPA and common obligations",
+                  "href": "/dpa"
+                }
+              ]
+            },
+            {
+              "id": "scope",
+              "title": "1. Scope and effective date",
+              "paragraphs": [
+                "This addendum applies only to SD: Klaviyo Bot Cleaner, its embedded Shopify app, merchant and administrator accounts, support and privacy requests, and the operation and security of the service. It is effective on October 21, 2026 and was last updated on October 21, 2026.",
+                "The English text is a translation. The Spanish version is the prevailing version. Where legally permitted and there is a contradiction, the Spanish version prevails without removing mandatory rights applicable to the merchant or any individual."
+              ]
+            },
+            {
+              "id": "identity",
+              "title": "2. Controller identity and contact",
+              "paragraphs": [
+                "ShopiDeck is a trade name operated by Andres Camilo Bonilla Carreño, a Colombian individual merchant based at Cra. 79A # 6-04, Bogotá D.C., Colombia.",
+                "Privacy, legal, support, and security incident contact: team@shopideck.com. The internal privacy contact is Andres Camilo Bonilla Carreño at team@shopideck.com; this contact is not described as a formal DPO."
+              ]
+            },
+            {
+              "id": "definitions",
+              "title": "3. Definitions",
+              "paragraphs": [
+                "In this policy, merchant means the Shopify merchant or business that installs or uses the app; administrator means an authorized Shopify user; profile means a Klaviyo contact record made available through the authorized account; suppression means the Klaviyo action that prevents marketing sends and is not permanent profile deletion; and ShopiDeck, we, or us means the operator identified above."
+              ]
+            },
+            {
+              "id": "roles",
+              "title": "4. Privacy roles",
+              "paragraphs": [
+                "ShopiDeck acts as controller for merchant and administrator data, account administration, billing, product use, support, security, abuse prevention, contractual administration, and legal compliance.",
+                "ShopiDeck acts as processor for Klaviyo profiles processed on the merchant's documented instructions, including scoring, results, confirmed suppressions, and privacy requests submitted through Shopify. The merchant generally acts as controller for its customers' data and determines the applicable legal basis for that processing."
+              ],
+              "bullets": [
+                "The merchant must have a legal basis to store customer profiles in Klaviyo and give lawful instructions to ShopiDeck.",
+                "The merchant must provide its own privacy notices and handle customer rights requests when it acts as controller.",
+                "The merchant must review profiles and confirm a suppression before ShopiDeck sends that action to Klaviyo.",
+                "The merchant must have authority to connect the Shopify and Klaviyo accounts and must not use the app for incompatible purposes."
+              ]
+            },
+            {
+              "id": "people",
+              "title": "5. People affected",
+              "bullets": [
+                "Shopify merchants, owners, administrators, and other authorized users.",
+                "Customers and contacts represented by profiles in the merchant's authorized Klaviyo account.",
+                "People who submit support, privacy, or security incident requests.",
+                "People whose data appears in technical, security, or operational records created while the service runs."
+              ]
+            },
+            {
+              "id": "sources",
+              "title": "6. Sources of data",
+              "bullets": [
+                "Shopify, including installation, authentication, store and administrator identity, App Store, billing, webhooks, and privacy requests.",
+                "Klaviyo, through the OAuth connection authorized by the merchant and data available in that account.",
+                "The merchant or administrator directly, including support and privacy request forms.",
+                "The service's operation, security controls, and limited technical or error records."
+              ]
+            },
+            {
+              "id": "categories",
+              "title": "7. Categories of data processed",
+              "bullets": [
+                "Shopify and merchant data: myshopify.com domain, Shopify Shop ID, Shopify access token, session information, administrator user ID, administrator first and last name and email when Shopify provides them, locale, account-owner status, scopes, plan, billing cycle, usage limits, monthly consumption, support requests, and limited technical and operational records.",
+                "Klaviyo account data: Klaviyo Account ID, OAuth scopes, and encrypted access and refresh tokens.",
+                "Klaviyo profile data: Profile ID, email, first name, last name, phone when present, city when present, country when present, IP when available, creation date, update date, marketing subscription status, and email domain.",
+                "Derived data: normalized patterns used for detection, risk score, risk level, explainable detection reasons, suppression result, audit history, and suppression history.",
+                "Support, privacy, security, and operational data needed to receive requests, verify them proportionately, protect the service, and respond."
+              ]
+            },
+            {
+              "id": "unrequested-data",
+              "title": "8. Data not requested",
+              "paragraphs": [
+                "The app is not designed to intentionally request or process health data, biometric data, religion, sexual orientation, political opinions, financial information, card numbers, passwords, or equivalent special categories. Merchants must not submit sensitive data through fields that the app may process unless they have an appropriate legal basis and the use is lawful.",
+                "ShopiDeck does not store payment card information, sell personal data, share data for behavioral advertising, use profiles for its own advertising, create advertising audiences, or use data to train artificial-intelligence models."
+              ]
+            },
+            {
+              "id": "purposes",
+              "title": "9. Purposes and legal bases",
+              "paragraphs": [
+                "The following table describes the purpose framework for the current processing. In Colombia, authorization is obtained when required, subject to the legal exceptions that apply. For Klaviyo profiles, the merchant determines its own legal basis and gives documented instructions. A legal basis listed for one purpose may not apply in every jurisdiction or circumstance."
+              ],
+              "table": {
+                "headers": [
+                  "Purpose",
+                  "Legal basis or instruction"
+                ],
+                "rows": [
+                  [
+                    "Providing the app",
+                    "Performance of the contract."
+                  ],
+                  [
+                    "Authentication",
+                    "Performance of the contract and security."
+                  ],
+                  [
+                    "Account administration",
+                    "Performance of the contract."
+                  ],
+                  [
+                    "Billing",
+                    "Performance of the contract and applicable legal, accounting, or tax obligations."
+                  ],
+                  [
+                    "Support",
+                    "Performance of the contract and management of requests."
+                  ],
+                  [
+                    "Security and abuse prevention",
+                    "Legitimate interest and applicable legal obligations."
+                  ],
+                  [
+                    "Privacy requests",
+                    "Legal obligation."
+                  ],
+                  [
+                    "Klaviyo profiles and scoring",
+                    "The merchant's documented instructions as controller; the merchant determines its legal basis."
+                  ],
+                  [
+                    "Future non-essential cookies",
+                    "Consent where legally required."
+                  ]
+                ]
+              }
+            },
+            {
+              "id": "shopify",
+              "title": "10. Shopify",
+              "paragraphs": [
+                "Shopify provides installation, authentication, store and administrator identity, App Store and billing functions, webhooks, and privacy request mechanisms. Shopify is an independent platform and its own terms and privacy information also apply. Shopify may send privacy webhooks to ShopiDeck for the relevant store and customer records."
+              ],
+              "links": [
+                {
+                  "label": "Shopify terms, privacy, and DPA",
+                  "href": "https://www.shopify.com/legal",
+                  "external": true
+                }
+              ]
+            },
+            {
+              "id": "klaviyo",
+              "title": "11. Klaviyo connection and permissions",
+              "paragraphs": [
+                "The app connects to Klaviyo through OAuth, reads existing profiles and subscription information, applies rule-based scoring, and sends a suppression only after the merchant selects profiles and confirms the action. Current permissions are accounts:read, profiles:read, profiles:write, subscriptions:read, and subscriptions:write. The app does not request permission for permanent profile deletion.",
+                "Klaviyo OAuth access and refresh tokens are encrypted before storage. The merchant can disconnect Klaviyo from Settings. Disconnecting revokes and removes the OAuth tokens and connection while retained audit and suppression history remains for its retention period."
+              ],
+              "links": [
+                {
+                  "label": "Klaviyo terms, privacy, and DPA",
+                  "href": "https://www.klaviyo.com/legal",
+                  "external": true
+                }
+              ]
+            },
+            {
+              "id": "scoring",
+              "title": "12. Scoring and automated evaluation",
+              "paragraphs": [
+                "The app performs an automated assessment based on explainable rules. Possible signals include disposable email domains, unusual or apparently generated email formats, generic or incomplete names, missing data, repeated values, bursts of profile creation, shared email patterns, shared name patterns, shared IP patterns, shared phone patterns, and available subscription status.",
+                "The score is an estimate and does not prove fraud or that a profile is a bot. False positives and false negatives are possible. The result may classify a profile as low risk, needs review, or probable bot and shows understandable reasons for the classification."
+              ]
+            },
+            {
+              "id": "human-review",
+              "title": "13. Human review and significant decisions",
+              "paragraphs": [
+                "The score does not create an automatic suppression. The merchant keeps the final decision, reviews the profile and its reasons, selects profiles, and confirms any suppression. ShopiDeck does not make legal or similarly significant decisions about an individual solely from the scoring. Results are not used for advertising, credit, employment, insurance, or eligibility decisions.",
+                "The app does not use opens, clicks, purchases, or browsing activity to declare a profile inactive."
+              ]
+            },
+            {
+              "id": "providers",
+              "title": "14. Providers and subprocessors",
+              "paragraphs": [
+                "ShopiDeck uses the following providers for the current service. They may process data as needed to provide their services and under their applicable contracts. Prisma is an ORM library and is not an independent subprocessor."
+              ],
+              "bullets": [
+                "Shopify: installation, authentication, store and administrator identity, App Store, billing, webhooks, and privacy requests.",
+                "Klaviyo: OAuth, account and profile queries, subscription information, and merchant-confirmed suppression.",
+                "Supabase: PostgreSQL database and application storage; region US East, United States.",
+                "Vercel: hosting and serverless functions; processing in the United States.",
+                "Resend: email communications and support when applicable."
+              ],
+              "links": [
+                {
+                  "label": "View the full subprocessor list",
+                  "href": "/subprocessors#klaviyo-bot-cleaner"
+                }
+              ]
+            },
+            {
+              "id": "transfers",
+              "title": "15. International transfers",
+              "paragraphs": [
+                "The controller is established in Colombia. Data may be processed in the United States and other countries where Shopify, Klaviyo, Supabase, Vercel, and Resend operate. ShopiDeck does not represent that all data stays in Colombia.",
+                "ShopiDeck uses the contracts and safeguards made available by the relevant providers when applicable. A merchant or individual may request additional information about applicable safeguards by contacting team@shopideck.com. The provider's terms, privacy notice, DPA, and any applicable transfer mechanism may also apply."
+              ],
+              "links": [
+                {
+                  "label": "View provider transfer information",
+                  "href": "/subprocessors#klaviyo-bot-cleaner"
+                }
+              ]
+            },
+            {
+              "id": "retention",
+              "title": "16. Retention",
+              "paragraphs": [
+                "ShopiDeck retains data for the periods below, subject to earlier deletion where required by law or the implemented deletion flows. Retention applies to local ShopiDeck records; Shopify and Klaviyo may retain data independently under their own policies and instructions."
+              ],
+              "table": {
+                "headers": [
+                  "Data or record",
+                  "Retention"
+                ],
+                "rows": [
+                  [
+                    "Klaviyo OAuth state",
+                    "10 minutes."
+                  ],
+                  [
+                    "Klaviyo tokens",
+                    "Until disconnect, uninstall, account deletion, or revocation."
+                  ],
+                  [
+                    "Temporary scan data",
+                    "During processing."
+                  ],
+                  [
+                    "Temporary data for completed jobs",
+                    "Approximately 24 hours."
+                  ],
+                  [
+                    "Failed or cancelled scans",
+                    "30 days."
+                  ],
+                  [
+                    "Scan history",
+                    "365 days."
+                  ],
+                  [
+                    "Results",
+                    "365 days."
+                  ],
+                  [
+                    "Suppression history",
+                    "365 days."
+                  ],
+                  [
+                    "Privacy requests and exports",
+                    "30 days."
+                  ],
+                  [
+                    "Shopify sessions",
+                    "While the app is installed or until removed."
+                  ],
+                  [
+                    "Redaction HMAC hashes",
+                    "While the store record exists."
+                  ],
+                  [
+                    "Legally necessary records",
+                    "For the period required by applicable law."
+                  ]
+                ]
+              }
+            },
+            {
+              "id": "redaction-hashes",
+              "title": "17. Redaction HMAC hashes",
+              "paragraphs": [
+                "Redaction HMAC hashes are pseudonymized values, not completely anonymous data. They are used to prevent an identifier that was previously redacted from being stored again. They are deleted when the store record is permanently deleted."
+              ]
+            },
+            {
+              "id": "cookies",
+              "title": "18. Cookies",
+              "paragraphs": [
+                "The embedded app uses the functional or necessary cookie shopideck_locale to remember the language selected inside the embedded app. It lasts one year and has Secure, HttpOnly, and SameSite=None attributes. It is not used for advertising or analytics.",
+                "ShopiDeck does use cookies. Any future non-essential cookie will be used only with the consent or other legal basis required by applicable law and this policy will be updated where necessary."
+              ]
+            },
+            {
+              "id": "analytics",
+              "title": "19. Analytics and advertising",
+              "paragraphs": [
+                "Bot Cleaner does not use Google Analytics, Meta Pixel, Sentry, Vercel Analytics, advertising analytics, behavioral advertising, advertising audiences, or profile data for ShopiDeck advertising. ShopiDeck does not use personal data to train artificial-intelligence models."
+              ]
+            },
+            {
+              "id": "security",
+              "title": "20. Security measures",
+              "bullets": [
+                "Klaviyo tokens are encrypted.",
+                "Connections use HTTPS.",
+                "Secrets are kept on the server.",
+                "Shopify authentication and protected routes are used.",
+                "Webhooks are verified and backend input is validated.",
+                "Critical actions include ownership verification and confirmation before suppression.",
+                "Usage limits are enforced in the backend.",
+                "Privacy requests and exports are encrypted."
+              ],
+              "paragraphs": [
+                "These measures reduce risk but do not guarantee absolute security."
+              ]
+            },
+            {
+              "id": "incidents",
+              "title": "21. Security incidents",
+              "paragraphs": [
+                "ShopiDeck investigates suspected security incidents and notifies affected parties or authorities when the law requires it. Merchants must report compromised credentials or suspected unauthorized access to team@shopideck.com. Do not send passwords, API keys, OAuth tokens, or other secrets by email."
+              ]
+            },
+            {
+              "id": "rights",
+              "title": "22. Rights",
+              "paragraphs": [
+                "Subject to applicable law and the relevant privacy role, individuals may have the right to know about processing, access data, update or correct it, request proof of authorization where applicable, be informed about its use, submit inquiries and complaints, request deletion or suppression, revoke authorization where legally available, and request review of automated processing.",
+                "The merchant generally handles rights concerning its customer data as controller. ShopiDeck assists the merchant as processor through documented instructions and responds directly where ShopiDeck is the controller."
+              ]
+            },
+            {
+              "id": "requests",
+              "title": "23. Privacy requests",
+              "paragraphs": [
+                "Send a request to team@shopideck.com. Include:",
+                "Do not send passwords, API keys, tokens, or full customer lists."
+              ],
+              "bullets": [
+                "Your name.",
+                "Your relationship with the store.",
+                "The myshopify.com domain.",
+                "The right you want to exercise.",
+                "A description of the request.",
+                "Proportionate information needed to verify identity and authority."
+              ]
+            },
+            {
+              "id": "complaints",
+              "title": "24. Inquiries and complaints",
+              "paragraphs": [
+                "Please contact team@shopideck.com first so ShopiDeck can review the request. The request should identify the store, the relevant data or processing, and the outcome sought. ShopiDeck will handle it under the applicable law and role of the parties."
+              ]
+            },
+            {
+              "id": "colombia",
+              "title": "25. Colombia",
+              "paragraphs": [
+                "For processing subject to Colombian law, ShopiDeck requests authorization when required and relies on applicable legal exceptions when an exception applies. Individuals may exercise the rights described above by contacting the privacy address. Requests and complaints may be submitted through the applicable procedure before approaching the Colombian authority."
+              ]
+            },
+            {
+              "id": "eea",
+              "title": "26. European Economic Area",
+              "paragraphs": [
+                "ShopiDeck is not established in the European Union or the United Kingdom and does not currently have a formal representative in either jurisdiction. Andres Camilo Bonilla Carreño is the internal privacy contact and is not a formal DPO. Where EEA law applies, individuals may have rights under that law, including access, correction, deletion, restriction, portability, objection, and review of automated processing, subject to the applicable conditions and limits. This policy does not claim universal compliance or appoint a representative that does not exist."
+              ]
+            },
+            {
+              "id": "uk",
+              "title": "27. United Kingdom",
+              "paragraphs": [
+                "ShopiDeck is not established in the United Kingdom and does not currently have a formal UK representative. Andres Camilo Bonilla Carreño is the internal privacy contact and is not a formal DPO. Where UK law applies, individuals may exercise the rights available under that law, subject to its conditions and limits. This policy does not claim universal compliance or appoint a representative that does not exist."
+              ]
+            },
+            {
+              "id": "minors",
+              "title": "28. Children",
+              "paragraphs": [
+                "The app is directed exclusively to Shopify merchants and authorized business users; it is not directed to children. Merchants must not provide children's data or sensitive data in a way that is incompatible with applicable law."
+              ]
+            },
+            {
+              "id": "disconnect",
+              "title": "29. Disconnecting Klaviyo",
+              "paragraphs": [
+                "When Klaviyo is disconnected, ShopiDeck revokes and deletes the OAuth tokens and removes the Klaviyo connection. Audit and suppression history remains during its retention period unless an applicable deletion request or account-deletion flow removes it."
+              ]
+            },
+            {
+              "id": "uninstall",
+              "title": "30. Uninstalling Shopify",
+              "paragraphs": [
+                "When the app is uninstalled, sessions are removed, Klaviyo credentials are revoked or deleted, and the store is marked inactive. Shopify sends shop/redact approximately 48 hours later. shop/redact deletes the local store record and related data. Shopify or Klaviyo may retain data independently under their own policies."
+              ]
+            },
+            {
+              "id": "delete-account",
+              "title": "31. Delete account",
+              "paragraphs": [
+                "Only the store owner can use Delete account. The app is uninstalled, sessions and tokens are removed, the local store record is deleted, and local relationships are removed through cascading deletion. ShopiDeck does not claim to delete data that Shopify or Klaviyo retain independently."
+              ]
+            },
+            {
+              "id": "webhooks",
+              "title": "32. Privacy webhooks",
+              "bullets": [
+                "customers/data_request: locates data using email or phone, creates an encrypted export, allows the store owner to download the completed request, and keeps the request for 30 days.",
+                "customers/redact: deletes related results and temporary related data, while retaining an HMAC hash to prevent reintroduction of the identifier.",
+                "shop/redact: deletes the local store data.",
+                "app/uninstalled: supports uninstall cleanup.",
+                "app/scopes_update: records and supports scope changes."
+              ]
+            },
+            {
+              "id": "changes",
+              "title": "33. Changes to this policy",
+              "paragraphs": [
+                "ShopiDeck may update this policy when the service, data flows, providers, legal requirements, or retention practices change. The effective-date and last-updated labels identify the current version. Material changes will be communicated through an appropriate channel when required."
+              ]
+            },
+            {
+              "id": "contact",
+              "title": "34. Contact",
+              "paragraphs": [
+                "For privacy, legal, support, or security questions, contact team@shopideck.com. Legal-notice address: Cra. 79A # 6-04, Bogotá D.C., Colombia."
+              ]
+            },
+            {
+              "id": "authority",
+              "title": "35. Supervisory authority",
+              "paragraphs": [
+                "The Colombian personal-data authority is the Superintendencia de Industria y Comercio — Delegatura para la Protección de Datos Personales. Where applicable, a person may submit a complaint through the authority's official channels after the relevant direct request process."
+              ],
+              "links": [
+                {
+                  "label": "SIC Delegatura para la Protección de Datos Personales",
+                  "href": "https://www.sic.gov.co/que-es-la-delegatura-datos-personales",
+                  "external": true
+                },
+                {
+                  "label": "SIC online requests and complaints",
+                  "href": "https://servicioslinea.sic.gov.co/servilinea/pqrsf",
+                  "external": true
+                }
+              ]
+            }
+          ]
+        },
+        "terms": {
+          "title": "SD: Klaviyo Bot Cleaner — Service Terms",
+          "category": "Legal and service terms",
+          "effectiveDate": "October 21, 2026",
+          "lastUpdated": "October 21, 2026",
+          "intro": "These Terms govern access to and use of SD: Klaviyo Bot Cleaner by Shopify merchants. The service is available through Shopify Admin and the embedded app at https://klaviyobotcleaner.shopideck.com.",
+          "sections": [
+            {
+              "id": "app-scope",
+              "title": "Documents applicable to this app",
+              "paragraphs": [
+                "This document supplements the general ShopiDeck documents exclusively for SD: Klaviyo Bot Cleaner. Its data, permissions, providers, retention, pricing, and suppression rules do not apply to Less Time Marketing or other apps. For app-specific differences, this addendum prevails over the general text; the DPA governs processor obligations and mandatory law always prevails."
+              ],
+              "links": [
+                {
+                  "label": "General ShopiDeck document",
+                  "href": "/terms"
+                },
+                {
+                  "label": "Bot Cleaner privacy",
+                  "href": "/privacy/klaviyo-bot-cleaner"
+                },
+                {
+                  "label": "Bot Cleaner terms",
+                  "href": "/terms/klaviyo-bot-cleaner"
+                },
+                {
+                  "label": "General DPA and common obligations",
+                  "href": "/dpa"
+                }
+              ]
+            },
+            {
+              "id": "identity",
+              "title": "1. Provider identity",
+              "paragraphs": [
+                "These Terms form an agreement between the merchant and Andres Camilo Bonilla Carreño, a Colombian individual merchant operating under the ShopiDeck trade name and based at Cra. 79A # 6-04, Bogotá D.C., Colombia. Contact: team@shopideck.com."
+              ]
+            },
+            {
+              "id": "effective",
+              "title": "2. Effective date",
+              "paragraphs": [
+                "These Terms are effective on October 21, 2026 and were last updated on October 21, 2026."
+              ]
+            },
+            {
+              "id": "acceptance",
+              "title": "3. Acceptance",
+              "paragraphs": [
+                "By installing, accessing, or using the app, the merchant accepts these Terms, the Privacy Policy, the applicable Shopify App Pricing information, and any terms expressly incorporated into the service. If the merchant does not agree, it must not use the app."
+              ]
+            },
+            {
+              "id": "capacity",
+              "title": "4. Capacity and authority",
+              "paragraphs": [
+                "The person accepting these Terms represents that they can bind the merchant and have authority over the Shopify store and the Klaviyo account connected to the service. The merchant must keep its account information accurate and authorize only appropriate users."
+              ]
+            },
+            {
+              "id": "service",
+              "title": "5. Service description",
+              "paragraphs": [
+                "SD: Klaviyo Bot Cleaner connects a merchant-authorized Klaviyo account through OAuth, consults existing profiles, audits unsuppressed profiles, detects potentially suspicious signals, applies explainable rule-based scoring, classifies profiles as low risk, needs review, or probable bot, shows reasons, allows merchant review and selection, requests confirmation, sends confirmed suppressions to Klaviyo, keeps audit and suppression history, exports CSV on eligible plans, and shows approximate savings estimates.",
+                "The app does not permanently delete Klaviyo profiles, automatically suppress profiles, block checkouts, modify the Shopify theme, guarantee that a profile is a bot, guarantee savings, guarantee a lower Klaviyo invoice, guarantee deliverability, or replace merchant review. Suppression prevents marketing sends according to Klaviyo's operation and may be reversed from Klaviyo."
+              ]
+            },
+            {
+              "id": "license",
+              "title": "6. Limited license",
+              "paragraphs": [
+                "Subject to these Terms and the applicable Shopify App Pricing terms, ShopiDeck grants the merchant a limited, non-exclusive, non-transferable, revocable right to access and use the service for its internal Shopify operations. The merchant must not resell, sublicense, copy, modify, reverse engineer, extract, or create a competing service from the app except where a restriction cannot legally be enforced."
+              ]
+            },
+            {
+              "id": "shopify",
+              "title": "7. Shopify requirements",
+              "paragraphs": [
+                "Use requires a compatible Shopify store, a Shopify account with permission to install and use the app, and compliance with Shopify's terms, policies, permissions, platform rules, billing rules, and applicable API limits. Shopify is an independent third-party platform."
+              ]
+            },
+            {
+              "id": "klaviyo",
+              "title": "8. Klaviyo requirements",
+              "paragraphs": [
+                "The merchant must have authority to connect the Klaviyo account and must authorize the OAuth permissions required by the current workflow: accounts:read, profiles:read, profiles:write, subscriptions:read, and subscriptions:write. Klaviyo is an independent third-party platform and its terms, policies, account status, permissions, and API limits may affect the service."
+              ]
+            },
+            {
+              "id": "merchant-obligations",
+              "title": "9. Merchant obligations",
+              "bullets": [
+                "Have authority over the Shopify store.",
+                "Have authority over the Klaviyo account.",
+                "Keep Shopify and Klaviyo accounts and credentials secure.",
+                "Have a legal basis for the data supplied to the service.",
+                "Provide appropriate privacy notices and respond to data-subject rights.",
+                "Review scores and reasons before acting.",
+                "Confirm suppressions before submitting them.",
+                "Do not evade plan limits or authentication.",
+                "Do not use the app unlawfully or provide sensitive data incompatibly with applicable law.",
+                "Do not treat a result as conclusive proof of fraud."
+              ]
+            },
+            {
+              "id": "customer-data",
+              "title": "10. Customer data",
+              "paragraphs": [
+                "The merchant remains responsible for customer and Klaviyo profile data, its instructions, its privacy notices, its legal bases, and its decisions about suppression. The merchant grants ShopiDeck only the rights reasonably necessary to operate the service on its documented instructions and under the Privacy Policy."
+              ]
+            },
+            {
+              "id": "compliance",
+              "title": "11. Merchant compliance",
+              "paragraphs": [
+                "The merchant must comply with applicable privacy, marketing, consumer, platform, and other laws; Shopify and Klaviyo terms; and the rights of the people represented in its data. The merchant must not use the app for an incompatible purpose or provide data it is not authorized to process."
+              ]
+            },
+            {
+              "id": "scoring",
+              "title": "12. Rule-based scoring",
+              "paragraphs": [
+                "The service uses explainable, automated rules to produce signals and classifications. A score is an estimate for review, not proof of fraud, identity, inactivity, or unlawful conduct. The service does not use opens, clicks, purchases, or browsing activity to declare a profile inactive. False positives and false negatives are possible."
+              ]
+            },
+            {
+              "id": "review",
+              "title": "13. Human review",
+              "paragraphs": [
+                "The merchant must review the score, classification, and reasons. ShopiDeck does not make legal or similarly significant decisions solely from scoring, and the merchant retains the final decision. Results are not intended for advertising, credit, employment, insurance, or eligibility decisions."
+              ]
+            },
+            {
+              "id": "suppression",
+              "title": "14. Suppression",
+              "paragraphs": [
+                "The service does not suppress profiles automatically. The merchant selects profiles and confirms the action before ShopiDeck sends the suppression to Klaviyo. Suppression is not permanent profile deletion. ShopiDeck cannot guarantee that a suppression will succeed if Klaviyo, permissions, account status, API limits, or another third-party limitation prevents it."
+              ]
+            },
+            {
+              "id": "plans",
+              "title": "15. Plans",
+              "paragraphs": [
+                "The current plans are listed below. The Shopify approval screen and the app interface are the final reference for the price and plan conditions.",
+                "Free Audit: USD 0; one initial audit per store; up to 100,000 unsuppressed profiles; no suppression; no CSV. Starter: USD 9 per month; 2 scans per month; 5,000 profiles per month; 500 suppressions per month; detailed table and history. Growth: USD 19 per month; a 7-day trial through Shopify App Pricing; 5 scans per month; 25,000 profiles per month; 5,000 suppressions per month; CSV and history. Pro: USD 49 per month; 15 scans per month; 100,000 profiles per month; 25,000 suppressions per month; CSV, history, and priority support."
+              ]
+            },
+            {
+              "id": "limits",
+              "title": "16. Limits",
+              "paragraphs": [
+                "Scan, profile, suppression, CSV, and history availability depends on the plan shown in Shopify App Pricing and enforced by the app. The Free Audit does not reset when Klaviyo is disconnected. ShopiDeck may apply backend limits to protect the service and keep usage aligned with the selected plan."
+              ]
+            },
+            {
+              "id": "billing",
+              "title": "17. Billing",
+              "paragraphs": [
+                "Shopify App Pricing administers approval, charges, billing cycle, trial, cancellation, and invoice. ShopiDeck does not store payment card information. Taxes, renewals, billing dates, and charges are governed by the information presented by Shopify."
+              ]
+            },
+            {
+              "id": "trials",
+              "title": "18. Trials",
+              "paragraphs": [
+                "The Growth plan may include a 7-day trial through Shopify App Pricing. Eligibility, duration, conversion, charges, and cancellation follow the Shopify approval flow and the conditions shown at signup. No trial condition outside those sources is promised."
+              ]
+            },
+            {
+              "id": "cancellation",
+              "title": "19. Cancellation",
+              "paragraphs": [
+                "The merchant may cancel from Settings, through uninstallation, or according to the billing cycle administered by Shopify App Pricing. The merchant should review Shopify's billing information before cancelling. Disconnecting or uninstalling may stop future access and processing but does not necessarily delete data at the same moment."
+              ]
+            },
+            {
+              "id": "refunds",
+              "title": "20. Refunds",
+              "paragraphs": [
+                "Requests for billing adjustments or refunds should be sent to team@shopideck.com. Each request will be evaluated according to Shopify App Pricing billing, service use, applicable law, and the authority available to ShopiDeck within Shopify. Unless required by law, submitting a request does not guarantee a refund."
+              ]
+            },
+            {
+              "id": "third-parties",
+              "title": "21. Third-party services",
+              "paragraphs": [
+                "The service uses Shopify, Klaviyo, Supabase, Vercel, and Resend. Third-party outages, changes, limits, security incidents, or policy decisions may affect the service and are outside ShopiDeck's direct control. Prisma is an ORM library and is not an independent subprocessor."
+              ]
+            },
+            {
+              "id": "acceptable-use",
+              "title": "22. Acceptable use",
+              "bullets": [
+                "Do not violate law or third-party rights.",
+                "Do not access a store or Klaviyo account without authorization.",
+                "Do not submit malicious code or attack the service.",
+                "Do not evade authentication, plan limits, or usage controls.",
+                "Do not misrepresent a score as a verified fact.",
+                "Do not use the app for a decision requiring accuracy or legal effect that the service does not provide.",
+                "Do not send passwords, API keys, tokens, or other secrets in support forms."
+              ]
+            },
+            {
+              "id": "security",
+              "title": "23. Security and credentials",
+              "paragraphs": [
+                "The merchant must protect its Shopify and Klaviyo accounts, authorize suitable users, keep credentials confidential, and promptly report suspected unauthorized access. OAuth tokens are encrypted, protected routes require authentication, and secrets remain server-side. These measures do not guarantee absolute security."
+              ]
+            },
+            {
+              "id": "ip",
+              "title": "24. Intellectual property",
+              "paragraphs": [
+                "ShopiDeck owns or has the right to use the service, software, documentation, public-site content, brand, and related materials, except for merchant data and third-party materials. These Terms transfer no ownership. Shopify, Klaviyo, and other third-party names and marks belong to their respective owners."
+              ]
+            },
+            {
+              "id": "feedback",
+              "title": "25. Feedback",
+              "paragraphs": [
+                "If the merchant sends suggestions or feedback, ShopiDeck may use them to improve the service without compensation, provided it does not need to disclose the merchant's confidential information or customer data. Feedback is voluntary and does not change the merchant's ownership of its data."
+              ]
+            },
+            {
+              "id": "availability",
+              "title": "26. Availability",
+              "paragraphs": [
+                "The service may be affected by Shopify, Klaviyo, hosting, database, email, network, or other dependencies. ShopiDeck does not promise uninterrupted or error-free availability."
+              ]
+            },
+            {
+              "id": "maintenance",
+              "title": "27. Maintenance",
+              "paragraphs": [
+                "ShopiDeck may perform maintenance, security work, updates, or other operational work. Maintenance may temporarily limit or change access. ShopiDeck will communicate when required by applicable law or the circumstances of the service."
+              ]
+            },
+            {
+              "id": "modifications",
+              "title": "28. Modifications",
+              "paragraphs": [
+                "ShopiDeck may add, remove, or change features, plans, limits, or functionality when allowed by law and platform rules. Material changes will be communicated through an appropriate channel when required."
+              ]
+            },
+            {
+              "id": "suspension",
+              "title": "29. Suspension",
+              "paragraphs": [
+                "Access may be suspended when reasonably necessary for security, abuse prevention, non-payment through Shopify, breach of these Terms, a third-party platform requirement, legal compliance, or service protection. Where appropriate, ShopiDeck will make reasonable efforts to provide notice and an opportunity to address the issue."
+              ]
+            },
+            {
+              "id": "termination",
+              "title": "30. Termination",
+              "paragraphs": [
+                "Access may be terminated for the same reasons as suspension or if the service is discontinued. Termination does not remove obligations that by their nature continue, including payment obligations already incurred, intellectual-property provisions, confidentiality, disclaimers, and limitations to the extent legally enforceable."
+              ]
+            },
+            {
+              "id": "data-effects",
+              "title": "31. Effects on data",
+              "paragraphs": [
+                "When Klaviyo is disconnected, tokens are revoked and removed while retained history may remain. Account deletion removes the local store record and related local data through the implemented deletion flow. Uninstall and privacy webhooks support deletion and export processes. ShopiDeck does not claim to delete data that Shopify or Klaviyo retain independently. The Privacy Policy describes retention periods and the relevant deletion flows."
+              ]
+            },
+            {
+              "id": "warranties",
+              "title": "32. Warranty disclaimers",
+              "paragraphs": [
+                "To the maximum extent permitted by applicable law, the service is provided as available and as described. ShopiDeck does not warrant that scoring is complete or accurate, that every bot will be identified, that every suppression will succeed, or that the service will produce revenue, cost, deliverability, compliance, or other business results. Mandatory legal rights are not excluded."
+              ]
+            },
+            {
+              "id": "liability",
+              "title": "33. Limitation of liability",
+              "paragraphs": [
+                "To the maximum extent permitted by applicable law, ShopiDeck is not liable for indirect, incidental, special, consequential, exemplary, or punitive loss, or lost profits, revenue, goodwill, data, or business opportunities arising from or related to the service. Nothing in these Terms excludes liability or rights that cannot legally be excluded or limited."
+              ]
+            },
+            {
+              "id": "law",
+              "title": "34. Governing law",
+              "paragraphs": [
+                "These Terms are governed by the laws of the Republic of Colombia. The choice of law does not limit mandatory rights that cannot be excluded contractually."
+              ]
+            },
+            {
+              "id": "jurisdiction",
+              "title": "35. Jurisdiction",
+              "paragraphs": [
+                "The competent courts of Bogotá D.C., Colombia have jurisdiction over disputes subject to these Terms. The choice of jurisdiction does not limit mandatory rights that cannot be excluded contractually."
+              ]
+            },
+            {
+              "id": "communications",
+              "title": "36. Communications",
+              "paragraphs": [
+                "Operational, support, privacy, and legal communications may be sent through the app, Shopify, or team@shopideck.com. The merchant must keep its account and contact information current and monitor those channels."
+              ]
+            },
+            {
+              "id": "assignment",
+              "title": "37. Assignment",
+              "paragraphs": [
+                "The merchant may not assign these Terms in a way that violates applicable law or Shopify platform rules. ShopiDeck may assign or transfer its rights and obligations as part of operating the service, subject to applicable law."
+              ]
+            },
+            {
+              "id": "severability",
+              "title": "38. Severability",
+              "paragraphs": [
+                "If a provision is unenforceable, it will be adjusted to the minimum extent necessary and the remaining provisions will continue, subject to mandatory law."
+              ]
+            },
+            {
+              "id": "waiver",
+              "title": "39. No waiver",
+              "paragraphs": [
+                "A failure to enforce a provision is not a waiver of the right to enforce it later."
+              ]
+            },
+            {
+              "id": "entire-agreement",
+              "title": "40. Entire agreement",
+              "paragraphs": [
+                "These Terms, the Privacy Policy, the applicable Shopify App Pricing information, and terms expressly incorporated in writing describe the service agreement. No unlisted promise is added by implication."
+              ]
+            },
+            {
+              "id": "language",
+              "title": "41. Prevailing language",
+              "paragraphs": [
+                "The Spanish version is the prevailing version. The English version is a translation. Where legally permitted and there is a contradiction, the Spanish version prevails without removing mandatory rights applicable to the merchant."
+              ]
+            },
+            {
+              "id": "contact",
+              "title": "42. Contact",
+              "paragraphs": [
+                "For questions about these Terms, contact team@shopideck.com. Legal-notice address: Cra. 79A # 6-04, Bogotá D.C., Colombia."
+              ]
+            }
+          ]
+        },
+        "dpa": {
+          "title": "SD: Klaviyo Bot Cleaner — Processing Schedule",
+          "category": "Data processing",
+          "effectiveDate": "October 21, 2026",
+          "lastUpdated": "October 21, 2026",
+          "intro": "This Data Processing Addendum (DPA) applies when ShopiDeck processes Klaviyo profile data for a merchant using SD: Klaviyo Bot Cleaner. It supplements the Terms of Use and the Privacy Policy.",
+          "sections": [
+            {
+              "id": "app-scope",
+              "title": "Documents applicable to this app",
+              "paragraphs": [
+                "This document supplements the general ShopiDeck documents exclusively for SD: Klaviyo Bot Cleaner. Its data, permissions, providers, retention, pricing, and suppression rules do not apply to Less Time Marketing or other apps. For app-specific differences, this addendum prevails over the general text; the DPA governs processor obligations and mandatory law always prevails."
+              ],
+              "links": [
+                {
+                  "label": "General ShopiDeck document",
+                  "href": "/dpa"
+                },
+                {
+                  "label": "Bot Cleaner privacy",
+                  "href": "/privacy/klaviyo-bot-cleaner"
+                },
+                {
+                  "label": "Bot Cleaner terms",
+                  "href": "/terms/klaviyo-bot-cleaner"
+                },
+                {
+                  "label": "General DPA and common obligations",
+                  "href": "/dpa"
+                }
+              ]
+            },
+            {
+              "id": "object",
+              "title": "1. Object and roles",
+              "paragraphs": [
+                "The merchant is the controller and ShopiDeck is the processor for personal data processed through the merchant's authorized Klaviyo account and documented instructions. This DPA describes the processing needed to provide the service, including profile auditing, scoring, results, merchant-confirmed suppression, audit history, and privacy-request assistance."
+              ]
+            },
+            {
+              "id": "duration",
+              "title": "2. Duration",
+              "paragraphs": [
+                "This DPA begins when the merchant accepts the Terms or uses the service and continues while ShopiDeck processes personal data for the merchant. It ends when that processing ends, subject to retention required by law, security, dispute, or the documented deletion flows."
+              ]
+            },
+            {
+              "id": "instructions",
+              "title": "3. Instructions",
+              "paragraphs": [
+                "ShopiDeck processes personal data only on the merchant's documented instructions, the Terms, the Privacy Policy, and the configuration and actions the merchant takes in the app. The merchant must ensure that its instructions are lawful and that it has authority to connect Klaviyo and provide the data."
+              ]
+            },
+            {
+              "id": "data",
+              "title": "4. Categories of data",
+              "bullets": [
+                "Klaviyo Account ID, scopes, and encrypted OAuth access and refresh tokens.",
+                "Profile ID, email, name, phone, city, country, IP when available, creation and update dates, email domain, and marketing subscription status.",
+                "Normalized detection patterns, risk score, risk level, reasons, suppression results, audit history, and suppression history.",
+                "Shopify store identifiers, session and account information, plan and usage information, support requests, and limited technical records needed for the service."
+              ]
+            },
+            {
+              "id": "subjects",
+              "title": "5. Categories of data subjects",
+              "bullets": [
+                "Customers and contacts represented by Klaviyo profiles.",
+                "The merchant's owners, administrators, and authorized users.",
+                "People whose information appears in support, privacy, security, or operational records."
+              ]
+            },
+            {
+              "id": "confidentiality",
+              "title": "6. Confidentiality",
+              "paragraphs": [
+                "ShopiDeck will restrict access to personal data to people and providers who need it to provide, secure, support, or comply with the service and who are subject to confidentiality obligations or an appropriate legal duty."
+              ]
+            },
+            {
+              "id": "security",
+              "title": "7. Security",
+              "paragraphs": [
+                "ShopiDeck applies the technical and organizational measures described in the Privacy Policy, including encrypted Klaviyo tokens, HTTPS, server-side secrets, authenticated routes, webhook verification, backend validation, ownership checks, merchant confirmation before suppression, backend limits, and encrypted privacy requests. No measure guarantees absolute security."
+              ]
+            },
+            {
+              "id": "subprocessors",
+              "title": "8. Subprocessors",
+              "paragraphs": [
+                "The merchant authorizes the subprocessors listed on the public subprocessor page: Shopify, Klaviyo, Supabase, Vercel, and Resend. ShopiDeck will use them only for the purposes described there and will keep the list current when the service changes."
+              ],
+              "links": [
+                {
+                  "label": "View the subprocessor list",
+                  "href": "/subprocessors#klaviyo-bot-cleaner"
+                }
+              ]
+            },
+            {
+              "id": "transfers",
+              "title": "9. International transfers",
+              "paragraphs": [
+                "Processing may occur in the United States and other countries where the listed providers operate. Supabase uses the US East region and Vercel processes in the United States. ShopiDeck uses provider contracts and safeguards when applicable. The merchant may request additional information about transfer safeguards at team@shopideck.com."
+              ]
+            },
+            {
+              "id": "rights",
+              "title": "10. Assistance with rights",
+              "paragraphs": [
+                "ShopiDeck assists the merchant with documented privacy requests received through Shopify and with the implemented customer data-request and redaction webhooks. The merchant remains responsible for responding to its customers and deciding whether a request is valid and how it should be fulfilled."
+              ]
+            },
+            {
+              "id": "incidents",
+              "title": "11. Incidents",
+              "paragraphs": [
+                "ShopiDeck investigates suspected security incidents and notifies the merchant when required by law or appropriate to the relevant incident. The merchant must promptly report compromised credentials or suspected unauthorized access to team@shopideck.com and must not send secrets by email."
+              ]
+            },
+            {
+              "id": "audits",
+              "title": "12. Audits and information",
+              "paragraphs": [
+                "ShopiDeck will make the information in the Privacy Policy, this DPA, and the public subprocessor list available to help the merchant assess the processing. Any additional audit or information request must be proportionate to the service, protect confidential information, and be sent to team@shopideck.com."
+              ]
+            },
+            {
+              "id": "deletion",
+              "title": "13. Deletion or return",
+              "paragraphs": [
+                "When the merchant disconnects Klaviyo, the OAuth tokens and connection are removed while retained history may remain. On uninstall, account deletion, and shop/redact, ShopiDeck follows the implemented deletion flows. Local records are removed according to the retention periods and flows in the Privacy Policy. Shopify and Klaviyo may retain data independently."
+              ]
+            },
+            {
+              "id": "merchant",
+              "title": "14. Merchant obligations",
+              "bullets": [
+                "Maintain a lawful basis and appropriate notices for customer data.",
+                "Give lawful and documented instructions.",
+                "Have authority over the Shopify and Klaviyo accounts.",
+                "Review and confirm suppressions.",
+                "Respond to data-subject requests and complaints as controller.",
+                "Do not send sensitive data, credentials, API keys, or passwords through the service or support channels inappropriately."
+              ]
+            },
+            {
+              "id": "measures",
+              "title": "15. Technical and organizational measures",
+              "paragraphs": [
+                "The service's measures include access control through Shopify authentication, protected routes, encrypted OAuth tokens, HTTPS, server-side secret handling, webhook verification, backend validation, ownership verification for critical actions, backend usage limits, suppression confirmation, and encrypted privacy-request exports. These measures may be updated as the service evolves without reducing the obligations of the parties under applicable law."
+              ]
+            },
+            {
+              "id": "contact",
+              "title": "16. Contact",
+              "paragraphs": [
+                "For this DPA, contact team@shopideck.com or write to Cra. 79A # 6-04, Bogotá D.C., Colombia."
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "less-time-marketing": {
+      "name": "SD: Less Time Marketing",
+      "documents": {
+        "privacy": {
+          "title": "SD: Less Time Marketing — Privacy Addendum",
+          "category": "Legal and privacy",
+          "effectiveDate": "October 21, 2026",
+          "lastUpdated": "October 21, 2026",
+          "intro": "How Less Time Marketing uses store, brand, and connected-account data to create, schedule, and publish content. This app does not read Shopify customers, orders, or payments. These practices apply only when you use this app or activate the relevant connection.",
+          "sections": [
+            {
+              "id": "scope",
+              "title": "1. Scope, operator, and roles",
+              "paragraphs": [
+                "This addendum supplements the general ShopiDeck Privacy Policy exclusively for Less Time Marketing. For app-specific differences it prevails over the general policy, subject to mandatory law and the DPA for processor obligations. Bot Cleaner permissions, scoring, customer-profile retention, and suppression workflows do not apply here. Publishing these terms does not mean every integration is already available; availability and permissions are shown in the app before connection.",
+                "The operator and privacy contact are identified in the general policy. ShopiDeck is controller for account administration, billing, connection administration, security, and its own service communications; it is processor for personal data in store and brand materials and publishing instructions handled on the merchant's behalf. Social platforms act under their own terms for data they receive. A connection is not permission to use its data in another ShopiDeck app."
+              ],
+              "links": [
+                {
+                  "label": "General ShopiDeck privacy policy",
+                  "href": "/privacy"
+                },
+                {
+                  "label": "General ShopiDeck terms",
+                  "href": "/terms"
+                },
+                {
+                  "label": "This app's privacy addendum",
+                  "href": "/privacy/less-time-marketing"
+                },
+                {
+                  "label": "This app's service terms",
+                  "href": "/terms/less-time-marketing"
+                },
+                {
+                  "label": "General DPA",
+                  "href": "/dpa"
+                },
+                {
+                  "label": "This app's processing schedule",
+                  "href": "/dpa/less-time-marketing"
+                },
+                {
+                  "label": "This app's providers",
+                  "href": "/subprocessors#less-time-marketing"
+                }
+              ]
+            },
+            {
+              "id": "data",
+              "title": "2. Data, sources, and purposes",
+              "table": {
+                "headers": [
+                  "Data and source",
+                  "Use"
+                ],
+                "rows": [
+                  [
+                    "Shopify: store domain, name, time zone, language, currency, and email; installation and session identifiers.",
+                    "Identify the installation, authenticate users, schedule in the store's time zone, and send service notices."
+                  ],
+                  [
+                    "Shopify products (read_products): titles, descriptions, prices, tags, and images.",
+                    "Generate product-based copy, images, and videos."
+                  ],
+                  [
+                    "Merchant: brand description, audience, tone, values, logo, colors, prohibited words, and prompts.",
+                    "Adapt generated content to the brand and merchant instructions."
+                  ],
+                  [
+                    "App: campaigns, posts, copy, hashtags, asset links, schedules, and publishing attempts.",
+                    "Maintain the content calendar and show publishing status and errors."
+                  ],
+                  [
+                    "Generated images and videos; Shopify Files (write_files).",
+                    "Store final generated assets in the merchant's Shopify Files, rather than as a permanent media library on ShopiDeck servers."
+                  ],
+                  [
+                    "Connected Meta, TikTok, Google/YouTube, or LinkedIn account: ID, display name, photo, granted scopes, and access/refresh tokens where issued.",
+                    "Identify the chosen account, maintain the connection, and publish authorized content. Tokens are encrypted at rest using AES-256-GCM."
+                  ],
+                  [
+                    "Shopify Billing and app: plan, credits, consumption, purchase and billing status; technical and audit logs.",
+                    "Manage charges, credit balances, service reliability, security, and abuse prevention."
+                  ]
+                ]
+              }
+            },
+            {
+              "id": "excluded-data",
+              "title": "3. Data this app does not access",
+              "bullets": [
+                "It does not request permissions to read Shopify customer records, orders, or payment details. Subscription billing status is separate from store customer payment data.",
+                "It does not read social-network messages, follower lists, audience analytics, or other people's social data for those purposes. Basic account/channel identity is used only for the selected connection.",
+                "It does not receive your social-network passwords: authorization takes place with the platform.",
+                "Product images are processed temporarily for generation; ShopiDeck does not keep permanent copies of the original product photos on its servers. AI providers may have their own processing and retention conditions.",
+                "Do not put customer lists, sensitive personal data, secrets, or third-party personal information into brand fields, prompts, or product materials for generation."
+              ]
+            },
+            {
+              "id": "purposes-ai",
+              "title": "4. Legal bases, AI, and automation",
+              "paragraphs": [
+                "Creating, scheduling, publishing, managing credits, and necessary service notices are based on performance of the contract where that basis applies. Billing and accounting also involve legal obligations. Security, abuse prevention, and optional weekly summaries may rely on legitimate interests where permitted; optional emails can be disabled in Settings → Emails. Consent or authorization is obtained where required, including under Colombian law. For data processed on your behalf, you determine the legal basis and instruct ShopiDeck.",
+                "All AI processing is routed through fal.ai. Depending on the selected task, the chain includes OpenRouter for routing, Anthropic and OpenAI for text/creative work, Google and OpenAI for images, MiniMax, Google and ByteDance for video, Kuaishou/Kling for background music, and fal.ai subtitle and FFmpeg assembly services. Legacy reserved jobs may also use earlier Seedance or Wan models. Only the inputs needed for the selected operation are sent to the relevant providers; not every provider receives every request. These are generation functions, distinct from Bot Cleaner's rule-based scoring.",
+                "ShopiDeck does not use your data to train its own AI models. The external providers' retention, downstream routing, transfer safeguards, and no-training restrictions are pending contractual confirmation. The current documentation does not establish a fal.ai or model-provider DPA or written no-training commitment. No zero-retention or universal external-provider no-training guarantee is made. General public privacy notices do not establish the terms of the specific API/model deployment.",
+                "This app does not make decisions producing legal or similarly significant effects about individuals. Publishing requires approval by default. If you enable automatic publishing for a campaign, eligible posts can be published without individual review; you can disable that option. TikTok always requires your explicit approval and publishing choices."
+              ]
+            },
+            {
+              "id": "connections",
+              "title": "5. Social connections and information shared",
+              "paragraphs": [
+                "Only connections you activate receive content. Authorizing a connection does not activate all networks. Each platform's own privacy terms govern its independent processing, including public distribution of posts."
+              ],
+              "table": {
+                "headers": [
+                  "Connection and access",
+                  "Content sent"
+                ],
+                "rows": [
+                  [
+                    "Google/YouTube: youtube.upload and youtube.readonly to identify the channel.",
+                    "Video, title, description, hashtags, and selected publishing options."
+                  ],
+                  [
+                    "Meta: publish to the selected Instagram professional account or Facebook Page.",
+                    "Copy, hashtags, and image or video, plus the chosen target account."
+                  ],
+                  [
+                    "TikTok: basic profile and video publishing permissions.",
+                    "Copy, hashtags, video, and the privacy, interaction, and commercial-content choices you explicitly select."
+                  ],
+                  [
+                    "LinkedIn: openid, profile, and w_member_social for the connected member profile.",
+                    "Copy, hashtags, images or video, and the selected publishing destination."
+                  ]
+                ]
+              },
+              "links": [
+                {
+                  "label": "YouTube Terms of Service",
+                  "href": "https://www.youtube.com/t/terms",
+                  "external": true
+                },
+                {
+                  "label": "Google Privacy Policy",
+                  "href": "https://policies.google.com/privacy",
+                  "external": true
+                },
+                {
+                  "label": "Google API Services User Data Policy (Limited Use)",
+                  "href": "https://developers.google.com/terms/api-services-user-data-policy",
+                  "external": true
+                },
+                {
+                  "label": "Google: connected apps / aplicaciones conectadas",
+                  "href": "https://myaccount.google.com/connections",
+                  "external": true
+                },
+                {
+                  "label": "Meta Terms",
+                  "href": "https://www.facebook.com/terms.php",
+                  "external": true
+                },
+                {
+                  "label": "Instagram Terms",
+                  "href": "https://help.instagram.com/581066165581870",
+                  "external": true
+                },
+                {
+                  "label": "TikTok Terms of Service",
+                  "href": "https://www.tiktok.com/legal/page/row/terms-of-service/en",
+                  "external": true
+                },
+                {
+                  "label": "TikTok Music Usage Confirmation",
+                  "href": "https://www.tiktok.com/legal/page/global/music-usage-confirmation/en",
+                  "external": true
+                },
+                {
+                  "label": "TikTok Branded Content Policy",
+                  "href": "https://www.tiktok.com/legal/page/global/bc-policy/en",
+                  "external": true
+                },
+                {
+                  "label": "LinkedIn User Agreement",
+                  "href": "https://www.linkedin.com/legal/user-agreement",
+                  "external": true
+                }
+              ]
+            },
+            {
+              "id": "google-limited-use",
+              "title": "6. Google/YouTube and Limited Use",
+              "paragraphs": [
+                "Less Time Marketing uses YouTube API Services. By using the YouTube integration, you agree to be bound by the YouTube Terms of Service; Google's Privacy Policy explains Google's processing.",
+                "Less Time Marketing's use and transfer to any other app of information received from Google APIs will adhere to the Google API Services User Data Policy, including the Limited Use requirements. Google user data is used only to provide the user-facing connection and publishing features you authorize, is not sold or used for advertising, and is not transferred to another ShopiDeck app or to AI providers for model training. Humans do not read it except with your affirmative agreement for specific data, for necessary security purposes, to comply with law, or as otherwise expressly permitted by that policy.",
+                "Revoke access at any time through Google's connected-app settings or disconnect in the app. You may also request deletion directly from ShopiDeck without first revoking access. Revocation stops further authorized access; deletion of retained connection data is handled under the retention rules below and, for YouTube authorized data, within 30 calendar days of revocation or a deletion request. Previously published videos remain on YouTube unless you delete them there."
+              ],
+              "links": [
+                {
+                  "label": "YouTube Terms of Service",
+                  "href": "https://www.youtube.com/t/terms",
+                  "external": true
+                },
+                {
+                  "label": "Google Privacy Policy",
+                  "href": "https://policies.google.com/privacy",
+                  "external": true
+                },
+                {
+                  "label": "Google API Services User Data Policy (Limited Use)",
+                  "href": "https://developers.google.com/terms/api-services-user-data-policy",
+                  "external": true
+                },
+                {
+                  "label": "Google: connected apps / aplicaciones conectadas",
+                  "href": "https://myaccount.google.com/connections",
+                  "external": true
+                }
+              ]
+            },
+            {
+              "id": "providers-transfers",
+              "title": "7. Providers and international processing",
+              "paragraphs": [
+                "This app uses Shopify for installation, products, Files and billing; Vercel for hosting; Neon for its database; fal.ai and relevant model providers for generation; Resend for service emails; and only the social platforms you connect for publishing. Supabase and Klaviyo are not Less Time Marketing providers merely because Bot Cleaner uses them. The provider register describes the relevant data and roles, including downstream model providers.",
+                "The operator is in Colombia. Processing may occur in the United States, Canada, the configured Neon region, and other countries in the provider register. Neon's specific deployment region is not established in the supplied product documentation; request the current location and safeguards at team@shopideck.com. Where required, transfers must rely on an applicable lawful mechanism, such as contractual safeguards; no provider certification or signed transfer instrument is presumed by this notice."
+              ],
+              "links": [
+                {
+                  "label": "Less Time Marketing provider register",
+                  "href": "/subprocessors#less-time-marketing"
+                }
+              ]
+            },
+            {
+              "id": "retention",
+              "title": "8. Retention, disconnecting, and uninstalling",
+              "paragraphs": [
+                "The following periods apply to this app's active local records. Earlier deletion on uninstall or a valid request takes precedence over ordinary retention. They do not promise deletion of Shopify Files, published social content, independent platform records, provider logs, or backup copies at the same instant.",
+                "Disconnecting a network in the app removes its local tokens immediately and stops new publishing through that connection; revoking from the platform stops API access and is followed by connection cleanup. Uninstalling removes the app's social credentials and stops future jobs. Shopify normally sends shop/redact approximately 48 hours after uninstall; on that event ShopiDeck deletes the local store record and related app records. This is not a guarantee that all copies at every provider disappear exactly 48 hours after uninstall. You can request deletion directly without waiting for that event."
+              ],
+              "table": {
+                "headers": [
+                  "Record",
+                  "Ordinary retention or deletion trigger"
+                ],
+                "rows": [
+                  [
+                    "Connected-account tokens",
+                    "Until disconnect, revocation, or uninstall; removed immediately on in-app disconnection."
+                  ],
+                  [
+                    "Campaigns, posts, publishing attempts",
+                    "365 days after completion, or earlier on store-data deletion."
+                  ],
+                  [
+                    "Generation-credit history",
+                    "24 months, or earlier on store-data deletion unless legally required records must be retained."
+                  ],
+                  [
+                    "Plan and package purchases",
+                    "While installed, with only records required by law retained afterwards; Shopify retains its own invoices."
+                  ],
+                  [
+                    "Generated files no longer referenced by any post",
+                    "Nightly cleanup in Shopify Files while the app remains installed and has access. After uninstall you manage remaining files in Shopify."
+                  ],
+                  [
+                    "Other local store and connection records",
+                    "Deleted on shop/redact or a valid earlier deletion request, subject to narrowly necessary legal retention."
+                  ],
+                  [
+                    "Privacy-request and used-trial hashes",
+                    "Only minimal pseudonymous evidence for request handling and preventing repeated trials; restricted to those purposes and removed when no longer necessary or legally required. Hashes are not anonymous data."
+                  ]
+                ]
+              }
+            },
+            {
+              "id": "rights-security",
+              "title": "9. Rights, deletion, security, and changes",
+              "paragraphs": [
+                "Send access, correction, deletion, portability, objection, or other applicable rights requests to team@shopideck.com, identifying Less Time Marketing and your store. The general policy gives jurisdiction-specific rights and response periods. Shopify customer requests are checked within this app's scope: because it does not store Shopify customer records, the response reports that absence where applicable. That response does not decide whether Bot Cleaner holds the same person's data.",
+                "For Meta data deletion, disconnect in the app, remove access in Meta, or use the public deletion instructions linked below to request deletion of connection data. This website provides instructions and contact, not an automated Meta callback or generated confirmation-code service. A Meta callback and status URL, if configured in the app, are separate app functions.",
+                "Security measures include HTTPS, AES-256-GCM encryption of stored social tokens, minimum necessary access, and audit records. Incidents affecting personal data are notified without undue delay as required; notification to an authority within 72 hours applies where the law requires it, not to every technical incident. The service is for adult business users. Material privacy changes are communicated in the app or by email and any necessary new authorization is obtained before the changed use."
+              ],
+              "links": [
+                {
+                  "label": "Data deletion instructions",
+                  "href": "/data-deletion"
+                },
+                {
+                  "label": "General privacy rights and contact",
+                  "href": "/privacy#rights"
+                }
+              ]
+            }
+          ]
+        },
+        "terms": {
+          "title": "SD: Less Time Marketing — Service Terms",
+          "category": "Legal and privacy",
+          "effectiveDate": "October 21, 2026",
+          "lastUpdated": "October 21, 2026",
+          "intro": "App-specific conditions for AI content generation, campaign scheduling, social publishing, plans, and credits in Less Time Marketing.",
+          "sections": [
+            {
+              "id": "scope",
+              "title": "1. Applicable agreement",
+              "paragraphs": [
+                "These conditions apply only to Less Time Marketing and supplement the general ShopiDeck Terms. The operator and address are identified in the general Terms. Installing or using the app requires acceptance of the general Terms, these conditions, the applicable approved plan, and acknowledgment of the general Privacy Policy and this app's privacy addendum. These app-specific conditions prevail for this app, subject to mandatory law and the DPA for processor obligations. Using this app does not subscribe you to Bot Cleaner or any other app."
+              ],
+              "links": [
+                {
+                  "label": "General ShopiDeck privacy policy",
+                  "href": "/privacy"
+                },
+                {
+                  "label": "General ShopiDeck terms",
+                  "href": "/terms"
+                },
+                {
+                  "label": "This app's privacy addendum",
+                  "href": "/privacy/less-time-marketing"
+                },
+                {
+                  "label": "This app's service terms",
+                  "href": "/terms/less-time-marketing"
+                },
+                {
+                  "label": "General DPA",
+                  "href": "/dpa"
+                },
+                {
+                  "label": "This app's processing schedule",
+                  "href": "/dpa/less-time-marketing"
+                },
+                {
+                  "label": "This app's providers",
+                  "href": "/subprocessors#less-time-marketing"
+                }
+              ]
+            },
+            {
+              "id": "service-approval",
+              "title": "2. Service, approval, and automatic publishing",
+              "paragraphs": [
+                "Less Time Marketing creates copy, hashtags, images, videos, and subtitles using third-party AI from store products, brand materials, and your prompts. It schedules and publishes to accounts you connect when the integration is available and authorized. AI output can contain errors: review accuracy, rights, and platform rules before publishing.",
+                "By default nothing is published without your approval. If you enable automatic publishing for a campaign, the app approves eligible posts one hour before their scheduled time and they may publish without individual review. You can disable it. TikTok is excluded: you must always approve each TikTok post and explicitly choose the required privacy, interaction, commercial-content, and music-use confirmations. Automatic approval in this app never authorizes automatic suppression in Bot Cleaner.",
+                "Generated media is saved in Content → Files in your Shopify store. The app deletes files it no longer needs while authorized. Once uninstalled it loses access and cannot delete remaining Shopify Files; you must manage them in Shopify. Publishing to a social network creates a separate platform copy that uninstalling does not remove."
+              ]
+            },
+            {
+              "id": "social-platforms",
+              "title": "3. Connected accounts and platform terms",
+              "paragraphs": [
+                "You must be authorized to administer every connected account or Page. Connecting authorizes publication of content you approve or enable for automatic approval. You can disconnect in the app or revoke access from the platform. Platforms may delay, reject, restrict, make private, or remove content, change APIs, or suspend accounts.",
+                "The app uses YouTube API Services. By using its YouTube features you agree to be bound by the YouTube Terms of Service. Google's Privacy Policy also applies to Google's processing. Meta, Instagram, TikTok, and LinkedIn terms apply to their respective connections. For TikTok, the Music Usage Confirmation and, where applicable, Branded Content Policy also apply. These requirements concern only the platform you use.",
+                "Where supported, the app labels AI-generated content, for example on YouTube. You remain responsible for synthetic-content disclosures and advertising labels required by the platform or applicable law, including applicable EU AI rules. A platform label does not guarantee legal compliance."
+              ],
+              "links": [
+                {
+                  "label": "YouTube Terms of Service",
+                  "href": "https://www.youtube.com/t/terms",
+                  "external": true
+                },
+                {
+                  "label": "Google Privacy Policy",
+                  "href": "https://policies.google.com/privacy",
+                  "external": true
+                },
+                {
+                  "label": "Google API Services User Data Policy (Limited Use)",
+                  "href": "https://developers.google.com/terms/api-services-user-data-policy",
+                  "external": true
+                },
+                {
+                  "label": "Google: connected apps / aplicaciones conectadas",
+                  "href": "https://myaccount.google.com/connections",
+                  "external": true
+                },
+                {
+                  "label": "Meta Terms",
+                  "href": "https://www.facebook.com/terms.php",
+                  "external": true
+                },
+                {
+                  "label": "Instagram Terms",
+                  "href": "https://help.instagram.com/581066165581870",
+                  "external": true
+                },
+                {
+                  "label": "TikTok Terms of Service",
+                  "href": "https://www.tiktok.com/legal/page/row/terms-of-service/en",
+                  "external": true
+                },
+                {
+                  "label": "TikTok Music Usage Confirmation",
+                  "href": "https://www.tiktok.com/legal/page/global/music-usage-confirmation/en",
+                  "external": true
+                },
+                {
+                  "label": "TikTok Branded Content Policy",
+                  "href": "https://www.tiktok.com/legal/page/global/bc-policy/en",
+                  "external": true
+                },
+                {
+                  "label": "LinkedIn User Agreement",
+                  "href": "https://www.linkedin.com/legal/user-agreement",
+                  "external": true
+                }
+              ]
+            },
+            {
+              "id": "plans-credits",
+              "title": "4. Plans, trial, and credits",
+              "paragraphs": [
+                "Plans and packages are billed through Shopify in USD and appear on your Shopify bill. Current prices and quantities are shown in the app and Shopify listing; only charges approved through the applicable Shopify flow are authorized. These credits are specific to Less Time Marketing and are not transferable to another ShopiDeck app."
+              ],
+              "table": {
+                "headers": [
+                  "Item",
+                  "Conditions"
+                ],
+                "rows": [
+                  [
+                    "Starter, Growth, and Pro",
+                    "Monthly plans with the price and monthly credits shown before approval."
+                  ],
+                  [
+                    "Free trial",
+                    "7 days and 60 credits, once per store, under the terms shown at signup. Cancel before the trial ends to avoid the subscription charge."
+                  ],
+                  [
+                    "Monthly credits",
+                    "Renew each billing cycle; unused monthly credits do not roll over."
+                  ],
+                  [
+                    "Credit packages",
+                    "One-time purchases valid for 12 months from purchase, used after monthly credits."
+                  ],
+                  [
+                    "Consumption",
+                    "Each text, image, video, or subtitle generation uses the credits displayed before generation."
+                  ]
+                ]
+              }
+            },
+            {
+              "id": "refunds",
+              "title": "5. Failed generations and refunds",
+              "paragraphs": [
+                "Credits are returned automatically if generation fails for a technical reason. A generation rejected by the AI provider's content policy consumes the displayed credits even if no output is delivered; this condition must be disclosed before the attempt is charged.",
+                "Plan and package payments are non-refundable, with no prorated refund for a partially used cycle, except where mandatory law requires otherwise or ShopiDeck made a billing error. Report a suspected billing error to team@shopideck.com within 30 days so it can be investigated; this reporting period does not remove mandatory legal rights. Approved monetary refunds are processed through Shopify."
+              ]
+            },
+            {
+              "id": "cancellation-pricing",
+              "title": "6. Cancellation and price changes",
+              "paragraphs": [
+                "Cancel through Plans in the app or uninstall. Cancelling in the app ends the plan and its monthly credits immediately; package credits remain until expiry while the account is available. Cancellation through Shopify may leave access active until the end of the paid cycle, as shown in that flow. If neither an active plan nor usable credits remain, campaigns are paused and no new posts are published until eligibility is restored. Uninstalling stops app processing and access, including use of package credits; retaining unused credits does not authorize later publishing after uninstall.",
+                "Price changes are announced at least 30 days in advance and any approval required by Shopify must be obtained before charging the new amount. Prices, credits, and cancellation rules from another ShopiDeck app do not change this subscription."
+              ]
+            },
+            {
+              "id": "content-rights",
+              "title": "7. Your materials and generated content",
+              "paragraphs": [
+                "You retain rights in your product data, brand, logo, and prompts. You grant ShopiDeck and the providers involved only the permission needed to generate, store, schedule, and publish content for you. You must have the necessary rights and permissions for input materials.",
+                "To the extent ShopiDeck holds transferable rights in generated text, images, and videos, ShopiDeck assigns those rights to you, subject to third-party rights and model terms. AI output may be similar to other users' output, may not qualify for intellectual-property protection, and is not guaranteed exclusive or free of third-party claims. No rights in third-party music, brands, likenesses, or other protected material are granted by implication.",
+                "You are responsible for approved or automatically approved posts, including truthful product claims, prices, discounts, endorsements, image and music rights, privacy, advertising and consumer law, and platform rules. ShopiDeck retains rights in its software, design, documentation, and brands under the general Terms."
+              ]
+            },
+            {
+              "id": "acceptable-use",
+              "title": "8. Prohibited use and enforcement",
+              "bullets": [
+                "Illegal, deceptive, defamatory, hateful, or sexual content; fabricated offers, discounts, or testimonials.",
+                "Products or services prohibited by Shopify or the selected platform; impersonation of people or brands.",
+                "Copyright, trademark, privacy, image, or music-rights infringement; bypassing content restrictions or platform/API limits.",
+                "Spam, abusive automation, unauthorized accounts, or attempts to evade credit, trial, or authentication controls."
+              ],
+              "paragraphs": [
+                "ShopiDeck may block product images rejected under content policies, pause campaigns, or suspend the affected account for violations. Notice is provided unless law or a serious risk prevents it. A restriction in this app does not itself authorize new data access or automatic suspension of unrelated apps; the general Terms govern any separately justified security or legal measure."
+              ]
+            },
+            {
+              "id": "availability-liability",
+              "title": "9. Availability, liability, and third-party claims",
+              "paragraphs": [
+                "The service is provided as is and as available to the extent legally permitted. It depends on Shopify, social networks, AI, hosting, and database providers. A missed publication is shown for review and rescheduling; no sales, reach, follower growth, exact publishing time, or platform acceptance is guaranteed.",
+                "To the maximum extent permitted by law, total ShopiDeck liability arising from this app is limited to amounts you paid ShopiDeck for this app in the 12 months before the event giving rise to the claim. Fees paid for another ShopiDeck app are not included. The general exclusions for indirect loss, lost profits and data, and independent platform decisions also apply. These limits never exclude mandatory rights or liability that cannot legally be limited, including fraud or gross negligence where applicable.",
+                "To the extent permitted by law, you will indemnify ShopiDeck for third-party claims resulting from unlawful content you supplied or authorized for publication, rights infringement, or your breach of these Terms. This does not cover loss caused by ShopiDeck's own breach or non-excludable responsibility. ShopiDeck will notify you of the claim and allow reasonable participation in the defense; no settlement imposing obligations on you may be made without your agreement."
+              ]
+            },
+            {
+              "id": "changes-law-contact",
+              "title": "10. Changes, termination, and contact",
+              "paragraphs": [
+                "Material changes to these app conditions are notified in the app or by email at least 15 days before taking effect, except changes urgently required by law or security, which are communicated as soon as reasonably possible. Price changes follow the 30-day rule above. Material removal of an essential paid feature is announced with reasonable advance notice. Continued use after effectiveness constitutes acceptance where legally permitted; any express consent or Shopify approval required is still obtained. You may stop using and uninstall the app before a change takes effect.",
+                "Uninstalling terminates app access and removes credentials; local records are deleted according to the app privacy addendum. The general Terms govern Colombian law, competent Bogotá courts, and mandatory rights elsewhere. This is a business service; consumer cancellation rights, including any EU/UK withdrawal right, apply only if mandatory law makes them applicable and are never waived here.",
+                "For support, billing disputes, or legal questions contact team@shopideck.com, identifying Less Time Marketing. We respond to service disputes within 15 business days; privacy requests follow the statutory periods in the general Privacy Policy."
+              ]
+            }
+          ]
+        },
+        "dpa": {
+          "title": "SD: Less Time Marketing — Processing Schedule",
+          "category": "Legal and privacy",
+          "effectiveDate": "October 21, 2026",
+          "lastUpdated": "October 21, 2026",
+          "intro": "This schedule describes only personal data processed on the merchant's behalf by Less Time Marketing and forms part of the general ShopiDeck DPA. Account administration handled as controller remains governed by the general Privacy Policy.",
+          "sections": [
+            {
+              "id": "processing",
+              "title": "1. Subject matter, duration, and instructions",
+              "paragraphs": [
+                "The purpose is generating, storing, scheduling, and publishing merchant content from authorized product and brand materials. Processing includes retrieval, temporary media processing, AI generation, storage of campaign metadata and asset links, transmission to chosen social accounts, logging, and deletion. It lasts for the app relationship and documented retention periods. Prompts, selected platforms, campaign settings, individual approvals, and explicitly enabled automatic publishing are documented instructions. They apply only to this app."
+              ],
+              "links": [
+                {
+                  "label": "General ShopiDeck privacy policy",
+                  "href": "/privacy"
+                },
+                {
+                  "label": "General ShopiDeck terms",
+                  "href": "/terms"
+                },
+                {
+                  "label": "This app's privacy addendum",
+                  "href": "/privacy/less-time-marketing"
+                },
+                {
+                  "label": "This app's service terms",
+                  "href": "/terms/less-time-marketing"
+                },
+                {
+                  "label": "General DPA",
+                  "href": "/dpa"
+                },
+                {
+                  "label": "This app's processing schedule",
+                  "href": "/dpa/less-time-marketing"
+                },
+                {
+                  "label": "This app's providers",
+                  "href": "/subprocessors#less-time-marketing"
+                }
+              ]
+            },
+            {
+              "id": "data-subjects",
+              "title": "2. Data and people concerned",
+              "paragraphs": [
+                "Data may include business contact details, brand and product materials containing personal data, authorized account/channel identity, campaign content and assets, publishing instructions and technical records needed to carry them out. People concerned are merchant staff and authorized account operators, and people lawfully depicted or identified in merchant-supplied materials. Shopify customer, order, and payment datasets, private social messages, follower lists, and sensitive data are outside the intended processing. Do not submit those datasets through prompts or materials. Roles for each operation, including connection administration, are described in the app privacy addendum."
+              ]
+            },
+            {
+              "id": "providers-security-deletion",
+              "title": "3. Providers, measures, and deletion",
+              "paragraphs": [
+                "Only providers identified for Less Time Marketing in the provider register are used for the relevant operations. Merchant-selected social platforms receive posts on the merchant's instruction and may process them as independent controllers; they are not automatically ShopiDeck subprocessors for all their activities. AI-provider use is restricted to the instructed generation service and its contracted processing terms. Bot Cleaner providers and customer-profile instructions are not incorporated here.",
+                "Measures include HTTPS, encrypted stored social tokens (AES-256-GCM), least-privilege access, and audit records. The general DPA governs confidentiality, provider obligations, rights assistance, international transfers, incidents, audits, and return/deletion. Ordinary retention, immediate in-app token removal, local deletion on shop/redact, residual hashes, and Shopify Files/platform-copy limits are detailed in this app's privacy addendum; no universal 48-hour deletion promise applies to every provider copy."
+              ],
+              "links": [
+                {
+                  "label": "General DPA",
+                  "href": "/dpa"
+                },
+                {
+                  "label": "App retention and deletion",
+                  "href": "/privacy/less-time-marketing#retention"
+                },
+                {
+                  "label": "App providers",
+                  "href": "/subprocessors#less-time-marketing"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "providers": [
+    {
+      "scope": "website",
+      "name": "Vercel",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://vercel.com/legal/privacy-policy",
+          "external": true
+        }
+      ],
+      "service": "Public website hosting",
+      "purpose": "Deliver pages and support endpoints; maintain security.",
+      "data": "Web requests, IP/device and limited technical records; support submissions in transit.",
+      "role": "Hosting provider; processor where acting on ShopiDeck instructions.",
+      "region": "United States; other locations under the applicable service configuration and terms."
+    },
+    {
+      "scope": "website",
+      "name": "Resend",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://resend.com/legal/privacy-policy",
+          "external": true
+        }
+      ],
+      "service": "Support email",
+      "purpose": "Deliver requested support to team@shopideck.com.",
+      "data": "Name, email, store, selected app, subject, and message.",
+      "role": "Email provider for ShopiDeck support.",
+      "region": "International processing under the provider's applicable terms; no exclusive region established here."
+    },
+    {
+      "scope": "website",
+      "name": "Tally",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://tally.so/help/privacy-policy",
+          "external": true
+        }
+      ],
+      "service": "External early-access forms",
+      "purpose": "Collect voluntary early-access requests on the Less Time Marketing landing page.",
+      "data": "Submitted form fields and technical data when the widget loads or form opens.",
+      "role": "Form provider; its privacy notice also governs its own operations.",
+      "region": "Provider infrastructure and subprocessors under Tally's terms; no app database access."
+    },
+    {
+      "scope": "klaviyo-bot-cleaner",
+      "name": "Shopify",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://www.shopify.com/legal/privacy",
+          "external": true
+        }
+      ],
+      "service": "App platform and billing",
+      "purpose": "Install, authenticate, bill, and deliver compliance events for Bot Cleaner.",
+      "data": "Store/admin identity, sessions, plan, usage and privacy-request identifiers.",
+      "role": "Independent platform; contractual role depends on the operation.",
+      "region": "Countries where Shopify processes; international transfers may occur."
+    },
+    {
+      "scope": "klaviyo-bot-cleaner",
+      "name": "Klaviyo",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://www.klaviyo.com/legal/privacy-notice",
+          "external": true
+        }
+      ],
+      "service": "Authorized profile API",
+      "purpose": "Account/profile queries, subscription data, and merchant-confirmed suppression.",
+      "data": "Authorized account/profile data, encrypted OAuth credentials, and confirmed suppression requests.",
+      "role": "Merchant-connected independent platform; account terms govern its processing.",
+      "region": "Countries where Klaviyo processes; international transfers may occur."
+    },
+    {
+      "scope": "klaviyo-bot-cleaner",
+      "name": "Supabase",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://supabase.com/privacy",
+          "external": true
+        },
+        {
+          "label": "DPA",
+          "href": "https://supabase.com/legal/dpa",
+          "external": true
+        }
+      ],
+      "service": "PostgreSQL and app storage",
+      "purpose": "Store Bot Cleaner records, audit results, suppression history, and privacy requests.",
+      "data": "Bot Cleaner account/profile records and derived data as described in its addendum.",
+      "role": "Database/storage subprocessor for instructed app processing.",
+      "region": "US East, United States."
+    },
+    {
+      "scope": "klaviyo-bot-cleaner",
+      "name": "Vercel",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://vercel.com/legal/privacy-policy",
+          "external": true
+        },
+        {
+          "label": "DPA",
+          "href": "https://vercel.com/legal/dpa",
+          "external": true
+        }
+      ],
+      "service": "App hosting",
+      "purpose": "Run Bot Cleaner server functions.",
+      "data": "Requests and data handled by Bot Cleaner functions, limited logs.",
+      "role": "Hosting subprocessor for instructed processing.",
+      "region": "United States."
+    },
+    {
+      "scope": "klaviyo-bot-cleaner",
+      "name": "Resend",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://resend.com/legal/privacy-policy",
+          "external": true
+        }
+      ],
+      "service": "Service email",
+      "purpose": "Send relevant Bot Cleaner support/service messages.",
+      "data": "Recipient and necessary message content; not entire profile datasets.",
+      "role": "Email provider; subprocessor where handling instructed data.",
+      "region": "Region not established in current documentation; international processing may occur."
+    },
+    {
+      "scope": "less-time-marketing",
+      "name": "Shopify",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://www.shopify.com/legal/privacy",
+          "external": true
+        }
+      ],
+      "service": "Store, products, Files, and billing",
+      "purpose": "Installation, authentication, product retrieval, final asset storage, and charges.",
+      "data": "Store identity, catalog, generated media and billing state; no Shopify customers, orders, or payment datasets.",
+      "role": "Independent platform; role depends on the operation and applicable agreement.",
+      "region": "Canada, United States, and other locations under Shopify's terms."
+    },
+    {
+      "scope": "less-time-marketing",
+      "name": "Vercel",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://vercel.com/legal/privacy-policy",
+          "external": true
+        }
+      ],
+      "service": "App hosting",
+      "purpose": "Run content-generation, scheduling, and publishing functions.",
+      "data": "App traffic, necessary input/output processing, and limited technical records.",
+      "role": "Hosting subprocessor for instructed app processing.",
+      "region": "United States; applicable configuration and provider terms govern other processing."
+    },
+    {
+      "scope": "less-time-marketing",
+      "name": "Neon",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://neon.com/privacy-policy",
+          "external": true
+        },
+        {
+          "label": "DPA",
+          "href": "https://neon.com/pdf/DPA.pdf",
+          "external": true
+        }
+      ],
+      "service": "PostgreSQL database",
+      "purpose": "Store app records, campaigns, credits, and encrypted connected-account tokens.",
+      "data": "App metadata and records in its privacy addendum; not a permanent product-media library.",
+      "role": "Database subprocessor for instructed app processing.",
+      "region": "Specific project region pending verification in Neon deployment settings. No exclusive country or data-residency guarantee is asserted."
+    },
+    {
+      "scope": "less-time-marketing",
+      "name": "fal.ai",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://fal.ai/legal/privacy-policy",
+          "external": true
+        },
+        {
+          "label": "Terms",
+          "href": "https://fal.ai/legal/terms-of-service",
+          "external": true
+        }
+      ],
+      "service": "AI generation and media orchestration",
+      "purpose": "All AI requests pass through fal.ai: text, creative ideas/selection, image/video, music, subtitles, and media assembly.",
+      "data": "Relevant product/brand inputs, prompts, product images, generated media and job metadata. Connected-platform OAuth tokens are not generation inputs.",
+      "role": "Generation provider/subprocessor; downstream services listed separately below. Contractual confirmation of external-provider training restrictions is pending.",
+      "region": "United States and downstream-provider processing locations under the selected service/model contracts; not confined to fal.ai's headquarters."
+    },
+    {
+      "scope": "less-time-marketing",
+      "name": "Resend",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://resend.com/legal/privacy-policy",
+          "external": true
+        }
+      ],
+      "service": "Service email",
+      "purpose": "Review/reconnection notices, trial notices, and optional summaries.",
+      "data": "Store contact email and necessary notice content.",
+      "role": "Email provider; subprocessor where handling instructed data.",
+      "region": "International processing under applicable provider terms; exact service region not established here."
+    },
+    {
+      "scope": "less-time-marketing",
+      "name": "OpenRouter",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://openrouter.ai/privacy",
+          "external": true
+        }
+      ],
+      "service": "Downstream generation/routing via fal.ai",
+      "purpose": "Text-model routing through fal.ai's openrouter/router service.",
+      "data": "Only inputs, prompts, media, outputs, and metadata needed for the selected generation/routing operation; not all inputs are sent to every provider.",
+      "role": "Downstream provider in the generation chain. Exact entity, routing, retention, DPA, transfer, and no-training conditions are pending contractual verification. A general public privacy notice is not proof of an API no-training commitment.",
+      "region": "Depends on the actual model deployment, routing, and contract; countries and transfer safeguards must be verified. No processing country is inferred from the brand name."
+    },
+    {
+      "scope": "less-time-marketing",
+      "name": "Anthropic",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://www.anthropic.com/legal/privacy",
+          "external": true
+        }
+      ],
+      "service": "Downstream generation/routing via fal.ai",
+      "purpose": "Text generation, creative ideas, and creative selection.",
+      "data": "Only inputs, prompts, media, outputs, and metadata needed for the selected generation/routing operation; not all inputs are sent to every provider.",
+      "role": "Downstream provider in the generation chain. Exact entity, routing, retention, DPA, transfer, and no-training conditions are pending contractual verification. A general public privacy notice is not proof of an API no-training commitment.",
+      "region": "Depends on the actual model deployment, routing, and contract; countries and transfer safeguards must be verified. No processing country is inferred from the brand name."
+    },
+    {
+      "scope": "less-time-marketing",
+      "name": "OpenAI",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://openai.com/policies/privacy-policy/",
+          "external": true
+        }
+      ],
+      "service": "Downstream generation/routing via fal.ai",
+      "purpose": "Fallback text and maximum-quality image generation.",
+      "data": "Only inputs, prompts, media, outputs, and metadata needed for the selected generation/routing operation; not all inputs are sent to every provider.",
+      "role": "Downstream provider in the generation chain. Exact entity, routing, retention, DPA, transfer, and no-training conditions are pending contractual verification. A general public privacy notice is not proof of an API no-training commitment.",
+      "region": "Depends on the actual model deployment, routing, and contract; countries and transfer safeguards must be verified. No processing country is inferred from the brand name."
+    },
+    {
+      "scope": "less-time-marketing",
+      "name": "Google",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://policies.google.com/privacy",
+          "external": true
+        }
+      ],
+      "service": "Downstream generation/routing via fal.ai",
+      "purpose": "Standard image editing and maximum-quality short-video generation.",
+      "data": "Only inputs, prompts, media, outputs, and metadata needed for the selected generation/routing operation; not all inputs are sent to every provider.",
+      "role": "Downstream provider in the generation chain. Exact entity, routing, retention, DPA, transfer, and no-training conditions are pending contractual verification. A general public privacy notice is not proof of an API no-training commitment.",
+      "region": "Depends on the actual model deployment, routing, and contract; countries and transfer safeguards must be verified. No processing country is inferred from the brand name."
+    },
+    {
+      "scope": "less-time-marketing",
+      "name": "MiniMax",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://platform.minimax.io/protocol/privacy-policy",
+          "external": true
+        }
+      ],
+      "service": "Downstream generation/routing via fal.ai",
+      "purpose": "Standard short-video generation.",
+      "data": "Only inputs, prompts, media, outputs, and metadata needed for the selected generation/routing operation; not all inputs are sent to every provider.",
+      "role": "Downstream provider in the generation chain. Exact entity, routing, retention, DPA, transfer, and no-training conditions are pending contractual verification. A general public privacy notice is not proof of an API no-training commitment.",
+      "region": "Depends on the actual model deployment, routing, and contract; countries and transfer safeguards must be verified. No processing country is inferred from the brand name."
+    },
+    {
+      "scope": "less-time-marketing",
+      "name": "ByteDance",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://www.bytedance.com/en/privacy",
+          "external": true
+        }
+      ],
+      "service": "Downstream generation/routing via fal.ai",
+      "purpose": "Seedance video generation, including longer and creative videos and legacy reserved jobs.",
+      "data": "Only inputs, prompts, media, outputs, and metadata needed for the selected generation/routing operation; not all inputs are sent to every provider.",
+      "role": "Downstream provider in the generation chain. Exact entity, routing, retention, DPA, transfer, and no-training conditions are pending contractual verification. A general public privacy notice is not proof of an API no-training commitment.",
+      "region": "Depends on the actual model deployment, routing, and contract; countries and transfer safeguards must be verified. No processing country is inferred from the brand name."
+    },
+    {
+      "scope": "less-time-marketing",
+      "name": "Kuaishou / Kling",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://kling.ai/docs/privacy-policy",
+          "external": true
+        }
+      ],
+      "service": "Downstream generation/routing via fal.ai",
+      "purpose": "Video-to-audio background music generation.",
+      "data": "Only inputs, prompts, media, outputs, and metadata needed for the selected generation/routing operation; not all inputs are sent to every provider.",
+      "role": "Downstream provider in the generation chain. Exact entity, routing, retention, DPA, transfer, and no-training conditions are pending contractual verification. A general public privacy notice is not proof of an API no-training commitment.",
+      "region": "Depends on the actual model deployment, routing, and contract; countries and transfer safeguards must be verified. No processing country is inferred from the brand name."
+    },
+    {
+      "scope": "less-time-marketing",
+      "name": "Wan / Alibaba",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://www.alibabacloud.com/help/en/legal/latest/alibaba-cloud-international-website-privacy-policy",
+          "external": true
+        }
+      ],
+      "service": "Downstream generation/routing via fal.ai",
+      "purpose": "Legacy reserved Wan video jobs only; not a general new-job authorization.",
+      "data": "Only inputs, prompts, media, outputs, and metadata needed for the selected generation/routing operation; not all inputs are sent to every provider.",
+      "role": "Downstream provider in the generation chain. Exact entity, routing, retention, DPA, transfer, and no-training conditions are pending contractual verification. A general public privacy notice is not proof of an API no-training commitment.",
+      "region": "Depends on the actual model deployment, routing, and contract; countries and transfer safeguards must be verified. No processing country is inferred from the brand name."
+    },
+    {
+      "scope": "less-time-marketing",
+      "name": "Meta (Facebook / Instagram)",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://www.facebook.com/privacy/policy/",
+          "external": true
+        }
+      ],
+      "service": "Optional connected publishing platform",
+      "purpose": "Publish authorized content to the account you select, only if connected.",
+      "data": "Account/channel identity and approved copy, hashtags, image/video, and publishing options as applicable. The platform issues its own authorization tokens.",
+      "role": "Merchant-selected recipient and independent controller for its platform operations, not automatically a ShopiDeck subprocessor for all activities. Google/YouTube publishing is distinct from Google's AI-generation role above.",
+      "region": "Platform processing locations under its own terms; international processing may occur."
+    },
+    {
+      "scope": "less-time-marketing",
+      "name": "TikTok",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://www.tiktok.com/legal/page/row/privacy-policy/en",
+          "external": true
+        }
+      ],
+      "service": "Optional connected publishing platform",
+      "purpose": "Publish authorized content to the account you select, only if connected.",
+      "data": "Account/channel identity and approved copy, hashtags, image/video, and publishing options as applicable. The platform issues its own authorization tokens.",
+      "role": "Merchant-selected recipient and independent controller for its platform operations, not automatically a ShopiDeck subprocessor for all activities. Google/YouTube publishing is distinct from Google's AI-generation role above.",
+      "region": "Platform processing locations under its own terms; international processing may occur."
+    },
+    {
+      "scope": "less-time-marketing",
+      "name": "Google / YouTube",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://policies.google.com/privacy",
+          "external": true
+        }
+      ],
+      "service": "Optional connected publishing platform",
+      "purpose": "Publish authorized content to the account you select, only if connected.",
+      "data": "Account/channel identity and approved copy, hashtags, image/video, and publishing options as applicable. The platform issues its own authorization tokens.",
+      "role": "Merchant-selected recipient and independent controller for its platform operations, not automatically a ShopiDeck subprocessor for all activities. Google/YouTube publishing is distinct from Google's AI-generation role above.",
+      "region": "Platform processing locations under its own terms; international processing may occur."
+    },
+    {
+      "scope": "less-time-marketing",
+      "name": "LinkedIn",
+      "links": [
+        {
+          "label": "Privacy",
+          "href": "https://www.linkedin.com/legal/privacy-policy",
+          "external": true
+        }
+      ],
+      "service": "Optional connected publishing platform",
+      "purpose": "Publish authorized content to the account you select, only if connected.",
+      "data": "Account/channel identity and approved copy, hashtags, image/video, and publishing options as applicable. The platform issues its own authorization tokens.",
+      "role": "Merchant-selected recipient and independent controller for its platform operations, not automatically a ShopiDeck subprocessor for all activities. Google/YouTube publishing is distinct from Google's AI-generation role above.",
+      "region": "Platform processing locations under its own terms; international processing may occur."
+    }
+  ],
+  "dataDeletion": {
+    "title": "Data Deletion Instructions",
+    "category": "Legal and privacy",
+    "effectiveDate": "October 21, 2026",
+    "lastUpdated": "October 21, 2026",
+    "intro": "Disconnect accounts, stop app access, or request deletion from ShopiDeck. Identify the app or apps concerned so that your request reaches the right records.",
+    "sections": [
+      {
+        "id": "request",
+        "title": "1. Request deletion directly",
+        "paragraphs": [
+          "Email team@shopideck.com with the subject \"Data deletion — [app name]\". State the app(s), store domain or connected-account identifier, your relationship to the account, and the data you want deleted. We may ask for proportionate proof of authority. Do not include passwords, API keys, access tokens, or full customer lists. You can request deletion without first disconnecting or uninstalling.",
+          "We confirm scope, handle requests under the applicable legal deadlines, and explain any legally required restricted retention. You may request an update through the same email channel. A request covering one app does not silently delete another app's records; specify all relevant apps. Store customers should contact the merchant as controller, with ShopiDeck assistance where it holds data on the merchant's behalf."
+        ],
+        "links": [
+          {
+            "label": "Email privacy contact",
+            "href": "mailto:team@shopideck.com",
+            "external": true
+          },
+          {
+            "label": "Rights and response periods",
+            "href": "/privacy#rights"
+          },
+          {
+            "label": "Colombian inquiry and complaint periods",
+            "href": "/privacy#colombia"
+          }
+        ]
+      },
+      {
+        "id": "less-time-marketing",
+        "title": "2. Less Time Marketing: Meta and other social accounts",
+        "bullets": [
+          "Disconnect the selected network in the app to remove its local tokens immediately and stop new publishing through it.",
+          "You may also remove the app's access from the connected platform's settings. For Facebook/Instagram, use Meta's Apps and Websites or Business Integrations controls for the account concerned. For Google/YouTube use Google's connected-app settings linked below.",
+          "To delete retained connection data or content records in ShopiDeck, send the direct request above identifying Meta, TikTok, Google/YouTube, or LinkedIn as applicable. YouTube authorized data is deleted within 30 calendar days of revocation or a valid deletion request.",
+          "Uninstalling stops app access and removes social credentials. Shopify normally sends shop/redact approximately 48 hours later; that event deletes local store records subject to the documented legal exceptions, rather than guaranteeing deletion of every provider copy exactly at 48 hours.",
+          "Already-published social posts and remaining Shopify Files must be managed in those platforms. After uninstall, the app no longer has permission to delete Shopify Files."
+        ],
+        "paragraphs": [
+          "This is the public deletion-instructions page. It does not accept automated Meta deletion callbacks, generate confirmation codes, or provide a live request-status lookup. Any callback/status URL configured by the app is a separate app endpoint; contact ShopiDeck for request status."
+        ],
+        "links": [
+          {
+            "label": "Google: revoke connected access",
+            "href": "https://myaccount.google.com/connections",
+            "external": true
+          },
+          {
+            "label": "Less Time Marketing retention and deletion",
+            "href": "/privacy/less-time-marketing#retention"
+          }
+        ]
+      },
+      {
+        "id": "klaviyo-bot-cleaner",
+        "title": "3. Bot Cleaner",
+        "paragraphs": [
+          "Disconnect Klaviyo in Settings to revoke/remove connection credentials. Retained audit and suppression history follows the Bot Cleaner retention rules. Store-owner account deletion and Shopify privacy events provide the documented local deletion flows. Suppressing a Klaviyo profile is not permanent deletion of that profile. Contact the merchant or Klaviyo for records independently controlled there; uninstalling Bot Cleaner does not erase them."
+        ],
+        "links": [
+          {
+            "label": "Bot Cleaner retention and deletion",
+            "href": "/privacy/klaviyo-bot-cleaner#retention"
+          }
+        ]
+      }
+    ]
+  }
+}

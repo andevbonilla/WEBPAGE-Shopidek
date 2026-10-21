@@ -23,7 +23,7 @@
     "copyright": "© {year} ShopiDeck • Todos los derechos reservados",
     "builtWith": "Construido con Next.js",
     "dpa": "Anexo de tratamiento",
-    "subprocessors": "Subencargados",
+    "subprocessors": "Proveedores y subencargados",
     "newBadge": "Nuevo",
     "homeLabel": "Inicio de ShopiDeck"
   },
@@ -466,13 +466,16 @@
     "schemaDescription": "Una suite en crecimiento de herramientas enfocadas para comerciantes de Shopify."
   },
   "UI": {
+    "publicWebsite": "Sitio público",
+    "dataProcessed": "Datos tratados",
+    "providerRole": "Rol y condiciones",
     "resourceLabels": { "Terms": "Términos", "Privacy": "Privacidad", "DPA": "DPA" },
     "pageLink": "Enlace de la Página",
     "copyPageLink": "Copiar enlace de la página",
     "linkCopied": "¡Enlace Copiado!",
     "copyUrl": "Copiar URL",
     "dataProcessingAddendum": "Anexo de tratamiento",
-    "subprocessors": "Subencargados",
+    "subprocessors": "Proveedores y subencargados",
     "onThisPage": "Contenido de esta página",
     "legalContact": "Contacto legal",
     "lastUpdated": "Última actualización",
@@ -485,7 +488,7 @@
     "shareOnFacebook": "Compartir en Facebook",
     "moreShareOptions": "Más opciones para compartir",
     "dataProcessing": "Tratamiento de datos",
-    "thisPageIdentifiesTheProvidersThatMay": "Esta página identifica los proveedores que pueden tratar datos para prestar SD: Klaviyo Bot Cleaner y resume su servicio, finalidad, región y documentos públicos. Prisma es una biblioteca ORM y no es un subencargado independiente.",
+    "thisPageIdentifiesTheProvidersThatMay": "Los proveedores se listan por separado para el sitio público y cada app. Solo los pertinentes reciben los datos necesarios para la función usada. Las plataformas conectadas y los servicios IA posteriores tienen roles distintos; esta lista no da acceso a todas las apps a cada proveedor. Los avisos públicos no acreditan contratos API ni compromisos de no entrenamiento. Prisma es una biblioteca de software, no un subencargado separado.",
     "september12026": "1 de septiembre de 2026",
     "contact": "Contacto",
     "legalPages": "Páginas legales",
@@ -523,8 +526,8 @@
     "merchantControl": "Control del comerciante",
     "appIcon": "Icono de la app {productName}",
     "viewDetails": "Ver detalles",
-    "subprocessorsShopideck": "Subencargados | ShopiDeck",
-    "shopideckSubprocessorListForKlaviyoBotCleaner": "Lista de subencargados de SD: Klaviyo Bot Cleaner, servicios, finalidades, regiones y documentos públicos."
+    "subprocessorsShopideck": "Proveedores y subencargados | ShopiDeck",
+    "shopideckSubprocessorListForKlaviyoBotCleaner": "Registro de proveedores de ShopiDeck por sitio y app: finalidades, datos, roles, regiones y documentos públicos."
   }
 }
 

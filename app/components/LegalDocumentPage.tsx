@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import { localizedPath } from "../config";
 import type { LegalDocument, LegalLink, LegalSection, Locale } from "../legal/legalContent";
+import { legalProducts } from "../legal/productLegal";
 
 type Props = {
   document: LegalDocument;
@@ -39,6 +40,13 @@ function SectionLinks({ links, locale }: { links: LegalLink[]; locale: Locale })
 }
 
 function LegalSectionContent({ section, locale }: { section: LegalSection; locale: Locale }) {
+  const links = [
+    ...(section.links ?? []),
+    ...(section.productIndex ? legalProducts.map((product) => ({
+      label: product.name,
+      href: `/${section.productIndex}/${product.slug}`,
+    })) : []),
+  ];
   return (
     <section id={section.id} aria-labelledby={`${section.id}-heading`} className="scroll-mt-28">
       <h2 id={`${section.id}-heading`} className="font-display text-xl font-black tracking-tight text-brand-main sm:text-2xl">
@@ -84,7 +92,7 @@ function LegalSectionContent({ section, locale }: { section: LegalSection; local
         </div>
       )}
 
-      {section.links && <SectionLinks links={section.links} locale={locale} />}
+      {links.length > 0 && <SectionLinks links={links} locale={locale} />}
     </section>
   );
 }

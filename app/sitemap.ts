@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "./config";
 import { getPosts } from "./[locale]/blog/posts";
+import { legalProducts } from "./legal/productLegal";
+import { LEGAL_UPDATED_ISO } from "./legal/shared";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteLastModified = new Date("2026-09-15T00:00:00.000Z");
@@ -14,11 +16,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/terms",
     "/dpa",
     "/subprocessors",
+    "/data-deletion",
+    ...legalProducts.flatMap(({ slug }) => ["privacy", "terms", "dpa"].map((kind) => `/${kind}/${slug}`)),
   ];
   const paths = [
     ...staticPaths.map((path) => ({
       path,
-      lastModified: ["", "/help", "/social-marketing"].includes(path)
+      lastModified: /^\/(privacy|terms|dpa|subprocessors|data-deletion)(\/|$)/.test(path)
+        ? new Date(LEGAL_UPDATED_ISO)
+        : ["", "/help", "/social-marketing"].includes(path)
         ? new Date("2026-09-18T00:00:00.000Z")
         : siteLastModified,
     })),

@@ -6,6 +6,8 @@ import Navbar from "./Navbar";
 import CopyLinkButton from "./CopyLinkButton";
 import { localizedPath } from "../config";
 import type { Locale, Subprocessor } from "../legal/legalContent";
+import { legalProducts } from "../legal/productLegal";
+import { legalDate } from "../legal/shared";
 
 type Props = {
   locale: Locale;
@@ -14,6 +16,11 @@ type Props = {
 
 export default function SubprocessorsPage({ locale, items }: Props) {
   const resourceLabels: Record<string, string> = getMessages(locale, "UI").resourceLabels;
+  const labels = getMessages(locale, "UI");
+  const groups = [
+    { id: "website", name: labels.publicWebsite },
+    ...legalProducts.map(({ slug, name }) => ({ id: slug, name })),
+  ];
   return (
     <div className="min-h-screen bg-brand-bg font-sans text-brand-main">
       <Navbar />
@@ -28,9 +35,9 @@ export default function SubprocessorsPage({ locale, items }: Props) {
                 {getMessages(resolveLocale(locale), "UI").thisPageIdentifiesTheProvidersThatMay}
               </p>
               <div className="flex flex-wrap items-center gap-x-3 gap-y-2 border-y border-brand-border py-4 text-xs font-medium text-brand-muted">
-                <span>{getMessages(resolveLocale(locale), "UI").effective}: {getMessages(resolveLocale(locale), "UI").september12026}</span>
+                <span>{labels.effective}: {legalDate[locale]}</span>
                 <span aria-hidden="true">•</span>
-                <span>{getMessages(resolveLocale(locale), "UI").lastUpdated}: {getMessages(resolveLocale(locale), "UI").september12026}</span>
+                <span>{labels.lastUpdated}: {legalDate[locale]}</span>
               </div>
             </header>
 
@@ -41,6 +48,9 @@ export default function SubprocessorsPage({ locale, items }: Props) {
                   <a href="mailto:team@shopideck.com" className="mt-2 block break-all text-sm font-semibold underline decoration-brand-accent decoration-2 underline-offset-4">team@shopideck.com</a>
                 </div>
                 <nav className="mt-6 space-y-2 text-xs" aria-label={getMessages(resolveLocale(locale), "UI").legalPages}>
+                  {groups.map((group) => (
+                    <a key={group.id} href={`#${group.id}`} className="block font-semibold text-brand-secondary underline decoration-brand-accent decoration-2 underline-offset-4">{group.name}</a>
+                  ))}
                   <a href={localizedPath(locale, "/privacy")} className="block text-brand-secondary underline decoration-brand-accent decoration-2 underline-offset-4">{getMessages(resolveLocale(locale), "UI").privacyPolicy}</a>
                   <a href={localizedPath(locale, "/terms")} className="block text-brand-secondary underline decoration-brand-accent decoration-2 underline-offset-4">{getMessages(resolveLocale(locale), "UI").termsOfUse}</a>
                   <a href={localizedPath(locale, "/dpa")} className="block text-brand-secondary underline decoration-brand-accent decoration-2 underline-offset-4">{getMessages(resolveLocale(locale), "UI").dataProcessingAddendum2}</a>
@@ -49,12 +59,17 @@ export default function SubprocessorsPage({ locale, items }: Props) {
               </aside>
 
               <div className="space-y-6 lg:col-span-9">
-                {items.map((item) => (
-                  <section key={item.name} className="rounded-3xl border border-brand-border bg-brand-bg p-6 sm:p-8" aria-labelledby={`${item.name.toLowerCase()}-heading`}>
-                    <h2 id={`${item.name.toLowerCase()}-heading`} className="font-display text-2xl font-black tracking-tight">{item.name}</h2>
+                {groups.map((group) => (
+                  <section key={group.id} id={group.id} className="scroll-mt-28 space-y-5" aria-labelledby={`${group.id}-heading`}>
+                    <h2 id={`${group.id}-heading`} className="font-display text-2xl font-black tracking-tight">{group.name}</h2>
+                    {items.filter((item) => item.scope === group.id).map((item, index) => (
+                  <section key={item.name} className="rounded-3xl border border-brand-border bg-brand-bg p-6 sm:p-8" aria-labelledby={`${group.id}-${index}-heading`}>
+                    <h3 id={`${group.id}-${index}-heading`} className="font-display text-xl font-black tracking-tight">{item.name}</h3>
                     <dl className="mt-6 grid gap-5 text-sm sm:grid-cols-2">
                       <div><dt className="font-bold text-brand-main">{getMessages(resolveLocale(locale), "UI").service}</dt><dd className="mt-1 leading-6 text-brand-secondary">{item.service}</dd></div>
                       <div><dt className="font-bold text-brand-main">{getMessages(resolveLocale(locale), "UI").purpose}</dt><dd className="mt-1 leading-6 text-brand-secondary">{item.purpose}</dd></div>
+                      <div><dt className="font-bold text-brand-main">{labels.dataProcessed}</dt><dd className="mt-1 leading-6 text-brand-secondary">{item.data}</dd></div>
+                      <div><dt className="font-bold text-brand-main">{labels.providerRole}</dt><dd className="mt-1 leading-6 text-brand-secondary">{item.role}</dd></div>
                       <div className="sm:col-span-2"><dt className="font-bold text-brand-main">{getMessages(resolveLocale(locale), "UI").countryOrRegion}</dt><dd className="mt-1 leading-6 text-brand-secondary">{item.region}</dd></div>
                     </dl>
                     <div className="mt-6 flex flex-wrap gap-x-5 gap-y-3 border-t border-brand-border pt-5 text-sm">
@@ -65,6 +80,8 @@ export default function SubprocessorsPage({ locale, items }: Props) {
                         </a>
                       ))}
                     </div>
+                  </section>
+                    ))}
                   </section>
                 ))}
               </div>

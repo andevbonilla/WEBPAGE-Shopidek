@@ -1,6 +1,10 @@
 
 # ShopiDeck public website
 
+Legal pages use a suite-wide framework and independent app schedules in English
+and Spanish. See [legal maintenance](docs/legal-maintenance.md) for routes, how to
+add another app, and factual/contractual items to verify before publication.
+
 The public catalog contains only SD: Less Time Marketing, SD: Klaviyo Bot Cleaner,
 and SD: SEO That Sells. The latter is a forthcoming concept, not an installable app.
 

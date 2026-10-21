@@ -23,7 +23,7 @@
     "copyright": "© {year} ShopiDeck • All rights reserved",
     "builtWith": "Built with Next.js",
     "dpa": "Data Processing Addendum",
-    "subprocessors": "Subprocessors",
+    "subprocessors": "Providers and subprocessors",
     "newBadge": "New",
     "homeLabel": "ShopiDeck home"
   },
@@ -466,13 +466,16 @@
     "schemaDescription": "A growing suite of focused tools for Shopify merchants."
   },
   "UI": {
+    "publicWebsite": "Public website",
+    "dataProcessed": "Data processed",
+    "providerRole": "Role and conditions",
     "resourceLabels": { "Terms": "Terms", "Privacy": "Privacy", "DPA": "DPA" },
     "pageLink": "Page Link",
     "copyPageLink": "Copy page link",
     "linkCopied": "Link Copied!",
     "copyUrl": "Copy URL",
     "dataProcessingAddendum": "Data Processing Addendum",
-    "subprocessors": "Subprocessors",
+    "subprocessors": "Providers and subprocessors",
     "onThisPage": "On this page",
     "legalContact": "Legal contact",
     "lastUpdated": "Last updated",
@@ -485,7 +488,7 @@
     "shareOnFacebook": "Share on Facebook",
     "moreShareOptions": "More share options",
     "dataProcessing": "Data processing",
-    "thisPageIdentifiesTheProvidersThatMay": "This page identifies the providers that may process data to provide SD: Klaviyo Bot Cleaner and summarizes their service, purpose, region, and public documents. Prisma is an ORM library and is not an independent subprocessor.",
+    "thisPageIdentifiesTheProvidersThatMay": "Providers are listed separately for the public website and each app. Only relevant providers receive the data required for the function you use. Connected platforms and downstream AI services have distinct roles; this list does not give every provider access to every app. Public vendor notices do not establish API-specific contracts or no-training commitments. Prisma is a software library, not a separate subprocessor.",
     "september12026": "September 1, 2026",
     "contact": "Contact",
     "legalPages": "Legal pages",
@@ -523,8 +526,8 @@
     "merchantControl": "Merchant control",
     "appIcon": "{productName} app icon",
     "viewDetails": "View Details",
-    "subprocessorsShopideck": "Subprocessors | ShopiDeck",
-    "shopideckSubprocessorListForKlaviyoBotCleaner": "ShopiDeck subprocessor list for Klaviyo Bot Cleaner, including services, purposes, regions, and public documents."
+    "subprocessorsShopideck": "Providers and Subprocessors | ShopiDeck",
+    "shopideckSubprocessorListForKlaviyoBotCleaner": "ShopiDeck provider register by website and app: purposes, data, roles, regions, and public documents."
   }
 }
 
