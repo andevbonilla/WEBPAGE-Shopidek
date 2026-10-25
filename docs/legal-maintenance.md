@@ -74,7 +74,15 @@ cap, or connected-account authorization.
    URLs, linked general documents, and deletion instructions. If using Meta's
    callback option, implement and verify its callback and status response in the
    app backend; do not configure this static instructions page as that callback.
-7. Confirm the existing legal operator/address remain accurate. No company, NIT,
+7. The street address was removed from all legal documents on 2026-10-24 as a
+   temporary measure; documents now show only the operator and city (Bogotá D.C.).
+   Colombian Decree 1377/2013 (art. 13) expects the controller's address and phone
+   in the data-treatment policy: add a business address (e.g. a virtual office or
+   PO box) and phone before treating the policy as complete under Colombian law.
+   Platform data commitments (Less Time Marketing privacy, section 5) promise
+   deletion of Meta/TikTok/Google/LinkedIn data within 30 days of disconnection,
+   revocation, or request, and no use for AI training or advertising; confirm the
+   app backend enforces this. Confirm the legal operator remains accurate. No company, NIT,
    EU/UK representative, DPO, transfer agreement, certification, or partnership
    was invented to fill PDF placeholders. Assess any applicable EU/UK representative
    duties and execute transfer instruments where required. Have qualified counsel

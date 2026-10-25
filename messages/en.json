@@ -24,6 +24,7 @@
     "builtWith": "Built with Next.js",
     "dpa": "Data Processing Addendum",
     "subprocessors": "Providers and subprocessors",
+    "dataDeletion": "Data deletion",
     "newBadge": "New",
     "homeLabel": "ShopiDeck home"
   },

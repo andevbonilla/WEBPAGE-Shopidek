@@ -4,7 +4,7 @@
       "title": "ShopiDeck Privacy Policy",
       "category": "Legal and privacy",
       "effectiveDate": "October 21, 2026",
-      "lastUpdated": "October 21, 2026",
+      "lastUpdated": "October 24, 2026",
       "intro": "The common privacy framework for shopideck.com and the ShopiDeck suite. Each app has its own addendum describing its data, permissions, providers, retention, and deletion. Using one app does not authorize processing by every other app.",
       "sections": [
         {
@@ -21,7 +21,7 @@
           "id": "identity",
           "title": "2. Operator and privacy contact",
           "paragraphs": [
-            "ShopiDeck is a trade name operated by Andres Camilo Bonilla Carreño, a Colombian individual merchant, at Cra. 79A # 6-04, Bogotá D.C., Colombia. Contact for privacy, support, legal matters, and security incidents: team@shopideck.com.",
+            "ShopiDeck is a trade name operated by Andres Camilo Bonilla Carreño, a Colombian individual merchant based in Bogotá D.C., Colombia. Contact for privacy, support, legal matters, and security incidents: team@shopideck.com.",
             "The operator is the internal privacy contact, not a formally appointed DPO. ShopiDeck is not established in the EU or UK and has not identified a formally appointed representative there in these documents. No appointment or exemption from a legal requirement is asserted."
           ]
         },
@@ -185,14 +185,14 @@
       "title": "ShopiDeck General Terms of Use",
       "category": "Legal and privacy",
       "effectiveDate": "October 21, 2026",
-      "lastUpdated": "October 21, 2026",
+      "lastUpdated": "October 24, 2026",
       "intro": "Common conditions for the website and ShopiDeck suite. Each app has separate service terms, permissions, subscription rules, and data disclosures.",
       "sections": [
         {
           "id": "identity-scope",
           "title": "1. Provider, scope, and authority",
           "paragraphs": [
-            "These Terms form an agreement with Andres Camilo Bonilla Carreño, a Colombian individual merchant operating as ShopiDeck at Cra. 79A # 6-04, Bogotá D.C., Colombia. Contact: team@shopideck.com.",
+            "These Terms form an agreement with Andres Camilo Bonilla Carreño, a Colombian individual merchant operating as ShopiDeck from Bogotá D.C., Colombia. Contact: team@shopideck.com.",
             "They govern the public website and common service conditions. Apps are business services for merchants and authorized adult users. You must have authority to bind the business, administer the relevant store and connected accounts, and provide lawful instructions. Mandatory consumer rights, if applicable, are preserved."
           ]
         },
@@ -290,7 +290,7 @@
       "title": "ShopiDeck Data Processing Addendum",
       "category": "Legal and privacy",
       "effectiveDate": "October 21, 2026",
-      "lastUpdated": "October 21, 2026",
+      "lastUpdated": "October 24, 2026",
       "intro": "Common contractual duties when ShopiDeck processes personal data on a merchant's behalf. Each app's processing schedule defines its data, purposes, duration, safeguards, and providers.",
       "sections": [
         {
@@ -378,7 +378,7 @@
           "title": "SD: Klaviyo Bot Cleaner — Privacy Addendum",
           "category": "Legal and privacy",
           "effectiveDate": "October 21, 2026",
-          "lastUpdated": "October 21, 2026",
+          "lastUpdated": "October 24, 2026",
           "intro": "This Privacy Policy explains how SD: Klaviyo Bot Cleaner processes personal data in the embedded Shopify app at https://klaviyobotcleaner.shopideck.com. It describes the current product, its limits, the parties' privacy roles, and the choices available to individuals and merchants.",
           "sections": [
             {
@@ -418,7 +418,7 @@
               "id": "identity",
               "title": "2. Controller identity and contact",
               "paragraphs": [
-                "ShopiDeck is a trade name operated by Andres Camilo Bonilla Carreño, a Colombian individual merchant based at Cra. 79A # 6-04, Bogotá D.C., Colombia.",
+                "ShopiDeck is a trade name operated by Andres Camilo Bonilla Carreño, a Colombian individual merchant based in Bogotá D.C., Colombia.",
                 "Privacy, legal, support, and security incident contact: team@shopideck.com. The internal privacy contact is Andres Camilo Bonilla Carreño at team@shopideck.com; this contact is not described as a formal DPO."
               ]
             },
@@ -823,7 +823,7 @@
               "id": "contact",
               "title": "34. Contact",
               "paragraphs": [
-                "For privacy, legal, support, or security questions, contact team@shopideck.com. Legal-notice address: Cra. 79A # 6-04, Bogotá D.C., Colombia."
+                "For privacy, legal, support, or security questions, contact team@shopideck.com. Legal notices may be sent to the same email address. Location: Bogotá D.C., Colombia."
               ]
             },
             {
@@ -851,7 +851,7 @@
           "title": "SD: Klaviyo Bot Cleaner — Service Terms",
           "category": "Legal and service terms",
           "effectiveDate": "October 21, 2026",
-          "lastUpdated": "October 21, 2026",
+          "lastUpdated": "October 24, 2026",
           "intro": "These Terms govern access to and use of SD: Klaviyo Bot Cleaner by Shopify merchants. The service is available through Shopify Admin and the embedded app at https://klaviyobotcleaner.shopideck.com.",
           "sections": [
             {
@@ -883,7 +883,7 @@
               "id": "identity",
               "title": "1. Provider identity",
               "paragraphs": [
-                "These Terms form an agreement between the merchant and Andres Camilo Bonilla Carreño, a Colombian individual merchant operating under the ShopiDeck trade name and based at Cra. 79A # 6-04, Bogotá D.C., Colombia. Contact: team@shopideck.com."
+                "These Terms form an agreement between the merchant and Andres Camilo Bonilla Carreño, a Colombian individual merchant operating under the ShopiDeck trade name and based in Bogotá D.C., Colombia. Contact: team@shopideck.com."
               ]
             },
             {
@@ -1187,7 +1187,7 @@
               "id": "contact",
               "title": "42. Contact",
               "paragraphs": [
-                "For questions about these Terms, contact team@shopideck.com. Legal-notice address: Cra. 79A # 6-04, Bogotá D.C., Colombia."
+                "For questions about these Terms, contact team@shopideck.com. Legal notices may be sent to the same email address. Location: Bogotá D.C., Colombia."
               ]
             }
           ]
@@ -1196,7 +1196,7 @@
           "title": "SD: Klaviyo Bot Cleaner — Processing Schedule",
           "category": "Data processing",
           "effectiveDate": "October 21, 2026",
-          "lastUpdated": "October 21, 2026",
+          "lastUpdated": "October 24, 2026",
           "intro": "This Data Processing Addendum (DPA) applies when ShopiDeck processes Klaviyo profile data for a merchant using SD: Klaviyo Bot Cleaner. It supplements the Terms of Use and the Privacy Policy.",
           "sections": [
             {
@@ -1349,7 +1349,7 @@
               "id": "contact",
               "title": "16. Contact",
               "paragraphs": [
-                "For this DPA, contact team@shopideck.com or write to Cra. 79A # 6-04, Bogotá D.C., Colombia."
+                "For this DPA, contact team@shopideck.com."
               ]
             }
           ]
@@ -1363,7 +1363,7 @@
           "title": "SD: Less Time Marketing — Privacy Addendum",
           "category": "Legal and privacy",
           "effectiveDate": "October 21, 2026",
-          "lastUpdated": "October 21, 2026",
+          "lastUpdated": "October 24, 2026",
           "intro": "How Less Time Marketing uses store, brand, and connected-account data to create, schedule, and publish content. This app does not read Shopify customers, orders, or payments. These practices apply only when you use this app or activate the relevant connection.",
           "sections": [
             {
@@ -1467,9 +1467,12 @@
             },
             {
               "id": "connections",
-              "title": "5. Social connections and information shared",
+              "title": "5. Social connections, information shared, and platform data",
               "paragraphs": [
-                "Only connections you activate receive content. Authorizing a connection does not activate all networks. Each platform's own privacy terms govern its independent processing, including public distribution of posts."
+                "Only connections you activate receive content. Authorizing a connection does not activate all networks. Each platform's own privacy terms govern its independent processing, including public distribution of posts.",
+                "Data received from Meta, TikTok, Google/YouTube, or LinkedIn (\"platform data\") is used only to provide the connection and publishing features you request. ShopiDeck does not sell, rent, or license platform data; does not use it for advertising, profiling, or building audiences; does not share it with data brokers; does not combine it with data from other ShopiDeck apps; and does not use it to develop, improve, or train AI or machine-learning models. Platform data is not sent to AI generation providers.",
+                "Platform data is stored only for as long as the connection needs it and is deleted on disconnection, revocation, or a valid deletion request, within 30 calendar days at the latest, unless a narrow legal duty requires restricted retention. ShopiDeck personnel access it only for support you request, security, or legal compliance. Use of each platform's data follows the Meta Platform Terms and Developer Policies, the TikTok Developer Terms of Service, the LinkedIn API Terms of Use, and the YouTube API Services Terms and Developer Policies.",
+                "Facebook, Instagram, Meta, TikTok, YouTube, Google, and LinkedIn are trademarks of their respective owners. Less Time Marketing is an independent app and is not endorsed by, sponsored by, or affiliated with those companies."
               ],
               "table": {
                 "headers": [
@@ -1545,6 +1548,36 @@
                   "label": "LinkedIn User Agreement",
                   "href": "https://www.linkedin.com/legal/user-agreement",
                   "external": true
+                },
+                {
+                  "label": "Meta Platform Terms",
+                  "href": "https://developers.facebook.com/terms/",
+                  "external": true
+                },
+                {
+                  "label": "Meta Privacy Policy",
+                  "href": "https://www.facebook.com/privacy/policy/",
+                  "external": true
+                },
+                {
+                  "label": "TikTok Developer Terms of Service",
+                  "href": "https://www.tiktok.com/legal/page/global/tik-tok-developer-terms-of-service/en",
+                  "external": true
+                },
+                {
+                  "label": "TikTok Privacy Policy",
+                  "href": "https://www.tiktok.com/legal/page/row/privacy-policy/en",
+                  "external": true
+                },
+                {
+                  "label": "LinkedIn API Terms of Use",
+                  "href": "https://www.linkedin.com/legal/l/api-terms-of-use",
+                  "external": true
+                },
+                {
+                  "label": "LinkedIn Privacy Policy",
+                  "href": "https://www.linkedin.com/legal/privacy-policy",
+                  "external": true
                 }
               ]
             },
@@ -1553,8 +1586,8 @@
               "title": "6. Google/YouTube and Limited Use",
               "paragraphs": [
                 "Less Time Marketing uses YouTube API Services. By using the YouTube integration, you agree to be bound by the YouTube Terms of Service; Google's Privacy Policy explains Google's processing.",
-                "Less Time Marketing's use and transfer to any other app of information received from Google APIs will adhere to the Google API Services User Data Policy, including the Limited Use requirements. Google user data is used only to provide the user-facing connection and publishing features you authorize, is not sold or used for advertising, and is not transferred to another ShopiDeck app or to AI providers for model training. Humans do not read it except with your affirmative agreement for specific data, for necessary security purposes, to comply with law, or as otherwise expressly permitted by that policy.",
-                "Revoke access at any time through Google's connected-app settings or disconnect in the app. You may also request deletion directly from ShopiDeck without first revoking access. Revocation stops further authorized access; deletion of retained connection data is handled under the retention rules below and, for YouTube authorized data, within 30 calendar days of revocation or a deletion request. Previously published videos remain on YouTube unless you delete them there."
+                "Less Time Marketing's use and transfer to any other app of information received from Google APIs will adhere to the Google API Services User Data Policy, including the Limited Use requirements. Google user data is used only to provide the user-facing connection and publishing features you authorize, is not sold or used for advertising, and is not transferred to another ShopiDeck app or to AI providers, and is not used to develop, improve, or train generalized AI or machine-learning models. Humans do not read it except with your affirmative agreement for specific data, for necessary security purposes, to comply with law, or as otherwise expressly permitted by that policy.",
+                "Revoke access at any time through the Google security settings page (https://security.google.com/settings/security/permissions) or disconnect in the app. You may also request deletion directly from ShopiDeck without first revoking access. Revocation stops further authorized access; deletion of retained connection data is handled under the retention rules below and, for YouTube authorized data, within 30 calendar days of revocation or a deletion request. Previously published videos remain on YouTube unless you delete them there."
               ],
               "links": [
                 {
@@ -1575,6 +1608,11 @@
                 {
                   "label": "Google: connected apps / aplicaciones conectadas",
                   "href": "https://myaccount.google.com/connections",
+                  "external": true
+                },
+                {
+                  "label": "Google security settings: revoke third-party access",
+                  "href": "https://security.google.com/settings/security/permissions",
                   "external": true
                 }
               ]
@@ -1662,14 +1700,14 @@
           "title": "SD: Less Time Marketing — Service Terms",
           "category": "Legal and privacy",
           "effectiveDate": "October 21, 2026",
-          "lastUpdated": "October 21, 2026",
+          "lastUpdated": "October 24, 2026",
           "intro": "App-specific conditions for AI content generation, campaign scheduling, social publishing, plans, and credits in Less Time Marketing.",
           "sections": [
             {
               "id": "scope",
               "title": "1. Applicable agreement",
               "paragraphs": [
-                "These conditions apply only to Less Time Marketing and supplement the general ShopiDeck Terms. The operator and address are identified in the general Terms. Installing or using the app requires acceptance of the general Terms, these conditions, the applicable approved plan, and acknowledgment of the general Privacy Policy and this app's privacy addendum. These app-specific conditions prevail for this app, subject to mandatory law and the DPA for processor obligations. Using this app does not subscribe you to Bot Cleaner or any other app."
+                "These conditions apply only to Less Time Marketing and supplement the general ShopiDeck Terms. The operator and location are identified in the general Terms. Installing or using the app requires acceptance of the general Terms, these conditions, the applicable approved plan, and acknowledgment of the general Privacy Policy and this app's privacy addendum. These app-specific conditions prevail for this app, subject to mandatory law and the DPA for processor obligations. Using this app does not subscribe you to Bot Cleaner or any other app."
               ],
               "links": [
                 {
@@ -2369,7 +2407,7 @@
     "title": "Data Deletion Instructions",
     "category": "Legal and privacy",
     "effectiveDate": "October 21, 2026",
-    "lastUpdated": "October 21, 2026",
+    "lastUpdated": "October 24, 2026",
     "intro": "Disconnect accounts, stop app access, or request deletion from ShopiDeck. Identify the app or apps concerned so that your request reaches the right records.",
     "sections": [
       {
@@ -2377,7 +2415,7 @@
         "title": "1. Request deletion directly",
         "paragraphs": [
           "Email team@shopideck.com with the subject \"Data deletion — [app name]\". State the app(s), store domain or connected-account identifier, your relationship to the account, and the data you want deleted. We may ask for proportionate proof of authority. Do not include passwords, API keys, access tokens, or full customer lists. You can request deletion without first disconnecting or uninstalling.",
-          "We confirm scope, handle requests under the applicable legal deadlines, and explain any legally required restricted retention. You may request an update through the same email channel. A request covering one app does not silently delete another app's records; specify all relevant apps. Store customers should contact the merchant as controller, with ShopiDeck assistance where it holds data on the merchant's behalf."
+          "We confirm receipt and scope by email, complete verified deletion requests within 30 calendar days unless a shorter legal deadline applies, confirm completion by email, and explain any legally required restricted retention. You may request an update through the same email channel. A request covering one app does not silently delete another app's records; specify all relevant apps. Store customers should contact the merchant as controller, with ShopiDeck assistance where it holds data on the merchant's behalf."
         ],
         "links": [
           {
@@ -2400,7 +2438,7 @@
         "title": "2. Less Time Marketing: Meta and other social accounts",
         "bullets": [
           "Disconnect the selected network in the app to remove its local tokens immediately and stop new publishing through it.",
-          "You may also remove the app's access from the connected platform's settings. For Facebook/Instagram, use Meta's Apps and Websites or Business Integrations controls for the account concerned. For Google/YouTube use Google's connected-app settings linked below.",
+          "You may also remove the app's access directly in each platform (menu names can vary by version): Facebook — Settings & privacy → Settings → Apps and websites, or Business integrations for Pages → select the app → Remove. Instagram — Settings → Website permissions → Apps and websites → Remove. TikTok — Settings and privacy → Security and permissions → Manage app permissions → Remove access. Google/YouTube — Google security settings, linked below. LinkedIn — Settings → Data privacy → Permitted services → Remove.",
           "To delete retained connection data or content records in ShopiDeck, send the direct request above identifying Meta, TikTok, Google/YouTube, or LinkedIn as applicable. YouTube authorized data is deleted within 30 calendar days of revocation or a valid deletion request.",
           "Uninstalling stops app access and removes social credentials. Shopify normally sends shop/redact approximately 48 hours later; that event deletes local store records subject to the documented legal exceptions, rather than guaranteeing deletion of every provider copy exactly at 48 hours.",
           "Already-published social posts and remaining Shopify Files must be managed in those platforms. After uninstall, the app no longer has permission to delete Shopify Files."
@@ -2411,7 +2449,7 @@
         "links": [
           {
             "label": "Google: revoke connected access",
-            "href": "https://myaccount.google.com/connections",
+            "href": "https://security.google.com/settings/security/permissions",
             "external": true
           },
           {

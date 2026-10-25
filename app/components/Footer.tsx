@@ -109,6 +109,11 @@ export default function Footer() {
                   {dict.subprocessors}
                 </Link>
               </li>
+              <li>
+                <Link href="/data-deletion" className="hover:text-brand-accent transition-colors">
+                  {dict.dataDeletion}
+                </Link>
+              </li>
             </ul>
           </div>
 
