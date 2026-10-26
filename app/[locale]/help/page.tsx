@@ -8,7 +8,7 @@ import { AlertTriangle, ArrowRight, CheckCircle, Clock, HelpCircle, Search } fro
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { getFaqs } from "./faqData";
-import { TEAM_EMAIL, PRODUCT_NAME, SOCIAL_MARKETING_NAME, SEO_TOOL_NAME } from "../../config";
+import { TEAM_EMAIL, LEGAL_NAME, PRODUCT_NAME, SOCIAL_MARKETING_NAME, SEO_TOOL_NAME } from "../../config";
 
 type Locale = "en" | "es";
 
@@ -145,7 +145,33 @@ export default function HelpCenterPage() {
           </div>
         </section>
 
-        <section id="contact-form-anchor" className="py-16 md:py-24 bg-brand-bg border-t border-brand-border">
+        <section id="contact" className="scroll-mt-24 pt-16 md:pt-24 bg-brand-bg border-t border-brand-border">
+          <div className="layout-container max-w-3xl">
+            <div className="bg-brand-card rounded-3xl border border-brand-border p-8 md:p-10">
+              <h2 className="font-display font-black text-2xl md:text-3xl">{t("contactTitle")}</h2>
+              <p className="text-sm text-brand-secondary mt-3 leading-relaxed">{t("contactDesc")}</p>
+              <dl className="mt-6 grid gap-4 sm:grid-cols-3 text-sm">
+                <div>
+                  <dt className="text-xs font-bold uppercase tracking-wider text-brand-muted">{t("contactLegalName")}</dt>
+                  <dd className="mt-1 font-semibold text-brand-main">{LEGAL_NAME}</dd>
+                  <dd className="text-brand-secondary">{t("contactLegalType")}</dd>
+                </div>
+                <div>
+                  <dt className="text-xs font-bold uppercase tracking-wider text-brand-muted">{t("contactLocation")}</dt>
+                  <dd className="mt-1 font-semibold text-brand-main">{t("contactLocationValue")}</dd>
+                </div>
+                <div>
+                  <dt className="text-xs font-bold uppercase tracking-wider text-brand-muted">{t("contactEmail")}</dt>
+                  <dd className="mt-1 font-semibold text-brand-main">
+                    <a href={`mailto:${TEAM_EMAIL}`} className="underline decoration-brand-accent underline-offset-4 hover:text-brand-accent-hover">{TEAM_EMAIL}</a>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact-form-anchor" className="py-16 md:py-24 bg-brand-bg">
           <div className="layout-container max-w-3xl">
             <div className="bg-brand-card rounded-3xl border border-brand-border shadow-premium p-8 md:p-12">
               {formSubmitted ? (

@@ -20,7 +20,7 @@
     "terms": "Terms of Use",
     "language": "Language",
     "langDesc": "Switch between the English and Spanish versions of this page.",
-    "copyright": "© {year} ShopiDeck • All rights reserved",
+    "copyright": "© {year} ShopiDeck — operated by BONILLA CARRENO ANDRES CAMILO · team@shopideck.com",
     "builtWith": "Built with Next.js",
     "dpa": "Data Processing Addendum",
     "subprocessors": "Providers and subprocessors",
@@ -282,7 +282,14 @@
     "fieldMessagePlaceholder": "Describe what happened, what you expected, and any relevant steps. Do not include secrets or full customer lists.",
     "supportHours": "Email support during published support hours",
     "submit": "Send support request",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "contactTitle": "Contact and legal information",
+    "contactDesc": "ShopiDeck is a trade name of BONILLA CARRENO ANDRES CAMILO, a natural person (individual), Bogotá, Colombia.",
+    "contactLegalName": "Legal name",
+    "contactLegalType": "Natural person (individual)",
+    "contactLocation": "Location",
+    "contactLocationValue": "Bogotá, Colombia",
+    "contactEmail": "Email"
   },
   "Blog": {
     "badge": "",

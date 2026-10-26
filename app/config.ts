@@ -35,6 +35,8 @@ export const BOTCLEANER_INTERFACE = `${BRAND_ASSET_BASE}/products/bot-cleaner/sh
 export const BOTCLEANER_INTERFACE_WIDTH = 1528;
 export const BOTCLEANER_INTERFACE_HEIGHT = 969;
 export const TEAM_EMAIL = "team@shopideck.com";
+// Legal name exactly as registered with Meta (uppercase, no Ñ).
+export const LEGAL_NAME = "BONILLA CARRENO ANDRES CAMILO";
 export const SUPPORT_EMAIL = TEAM_EMAIL;
 export const PRIVACY_EMAIL = TEAM_EMAIL;
 export const PRODUCT_NAME = "SD: Klaviyo Bot Cleaner";

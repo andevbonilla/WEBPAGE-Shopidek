@@ -4,7 +4,7 @@
       "title": "ShopiDeck Privacy Policy",
       "category": "Legal and privacy",
       "effectiveDate": "October 21, 2026",
-      "lastUpdated": "October 24, 2026",
+      "lastUpdated": "October 26, 2026",
       "intro": "The common privacy framework for shopideck.com and the ShopiDeck suite. Each app has its own addendum describing its data, permissions, providers, retention, and deletion. Using one app does not authorize processing by every other app.",
       "sections": [
         {
@@ -21,7 +21,7 @@
           "id": "identity",
           "title": "2. Operator and privacy contact",
           "paragraphs": [
-            "ShopiDeck is a trade name operated by Andres Camilo Bonilla Carreño, a Colombian individual merchant based in Bogotá D.C., Colombia. Contact for privacy, support, legal matters, and security incidents: team@shopideck.com.",
+            "ShopiDeck is a trade name of BONILLA CARRENO ANDRES CAMILO, a natural person (individual), Bogotá, Colombia. Contact for privacy, support, legal matters, and security incidents: team@shopideck.com.",
             "The operator is the internal privacy contact, not a formally appointed DPO. ShopiDeck is not established in the EU or UK and has not identified a formally appointed representative there in these documents. No appointment or exemption from a legal requirement is asserted."
           ]
         },
@@ -185,14 +185,14 @@
       "title": "ShopiDeck General Terms of Use",
       "category": "Legal and privacy",
       "effectiveDate": "October 21, 2026",
-      "lastUpdated": "October 24, 2026",
+      "lastUpdated": "October 26, 2026",
       "intro": "Common conditions for the website and ShopiDeck suite. Each app has separate service terms, permissions, subscription rules, and data disclosures.",
       "sections": [
         {
           "id": "identity-scope",
           "title": "1. Provider, scope, and authority",
           "paragraphs": [
-            "These Terms form an agreement with Andres Camilo Bonilla Carreño, a Colombian individual merchant operating as ShopiDeck from Bogotá D.C., Colombia. Contact: team@shopideck.com.",
+            "ShopiDeck is a trade name of BONILLA CARRENO ANDRES CAMILO, a natural person (individual), Bogotá, Colombia. These Terms form an agreement with BONILLA CARRENO ANDRES CAMILO. Contact: team@shopideck.com.",
             "They govern the public website and common service conditions. Apps are business services for merchants and authorized adult users. You must have authority to bind the business, administer the relevant store and connected accounts, and provide lawful instructions. Mandatory consumer rights, if applicable, are preserved."
           ]
         },
@@ -290,14 +290,14 @@
       "title": "ShopiDeck Data Processing Addendum",
       "category": "Legal and privacy",
       "effectiveDate": "October 21, 2026",
-      "lastUpdated": "October 24, 2026",
+      "lastUpdated": "October 26, 2026",
       "intro": "Common contractual duties when ShopiDeck processes personal data on a merchant's behalf. Each app's processing schedule defines its data, purposes, duration, safeguards, and providers.",
       "sections": [
         {
           "id": "scope",
           "title": "1. Parties, scope, and precedence",
           "paragraphs": [
-            "This DPA is between the merchant as controller (or authorized processor) and Andres Camilo Bonilla Carreño, trading as ShopiDeck, as processor (or subprocessor as applicable). It applies only to personal data handled on the merchant's behalf, not ShopiDeck's own controller activities. It starts with the applicable app agreement and continues while that processing continues.",
+            "This DPA is between the merchant as controller (or authorized processor) and BONILLA CARRENO ANDRES CAMILO, trading as ShopiDeck, as processor (or subprocessor as applicable). It applies only to personal data handled on the merchant's behalf, not ShopiDeck's own controller activities. It starts with the applicable app agreement and continues while that processing continues.",
             "Each installed app's schedule specifies subject matter, purposes, operations, data categories, people, duration, measures, and relevant providers by reference to its privacy addendum. No schedule for an unused app is incorporated. This DPA governs processor duties over conflicting general commercial language; app schedules supplement technical details and cannot reduce these common duties or mandatory law."
           ],
           "productIndex": "dpa"
@@ -378,7 +378,7 @@
           "title": "SD: Klaviyo Bot Cleaner — Privacy Addendum",
           "category": "Legal and privacy",
           "effectiveDate": "October 21, 2026",
-          "lastUpdated": "October 24, 2026",
+          "lastUpdated": "October 26, 2026",
           "intro": "This Privacy Policy explains how SD: Klaviyo Bot Cleaner processes personal data in the embedded Shopify app at https://klaviyobotcleaner.shopideck.com. It describes the current product, its limits, the parties' privacy roles, and the choices available to individuals and merchants.",
           "sections": [
             {
@@ -418,8 +418,8 @@
               "id": "identity",
               "title": "2. Controller identity and contact",
               "paragraphs": [
-                "ShopiDeck is a trade name operated by Andres Camilo Bonilla Carreño, a Colombian individual merchant based in Bogotá D.C., Colombia.",
-                "Privacy, legal, support, and security incident contact: team@shopideck.com. The internal privacy contact is Andres Camilo Bonilla Carreño at team@shopideck.com; this contact is not described as a formal DPO."
+                "ShopiDeck is a trade name of BONILLA CARRENO ANDRES CAMILO, a natural person (individual), Bogotá, Colombia.",
+                "Privacy, legal, support, and security incident contact: team@shopideck.com. The internal privacy contact is BONILLA CARRENO ANDRES CAMILO at team@shopideck.com; this contact is not described as a formal DPO."
               ]
             },
             {
@@ -763,14 +763,14 @@
               "id": "eea",
               "title": "26. European Economic Area",
               "paragraphs": [
-                "ShopiDeck is not established in the European Union or the United Kingdom and does not currently have a formal representative in either jurisdiction. Andres Camilo Bonilla Carreño is the internal privacy contact and is not a formal DPO. Where EEA law applies, individuals may have rights under that law, including access, correction, deletion, restriction, portability, objection, and review of automated processing, subject to the applicable conditions and limits. This policy does not claim universal compliance or appoint a representative that does not exist."
+                "ShopiDeck is not established in the European Union or the United Kingdom and does not currently have a formal representative in either jurisdiction. BONILLA CARRENO ANDRES CAMILO is the internal privacy contact and is not a formal DPO. Where EEA law applies, individuals may have rights under that law, including access, correction, deletion, restriction, portability, objection, and review of automated processing, subject to the applicable conditions and limits. This policy does not claim universal compliance or appoint a representative that does not exist."
               ]
             },
             {
               "id": "uk",
               "title": "27. United Kingdom",
               "paragraphs": [
-                "ShopiDeck is not established in the United Kingdom and does not currently have a formal UK representative. Andres Camilo Bonilla Carreño is the internal privacy contact and is not a formal DPO. Where UK law applies, individuals may exercise the rights available under that law, subject to its conditions and limits. This policy does not claim universal compliance or appoint a representative that does not exist."
+                "ShopiDeck is not established in the United Kingdom and does not currently have a formal UK representative. BONILLA CARRENO ANDRES CAMILO is the internal privacy contact and is not a formal DPO. Where UK law applies, individuals may exercise the rights available under that law, subject to its conditions and limits. This policy does not claim universal compliance or appoint a representative that does not exist."
               ]
             },
             {
@@ -851,7 +851,7 @@
           "title": "SD: Klaviyo Bot Cleaner — Service Terms",
           "category": "Legal and service terms",
           "effectiveDate": "October 21, 2026",
-          "lastUpdated": "October 24, 2026",
+          "lastUpdated": "October 26, 2026",
           "intro": "These Terms govern access to and use of SD: Klaviyo Bot Cleaner by Shopify merchants. The service is available through Shopify Admin and the embedded app at https://klaviyobotcleaner.shopideck.com.",
           "sections": [
             {
@@ -883,7 +883,7 @@
               "id": "identity",
               "title": "1. Provider identity",
               "paragraphs": [
-                "These Terms form an agreement between the merchant and Andres Camilo Bonilla Carreño, a Colombian individual merchant operating under the ShopiDeck trade name and based in Bogotá D.C., Colombia. Contact: team@shopideck.com."
+                "ShopiDeck is a trade name of BONILLA CARRENO ANDRES CAMILO, a natural person (individual), Bogotá, Colombia. These Terms form an agreement between the merchant and BONILLA CARRENO ANDRES CAMILO. Contact: team@shopideck.com."
               ]
             },
             {
@@ -1363,14 +1363,14 @@
           "title": "SD: Less Time Marketing — Privacy Addendum",
           "category": "Legal and privacy",
           "effectiveDate": "October 21, 2026",
-          "lastUpdated": "October 24, 2026",
+          "lastUpdated": "October 26, 2026",
           "intro": "How Less Time Marketing uses store, brand, and connected-account data to create, schedule, and publish content. This app does not read Shopify customers, orders, or payments. These practices apply only when you use this app or activate the relevant connection.",
           "sections": [
             {
               "id": "scope",
               "title": "1. Scope, operator, and roles",
               "paragraphs": [
-                "This addendum supplements the general ShopiDeck Privacy Policy exclusively for Less Time Marketing. For app-specific differences it prevails over the general policy, subject to mandatory law and the DPA for processor obligations. Bot Cleaner permissions, scoring, customer-profile retention, and suppression workflows do not apply here. Publishing these terms does not mean every integration is already available; availability and permissions are shown in the app before connection.",
+                "ShopiDeck is a trade name of BONILLA CARRENO ANDRES CAMILO, a natural person (individual), Bogotá, Colombia. This addendum supplements the general ShopiDeck Privacy Policy exclusively for Less Time Marketing. For app-specific differences it prevails over the general policy, subject to mandatory law and the DPA for processor obligations. Bot Cleaner permissions, scoring, customer-profile retention, and suppression workflows do not apply here. Publishing these terms does not mean every integration is already available; availability and permissions are shown in the app before connection.",
                 "The operator and privacy contact are identified in the general policy. ShopiDeck is controller for account administration, billing, connection administration, security, and its own service communications; it is processor for personal data in store and brand materials and publishing instructions handled on the merchant's behalf. Social platforms act under their own terms for data they receive. A connection is not permission to use its data in another ShopiDeck app."
               ],
               "links": [
@@ -1700,14 +1700,14 @@
           "title": "SD: Less Time Marketing — Service Terms",
           "category": "Legal and privacy",
           "effectiveDate": "October 21, 2026",
-          "lastUpdated": "October 24, 2026",
+          "lastUpdated": "October 26, 2026",
           "intro": "App-specific conditions for AI content generation, campaign scheduling, social publishing, plans, and credits in Less Time Marketing.",
           "sections": [
             {
               "id": "scope",
               "title": "1. Applicable agreement",
               "paragraphs": [
-                "These conditions apply only to Less Time Marketing and supplement the general ShopiDeck Terms. The operator and location are identified in the general Terms. Installing or using the app requires acceptance of the general Terms, these conditions, the applicable approved plan, and acknowledgment of the general Privacy Policy and this app's privacy addendum. These app-specific conditions prevail for this app, subject to mandatory law and the DPA for processor obligations. Using this app does not subscribe you to Bot Cleaner or any other app."
+                "ShopiDeck is a trade name of BONILLA CARRENO ANDRES CAMILO, a natural person (individual), Bogotá, Colombia. These conditions apply only to Less Time Marketing and supplement the general ShopiDeck Terms. The operator and location are identified in the general Terms. Installing or using the app requires acceptance of the general Terms, these conditions, the applicable approved plan, and acknowledgment of the general Privacy Policy and this app's privacy addendum. These app-specific conditions prevail for this app, subject to mandatory law and the DPA for processor obligations. Using this app does not subscribe you to Bot Cleaner or any other app."
               ],
               "links": [
                 {
