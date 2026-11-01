@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { locale } = await params;
   const currentLocale = resolveLocale(locale);
   const t = getTranslations(currentLocale, "BotCleaner");
-  const path = localizedPath(currentLocale, "/botcleaner");
+  const path = localizedPath(currentLocale, "/klaviyo-bot-cleaner");
   return {
     metadataBase: new URL(SITE_URL),
     title: t("seoTitle"),
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       shortcut: BOTCLEANER_LOGO,
       apple: BOTCLEANER_LOGO,
     },
-    alternates: { canonical: path, languages: { en: "/botcleaner", es: "/es/botcleaner", "x-default": "/botcleaner" } },
+    alternates: { canonical: path, languages: { en: "/klaviyo-bot-cleaner", es: "/es/klaviyo-bot-cleaner", "x-default": "/klaviyo-bot-cleaner" } },
     openGraph: {
       title: t("seoTitle"), description: t("seoDescription"), url: `${SITE_URL}${path}`,
       siteName: "ShopiDeck", type: "website",
@@ -59,7 +59,7 @@ export default async function BotCleanerPage({ params }: PageProps) {
     description: t(`tStep${number}Desc` as keyof typeof copy),
   }));
   const benefitIcons = [Bot, Coins, Target, ShieldCheck];
-  const canonicalUrl = `${SITE_URL}${localizedPath(currentLocale, "/botcleaner")}`;
+  const canonicalUrl = `${SITE_URL}${localizedPath(currentLocale, "/klaviyo-bot-cleaner")}`;
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [

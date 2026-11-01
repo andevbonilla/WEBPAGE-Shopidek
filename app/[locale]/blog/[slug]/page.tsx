@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     metadataBase: new URL(SITE_URL),
-    title: `${post.title} | ShopiDeck Blog`,
+    title: post.seoTitle.length <= 48 ? `${post.seoTitle} | ShopiDeck` : post.seoTitle,
     description: post.excerpt,
     alternates: {
       canonical: canonicalPath,
@@ -57,7 +57,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: post.title,
       description: post.excerpt,
       type: "article",
+      siteName: "ShopiDeck",
       publishedTime: post.publishedAt,
+      modifiedTime: post.updatedAt ?? post.publishedAt,
       url: `${SITE_URL}${canonicalPath}`,
       images: [
         {
@@ -115,7 +117,7 @@ export default async function BlogPostPage({ params }: PageProps) {
     description: post.excerpt,
     image: [imageUrl],
     datePublished: post.publishedAt,
-    dateModified: post.publishedAt,
+    dateModified: post.updatedAt ?? post.publishedAt,
     inLanguage: currentLocale,
     isAccessibleForFree: true,
     keywords: post.keywords.join(", "),

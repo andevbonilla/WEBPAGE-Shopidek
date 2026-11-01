@@ -8,8 +8,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const siteLastModified = new Date("2026-09-15T00:00:00.000Z");
   const staticPaths = [
     "",
-    "/botcleaner",
-    "/social-marketing",
+    "/klaviyo-bot-cleaner",
+    "/less-time-marketing",
     "/help",
     "/blog",
     "/privacy",
@@ -24,13 +24,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       path,
       lastModified: /^\/(privacy|terms|dpa|subprocessors|data-deletion)(\/|$)/.test(path)
         ? new Date(LEGAL_UPDATED_ISO)
-        : ["", "/help", "/social-marketing"].includes(path)
+        : ["/less-time-marketing", "/klaviyo-bot-cleaner"].includes(path)
+        ? new Date("2026-11-01T00:00:00.000Z")
+        : ["", "/help"].includes(path)
         ? new Date("2026-09-18T00:00:00.000Z")
         : siteLastModified,
     })),
     ...getPosts("en").map((post) => ({
       path: `/blog/${post.id}`,
-      lastModified: new Date(post.publishedAt),
+      lastModified: new Date(post.updatedAt ?? post.publishedAt),
     })),
   ];
 

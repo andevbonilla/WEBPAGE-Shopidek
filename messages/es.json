@@ -104,7 +104,10 @@
     "faq4A": "El soporte por email está disponible en team@shopideck.com durante el horario publicado. Incluye el dominio de tu tienda, el producto, los pasos para reproducir el problema y capturas sin API keys, contraseñas, tokens ni listas completas de clientes. Consulta la política de privacidad para saber cómo se tratan los datos enviados."
   },
   "BotCleaner": {
-    "heroLines": ["Encuentra perfiles sospechosos de Klaviyo.", "Antes de que inflen tu lista."],
+    "heroLines": [
+      "Encuentra perfiles sospechosos de Klaviyo.",
+      "Antes de que inflen tu lista."
+    ],
     "badge": "Disponible en Shopify App Store",
     "title": "Encuentra perfiles sospechosos de Klaviyo antes de que inflen tu lista.",
     "subtitle": "Conecta Klaviyo mediante OAuth, analiza perfiles existentes, entiende por qué fueron marcados y suprime únicamente los perfiles que revises y confirmes.",
@@ -178,7 +181,7 @@
     "faqAnswer7": "No. La app opera desde Shopify Admin y APIs de backend. No requiere archivos Liquid ni scripts en el storefront.",
     "faqQuestion8": "¿La app configura SPF, DKIM o DMARC?",
     "faqAnswer8": "No. La autenticación del dominio debe configurarse por separado siguiendo las instrucciones de Klaviyo y de tu proveedor DNS.",
-    "seoTitle": "SD: Klaviyo Bot Cleaner | Revisión de perfiles sospechosos de Klaviyo",
+    "seoTitle": "SD: Klaviyo Bot Cleaner | Perfiles sospechosos en Klaviyo",
     "seoDescription": "Audita perfiles sospechosos de Klaviyo mediante OAuth, señales de riesgo explicables, revisión del comerciante y supresión confirmada.",
     "seoKeywords": "auditoría de perfiles Klaviyo, app Shopify Klaviyo, supresión de perfiles, señales de emails desechables",
     "schemaDescription": "Un flujo controlado por el comerciante para auditar y suprimir perfiles existentes de Klaviyo.",
@@ -301,82 +304,289 @@
     "readFull": ""
   },
   "LessTimeMarketing": {
-    "seoTitle": "SD: Less Time Marketing | Marketing mientras duermes",
-    "seoDescription": "Marketing mientras duermes para tiendas Shopify. Planifica semanas o meses de contenido de calidad con unos 5 minutos de configuración. App en desarrollo; solicita acceso anticipado.",
-    "badge": "Próximamente · En desarrollo",
-    "eyebrow": "SD: Less Time Marketing",
+    "seoTitle": "SD: Less Time Marketing | Redes sociales con IA para Shopify",
+    "seoDescription": "Convierte tus productos de Shopify en imágenes, videos y textos con IA, programados en tus redes. Tú apruebas cada post. Únete a la lista de espera.",
+    "iconAlt": "Ícono de la app SD: Less Time Marketing con tarjetas de campaña y un megáfono",
+    "badge": "En desarrollo",
     "heroLines": [
-      "Marketing que trabaja.",
-      "Mientras tú duermes."
+      "Dedica menos tiempo al marketing.",
+      "Planifica. Aprueba. Publica."
     ],
-    "heroDescription": "Unos 5 minutos para configurar tus campañas. Semanas o meses de contenido personalizado y de calidad diseñado para vender. Estamos construyendo marketing automatizado para las redes sociales de tu tienda Shopify, con un enfoque en calidad y practicidad, no solo más publicaciones.",
+    "heroDescription": "Convierte tus productos de Shopify en imágenes, videos y textos con IA, programados en tus redes sociales. Planificas una campaña una vez, revisas cada publicación y la app la publica a tiempo.",
     "primaryCta": "Unirme a la lista de espera",
-    "secondaryCta": "Explorar el concepto",
-    "timingNote": "5 minutos es un objetivo aproximado del producto, no un tiempo de finalización garantizado. La app está en desarrollo; las funciones finales y la disponibilidad se anunciarán en el lanzamiento.",
-    "iconAlt": "Icono de la app SD: Less Time Marketing con tarjetas de campaña y un megáfono",
+    "secondaryCta": "Ver cómo funciona",
+    "heroNote": "La app está en desarrollo y aún no está en la Shopify App Store. Únete a la lista de espera y te avisaremos cuando se lance. Todos los planes empezarán con una prueba gratis de 7 días con 60 créditos.",
     "pillars": [
-      "~5 minutos de configuración",
-      "Semanas o meses",
-      "Calidad primero"
+      "Creado desde tu catálogo",
+      "Tú apruebas cada publicación",
+      "Facturado por Shopify"
     ],
-    "previewLabel": "Vista conceptual",
-    "previewTitle": "Una idea. Toda una campaña.",
-    "previewDescription": "De un producto que te encanta a una historia que vale la pena compartir, en un calendario que funciona para ti.",
-    "previewCampaign": "Tu próxima colección",
-    "previewRange": "30 días · Una voz de marca",
-    "previewCards": [
-      {
-        "label": "Descubrir",
-        "title": "Conoce tu nuevo favorito.",
-        "caption": "Presenta el producto y lo que lo hace especial."
-      },
-      {
-        "label": "Conectar",
-        "title": "Hay una historia detrás.",
-        "caption": "Comparte los detalles, valores y personas detrás de tu marca."
-      },
-      {
-        "label": "Invitar",
-        "title": "Hazlo parte de tu día.",
-        "caption": "Dale a tu audiencia una razón clara para explorar tu tienda."
-      }
-    ],
-    "calendarLabel": "Una campaña, no solo una publicación",
-    "calendarDays": [
-      "L",
-      "M",
-      "X",
-      "J",
-      "V",
-      "S",
-      "D"
-    ],
-    "calendarLegend": "Descubrir · Conectar · Invitar",
-    "previewNote": "Campaña únicamente ilustrativa. No es una captura de un producto lanzado ni una promesa de canales compatibles.",
-    "benefitsEyebrow": "Pensada alrededor de tu tienda",
-    "benefitsTitle": "Calidad antes que cantidad. Practicidad antes que complejidad.",
-    "benefitsDescription": "Un calendario lleno no es suficiente. Nos enfocamos en contenido útil con un propósito de venta, una voz de marca coherente y un flujo que te deje tiempo para gestionar tu tienda.",
+    "mock": {
+      "label": "Vista ilustrativa",
+      "alt": "Vista ilustrativa de una pantalla de revisión: una imagen de producto con IA, su texto y hashtags, la fecha programada y un botón para aprobar.",
+      "app": "Less Time Marketing",
+      "campaign": "Colección de primavera",
+      "sections": [
+        "Por hacer",
+        "Por revisar",
+        "Próximas",
+        "Publicadas"
+      ],
+      "postType": "Promocional · Imagen",
+      "date": "Vie · 10:00 a. m.",
+      "status": "Por revisar",
+      "caption": "Ligera como un paseo matutino. Nuestra camisa de lino te mantiene fresco del café al atardecer.",
+      "hashtags": "#lino #veranoconestilo #novedades",
+      "approve": "Aprobar",
+      "edit": "Editar",
+      "another": "Crear otra"
+    },
+    "benefitsEyebrow": "Por qué Less Time Marketing",
+    "benefitsTitle": "Contenido constante en redes, sin hacer cada publicación a mano.",
+    "benefitsDescription": "Escribir, diseñar y programar cada publicación quita tiempo que podrías dedicar a tu tienda. La app prepara el trabajo; tú tienes la última palabra.",
     "benefits": [
       {
-        "title": "Suena como tu marca",
-        "description": "Adapta las ideas de campaña a tu tono, audiencia y objetivos, en lugar de mensajes genéricos que podrían pertenecer a cualquier tienda."
+        "title": "Campañas, no publicaciones sueltas",
+        "description": "Elige productos, un formato, un tipo de publicación y un calendario completo una sola vez. La app escribe y prepara cada publicación de la campaña."
       },
       {
-        "title": "Dales una razón para comprar",
-        "description": "Explica el valor de tus productos, responde preguntas de compra y conecta cada mensaje con un siguiente paso claro. Contenido diseñado para vender, no solo para llenar un feed."
+        "title": "Creado desde tu catálogo",
+        "description": "Los textos y las imágenes usan solo los datos y fotos de tus productos. Sin precios, descuentos, stock, reseñas ni resultados inventados."
       },
       {
-        "title": "Piensa en semanas o meses",
-        "description": "Construye un calendario de campaña conectado en lugar de decidir qué publicar una publicación a la vez. Define tu dirección, revisa el contenido y deja que el plan aprobado haga el trabajo repetitivo."
+        "title": "Imágenes, carruseles y video",
+        "description": "Cinco tipos de publicación con imagen, carruseles y videos verticales de 5, 15 y 30 segundos con formatos de historia, más Creatividad en Pro."
       },
       {
-        "title": "Automatiza con aprobación",
-        "description": "Revisa y ajusta la campaña antes de aprobar el flujo previsto de publicación automatizada. Tu marca sigue en tus manos."
+        "title": "Tú mantienes el control",
+        "description": "Cada publicación espera tu aprobación por defecto. El piloto automático es opcional por campaña y la aprobación se bloquea hasta que el contenido esté listo."
       }
     ],
+    "workflowEyebrow": "Cómo funciona",
+    "workflowTitle": "De tus productos a un calendario publicado.",
+    "workflowDescription": "Cuatro pasos dentro de tu panel de Shopify. Tú das la dirección y la app hace el trabajo repetitivo.",
+    "steps": [
+      {
+        "title": "Elige tus productos",
+        "description": "Selecciona productos específicos o toda tu tienda. La app lee los datos y las fotos de tu catálogo."
+      },
+      {
+        "title": "Elige formato, tipo y ritmo",
+        "description": "Imágenes o video, el tipo de publicación, las cuentas sociales y un calendario: una vez, fechas concretas o un ritmo que se repite, con tu zona horaria."
+      },
+      {
+        "title": "Revisa y aprueba",
+        "description": "Cada publicación tiene su propia página. Edita el texto y los hashtags, reprograma, crea otra versión, aprueba o rechaza."
+      },
+      {
+        "title": "Publicado a tiempo",
+        "description": "Las publicaciones aprobadas salen automáticamente a su hora. Los correos te avisan qué falta revisar y qué se publicó."
+      }
+    ],
+    "makesEyebrow": "Qué crea",
+    "makesTitle": "Imágenes, carruseles y videos cortos con tus propias fotos.",
+    "makesDescription": "Elige el tipo de publicación que encaja con cada campaña. Los textos se escriben en el idioma de la campaña, con un gancho inicial y hashtags para cada red.",
+    "imageTypesTitle": "Tipos de publicación con imagen",
+    "imageTypes": [
+      {
+        "title": "Promocional",
+        "description": "Hace el producto deseable y termina con una invitación a comprar."
+      },
+      {
+        "title": "Informativa",
+        "description": "Explica qué es, de qué está hecho o cómo funciona, sin vender de forma agresiva."
+      },
+      {
+        "title": "Consejos",
+        "description": "Un consejo práctico con tu producto, escrito completo en la imagen."
+      },
+      {
+        "title": "Historia de marca",
+        "description": "Un momento real con tu producto y una frase corta de tu marca en la imagen."
+      },
+      {
+        "title": "Meme / humor",
+        "description": "Un chiste ligero y cercano con tu producto. Nunca usa imágenes ni personas famosas."
+      },
+      {
+        "title": "Creatividad Pro",
+        "description": "Una IA propone 10 ideas, otra elige una y la publicación se produce en calidad máxima."
+      }
+    ],
+    "carouselTitle": "Carruseles",
+    "carouselDescription": "Una publicación con varias fotos: de 2 a 4 productos, o un producto con 2 a 5 fotos. Tu logo real se puede colocar en las imágenes terminadas (desactivado por defecto).",
+    "videoTitle": "Videos verticales",
+    "videos": [
+      {
+        "length": "5 s",
+        "plans": "Todos los planes",
+        "description": "Tu producto en movimiento: problema → solución, ASMR visual, POV, revelación cinematográfica o escenas surrealistas."
+      },
+      {
+        "length": "15 s",
+        "plans": "Growth y Pro",
+        "description": "Una historia corta en varias escenas, con audio: mini historias, demostraciones, 3 beneficios, estilo UGC o caricatura."
+      },
+      {
+        "length": "30 s",
+        "plans": "Pro",
+        "description": "Una historia completa con más escenas y audio, más el formato Creatividad de 10 segundos."
+      }
+    ],
+    "makesNote": "Los videos se crean con tus propias fotos de producto: el producto conserva su apariencia real y se crea una escena nueva a su alrededor. Hay subtítulos opcionales para videos de 15 y 30 segundos.",
+    "controlTitle": "Automatización que te deja al mando.",
+    "controlDescription": "Ahorrar tiempo no debería significar perder el control de tu marca ni de tus datos.",
+    "controlPoints": [
+      "Cada publicación espera tu aprobación, salvo que actives el piloto automático en una campaña.",
+      "Con piloto automático, una publicación que no revisaste se aprueba una hora antes de su hora.",
+      "Los textos y las imágenes usan solo los datos de tu catálogo, nunca afirmaciones inventadas.",
+      "Un perfil de marca: logo, colores, tipografía, tono, valores y palabras prohibidas.",
+      "Solo lee productos y guarda archivos. Nunca lee pedidos ni datos de clientes.",
+      "Las imágenes y los videos se guardan en tus propios Archivos de Shopify.",
+      "Interfaz y contenido en inglés, español, portugués, francés y alemán.",
+      "Sin promesas de alcance, seguidores, ventas ni ingresos."
+    ],
+    "pricingEyebrow": "Precios",
+    "pricingTitle": "Planes simples con créditos mensuales.",
+    "pricingDescription": "Cada plan incluye créditos mensuales. Cada acción usa créditos y publicar siempre es gratis. Precios en USD, cobrados en tu factura de Shopify.",
+    "popularLabel": "Más popular",
+    "perMonth": "mes",
+    "creditsLabel": "créditos / mes",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "$19",
+        "credits": "400",
+        "popular": false,
+        "tagline": "Para una tienda que lanza sus primeras campañas.",
+        "features": [
+          "2 cuentas sociales",
+          "3 campañas activas",
+          "Videos de 5 segundos",
+          "Programación y publicación automáticas",
+          "Imágenes, videos, textos y hashtags con IA"
+        ],
+        "estimate": "Unas 66 imágenes estándar o 13 videos cortos"
+      },
+      {
+        "name": "Growth",
+        "price": "$39",
+        "credits": "1.000",
+        "popular": true,
+        "tagline": "Para tiendas con varias campañas a la vez.",
+        "features": [
+          "5 cuentas sociales",
+          "10 campañas activas",
+          "+ Videos de 15 segundos con audio",
+          "Todo lo de Starter",
+          "Subtítulos de video en el idioma de la campaña"
+        ],
+        "estimate": "Unas 166 imágenes estándar o 33 videos cortos"
+      },
+      {
+        "name": "Pro",
+        "price": "$79",
+        "credits": "2.500",
+        "popular": false,
+        "tagline": "Para marcas que publican a diario en muchas cuentas.",
+        "features": [
+          "5 cuentas sociales",
+          "Campañas activas ilimitadas",
+          "+ Videos de 30 segundos y Creatividad",
+          "Todo lo de Growth",
+          "Creatividad para imágenes y video"
+        ],
+        "estimate": "Unas 416 imágenes estándar o 83 videos cortos"
+      }
+    ],
+    "trialTitle": "Prueba gratis de 7 días",
+    "trialDescription": "Empieza cualquier plan con 7 días y 60 créditos (unas 10 imágenes o 2 videos cortos), a través de Shopify. Recibes un correo 24 horas antes de que termine la prueba.",
+    "packsTitle": "Paquetes de créditos extra",
+    "packsDescription": "Paquetes de pago único para cualquier plan, válidos por 12 meses y usados después de tus créditos mensuales.",
+    "packs": [
+      {
+        "credits": "150 créditos",
+        "price": "$9",
+        "recommended": false
+      },
+      {
+        "credits": "400 créditos",
+        "price": "$19",
+        "recommended": true
+      },
+      {
+        "credits": "1.200 créditos",
+        "price": "$49",
+        "recommended": false
+      }
+    ],
+    "recommendedLabel": "Recomendado",
+    "creditsTitle": "Créditos por acción",
+    "creditsHeaders": [
+      "Acción",
+      "Créditos"
+    ],
+    "creditsRows": [
+      {
+        "action": "Texto (por red)",
+        "credits": "1"
+      },
+      {
+        "action": "Imagen · estándar",
+        "credits": "6"
+      },
+      {
+        "action": "Imagen · calidad máxima",
+        "credits": "25"
+      },
+      {
+        "action": "Carrusel",
+        "credits": "Una imagen por foto"
+      },
+      {
+        "action": "Pasos de ideas de Creatividad",
+        "credits": "9"
+      },
+      {
+        "action": "Video 5 s · estándar",
+        "credits": "30"
+      },
+      {
+        "action": "Video 5 s · calidad máxima",
+        "credits": "55"
+      },
+      {
+        "action": "Video Creatividad 10 s",
+        "credits": "115 + 9"
+      },
+      {
+        "action": "Video 15 s con audio",
+        "credits": "175"
+      },
+      {
+        "action": "Video 30 s con audio",
+        "credits": "350"
+      },
+      {
+        "action": "Subtítulos para un video de 15 o 30 s",
+        "credits": "3"
+      },
+      {
+        "action": "Publicar",
+        "credits": "Gratis"
+      }
+    ],
+    "fairBillingTitle": "Cobro justo",
+    "fairBilling": [
+      "Los créditos se reservan antes del trabajo y se devuelven si el contenido no se entrega por una falla técnica.",
+      "Un video que el proveedor de IA rechaza por su política de contenido consume los créditos de ese intento. La app te avisa cuando ocurre.",
+      "Los créditos mensuales se renuevan cada ciclo de facturación y no se acumulan.",
+      "Al subir de plan se suman los créditos extra por el resto del ciclo. Bajar de plan o cancelar aplica al final del ciclo."
+    ],
+    "pricingNote": "Los planes y precios aplicarán cuando la app se lance en la Shopify App Store. El contenido se genera con IA; revisa cada publicación antes de aprobarla.",
     "comparisonEyebrow": "Compara tus opciones",
-    "comparisonTitle": "Menos trabajo repetitivo. Más intención en cada campaña.",
-    "comparisonDescription": "En lugar de competir por el número de publicaciones, nuestro enfoque propuesto reúne contexto de marca, intención de compra y un flujo práctico de campañas.",
+    "comparisonTitle": "Otra forma de mantener activas tus redes.",
+    "comparisonDescription": "En lugar de crear cada publicación tú mismo o generar publicaciones en masa, Less Time Marketing planifica campañas completas desde tu catálogo y te pide aprobación.",
     "comparisonHeaders": [
       "Lo que importa",
       "Crear todo manualmente",
@@ -385,87 +595,97 @@
     ],
     "comparisonRows": [
       {
-        "criterion": "Calidad",
-        "manual": "Tú escribes y compruebas cada pieza.",
-        "volume": "Un lote grande sigue necesitando comprobaciones de relevancia y calidad.",
-        "shopideck": "El contexto de marca y producto guía los borradores; tú revisas la calidad antes de aprobar."
+        "criterion": "Planificación",
+        "manual": "Decides qué publicar, una publicación a la vez.",
+        "volume": "Un montón de publicaciones aún necesita un calendario.",
+        "shopideck": "Una campaña con productos, formato, tipo y calendario, configurada una vez."
       },
       {
-        "criterion": "Practicidad",
-        "manual": "Las ideas, la redacción y el calendario son tareas separadas.",
-        "volume": "Las publicaciones por sí solas no definen una campaña ni un plan de publicación.",
-        "shopideck": "Un solo flujo guiado: un resumen breve, una campaña, revisión y un calendario aprobado."
+        "criterion": "Datos del producto",
+        "manual": "Revisas cada detalle tú mismo.",
+        "volume": "Los textos genéricos pueden alejarse de lo que vendes.",
+        "shopideck": "Los textos y las imágenes usan solo los datos y fotos de tu catálogo."
       },
       {
-        "criterion": "Propósito de venta",
-        "manual": "Tú conectas cada mensaje con un producto y un siguiente paso.",
-        "volume": "Más publicaciones por sí solas no crean una razón para comprar.",
-        "shopideck": "El valor del producto, las preguntas de compra y llamadas a la acción claras dan forma a la campaña."
+        "criterion": "Control",
+        "manual": "Control total, pero cada paso es manual.",
+        "volume": "Es difícil revisar todo antes de que salga.",
+        "shopideck": "Aprobación por defecto y piloto automático opcional por campaña."
       },
       {
-        "criterion": "Tiempo",
-        "manual": "Cada nueva publicación requiere más trabajo directo.",
-        "volume": "Generar borradores es solo una parte del trabajo.",
-        "shopideck": "Unos 5 minutos de configuración inicial es el objetivo; planifica semanas o meses, con tiempo para revisar."
+        "criterion": "Claridad de costos",
+        "manual": "Tu tiempo, que es difícil de medir.",
+        "volume": "Depende de la herramienta.",
+        "shopideck": "El costo en créditos se muestra por acción y por campaña antes de crearla."
       }
     ],
-    "comparisonNote": "Comparación de enfoques de trabajo, no una evaluación verificada de competidores específicos. Otras herramientas pueden ofrecer funciones similares. La columna SD describe el diseño previsto del producto, no funciones lanzadas. El tiempo de configuración y las ventas no están garantizados.",
-    "workflowEyebrow": "El flujo previsto",
-    "workflowTitle": "De tu tienda a tu próxima campaña.",
-    "workflowDescription": "Un camino simple desde un breve resumen de marca hasta una campaña que puedes revisar y preparar para publicar.",
-    "steps": [
-      {
-        "title": "Cuenta la historia de tu marca",
-        "description": "Describe tu audiencia, tono y lo que quieres lograr con la campaña."
-      },
-      {
-        "title": "Elige productos y un periodo",
-        "description": "Selecciona los productos que quieres destacar y planifica contenido para días, semanas o meses."
-      },
-      {
-        "title": "Crea y revisa la campaña",
-        "description": "Prepara un borrador de campaña personalizado. Ajusta los mensajes y comprueba los detalles del producto antes de aprobar."
-      },
-      {
-        "title": "Aprueba y planifica la publicación",
-        "description": "Define el calendario y aprueba la automatización en las redes compatibles. Las integraciones finales se confirmarán en el lanzamiento."
-      }
-    ],
-    "controlTitle": "Más automatización. Tu voz, intacta.",
-    "controlDescription": "Ahorrar tiempo no debería significar perder el control de tu marca. El flujo propuesto pone la revisión antes de la publicación.",
-    "controlPoints": [
-      "Revisa los mensajes y afirmaciones sobre productos antes de aprobar.",
-      "Ajusta el tono, los objetivos de campaña y los horarios.",
-      "Confirma las redes compatibles y los permisos en el lanzamiento.",
-      "Sin promesas de alcance, ventas o ingresos garantizados."
-    ],
-    "faqTitle": "Antes de unirte a la próxima campaña.",
+    "comparisonNote": "Comparación de formas de trabajo, no una reseña de herramientas específicas. Otras herramientas pueden ofrecer funciones que no aparecen aquí.",
+    "faqTitle": "Preguntas antes de unirte.",
     "faqs": [
       {
-        "question": "¿Puedo instalar SD: Less Time Marketing ahora?",
-        "answer": "Todavía no. SD: Less Time Marketing está en desarrollo. Puedes usar el formulario de acceso anticipado para solicitar información al equipo de ShopiDeck. Esto no crea una cuenta ni garantiza el acceso."
+        "question": "¿Puedo instalar Less Time Marketing ahora?",
+        "answer": "Todavía no. La app está en desarrollo y aún no está en la Shopify App Store. Únete a la lista de espera y te escribiremos cuando se lance. Inscribirte no crea una cuenta ni inicia una suscripción."
       },
       {
-        "question": "¿Una campaña siempre tomará exactamente 5 minutos?",
-        "answer": "No. Unos 5 minutos es un objetivo del producto para preparar una campaña inicial, no una garantía medida. La configuración, duración de campaña, información disponible y tu revisión pueden requerir tiempo adicional."
+        "question": "¿Necesito saber diseñar o escribir?",
+        "answer": "No. Eliges productos, el tipo de publicación y un calendario; la app escribe los textos y crea las imágenes o videos con tus fotos de producto. Puedes editar cualquier texto antes de aprobarlo."
       },
       {
-        "question": "¿Qué redes sociales serán compatibles?",
-        "answer": "La lista final de redes sociales compatibles e integraciones de publicación no está confirmada. La publicaremos antes de que la instalación esté disponible."
+        "question": "¿Publicará sin mi aprobación?",
+        "answer": "No por defecto: cada publicación espera tu aprobación. Puedes activar el piloto automático en una campaña; entonces una publicación que no revisaste se aprueba una hora antes de su hora. Algunas redes siempre requieren tu propia aprobación."
       },
       {
-        "question": "¿Publicará sin mi revisión?",
-        "answer": "El flujo propuesto incluye revisión y aprobación del comerciante antes de la publicación automatizada. Los controles y permisos finales se documentarán en el lanzamiento."
+        "question": "¿Qué redes sociales admite?",
+        "answer": "La app está hecha para publicar en varias redes sociales principales. Cada plataforma debe aprobar la app antes de que los comerciantes puedan usarla, así que publicaremos aquí las redes disponibles en el lanzamiento."
       },
       {
-        "question": "¿Cuánto costará?",
-        "answer": "Los precios y límites de los planes se anunciarán al lanzamiento. Quienes se unan a la lista de espera recibirán su primer mes de uso gratis cuando la app esté disponible. Inscribirse no inicia una suscripción."
+        "question": "¿Qué es un crédito?",
+        "answer": "Cada acción usa créditos: un texto 1, una imagen estándar 6, un video de 5 segundos 30, uno de 15 segundos 175 y uno de 30 segundos 350. Publicar es gratis. La app muestra los créditos estimados de una campaña antes de crearla."
+      },
+      {
+        "question": "¿Qué pasa si la generación falla?",
+        "answer": "Los créditos se reservan primero y se devuelven si el contenido no se entrega por una falla técnica. La excepción es un video que el proveedor de IA rechaza por su política de contenido: ese intento se cobra y la app lo explica."
+      },
+      {
+        "question": "¿Hay prueba gratis?",
+        "answer": "Sí: 7 días con 60 créditos en cualquier plan, a través de Shopify. Recibes un correo 24 horas antes de que termine."
+      },
+      {
+        "question": "¿Los créditos no usados se acumulan?",
+        "answer": "Los créditos mensuales del plan se renuevan cada ciclo y no se acumulan. Los créditos de los paquetes son válidos por 12 meses y se usan después de los mensuales."
+      },
+      {
+        "question": "¿Puedo cambiar o cancelar mi plan?",
+        "answer": "Sí, desde la app. Al subir de plan se suman los créditos extra por el resto del ciclo; bajar de plan aplica desde el siguiente ciclo; al cancelar mantienes el plan hasta que termine el ciclo. Shopify gestiona la facturación."
+      },
+      {
+        "question": "¿Inventa cosas sobre mis productos?",
+        "answer": "No. Los textos y las imágenes usan solo los datos de tu catálogo; la app nunca agrega precios, descuentos, stock, reseñas, recomendaciones ni resultados que no estén en tu tienda."
+      },
+      {
+        "question": "¿En qué idiomas pueden estar mis publicaciones?",
+        "answer": "Inglés, español, portugués, francés o alemán, elegido por campaña. La interfaz de la app está disponible en los mismos cinco idiomas."
+      },
+      {
+        "question": "¿A qué datos de mi tienda accede la app?",
+        "answer": "Solo a tus productos (para crear contenido) y a tus archivos (para guardarlo). Nunca lee pedidos ni datos de clientes. Las imágenes y los videos se guardan en tus propios Archivos de Shopify."
+      },
+      {
+        "question": "¿Puedo crear otra versión si no me gusta una imagen?",
+        "answer": "Sí. \"Crear otra\" genera una nueva imagen o video (se cobra como siempre), y cada ciclo de facturación incluye una nueva versión gratis de una imagen con IA."
+      },
+      {
+        "question": "¿Cuánto duran los videos?",
+        "answer": "5 segundos en todos los planes, 15 segundos con audio en Growth y Pro, y 30 segundos más el formato Creatividad de 10 segundos en Pro. Todos los videos son verticales."
       }
     ],
-    "closingTitle": "Tu tienda mantiene su historia. Tú recuperas tu tiempo.",
-    "closingDescription": "Únete a la lista de espera de SD: Less Time Marketing y recibe tu primer mes de uso gratis cuando lancemos la app. Inscribirte no inicia una suscripción.",
+    "closingTitle": "Dedica menos tiempo al marketing. Mantén tu marca en tus manos.",
+    "closingDescription": "Únete a la lista de espera y te avisaremos en cuanto Less Time Marketing esté disponible en la Shopify App Store.",
+    "legalTerms": "Términos del servicio",
+    "legalPrivacy": "Política de privacidad",
+    "legalSupport": "Soporte",
     "contactSubject": "Información de acceso anticipado a SD: Less Time Marketing",
-    "suiteLink": "Volver a la suite de ShopiDeck"
+    "suiteLink": "Volver a la suite ShopiDeck"
   },
   "Site": {
     "title": "ShopiDeck | Herramientas enfocadas para comerciantes de Shopify",
@@ -477,7 +697,11 @@
     "publicWebsite": "Sitio público",
     "dataProcessed": "Datos tratados",
     "providerRole": "Rol y condiciones",
-    "resourceLabels": { "Terms": "Términos", "Privacy": "Privacidad", "DPA": "DPA" },
+    "resourceLabels": {
+      "Terms": "Términos",
+      "Privacy": "Privacidad",
+      "DPA": "DPA"
+    },
     "pageLink": "Enlace de la Página",
     "copyPageLink": "Copiar enlace de la página",
     "linkCopied": "¡Enlace Copiado!",
@@ -538,5 +762,3 @@
     "shopideckSubprocessorListForKlaviyoBotCleaner": "Registro de proveedores de ShopiDeck por sitio y app: finalidades, datos, roles, regiones y documentos públicos."
   }
 }
-
-

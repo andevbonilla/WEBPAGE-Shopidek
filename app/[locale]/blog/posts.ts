@@ -3,9 +3,13 @@ import { resolveLocale, type Locale } from "@/i18n/messages";
 export interface Post {
   id: string;
   title: string;
+  /** Shorter title for search results (about 60 characters max). */
+  seoTitle: string;
   category: string;
   date: string;
   publishedAt: string;
+  /** Last meaningful content change, ISO date. */
+  updatedAt?: string;
   readTime: string;
   excerpt: string;
   content: string[];
@@ -22,7 +26,7 @@ export interface Post {
   faq?: { question: string; answer: string }[];
 }
 
-type ArticleCopy = Pick<Post, "id" | "title" | "category" | "excerpt" | "content" | "imageAlt" | "keywords" | "cta">;
+type ArticleCopy = Pick<Post, "id" | "title" | "seoTitle" | "updatedAt" | "category" | "excerpt" | "content" | "imageAlt" | "keywords" | "cta">;
 const sharedArticles: Record<string, Pick<Post, "image" | "imageCredit" | "sources">> = {
   "save-money-klaviyo-marketing": {
     image: "https://images.unsplash.com/photo-1710488350873-392a99d1da5d?auto=format&fit=crop&w=1600&h=1000&q=85",
@@ -30,7 +34,7 @@ const sharedArticles: Record<string, Pick<Post, "image" | "imageCredit" | "sourc
     sources: [
       { title: "Klaviyo: Smart Sending", url: "https://help.klaviyo.com/hc/en-us/articles/115002779311" },
       { title: "Klaviyo: engagement and sending frequency", url: "https://help.klaviyo.com/hc/en-us/articles/360037527052" },
-      { title: "SD: Klaviyo Bot Cleaner", url: "/botcleaner" },
+      { title: "SD: Klaviyo Bot Cleaner", url: "/klaviyo-bot-cleaner" },
     ],
   },
   "sell-more-with-klaviyo": {
@@ -48,7 +52,7 @@ const sharedArticles: Record<string, Pick<Post, "image" | "imageCredit" | "sourc
     sources: [
       { title: "Shopify: product page optimization", url: "https://www.shopify.com/blog/expert-advice-improve-product-pages" },
       { title: "Shopify: reducing cart abandonment", url: "https://www.shopify.com/enterprise/blog/44272899-how-to-reduce-shopping-cart-abandonment-by-optimizing-the-checkout" },
-      { title: "SD: Less Time Marketing", url: "/social-marketing" },
+      { title: "SD: Less Time Marketing", url: "/less-time-marketing" },
     ],
   },
 };
@@ -56,6 +60,7 @@ const sharedArticles: Record<string, Pick<Post, "image" | "imageCredit" | "sourc
 const articlesES: ArticleCopy[] = [
   {
     id: "save-money-klaviyo-marketing",
+    seoTitle: "5 formas de ahorrar dinero en tus campañas de Klaviyo",
     title: "5 estrategias para ahorrar más dinero con tus campañas de marketing en Klaviyo",
     category: "Marketing rentable",
     excerpt: "Reduce envíos innecesarios, revisa la calidad de tu lista y cuida el margen de cada promoción con cinco acciones que puedes empezar a aplicar hoy.",
@@ -87,6 +92,7 @@ const articlesES: ArticleCopy[] = [
   },
   {
     id: "sell-more-with-klaviyo",
+    seoTitle: "Cómo vender más con Klaviyo: 7 consejos para tus emails",
     title: "Cómo vender más con Klaviyo: 7 mejoras para convertir tus emails en pedidos",
     category: "Email marketing",
     excerpt: "Una oferta clara, mensajes relevantes y mejores páginas de destino pueden ayudarte a convertir el interés de tus suscriptores en compras.",
@@ -123,9 +129,11 @@ const articlesES: ArticleCopy[] = [
   },
   {
     id: "sell-more-on-shopify",
+    seoTitle: "Cómo vender más en Shopify: tienda y marketing",
+    updatedAt: "2026-11-01T12:00:00.000Z",
     title: "Cómo vender más en Shopify: mejoras para tu tienda y un marketing más constante",
     category: "Crecimiento en Shopify",
-    excerpt: "Mejora las fichas de producto, reduce dudas al comprar y organiza tu marketing. Conoce Less Time Marketing y únete a la lista de espera para obtener tu primer mes gratis.",
+    excerpt: "Mejora las fichas de producto, reduce dudas al comprar y organiza tu marketing. Conoce Less Time Marketing y únete a la lista de espera.",
     imageAlt: "Comerciante revisando un paquete junto a un portátil y cajas de pedidos",
     keywords: ["cómo vender más en Shopify", "mejorar tienda Shopify", "Less Time Marketing", "marketing redes sociales Shopify"],
     content: [
@@ -147,19 +155,20 @@ const articlesES: ArticleCopy[] = [
       "Less Time Marketing es una app de ShopiDeck en desarrollo para preparar campañas de redes sociales adaptadas a tu marca y a tus productos. El flujo previsto te permitirá definir la audiencia y el tono, elegir productos y un periodo, y revisar el contenido antes de aprobar su publicación.",
       "La idea es ayudarte a planificar semanas o meses de contenido sin dedicar el mismo esfuerzo manual a cada publicación. Queremos que puedas explicar mejor lo que vendes y mantener una comunicación constante mientras atiendes tu tienda.",
       "Las funciones e integraciones finales se confirmarán al lanzamiento. La herramienta busca ahorrar trabajo de planificación y creación, pero las ventas seguirán dependiendo de tu oferta, tu audiencia y la experiencia de compra.",
-      "## Únete a la lista de espera y obtén tu primer mes gratis",
-      "Si te interesa Less Time Marketing, puedes inscribirte en nuestra lista de espera. Quienes se unan recibirán su primer mes de uso gratis cuando la app esté disponible. Es una invitación para conocer la herramienta con tu propia tienda desde el lanzamiento.",
+      "## Únete a la lista de espera",
+      "Si te interesa Less Time Marketing, puedes inscribirte en nuestra lista de espera. Te avisaremos cuando la app esté disponible en la Shopify App Store. Todos los planes empezarán con una prueba gratis de 7 días con 60 créditos, para que la conozcas con tu propia tienda.",
       "Usa el botón al final del artículo para dejar tus datos en el formulario de acceso anticipado. La inscripción no instala la app ni inicia una suscripción. Te contactaremos con las novedades y las instrucciones para activar tu mes gratuito.",
       "## Qué puedes mejorar hoy",
       "Elige una ficha y responde las dudas que aún no resuelve. Revisa el recorrido de compra desde el teléfono y prepara una pequeña campaña con un mensaje claro. Mientras construimos Less Time Marketing, esas mejoras te ayudarán a preparar una base más sólida.",
     ],
-    cta: { product: "less-time-marketing", title: "Tu primer mes de Less Time Marketing, gratis", description: "Únete a la lista de espera y recibe tu primer mes de uso gratis cuando lancemos la app. Inscribirte no instala la herramienta ni inicia una suscripción.", label: "Unirme a la lista de espera" },
+    cta: { product: "less-time-marketing", title: "Sé de los primeros en probar Less Time Marketing", description: "Únete a la lista de espera y te avisaremos cuando lancemos la app. Todos los planes incluirán una prueba gratis de 7 días. Inscribirte no instala la herramienta ni inicia una suscripción.", label: "Unirme a la lista de espera" },
   },
 ];
 
 const articlesEN: ArticleCopy[] = [
   {
     id: "save-money-klaviyo-marketing",
+    seoTitle: "5 ways to save money on Klaviyo campaigns",
     title: "5 ways to save money on your Klaviyo marketing campaigns",
     category: "Marketing efficiency",
     excerpt: "Reduce unnecessary sends, review your list quality, and protect promotional margins with five changes you can start making today.",
@@ -191,6 +200,7 @@ const articlesEN: ArticleCopy[] = [
   },
   {
     id: "sell-more-with-klaviyo",
+    seoTitle: "How to sell more with Klaviyo: 7 email tips",
     title: "How to sell more with Klaviyo: 7 ways to turn emails into orders",
     category: "Email marketing",
     excerpt: "A clear offer, relevant messages, and better landing pages can help turn subscriber interest into purchases.",
@@ -227,9 +237,11 @@ const articlesEN: ArticleCopy[] = [
   },
   {
     id: "sell-more-on-shopify",
+    seoTitle: "How to sell more on Shopify: store and marketing tips",
+    updatedAt: "2026-11-01T12:00:00.000Z",
     title: "How to sell more on Shopify: a better store and more consistent marketing",
     category: "Shopify growth",
-    excerpt: "Improve product pages, answer buying questions, and organize your marketing. Discover Less Time Marketing and join the waitlist for your first month free.",
+    excerpt: "Improve product pages, answer buying questions, and organize your marketing. Discover Less Time Marketing and join the waitlist to hear when it launches.",
     imageAlt: "A merchant checking a package beside a laptop and shipping boxes",
     keywords: ["how to sell more on Shopify", "improve Shopify store", "Less Time Marketing", "Shopify social media marketing"],
     content: [
@@ -251,13 +263,13 @@ const articlesEN: ArticleCopy[] = [
       "Less Time Marketing is a ShopiDeck app in development for preparing social campaigns tailored to your brand and products. The planned workflow lets you define your audience and tone, choose products and a period, and review content before approving publication.",
       "The idea is to help you plan weeks or months of content without repeating the same manual effort for every post. We want to make it easier to explain what you sell and keep communicating while you run your store.",
       "Final features and integrations will be confirmed at launch. The tool aims to reduce planning and creation work, while sales will still depend on your offer, audience, and buying experience.",
-      "## Join the waitlist for your first month free",
-      "If you are interested in Less Time Marketing, join our waitlist. People who sign up will receive their first month of use free when the app becomes available. It is an invitation to explore the tool with your own store at launch.",
+      "## Join the waitlist",
+      "If you are interested in Less Time Marketing, join our waitlist. We will let you know when the app is available on the Shopify App Store. Every plan will start with a 7-day free trial with 60 credits, so you can try it with your own store.",
       "Use the button at the end of this article to leave your details in the early access form. Signing up does not install the app or start a subscription. We will contact you with availability updates and instructions to activate your free month.",
       "## What you can improve today",
       "Choose one product page and answer the questions it still leaves open. Review the buying journey on your phone and prepare a small campaign with a clear message. While we build Less Time Marketing, these improvements can give your next efforts a stronger foundation.",
     ],
-    cta: { product: "less-time-marketing", title: "Your first month of Less Time Marketing, free", description: "Join the waitlist and get your first month of use free when we launch. Signing up does not install the app or start a subscription.", label: "Join the waitlist" },
+    cta: { product: "less-time-marketing", title: "Be among the first to try Less Time Marketing", description: "Join the waitlist and we will let you know when we launch. Every plan will include a 7-day free trial. Signing up does not install the app or start a subscription.", label: "Join the waitlist" },
   },
 ];
 

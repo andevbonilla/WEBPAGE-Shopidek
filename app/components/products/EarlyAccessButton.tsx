@@ -8,9 +8,10 @@ const EARLY_ACCESS_FORM_ID = "9qe6yp";
 type EarlyAccessButtonProps = {
   label: string;
   className?: string;
+  variant?: "primary" | "secondary";
 };
 
-export function EarlyAccessButton({ label, className = "" }: EarlyAccessButtonProps) {
+export function EarlyAccessButton({ label, className = "", variant = "primary" }: EarlyAccessButtonProps) {
   return (
     <>
       {/* Next.js deduplicates this widget when multiple CTAs are rendered. */}
@@ -27,7 +28,7 @@ export function EarlyAccessButton({ label, className = "" }: EarlyAccessButtonPr
         data-tally-emoji-animation="wave"
         data-tally-auto-close="0"
         data-tally-form-events-forwarding="1"
-        className={`product-primary-button ${className}`.trim()}
+        className={`product-${variant}-button ${className}`.trim()}
       >
         {label}
         <ArrowRight className="cta-arrow h-4 w-4" aria-hidden="true" />

@@ -10,8 +10,8 @@ and SD: SEO That Sells. The latter is a forthcoming concept, not an installable 
 
 ## SD: Less Time Marketing product page
 
-The public product concept is available at `/social-marketing` in English and
-`/es/social-marketing` in Spanish. Its localized copy lives in
+The public product concept is available at `/less-time-marketing` in English and
+`/es/less-time-marketing` in Spanish. Its localized copy lives in
 `messages/en.json` and `messages/es.json` (LessTimeMarketing namespace); optimized icons and the preserved
 original are in `public/brand/products/social-marketing/`.
 
@@ -25,12 +25,15 @@ form at `https://tally.so/r/9qe6yp`. Responses are handled by Tally; no API key 
 backend integration is required here. Button labels use the EN/ES catalogs;
 form wording, translations, design, and response notifications are managed in
 Tally, not translated automatically by the website. Requesting early access does
-not create a product account or guarantee access. The
-five-minute campaign claim is an approximate product goal. This repository
-does not implement campaign generation or social publishing integrations.
-Positioning focuses on marketing while you sleep, quality, and practicality.
-The bilingual comparison describes working approaches rather than making
-unverified claims about named competitors.
+not create a product account or guarantee access.
+
+The page content follows the Less Time Marketing landing brief (1 November 2026):
+plans, credits, trial, image and video formats, and FAQs match the app code at that
+date. Social networks are not named until each platform approves the app. The
+hero visual is an illustrative mock, labelled as such, until real screenshots exist.
+The comparison describes working approaches rather than named competitors.
+Old paths `/social-marketing` and `/botcleaner` redirect permanently to
+`/less-time-marketing` and `/klaviyo-bot-cleaner` (see `next.config.ts`).
 
 ## Suite design and localization
 

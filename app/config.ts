@@ -1,4 +1,5 @@
-export const SITE_URL = "https://shopideck.com";
+// Production serves www.shopideck.com; the bare domain redirects there.
+export const SITE_URL = "https://www.shopideck.com";
 export const BRAND_ASSET_BASE = "/brand";
 
 export const NAVBAR_LOGO = `${BRAND_ASSET_BASE}/logos/shopideck-logo-horizontal-light.png`;
