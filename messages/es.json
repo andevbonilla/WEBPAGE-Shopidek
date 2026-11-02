@@ -380,7 +380,7 @@
         "features": [
           "5 cuentas sociales",
           "10 campañas activas",
-          "+ Videos de 15 segundos con audio",
+          "Videos de 15 segundos con audio",
           "Todo lo de Starter",
           "Subtítulos de video en el idioma de la campaña"
         ],
@@ -395,7 +395,7 @@
         "features": [
           "5 cuentas sociales",
           "Campañas activas ilimitadas",
-          "+ Videos de 30 segundos y Creatividad",
+          "Videos de 30 segundos y Creatividad",
           "Todo lo de Growth",
           "Creatividad para imágenes y video"
         ],
@@ -776,7 +776,9 @@
     "brainLabel": "IA de Less Time Marketing",
     "brainDescription": "Une cada detalle en una sola idea creativa",
     "outputTitle": "Contenido listo para publicar",
-    "outputAlt": "Publicación con IA creada por Less Time Marketing para una tienda de snowboard"
+    "outputAlt": "Publicación con IA creada por Less Time Marketing para una tienda de snowboard",
+    "creditsToggle": "Ver uso de créditos por acción",
+    "fairBillingDescription": "Reglas claras sobre cómo se usan, devuelven y renuevan los créditos."
   },
   "Site": {
     "title": "ShopiDeck | Apps enfocadas para comerciantes de Shopify",

@@ -5,6 +5,7 @@ import {
   ArrowRight,
   Brain,
   CalendarHeart,
+  ChevronDown,
   Captions,
   Check,
   CircleHelp,
@@ -300,23 +301,23 @@ export default async function LessTimeMarketingPage({ params }: PageProps) {
 
           {/* Before/after: how the app turns a catalog photo into a post. */}
           <h3 className="mb-6 text-center font-display text-xl font-black sm:text-2xl">{copy.transformTitle}</h3>
-          <div className="mx-auto mb-14 grid max-w-4xl grid-cols-[1fr_auto_1fr] items-center gap-3 sm:gap-6">
+          <div className="mx-auto mb-14 grid max-w-[717px] grid-cols-[1fr_auto_1fr] items-center gap-3 sm:gap-6">
             <figure>
               <div className="relative aspect-[431/543] overflow-hidden rounded-2xl border border-brand-border bg-white sm:rounded-3xl">
-                <Image src={`${ASSETS}/transform-before.webp`} alt={copy.beforeAlt} fill sizes="(max-width: 640px) 42vw, 380px" className="object-cover" />
+                <Image src={`${ASSETS}/transform-before.webp`} alt={copy.beforeAlt} fill sizes="(max-width: 640px) 42vw, 300px" className="object-cover" />
               </div>
               <figcaption className="mt-3 text-center text-xs font-bold text-brand-secondary sm:text-sm">{copy.beforeLabel}</figcaption>
             </figure>
             <ArrowRight className="h-6 w-6 text-app-accent sm:h-9 sm:w-9" aria-hidden="true" />
             <figure>
               <div className="relative aspect-[431/543] overflow-hidden rounded-2xl border-2 border-app-ink bg-white shadow-premium sm:rounded-3xl">
-                <Image src={`${ASSETS}/transform-after.webp`} alt={copy.afterAlt} fill sizes="(max-width: 640px) 42vw, 380px" className="object-cover" />
+                <Image src={`${ASSETS}/transform-after.webp`} alt={copy.afterAlt} fill sizes="(max-width: 640px) 42vw, 300px" className="object-cover" />
               </div>
               <figcaption className="mt-3 text-center text-xs font-bold text-app-ink sm:text-sm">{copy.afterLabel}</figcaption>
             </figure>
           </div>
 
-          <ul className="mx-auto grid max-w-6xl grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">
+          <ul className="mx-auto grid max-w-[920px] grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">
             {VIDEO_EXAMPLES.map((id, index) => (
               <li key={id}>
                 <div className="aspect-[9/16] overflow-hidden rounded-2xl border border-brand-border bg-brand-main shadow-soft sm:rounded-3xl">
@@ -338,7 +339,7 @@ export default async function LessTimeMarketingPage({ params }: PageProps) {
                   src={`${ASSETS}/example-ai-image.webp`}
                   alt={copy.imageExampleAlt}
                   fill
-                  sizes="(max-width: 1024px) 46vw, 270px"
+                  sizes="(max-width: 1024px) 46vw, 215px"
                   className="object-cover"
                 />
               </div>
@@ -353,11 +354,11 @@ export default async function LessTimeMarketingPage({ params }: PageProps) {
       <section className="product-section border-t border-brand-border bg-brand-bg">
         <div className="layout-container">
           <ProductHeading eyebrow={copy.featuresEyebrow} title={copy.featuresTitle} description={copy.featuresDescription} />
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid auto-rows-fr gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {copy.features.map((feature, index) => {
               const Icon = featureIcons[index];
               return (
-                <article key={feature.title} className="rounded-3xl border border-brand-border bg-brand-card p-6 sm:p-7">
+                <article key={feature.title} className="h-full rounded-3xl border border-brand-border bg-brand-card p-6 sm:p-7">
                   <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-app-soft text-app-ink">
                     <Icon className="h-5 w-5" aria-hidden="true" />
                   </div>
@@ -370,8 +371,8 @@ export default async function LessTimeMarketingPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* Languages. */}
-      <section className="product-section">
+      {/* Languages. Smaller top padding keeps it close to the features above. */}
+      <section className="pb-16 pt-3 sm:pb-24 sm:pt-5">
         <div className="layout-container">
           <div className="grid items-center gap-8 rounded-[2rem] bg-app-deep p-7 text-white sm:p-10 lg:grid-cols-2 lg:gap-16 lg:p-14">
             <div>
@@ -425,8 +426,13 @@ export default async function LessTimeMarketingPage({ params }: PageProps) {
             ))}
           </div>
 
-          <div className="mx-auto mt-8 grid max-w-6xl gap-5 lg:grid-cols-[1.2fr_1fr]">
-            <div className="overflow-hidden rounded-3xl border border-brand-border bg-brand-card">
+          {/* Credit table, collapsed by default (still in the HTML for search engines). */}
+          <details className="group mx-auto mt-8 max-w-3xl">
+            <summary className="mx-auto flex w-fit cursor-pointer list-none items-center gap-1.5 rounded-md text-sm font-bold text-app-ink underline-offset-4 marker:content-none hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-app-ink">
+              {copy.creditsToggle}
+              <ChevronDown className="h-4 w-4 transition-transform group-open:rotate-180 motion-reduce:transition-none" aria-hidden="true" />
+            </summary>
+            <div className="mt-5 overflow-hidden rounded-3xl border border-brand-border bg-brand-card">
               <table className="w-full border-collapse text-left text-sm">
                 <caption className="border-b border-brand-border px-6 py-5 text-left font-display text-xl font-black">{copy.creditsTitle}</caption>
                 <thead className="sr-only">
@@ -442,15 +448,22 @@ export default async function LessTimeMarketingPage({ params }: PageProps) {
                 </tbody>
               </table>
             </div>
-            <article className="rounded-3xl border border-brand-border bg-brand-card p-6 sm:p-7">
-              <ShieldCheck className="mb-4 h-6 w-6 text-app-ink" aria-hidden="true" />
-              <h3 className="font-display text-xl font-black">{copy.fairBillingTitle}</h3>
-              <ul className="mt-5 space-y-4 text-sm leading-relaxed text-brand-secondary">
-                {copy.fairBilling.map((item) => (
-                  <li key={item} className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 shrink-0 text-app-ink" aria-hidden="true" /><span>{item}</span></li>
-                ))}
-              </ul>
-            </article>
+          </details>
+
+          {/* Fair billing, same dark style as the languages block. */}
+          <div className="mx-auto mt-10 max-w-5xl rounded-[2rem] bg-app-deep p-7 text-white sm:p-10 lg:p-12">
+            <div className="mx-auto max-w-2xl text-center">
+              <ShieldCheck className="mx-auto mb-4 h-8 w-8 text-brand-accent" aria-hidden="true" />
+              <h3 className="font-display text-2xl font-black sm:text-3xl">{copy.fairBillingTitle}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-white/75">{copy.fairBillingDescription}</p>
+            </div>
+            <ul className="mt-8 grid gap-x-10 gap-y-5 text-sm leading-relaxed text-white/85 md:grid-cols-2">
+              {copy.fairBilling.map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-brand-accent" aria-hidden="true" /><span>{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
           <p className="mx-auto mt-8 max-w-3xl text-center text-xs leading-relaxed text-brand-muted">{copy.pricingNote}</p>
         </div>

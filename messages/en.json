@@ -380,7 +380,7 @@
         "features": [
           "5 social accounts",
           "10 active campaigns",
-          "+ 15-second videos with audio",
+          "15-second videos with audio",
           "Everything in Starter",
           "Video subtitles in the campaign language"
         ],
@@ -395,7 +395,7 @@
         "features": [
           "5 social accounts",
           "Unlimited active campaigns",
-          "+ 30-second videos and Creativity",
+          "30-second videos and Creativity",
           "Everything in Growth",
           "Creativity for images and video"
         ],
@@ -776,7 +776,9 @@
     "brainLabel": "Less Time Marketing AI",
     "brainDescription": "Combines every detail into one creative brief",
     "outputTitle": "Content ready to publish",
-    "outputAlt": "AI post created by Less Time Marketing for a snowboard store"
+    "outputAlt": "AI post created by Less Time Marketing for a snowboard store",
+    "creditsToggle": "See credit usage per action",
+    "fairBillingDescription": "Clear rules for how credits are spent, refunded and renewed."
   },
   "Site": {
     "title": "ShopiDeck | Focused apps for Shopify merchants",
