@@ -4,7 +4,7 @@ import { Check, ExternalLink, Bot, Coins, Target, ShieldCheck } from "lucide-rea
 import { getMessages, getTranslations, localeInfo, resolveLocale } from "@/i18n/messages";
 import { ProductPage, ProductHero, ProductHeading, ProductFaq, ProductMonitor } from "../../components/products/ProductPage";
 import {
-  PRODUCT_NAME, BOTCLEANER_INTERFACE, BOTCLEANER_INTERFACE_HEIGHT,
+  BOTCLEANER_DISPLAY_NAME, BOTCLEANER_INTERFACE, BOTCLEANER_INTERFACE_HEIGHT,
   BOTCLEANER_INTERFACE_WIDTH, BOTCLEANER_LOGO, BOTCLEANER_LOGO_HEIGHT,
   BOTCLEANER_LOGO_URL, BOTCLEANER_LOGO_WIDTH, getShopifyAppStoreUrl,
   SITE_MARK_HEIGHT, SITE_MARK_URL, SITE_MARK_WIDTH, SITE_URL, localizedPath,
@@ -64,7 +64,7 @@ export default async function BotCleanerPage({ params }: PageProps) {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "SoftwareApplication", name: PRODUCT_NAME, applicationCategory: "BusinessApplication",
+        "@type": "SoftwareApplication", name: BOTCLEANER_DISPLAY_NAME, applicationCategory: "BusinessApplication",
         operatingSystem: "Shopify Admin", image: BOTCLEANER_LOGO_URL, description: t("schemaDescription"),
         inLanguage: currentLocale, url: canonicalUrl,
         publisher: { "@type": "Organization", name: "ShopiDeck", logo: { "@type": "ImageObject", url: SITE_MARK_URL, width: SITE_MARK_WIDTH, height: SITE_MARK_HEIGHT } },
@@ -78,7 +78,7 @@ export default async function BotCleanerPage({ params }: PageProps) {
       {
         "@type": "BreadcrumbList", itemListElement: [
           { "@type": "ListItem", position: 1, name: "ShopiDeck", item: `${SITE_URL}${localizedPath(currentLocale)}` },
-          { "@type": "ListItem", position: 2, name: PRODUCT_NAME, item: canonicalUrl },
+          { "@type": "ListItem", position: 2, name: BOTCLEANER_DISPLAY_NAME, item: canonicalUrl },
         ],
       },
       { "@type": "FAQPage", mainEntity: faqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })) },
@@ -89,7 +89,7 @@ export default async function BotCleanerPage({ params }: PageProps) {
     <ProductPage theme="botcleaner">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
       <ProductHero
-        name={PRODUCT_NAME} icon={BOTCLEANER_LOGO} iconAlt={t("iconAlt")}
+        name={BOTCLEANER_DISPLAY_NAME} icon={BOTCLEANER_LOGO} iconAlt={t("iconAlt")}
         lines={copy.heroLines} description={t("subtitle")} note={t("note")} pillars={copy.pillars}
         actions={<>
           <a href={appStoreUrl} {...storeLinkProps} className="product-primary-button">

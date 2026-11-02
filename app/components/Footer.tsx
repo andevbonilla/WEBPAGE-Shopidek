@@ -12,9 +12,9 @@ import {
   FOOTER_LOGO_DISPLAY_WIDTH,
   FOOTER_LOGO_HEIGHT,
   FOOTER_LOGO_WIDTH,
-  PRODUCT_NAME,
+  BOTCLEANER_DISPLAY_NAME,
   SITE_LOGO_ALT,
-  SOCIAL_MARKETING_NAME,
+  LESS_TIME_MARKETING_DISPLAY_NAME,
 } from "../config";
 
 export default function Footer() {
@@ -74,12 +74,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/less-time-marketing" className="hover:text-brand-accent transition-colors">
-                  {SOCIAL_MARKETING_NAME}
+                  {LESS_TIME_MARKETING_DISPLAY_NAME}
                 </Link>
               </li>
               <li>
                 <Link href="/klaviyo-bot-cleaner" className="hover:text-brand-accent transition-colors">
-                  {PRODUCT_NAME}
+                  {BOTCLEANER_DISPLAY_NAME}
                 </Link>
               </li>
               <li>

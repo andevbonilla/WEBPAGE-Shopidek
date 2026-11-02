@@ -1,6 +1,6 @@
 {
   "Navbar": {
-    "apps": "Herramientas",
+    "apps": "Apps",
     "whyUs": "Nuestro enfoque",
     "reviews": "Opiniones",
     "faq": "Ayuda",
@@ -10,9 +10,9 @@
     "homeLabel": "Inicio de ShopiDeck"
   },
   "Footer": {
-    "desc": "Herramientas enfocadas para comerciantes de Shopify que quieren datos más limpios, marketing más claro y mejores decisiones de crecimiento.",
+    "desc": "Apps enfocadas para comerciantes de Shopify que quieren datos más limpios, marketing más claro y mejores decisiones de crecimiento.",
     "company": "Compañía",
-    "pricing": "Herramientas",
+    "pricing": "Apps",
     "help": "Centro de Ayuda",
     "blogLink": "Blog",
     "legal": "Legal",
@@ -29,31 +29,31 @@
     "homeLabel": "Inicio de ShopiDeck"
   },
   "Home": {
-    "heroBadge": "Una suite en crecimiento de herramientas enfocadas para comerciantes de Shopify",
-    "heroTitle": "La suite de herramientas que hará crecer tu tienda de Shopify",
+    "heroBadge": "Una suite en crecimiento de apps enfocadas para comerciantes de Shopify",
+    "heroTitle": "La suite de apps que hará crecer tu tienda de Shopify",
     "heroSubtitle": "ShopiDeck es la suite de apps que busca solucionar los problemas de tu tienda y, además, llevarla al siguiente nivel.",
     "activeApps": "Explorar la suite",
-    "heroFooter": "Pensada para comerciantes que prefieren herramientas útiles a la complejidad innecesaria.",
+    "heroFooter": "Pensada para comerciantes que prefieren apps útiles a la complejidad innecesaria.",
     "quality": "Calidad de lista",
     "excellent": "Lista para revisar",
     "activeStatus": "Disponible en Shopify",
     "comingSoon": "Próximamente",
     "activeDesc": "SD: Klaviyo Bot Cleaner ya está disponible en Shopify App Store.",
     "portfolioBadge": "NUESTROS PRODUCTOS",
-    "portfolioTitle": "Herramientas enfocadas para problemas prácticos de ecommerce.",
+    "portfolioTitle": "Apps enfocadas para problemas prácticos de ecommerce.",
     "portfolioDesc": "ShopiDeck es una suite en crecimiento para comerciantes de Shopify. Cada producto tiene un alcance claro, límites transparentes y un flujo centrado en el control del comerciante.",
     "keyBenefits": "Beneficios clave",
     "install": "Saber más",
     "details": "Ver detalles",
     "whyBadge": "NUESTRO ENFOQUE",
     "whyTitle": "Software útil con límites claros.",
-    "whyDesc": "Construimos herramientas enfocadas que explican qué hacen, qué no hacen y en qué momento decide el comerciante.",
+    "whyDesc": "Construimos apps enfocadas que explican qué hacen, qué no hacen y en qué momento decide el comerciante.",
     "valTransparency": "Flujos explicables",
     "valTransparencyDesc": "Los resultados incluyen señales y razones comprensibles para que puedas revisar antes de actuar.",
     "valSpeed": "Procesamiento en segundo plano",
     "valSpeedDesc": "Klaviyo Bot Cleaner funciona desde Shopify Admin y APIs de backend, sin cambios en el código del tema.",
     "valSimplicity": "Productos enfocados",
-    "valSimplicityDesc": "Cada herramienta se centra en un problema práctico de ecommerce, no en una colección de funciones desconectadas.",
+    "valSimplicityDesc": "Cada app se centra en un problema práctico de ecommerce, no en una colección de funciones desconectadas.",
     "valNoHiddenCosts": "Límites publicados",
     "valNoHiddenCostsDesc": "Los planes describen los límites de escaneos, perfiles y supresiones para entender el uso antes de instalar.",
     "valSpecificApps": "Control del comerciante",
@@ -61,7 +61,7 @@
     "valSupport": "Soporte humano",
     "valSupportDesc": "El soporte por email está disponible durante el horario publicado. Incluye el dominio de la tienda, la app y una descripción clara del problema.",
     "ideaTitle": "¿Tienes un problema de tienda que resolver?",
-    "ideaDesc": "Queremos seguir ampliando nuestro ecosistema de aplicaciones para ayudar cada vez a más comerciantes de Shopify. Si tienes una idea, un problema o una queja, escríbenos. Si tu mensaje inspira una nueva aplicación, recibirás acceso gratuito de por vida a esa herramienta, además de otros beneficios.",
+    "ideaDesc": "Queremos seguir ampliando nuestro ecosistema de aplicaciones para ayudar cada vez a más comerciantes de Shopify. Si tienes una idea, un problema o una queja, escríbenos. Si tu mensaje inspira una nueva aplicación, recibirás acceso gratuito de por vida a esa app, además de otros beneficios.",
     "ideaCta": "Contactar con ShopiDeck",
     "reviewsBadge": "ESTADO DEL PRODUCTO",
     "reviewsTitle": "Construida alrededor de flujos reales de comerciantes",
@@ -72,7 +72,7 @@
     "faqDesc": "Una breve explicación de cómo encajan los productos de ShopiDeck.",
     "ctaTitle": "Mejora tu tienda con más claridad.",
     "ctaDesc": "Explora la suite, lee los detalles del producto o visita el Centro de Ayuda antes de instalar.",
-    "ctaButton": "Ver herramientas",
+    "ctaButton": "Ver apps",
     "ctaHelp": "Visitar Centro de Ayuda",
     "prodBotBadge": "Disponible en Shopify",
     "prodBotDesc": "Los bots y perfiles falsos en tus listas de Klaviyo pueden distorsionar tus métricas y generar costos innecesarios. BotCleaner te permite conectar varias cuentas de Klaviyo, identificar perfiles sospechosos y suprimirlos de forma automática o manual, siempre bajo tu control.",
@@ -91,15 +91,15 @@
     "t2Quote": "La revisión del comerciante es parte del flujo, no un detalle posterior.",
     "t2Author": "ShopiDeck",
     "t2Role": "Principios de producto",
-    "t3Quote": "Las herramientas enfocadas ayudan a entender mejor lo que ocurre en una tienda.",
+    "t3Quote": "Las apps enfocadas ayudan a entender mejor lo que ocurre en una tienda.",
     "t3Author": "ShopiDeck",
     "t3Role": "Principios de producto",
     "faq1Q": "¿Qué es ShopiDeck?",
-    "faq1A": "ShopiDeck es una suite en crecimiento de herramientas enfocadas para comerciantes de Shopify. Sus productos abordan problemas prácticos como higiene de perfiles, flujos de marketing y operación de la tienda.",
+    "faq1A": "ShopiDeck es una suite en crecimiento de apps enfocadas para comerciantes de Shopify. Sus productos abordan problemas prácticos como higiene de perfiles, flujos de marketing y operación de la tienda.",
     "faq2Q": "¿Las aplicaciones ralentizan mi tienda de Shopify?",
     "faq2A": "Klaviyo Bot Cleaner opera desde Shopify Admin y APIs de backend. No requiere editar el tema ni añadir scripts frontend a tu tienda. Los demás productos publicarán su alcance técnico cuando estén disponibles.",
-    "faq3Q": "¿Cómo accedo a las próximas herramientas de la suite?",
-    "faq3A": "La suite tiene tres herramientas: SD: Less Time Marketing, SD: Klaviyo Bot Cleaner y SD: SEO That Sells. Less Time Marketing y SEO That Sells están en desarrollo y no están incluidos en Klaviyo Bot Cleaner. Visita la página de Less Time Marketing para solicitar información sobre acceso anticipado.",
+    "faq3Q": "¿Cómo accedo a las próximas apps de la suite?",
+    "faq3A": "La suite tiene tres apps: SD: Less Time Marketing, SD: Klaviyo Bot Cleaner y SD: SEO That Sells. Less Time Marketing y SEO That Sells están en desarrollo y no están incluidos en Klaviyo Bot Cleaner. Visita la página de Less Time Marketing para solicitar información sobre acceso anticipado.",
     "faq4Q": "¿Cómo se maneja el soporte técnico?",
     "faq4A": "El soporte por email está disponible en team@shopideck.com durante el horario publicado. Incluye el dominio de tu tienda, el producto, los pasos para reproducir el problema y capturas sin API keys, contraseñas, tokens ni listas completas de clientes. Consulta la política de privacidad para saber cómo se tratan los datos enviados."
   },
@@ -181,13 +181,13 @@
     "faqAnswer7": "No. La app opera desde Shopify Admin y APIs de backend. No requiere archivos Liquid ni scripts en el storefront.",
     "faqQuestion8": "¿La app configura SPF, DKIM o DMARC?",
     "faqAnswer8": "No. La autenticación del dominio debe configurarse por separado siguiendo las instrucciones de Klaviyo y de tu proveedor DNS.",
-    "seoTitle": "SD: Klaviyo Bot Cleaner | Perfiles sospechosos en Klaviyo",
+    "seoTitle": "Klaviyo Bot Cleaner | Perfiles sospechosos en Klaviyo",
     "seoDescription": "Audita perfiles sospechosos de Klaviyo mediante OAuth, señales de riesgo explicables, revisión del comerciante y supresión confirmada.",
     "seoKeywords": "auditoría de perfiles Klaviyo, app Shopify Klaviyo, supresión de perfiles, señales de emails desechables",
     "schemaDescription": "Un flujo controlado por el comerciante para auditar y suprimir perfiles existentes de Klaviyo.",
-    "iconAlt": "Icono de la app SD: Klaviyo Bot Cleaner con un bot sobre tarjetas de campaña",
-    "interfaceAlt": "Panel de auditoría de perfiles de SD: Klaviyo Bot Cleaner mostrado en un monitor de escritorio",
-    "walkthroughTitle": "Recorrido de SD: Klaviyo Bot Cleaner",
+    "iconAlt": "Icono de la app Klaviyo Bot Cleaner con un bot sobre tarjetas de campaña",
+    "interfaceAlt": "Panel de auditoría de perfiles de Klaviyo Bot Cleaner mostrado en un monitor de escritorio",
+    "walkthroughTitle": "Recorrido de Klaviyo Bot Cleaner",
     "pillars": [
       "Conexión OAuth",
       "Señales explicables",
@@ -304,9 +304,9 @@
     "readFull": ""
   },
   "LessTimeMarketing": {
-    "seoTitle": "SD: Less Time Marketing | Redes sociales con IA para Shopify",
+    "seoTitle": "Less Time Marketing | Redes sociales con IA para Shopify",
     "seoDescription": "Convierte tus productos de Shopify en imágenes, videos y textos con IA, programados en tus redes. Tú apruebas cada post. Únete a la lista de espera.",
-    "iconAlt": "Ícono de la app SD: Less Time Marketing con tarjetas de campaña y un megáfono",
+    "iconAlt": "Ícono de la app Less Time Marketing con tarjetas de campaña y un megáfono",
     "badge": "En desarrollo",
     "heroLines": [
       "Dedica menos tiempo al marketing.",
@@ -321,131 +321,34 @@
       "Tú apruebas cada publicación",
       "Facturado por Shopify"
     ],
-    "mock": {
-      "label": "Vista ilustrativa",
-      "alt": "Vista ilustrativa de una pantalla de revisión: una imagen de producto con IA, su texto y hashtags, la fecha programada y un botón para aprobar.",
-      "app": "Less Time Marketing",
-      "campaign": "Colección de primavera",
-      "sections": [
-        "Por hacer",
-        "Por revisar",
-        "Próximas",
-        "Publicadas"
-      ],
-      "postType": "Promocional · Imagen",
-      "date": "Vie · 10:00 a. m.",
-      "status": "Por revisar",
-      "caption": "Ligera como un paseo matutino. Nuestra camisa de lino te mantiene fresco del café al atardecer.",
-      "hashtags": "#lino #veranoconestilo #novedades",
-      "approve": "Aprobar",
-      "edit": "Editar",
-      "another": "Crear otra"
-    },
-    "benefitsEyebrow": "Por qué Less Time Marketing",
-    "benefitsTitle": "Contenido constante en redes, sin hacer cada publicación a mano.",
-    "benefitsDescription": "Escribir, diseñar y programar cada publicación quita tiempo que podrías dedicar a tu tienda. La app prepara el trabajo; tú tienes la última palabra.",
-    "benefits": [
-      {
-        "title": "Campañas, no publicaciones sueltas",
-        "description": "Elige productos, un formato, un tipo de publicación y un calendario completo una sola vez. La app escribe y prepara cada publicación de la campaña."
-      },
-      {
-        "title": "Creado desde tu catálogo",
-        "description": "Los textos y las imágenes usan solo los datos y fotos de tus productos. Sin precios, descuentos, stock, reseñas ni resultados inventados."
-      },
-      {
-        "title": "Imágenes, carruseles y video",
-        "description": "Cinco tipos de publicación con imagen, carruseles y videos verticales de 5, 15 y 30 segundos con formatos de historia, más Creatividad en Pro."
-      },
-      {
-        "title": "Tú mantienes el control",
-        "description": "Cada publicación espera tu aprobación por defecto. El piloto automático es opcional por campaña y la aprobación se bloquea hasta que el contenido esté listo."
-      }
-    ],
     "workflowEyebrow": "Cómo funciona",
     "workflowTitle": "De tus productos a un calendario publicado.",
     "workflowDescription": "Cuatro pasos dentro de tu panel de Shopify. Tú das la dirección y la app hace el trabajo repetitivo.",
     "steps": [
       {
         "title": "Elige tus productos",
-        "description": "Selecciona productos específicos o toda tu tienda. La app lee los datos y las fotos de tu catálogo."
+        "description": "Selecciona productos específicos o toda tu tienda. La app lee los datos y las fotos de tu catálogo.",
+        "imageAlt": "Formulario de campaña de Less Time Marketing: elegir qué productos de la tienda mostrar"
       },
       {
         "title": "Elige formato, tipo y ritmo",
-        "description": "Imágenes o video, el tipo de publicación, las cuentas sociales y un calendario: una vez, fechas concretas o un ritmo que se repite, con tu zona horaria."
+        "description": "Imágenes o video, el tipo de publicación, las cuentas sociales y un calendario: una vez, fechas concretas o un ritmo que se repite, con tu zona horaria.",
+        "imageAlt": "Formulario de campaña de Less Time Marketing: elegir cada cuánto publicar, con fecha de inicio y repetición"
       },
       {
         "title": "Revisa y aprueba",
-        "description": "Cada publicación tiene su propia página. Edita el texto y los hashtags, reprograma, crea otra versión, aprueba o rechaza."
+        "description": "Cada publicación tiene su propia página. Edita el texto y los hashtags, reprograma, crea otra versión, aprueba o rechaza.",
+        "imageAlt": "Página de publicación de Less Time Marketing: imagen de producto creada con IA, con su fecha programada y opciones para reprogramar"
       },
       {
         "title": "Publicado a tiempo",
-        "description": "Las publicaciones aprobadas salen automáticamente a su hora. Los correos te avisan qué falta revisar y qué se publicó."
+        "description": "Las publicaciones aprobadas salen automáticamente a su hora. Los correos te avisan qué falta revisar y qué se publicó.",
+        "imageAlt": "Página de campaña de Less Time Marketing: publicaciones próximas y publicadas con sus redes sociales"
       }
     ],
-    "makesEyebrow": "Qué crea",
-    "makesTitle": "Imágenes, carruseles y videos cortos con tus propias fotos.",
-    "makesDescription": "Elige el tipo de publicación que encaja con cada campaña. Los textos se escriben en el idioma de la campaña, con un gancho inicial y hashtags para cada red.",
-    "imageTypesTitle": "Tipos de publicación con imagen",
-    "imageTypes": [
-      {
-        "title": "Promocional",
-        "description": "Hace el producto deseable y termina con una invitación a comprar."
-      },
-      {
-        "title": "Informativa",
-        "description": "Explica qué es, de qué está hecho o cómo funciona, sin vender de forma agresiva."
-      },
-      {
-        "title": "Consejos",
-        "description": "Un consejo práctico con tu producto, escrito completo en la imagen."
-      },
-      {
-        "title": "Historia de marca",
-        "description": "Un momento real con tu producto y una frase corta de tu marca en la imagen."
-      },
-      {
-        "title": "Meme / humor",
-        "description": "Un chiste ligero y cercano con tu producto. Nunca usa imágenes ni personas famosas."
-      },
-      {
-        "title": "Creatividad Pro",
-        "description": "Una IA propone 10 ideas, otra elige una y la publicación se produce en calidad máxima."
-      }
-    ],
-    "carouselTitle": "Carruseles",
-    "carouselDescription": "Una publicación con varias fotos: de 2 a 4 productos, o un producto con 2 a 5 fotos. Tu logo real se puede colocar en las imágenes terminadas (desactivado por defecto).",
-    "videoTitle": "Videos verticales",
-    "videos": [
-      {
-        "length": "5 s",
-        "plans": "Todos los planes",
-        "description": "Tu producto en movimiento: problema → solución, ASMR visual, POV, revelación cinematográfica o escenas surrealistas."
-      },
-      {
-        "length": "15 s",
-        "plans": "Growth y Pro",
-        "description": "Una historia corta en varias escenas, con audio: mini historias, demostraciones, 3 beneficios, estilo UGC o caricatura."
-      },
-      {
-        "length": "30 s",
-        "plans": "Pro",
-        "description": "Una historia completa con más escenas y audio, más el formato Creatividad de 10 segundos."
-      }
-    ],
-    "makesNote": "Los videos se crean con tus propias fotos de producto: el producto conserva su apariencia real y se crea una escena nueva a su alrededor. Hay subtítulos opcionales para videos de 15 y 30 segundos.",
-    "controlTitle": "Automatización que te deja al mando.",
-    "controlDescription": "Ahorrar tiempo no debería significar perder el control de tu marca ni de tus datos.",
-    "controlPoints": [
-      "Cada publicación espera tu aprobación, salvo que actives el piloto automático en una campaña.",
-      "Con piloto automático, una publicación que no revisaste se aprueba una hora antes de su hora.",
-      "Los textos y las imágenes usan solo los datos de tu catálogo, nunca afirmaciones inventadas.",
-      "Un perfil de marca: logo, colores, tipografía, tono, valores y palabras prohibidas.",
-      "Solo lee productos y guarda archivos. Nunca lee pedidos ni datos de clientes.",
-      "Las imágenes y los videos se guardan en tus propios Archivos de Shopify.",
-      "Interfaz y contenido en inglés, español, portugués, francés y alemán.",
-      "Sin promesas de alcance, seguidores, ventas ni ingresos."
-    ],
+    "makesEyebrow": "Ejemplos reales",
+    "makesTitle": "Contenido creado por la app.",
+    "makesDescription": "Videos cortos e imágenes creados por Less Time Marketing a partir de las fotos de producto de una tienda.",
     "pricingEyebrow": "Precios",
     "pricingTitle": "Planes simples con créditos mensuales.",
     "pricingDescription": "Cada plan incluye créditos mensuales. Cada acción usa créditos y publicar siempre es gratis. Precios en USD, cobrados en tu factura de Shopify.",
@@ -499,28 +402,6 @@
         "estimate": "Unas 416 imágenes estándar o 83 videos cortos"
       }
     ],
-    "trialTitle": "Prueba gratis de 7 días",
-    "trialDescription": "Empieza cualquier plan con 7 días y 60 créditos (unas 10 imágenes o 2 videos cortos), a través de Shopify. Recibes un correo 24 horas antes de que termine la prueba.",
-    "packsTitle": "Paquetes de créditos extra",
-    "packsDescription": "Paquetes de pago único para cualquier plan, válidos por 12 meses y usados después de tus créditos mensuales.",
-    "packs": [
-      {
-        "credits": "150 créditos",
-        "price": "$9",
-        "recommended": false
-      },
-      {
-        "credits": "400 créditos",
-        "price": "$19",
-        "recommended": true
-      },
-      {
-        "credits": "1.200 créditos",
-        "price": "$49",
-        "recommended": false
-      }
-    ],
-    "recommendedLabel": "Recomendado",
     "creditsTitle": "Créditos por acción",
     "creditsHeaders": [
       "Acción",
@@ -584,42 +465,166 @@
       "Al subir de plan se suman los créditos extra por el resto del ciclo. Bajar de plan o cancelar aplica al final del ciclo."
     ],
     "pricingNote": "Los planes y precios aplicarán cuando la app se lance en la Shopify App Store. El contenido se genera con IA; revisa cada publicación antes de aprobarla.",
-    "comparisonEyebrow": "Compara tus opciones",
-    "comparisonTitle": "Otra forma de mantener activas tus redes.",
-    "comparisonDescription": "En lugar de crear cada publicación tú mismo o generar publicaciones en masa, Less Time Marketing planifica campañas completas desde tu catálogo y te pide aprobación.",
+    "comparisonEyebrow": "Compara alternativas",
+    "comparisonTitle": "Por qué Less Time Marketing es una gran alternativa.",
+    "comparisonDescription": "Cómo nos comparamos con tres alternativas directas de la Shopify App Store, usando solo lo que cada app muestra en su listado público.",
     "comparisonHeaders": [
       "Lo que importa",
-      "Crear todo manualmente",
-      "Generar publicaciones en masa",
-      "SD: Less Time Marketing"
+      "Less Time Marketing",
+      "Predis",
+      "Outfy",
+      "Xyla"
     ],
     "comparisonRows": [
       {
-        "criterion": "Planificación",
-        "manual": "Decides qué publicar, una publicación a la vez.",
-        "volume": "Un montón de publicaciones aún necesita un calendario.",
-        "shopideck": "Una campaña con productos, formato, tipo y calendario, configurada una vez."
+        "criterion": "Publicación automática",
+        "cells": [
+          {
+            "status": "yes",
+            "text": "Incluida en todos los planes, desde $19/mes"
+          },
+          {
+            "status": "no",
+            "text": "Solo desde $79/mes. El plan de $32 no publica automáticamente"
+          },
+          {
+            "status": "partial",
+            "text": "Plan gratis: 1 producto al día por red. Automatización completa desde $25/mes"
+          },
+          {
+            "status": "partial",
+            "text": "Desde $29/mes, con 30 publicaciones automáticas al mes"
+          }
+        ]
       },
       {
-        "criterion": "Datos del producto",
-        "manual": "Revisas cada detalle tú mismo.",
-        "volume": "Los textos genéricos pueden alejarse de lo que vendes.",
-        "shopideck": "Los textos y las imágenes usan solo los datos y fotos de tu catálogo."
+        "criterion": "Subtítulos en los videos",
+        "cells": [
+          {
+            "status": "yes",
+            "text": "Sí, en videos de 15 y 30 segundos, en el idioma de la campaña"
+          },
+          {
+            "status": "no",
+            "text": "No listado"
+          },
+          {
+            "status": "no",
+            "text": "No listado"
+          },
+          {
+            "status": "no",
+            "text": "No listado"
+          }
+        ]
       },
       {
-        "criterion": "Control",
-        "manual": "Control total, pero cada paso es manual.",
-        "volume": "Es difícil revisar todo antes de que salga.",
-        "shopideck": "Aprobación por defecto y piloto automático opcional por campaña."
+        "criterion": "Contenido adaptado a fechas especiales",
+        "cells": [
+          {
+            "status": "yes",
+            "text": "Sí: 10 fechas como Navidad o Halloween, opcional por campaña"
+          },
+          {
+            "status": "no",
+            "text": "No listado"
+          },
+          {
+            "status": "no",
+            "text": "No listado"
+          },
+          {
+            "status": "yes",
+            "text": "Publicaciones de festividades en su plan gratis"
+          }
+        ]
       },
       {
-        "criterion": "Claridad de costos",
-        "manual": "Tu tiempo, que es difícil de medir.",
-        "volume": "Depende de la herramienta.",
-        "shopideck": "El costo en créditos se muestra por acción y por campaña antes de crearla."
+        "criterion": "Interfaz y contenido en español, portugués, francés y alemán",
+        "cells": [
+          {
+            "status": "yes",
+            "text": "Sí, 5 idiomas"
+          },
+          {
+            "status": "yes",
+            "text": "Sí, 7 idiomas listados"
+          },
+          {
+            "status": "no",
+            "text": "Solo inglés"
+          },
+          {
+            "status": "no",
+            "text": "Inglés como único idioma listado"
+          }
+        ]
+      },
+      {
+        "criterion": "Publicación en LinkedIn",
+        "cells": [
+          {
+            "status": "yes",
+            "text": "Sí"
+          },
+          {
+            "status": "yes",
+            "text": "Listado"
+          },
+          {
+            "status": "no",
+            "text": "No listado"
+          },
+          {
+            "status": "no",
+            "text": "No listado"
+          }
+        ]
+      },
+      {
+        "criterion": "Aprobación por defecto y piloto automático opcional por campaña",
+        "cells": [
+          {
+            "status": "yes",
+            "text": "Sí, cada publicación te espera salvo que actives el piloto automático"
+          },
+          {
+            "status": "unknown",
+            "text": "No se indica en el listado"
+          },
+          {
+            "status": "unknown",
+            "text": "No se indica en el listado"
+          },
+          {
+            "status": "unknown",
+            "text": "No se indica en el listado"
+          }
+        ]
+      },
+      {
+        "criterion": "Datos de la tienda a los que accede",
+        "cells": [
+          {
+            "status": "yes",
+            "text": "Solo productos y archivos. Ni pedidos ni datos de clientes"
+          },
+          {
+            "status": "no",
+            "text": "También datos del dueño de la tienda: nombre, email, teléfono y dirección"
+          },
+          {
+            "status": "unknown",
+            "text": "No se indica en el listado"
+          },
+          {
+            "status": "unknown",
+            "text": "No se indica en el listado"
+          }
+        ]
       }
     ],
-    "comparisonNote": "Comparación de formas de trabajo, no una reseña de herramientas específicas. Otras herramientas pueden ofrecer funciones que no aparecen aquí.",
+    "comparisonNote": "Según el listado público de cada app en la Shopify App Store, consultado el 2 de noviembre de 2026. Precios en USD. Los listados pueden cambiar y otras herramientas pueden ofrecer funciones que no aparecen aquí.",
     "faqTitle": "Preguntas antes de unirte.",
     "faqs": [
       {
@@ -635,20 +640,20 @@
         "answer": "No por defecto: cada publicación espera tu aprobación. Puedes activar el piloto automático en una campaña; entonces una publicación que no revisaste se aprueba una hora antes de su hora. Algunas redes siempre requieren tu propia aprobación."
       },
       {
-        "question": "¿Qué redes sociales admite?",
-        "answer": "La app está hecha para publicar en varias redes sociales principales. Cada plataforma debe aprobar la app antes de que los comerciantes puedan usarla, así que publicaremos aquí las redes disponibles en el lanzamiento."
-      },
-      {
         "question": "¿Qué es un crédito?",
         "answer": "Cada acción usa créditos: un texto 1, una imagen estándar 6, un video de 5 segundos 30, uno de 15 segundos 175 y uno de 30 segundos 350. Publicar es gratis. La app muestra los créditos estimados de una campaña antes de crearla."
       },
       {
-        "question": "¿Qué pasa si la generación falla?",
-        "answer": "Los créditos se reservan primero y se devuelven si el contenido no se entrega por una falla técnica. La excepción es un video que el proveedor de IA rechaza por su política de contenido: ese intento se cobra y la app lo explica."
-      },
-      {
         "question": "¿Hay prueba gratis?",
         "answer": "Sí: 7 días con 60 créditos en cualquier plan, a través de Shopify. Recibes un correo 24 horas antes de que termine."
+      },
+      {
+        "question": "¿Qué redes sociales admite?",
+        "answer": "La app está hecha para publicar en hasta 5 redes sociales. Cada plataforma debe aprobar la app antes de que los comerciantes puedan usarla, así que confirmaremos aquí las redes disponibles en el lanzamiento."
+      },
+      {
+        "question": "¿Qué pasa si la generación falla?",
+        "answer": "Los créditos se reservan primero y se devuelven si el contenido no se entrega por una falla técnica. La excepción es un video que el proveedor de IA rechaza por su política de contenido: ese intento se cobra y la app lo explica."
       },
       {
         "question": "¿Los créditos no usados se acumulan?",
@@ -679,19 +684,105 @@
         "answer": "5 segundos en todos los planes, 15 segundos con audio en Growth y Pro, y 30 segundos más el formato Creatividad de 10 segundos en Pro. Todos los videos son verticales."
       }
     ],
-    "closingTitle": "Dedica menos tiempo al marketing. Mantén tu marca en tus manos.",
+    "closingTitle": "Configura en unos minutos. Obtén campañas de marketing para tus productos que funcionan solas.",
     "closingDescription": "Únete a la lista de espera y te avisaremos en cuanto Less Time Marketing esté disponible en la Shopify App Store.",
     "legalTerms": "Términos del servicio",
     "legalPrivacy": "Política de privacidad",
     "legalSupport": "Soporte",
-    "contactSubject": "Información de acceso anticipado a SD: Less Time Marketing",
-    "suiteLink": "Volver a la suite ShopiDeck"
+    "contactSubject": "Información de acceso anticipado a Less Time Marketing",
+    "suiteLink": "Volver a la suite ShopiDeck",
+    "videoExamples": [
+      "Ejemplo de video con IA 1",
+      "Ejemplo de video con IA 2",
+      "Ejemplo de video con IA 3"
+    ],
+    "imageExampleTitle": "Ejemplo de imagen con IA",
+    "imageExampleAlt": "Imagen creada con IA por Less Time Marketing: dos tablas de snowboard de la tienda apoyadas en una pared de madera con calabazas y hojas de otoño",
+    "examplesNote": "Ejemplos generados por Less Time Marketing con productos de una tienda de prueba. Los resultados dependen de tus fotos de producto y de la configuración.",
+    "featuresEyebrow": "Funciones únicas",
+    "featuresTitle": "Detalles que te ahorran todavía más tiempo.",
+    "featuresDescription": "Extras incluidos en la app para que tu contenido se vea terminado y a tiempo, sin herramientas adicionales.",
+    "features": [
+      {
+        "title": "Subtítulos en videos",
+        "description": "Agrega subtítulos a los videos de 15 y 30 segundos en el idioma de la campaña. Revísalos y decide si aplicarlos."
+      },
+      {
+        "title": "Modo Creatividad",
+        "description": "Una IA propone 10 ideas, otra elige la mejor y la publicación se produce en calidad máxima. Para imágenes y video en Pro."
+      },
+      {
+        "title": "Fechas especiales",
+        "description": "La app conoce fechas importantes como Navidad, Año Nuevo, San Valentín, el Día de la Madre o Halloween y adapta tus publicaciones a la ocasión, si así lo deseas."
+      },
+      {
+        "title": "Tu logo en las imágenes",
+        "description": "Coloca tu archivo de logo real en las imágenes terminadas. La IA nunca lo dibuja y viene desactivado por defecto."
+      },
+      {
+        "title": "Crear otra versión",
+        "description": "¿No te convence una imagen o un video? Crea uno nuevo. Cada ciclo de facturación incluye una nueva versión gratis de una imagen con IA."
+      },
+      {
+        "title": "Correos útiles",
+        "description": "Un recordatorio diario para revisar, alertas si algo falla y un resumen semanal de publicaciones y créditos."
+      }
+    ],
+    "languagesEyebrow": "Idiomas",
+    "languagesTitle": "Tu contenido hasta en 5 idiomas.",
+    "languagesDescription": "Elige el idioma de cada campaña: textos, hashtags, palabras en las imágenes y audio de los videos se crean en ese idioma. La interfaz de la app está disponible en los mismos cinco.",
+    "languages": [
+      "Inglés",
+      "Español",
+      "Portugués",
+      "Francés",
+      "Alemán"
+    ],
+    "languagesNote": "El audio de los videos puede no estar disponible en algunos idiomas.",
+    "comparisonSources": "Fuentes",
+    "faqMore": "Ver todas las preguntas",
+    "faqLess": "Ver menos preguntas",
+    "heroImageAlt": "Página de campañas de Less Time Marketing: dos campañas activas con sus fechas, formatos, calendario y redes sociales",
+    "transformTitle": "De la foto del producto a la publicación terminada",
+    "beforeLabel": "Antes: la foto de tu producto",
+    "afterLabel": "Después: publicación creada por la app",
+    "beforeAlt": "Foto original del producto de la tienda: dos tablas de snowboard sobre fondo blanco",
+    "afterAlt": "Publicación creada por Less Time Marketing: las mismas tablas en una escena real con dos niños y una pregunta escrita en la pared",
+    "algorithmEyebrow": "Contenido más inteligente",
+    "algorithmTitle": "Un algoritmo más inteligente, pensado para llevar compradores a tu tienda.",
+    "algorithmDescription": "Entiende los detalles de tu marca, las fechas especiales que eliges y las indicaciones que le das, y los combina para crear contenido de calidad que atrae compradores.",
+    "brandCardTitle": "Los detalles de tu marca",
+    "brandCardAlt": "Perfil de marca en Less Time Marketing: logo, colores, tipografía, eslogan, dónde vendes, edades de tus clientes, público y tono",
+    "datesCardTitle": "Las fechas especiales que eliges",
+    "datesCardAlt": "Fechas especiales en Less Time Marketing: Navidad, Año Nuevo, San Valentín, Día de la Mujer, Pascua, Día del Trabajo, Día de la Madre, Día del Padre, Amor y Amistad y Halloween",
+    "algorithmInputs": [
+      {
+        "title": "Tus productos y fotos",
+        "description": "Datos reales del catálogo, nunca inventados"
+      },
+      {
+        "title": "Tus indicaciones",
+        "description": "Notas extra para cada campaña"
+      },
+      {
+        "title": "Idioma y país",
+        "description": "Contenido hasta en 5 idiomas"
+      },
+      {
+        "title": "Tipo y formato",
+        "description": "Imágenes, carruseles o video"
+      }
+    ],
+    "brainLabel": "IA de Less Time Marketing",
+    "brainDescription": "Une cada detalle en una sola idea creativa",
+    "outputTitle": "Contenido listo para publicar",
+    "outputAlt": "Publicación con IA creada por Less Time Marketing para una tienda de snowboard"
   },
   "Site": {
-    "title": "ShopiDeck | Herramientas enfocadas para comerciantes de Shopify",
-    "description": "ShopiDeck crea herramientas enfocadas para comerciantes de Shopify que quieren datos más limpios, marketing más inteligente y mejores decisiones de crecimiento.",
-    "keywords": "herramientas Shopify, auditoría de perfiles Klaviyo, operaciones ecommerce, herramientas de crecimiento para comerciantes",
-    "schemaDescription": "Una suite en crecimiento de herramientas enfocadas para comerciantes de Shopify."
+    "title": "ShopiDeck | Apps enfocadas para comerciantes de Shopify",
+    "description": "ShopiDeck crea apps enfocadas para comerciantes de Shopify que quieren datos más limpios, marketing más inteligente y mejores decisiones de crecimiento.",
+    "keywords": "apps Shopify, auditoría de perfiles Klaviyo, operaciones ecommerce, apps de crecimiento para comerciantes",
+    "schemaDescription": "Una suite en crecimiento de apps enfocadas para comerciantes de Shopify."
   },
   "UI": {
     "publicWebsite": "Sitio público",
@@ -748,9 +839,9 @@
     "supportRequestCouldNotBeSent": "No se pudo enviar la solicitud de soporte.",
     "sending": "Enviando...",
     "doNotIncludeApiKeysPasswordsAccess": "No incluyas API keys, contraseñas, tokens de acceso ni listas completas de clientes. Las preguntas de privacidad pueden enviarse a ",
-    "aGrowingSuiteOfFocusedToolsFor": "Una suite en crecimiento de herramientas enfocadas para comerciantes de Shopify.",
-    "shopideckFocusedToolsForShopifyMerchants": "ShopiDeck | Herramientas enfocadas para Shopify",
-    "focusedToolsForShopifyMerchantsWhoWant": "Herramientas enfocadas para comerciantes de Shopify que quieren datos más limpios, marketing más inteligente y mejores decisiones de crecimiento.",
+    "aGrowingSuiteOfFocusedToolsFor": "Una suite en crecimiento de apps enfocadas para comerciantes de Shopify.",
+    "shopideckFocusedToolsForShopifyMerchants": "ShopiDeck | Apps enfocadas para Shopify",
+    "focusedToolsForShopifyMerchantsWhoWant": "Apps enfocadas para comerciantes de Shopify que quieren datos más limpios, marketing más inteligente y mejores decisiones de crecimiento.",
     "cleanerData": "Datos más limpios",
     "fasterWorkflows": "Flujos más rápidos",
     "lowerWaste": "Menos desperdicio",

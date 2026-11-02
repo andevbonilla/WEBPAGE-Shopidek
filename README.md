@@ -31,7 +31,10 @@ The page content follows the Less Time Marketing landing brief (1 November 2026)
 plans, credits, trial, image and video formats, and FAQs match the app code at that
 date. Social networks are not named until each platform approves the app. The
 hero visual is an illustrative mock, labelled as such, until real screenshots exist.
-The comparison describes working approaches rather than named competitors.
+The comparison names three alternatives (Predis, Outfy, Xyla) using only facts from
+their public Shopify App Store listings, read on 2 November 2026; re-check those
+listings before changing prices or claims. Workflow screenshots and the example image
+live in `public/brand/products/less-time-marketing/`.
 Old paths `/social-marketing` and `/botcleaner` redirect permanently to
 `/less-time-marketing` and `/klaviyo-bot-cleaner` (see `next.config.ts`).
 

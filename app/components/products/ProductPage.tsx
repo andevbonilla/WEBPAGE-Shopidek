@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Check, ChevronDown } from "lucide-react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
+import { FaqMore } from "./FaqMore";
 
 const themes = {
   botcleaner: { accent: "#2c8fe9", ink: "#185a9c", hover: "#164f89", soft: "#e8f3ff", wash: "#f5faff", border: "#b8d9f7", deep: "#152d45" },
@@ -88,21 +89,43 @@ export function ProductHeading({ eyebrow, title, description, centered = false, 
   );
 }
 
-export function ProductFaq({ title, faqs }: { title: string; faqs: { question: string; answer: string }[] }) {
+type Faq = { question: string; answer: string };
+
+function FaqItem({ faq }: { faq: Faq }) {
+  return (
+    <details className="group rounded-2xl border border-brand-border bg-brand-bg">
+      <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 p-5 text-sm font-bold marker:content-none sm:p-6 sm:text-base">
+        <span>{faq.question}</span><ChevronDown className="h-4 w-4 shrink-0 text-app-ink transition-transform group-open:rotate-180 motion-reduce:transition-none" aria-hidden="true" />
+      </summary>
+      <p className="px-5 pb-5 text-sm leading-relaxed text-brand-secondary sm:px-6 sm:pb-6">{faq.answer}</p>
+    </details>
+  );
+}
+
+type FaqProps = {
+  title: string;
+  faqs: Faq[];
+  /** Show only the first N questions and reveal the rest with a button. */
+  visibleCount?: number;
+  moreLabel?: string;
+  lessLabel?: string;
+};
+
+export function ProductFaq({ title, faqs, visibleCount, moreLabel, lessLabel }: FaqProps) {
+  const visible = visibleCount ? faqs.slice(0, visibleCount) : faqs;
+  const hidden = visibleCount ? faqs.slice(visibleCount) : [];
   return (
     <section className="product-section border-t border-brand-border bg-brand-card">
       <div className="layout-container max-w-4xl">
         <ProductHeading title={title} centered />
         <div className="space-y-3">
-          {faqs.map((faq) => (
-            <details key={faq.question} className="group rounded-2xl border border-brand-border bg-brand-bg">
-              <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 p-5 text-sm font-bold marker:content-none sm:p-6 sm:text-base">
-                <span>{faq.question}</span><ChevronDown className="h-4 w-4 shrink-0 text-app-ink transition-transform group-open:rotate-180 motion-reduce:transition-none" aria-hidden="true" />
-              </summary>
-              <p className="px-5 pb-5 text-sm leading-relaxed text-brand-secondary sm:px-6 sm:pb-6">{faq.answer}</p>
-            </details>
-          ))}
+          {visible.map((faq) => <FaqItem key={faq.question} faq={faq} />)}
         </div>
+        {hidden.length > 0 && (
+          <FaqMore moreLabel={moreLabel ?? ""} lessLabel={lessLabel ?? ""}>
+            {hidden.map((faq) => <FaqItem key={faq.question} faq={faq} />)}
+          </FaqMore>
+        )}
       </div>
     </section>
   );
