@@ -80,7 +80,7 @@
     "prodBotB2": "Auditoría en segundo plano con señales explicables",
     "prodBotB3": "Supresión confirmada por el comerciante",
     "prodBotFeatures": "Disponible en Shopify App Store",
-    "prodSocialDesc": "Marketing mientras duermes. Configura campañas en unos 5 minutos y planifica semanas o meses de contenido personalizado y de calidad diseñado para vender.",
+    "prodSocialDesc": "Convierte tus productos en imágenes, videos y textos con IA, programados en Instagram, Facebook, TikTok, YouTube y LinkedIn. Planifica una campaña en unos minutos y revisa cada publicación. Próximamente en la Shopify App Store.",
     "prodSocialB1": "Campañas adaptadas a tu marca",
     "prodSocialB2": "Contenido de calidad para semanas o meses",
     "prodSocialB3": "Revisión antes de programar",
@@ -99,7 +99,7 @@
     "faq2Q": "¿Las aplicaciones ralentizan mi tienda de Shopify?",
     "faq2A": "Klaviyo Bot Cleaner opera desde Shopify Admin y APIs de backend. No requiere editar el tema ni añadir scripts frontend a tu tienda. Los demás productos publicarán su alcance técnico cuando estén disponibles.",
     "faq3Q": "¿Cómo accedo a las próximas apps de la suite?",
-    "faq3A": "La suite tiene tres apps: SD: Less Time Marketing, SD: Klaviyo Bot Cleaner y SD: SEO That Sells. Less Time Marketing y SEO That Sells están en desarrollo y no están incluidos en Klaviyo Bot Cleaner. Visita la página de Less Time Marketing para solicitar información sobre acceso anticipado.",
+    "faq3A": "La suite tiene tres apps: SD: Less Time Marketing, SD: Klaviyo Bot Cleaner y SD: SEO That Sells. Less Time Marketing llegará pronto a la Shopify App Store y SEO That Sells es una próxima app; ninguna está incluida en Klaviyo Bot Cleaner. Visita la página de Less Time Marketing para unirte a la lista de espera.",
     "faq4Q": "¿Cómo se maneja el soporte técnico?",
     "faq4A": "El soporte por email está disponible en team@shopideck.com durante el horario publicado. Incluye el dominio de tu tienda, el producto, los pasos para reproducir el problema y capturas sin API keys, contraseñas, tokens ni listas completas de clientes. Consulta la política de privacidad para saber cómo se tratan los datos enviados."
   },
@@ -307,15 +307,15 @@
     "seoTitle": "Less Time Marketing | Redes sociales con IA para Shopify",
     "seoDescription": "Convierte tus productos de Shopify en imágenes, videos y textos con IA, programados en tus redes. Tú apruebas cada post. Únete a la lista de espera.",
     "iconAlt": "Ícono de la app Less Time Marketing con tarjetas de campaña y un megáfono",
-    "badge": "En desarrollo",
+    "badge": "Próximamente en la Shopify App Store",
     "heroLines": [
       "Dedica menos tiempo al marketing.",
       "Planifica. Aprueba. Publica."
     ],
-    "heroDescription": "Convierte tus productos de Shopify en imágenes, videos y textos con IA, programados en tus redes sociales. Planificas una campaña una vez, revisas cada publicación y la app la publica a tiempo.",
+    "heroDescription": "Convierte tus productos de Shopify en imágenes, videos y textos con IA, programados en tus cuentas de Instagram, Facebook, TikTok, YouTube y LinkedIn. Planificas una campaña una vez, revisas cada publicación y la app la publica a tiempo.",
     "primaryCta": "Unirme a la lista de espera",
     "secondaryCta": "Ver cómo funciona",
-    "heroNote": "La app está en desarrollo y aún no está en la Shopify App Store. Únete a la lista de espera y te avisaremos cuando se lance. Todos los planes empezarán con una prueba gratis de 7 días con 60 créditos.",
+    "heroNote": "Less Time Marketing llegará pronto a la Shopify App Store. Únete a la lista de espera para estar entre los primeros en instalarla. Todos los planes empiezan con una prueba gratis de 7 días con 60 créditos.",
     "pillars": [
       "Creado desde tu catálogo",
       "Tú apruebas cada publicación",
@@ -629,7 +629,7 @@
     "faqs": [
       {
         "question": "¿Puedo instalar Less Time Marketing ahora?",
-        "answer": "Todavía no. La app está en desarrollo y aún no está en la Shopify App Store. Únete a la lista de espera y te escribiremos cuando se lance. Inscribirte no crea una cuenta ni inicia una suscripción."
+        "answer": "Less Time Marketing llegará pronto a la Shopify App Store. Únete a la lista de espera y te escribiremos en cuanto puedas instalarla. Inscribirte no crea una cuenta ni inicia una suscripción."
       },
       {
         "question": "¿Necesito saber diseñar o escribir?",
@@ -640,16 +640,16 @@
         "answer": "No por defecto: cada publicación espera tu aprobación. Puedes activar el piloto automático en una campaña; entonces una publicación que no revisaste se aprueba una hora antes de su hora. Algunas redes siempre requieren tu propia aprobación."
       },
       {
+        "question": "¿Qué redes sociales admite?",
+        "answer": "Cuentas profesionales de Instagram, Páginas de Facebook, TikTok, canales de YouTube y perfiles de miembro de LinkedIn. TikTok y YouTube solo reciben video vertical. Tú eliges qué cuentas conectadas usa cada campaña."
+      },
+      {
         "question": "¿Qué es un crédito?",
         "answer": "Cada acción usa créditos: un texto 1, una imagen estándar 6, un video de 5 segundos 30, uno de 15 segundos 175 y uno de 30 segundos 350. Publicar es gratis. La app muestra los créditos estimados de una campaña antes de crearla."
       },
       {
         "question": "¿Hay prueba gratis?",
         "answer": "Sí: 7 días con 60 créditos en cualquier plan, a través de Shopify. Recibes un correo 24 horas antes de que termine."
-      },
-      {
-        "question": "¿Qué redes sociales admite?",
-        "answer": "La app está hecha para publicar en hasta 5 redes sociales. Cada plataforma debe aprobar la app antes de que los comerciantes puedan usarla, así que confirmaremos aquí las redes disponibles en el lanzamiento."
       },
       {
         "question": "¿Qué pasa si la generación falla?",
@@ -778,7 +778,55 @@
     "outputTitle": "Contenido listo para publicar",
     "outputAlt": "Publicación con IA creada por Less Time Marketing para una tienda de snowboard",
     "creditsToggle": "Ver uso de créditos por acción",
-    "fairBillingDescription": "Reglas claras sobre cómo se usan, devuelven y renuevan los créditos."
+    "fairBillingDescription": "Reglas claras sobre cómo se usan, devuelven y renuevan los créditos.",
+    "dataEyebrow": "Cuentas conectadas y tus datos",
+    "dataTitle": "Qué hace la app con cada cuenta que conectas.",
+    "dataDescription": "Tú eliges qué cuentas conectar. Cada una se usa solo para publicar el contenido que apruebas o programas, y puedes desconectarla cuando quieras.",
+    "platformUseLabel": "Qué hace la app",
+    "platformPermissionLabel": "Acceso que solicita",
+    "platforms": [
+      {
+        "name": "YouTube",
+        "use": "Sube a tu canal los videos verticales (Shorts) que apruebas, con su título y descripción, a la hora programada.",
+        "permission": "youtube.upload para subir los videos que apruebas y youtube.readonly para mostrar qué canal está conectado."
+      },
+      {
+        "name": "Instagram",
+        "use": "Publica en tu cuenta profesional de Instagram las imágenes, carruseles y Reels que apruebas.",
+        "permission": "Permiso para publicar contenido en la cuenta profesional que eliges."
+      },
+      {
+        "name": "Facebook",
+        "use": "Publica en la Página de Facebook que eliges las imágenes, carruseles y videos que apruebas.",
+        "permission": "Permiso para publicar en la Página que eliges."
+      },
+      {
+        "name": "TikTok",
+        "use": "Envía los videos que apruebas. Confirmas cada publicación y sus opciones de privacidad y divulgación en el formulario de TikTok.",
+        "permission": "Permisos de perfil básico y publicación de videos."
+      },
+      {
+        "name": "LinkedIn",
+        "use": "Publica en tu perfil de miembro de LinkedIn las publicaciones que apruebas.",
+        "permission": "openid, profile y w_member_social para tu perfil de miembro."
+      }
+    ],
+    "dataPoints": [
+      "Nunca lee tus mensajes, listas de seguidores ni estadísticas de audiencia.",
+      "Nunca vende los datos de las plataformas ni los usa para publicidad.",
+      "Los tokens de acceso se guardan cifrados y se eliminan al desconectar.",
+      "Puedes desconectar en la app o revocar el acceso desde cada plataforma cuando quieras."
+    ],
+    "limitedUse": "El uso y la transferencia a cualquier otra app de la información recibida de las API de Google por parte de Less Time Marketing cumplirá la Política de Datos de Usuario de los Servicios de API de Google, incluidos los requisitos de Uso Limitado. Al usar la integración con YouTube aceptas los Términos del Servicio de YouTube.",
+    "dataLinks": {
+      "privacy": "Política de privacidad de Less Time Marketing",
+      "terms": "Términos del servicio",
+      "googlePolicy": "Política de Datos de Usuario de los Servicios de API de Google",
+      "youtubeTerms": "Términos del Servicio de YouTube",
+      "googlePrivacy": "Política de Privacidad de Google",
+      "revoke": "Revocar el acceso de Google"
+    },
+    "trademarks": "Instagram, Facebook, TikTok, YouTube y LinkedIn son marcas de sus respectivos dueños. Less Time Marketing es una app independiente y no está respaldada ni afiliada a esas empresas."
   },
   "Site": {
     "title": "ShopiDeck | Apps enfocadas para comerciantes de Shopify",

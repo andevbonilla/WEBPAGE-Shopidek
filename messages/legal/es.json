@@ -1363,14 +1363,14 @@
           "title": "SD: Less Time Marketing — Anexo de privacidad",
           "category": "Legal y privacidad",
           "effectiveDate": "21 de octubre de 2026",
-          "lastUpdated": "26 de octubre de 2026",
-          "intro": "Cómo Less Time Marketing usa datos de la tienda, de tu marca y de cuentas conectadas para crear, programar y publicar contenido. Esta app no lee clientes, pedidos ni pagos de Shopify. Estas prácticas aplican solo al usar esta app o activar la conexión correspondiente.",
+          "lastUpdated": "3 de noviembre de 2026",
+          "intro": "Cómo Less Time Marketing usa datos de la tienda, de tu marca y de cuentas conectadas para crear, programar y publicar contenido en las cuentas de Instagram, Facebook, TikTok, YouTube y LinkedIn que conectas. En YouTube, la app usa los Servicios de API de YouTube para identificar tu canal y subir los Shorts que apruebas. Esta app no lee clientes, pedidos ni pagos de Shopify. Estas prácticas aplican solo al usar esta app o activar la conexión correspondiente.",
           "sections": [
             {
               "id": "scope",
               "title": "1. Alcance, prestador y roles",
               "paragraphs": [
-                "ShopiDeck es un nombre comercial de BONILLA CARRENO ANDRES CAMILO, persona natural, Bogotá, Colombia. Este anexo complementa la Política de Privacidad general de ShopiDeck exclusivamente para Less Time Marketing. Ante diferencias específicas de esta app prevalece sobre la política general, sujeto a la ley imperativa y al DPA en obligaciones de encargado. Aquí no aplican los permisos, scoring, conservación de perfiles de clientes ni flujos de supresión de Bot Cleaner. Publicar estos textos no significa que todas las integraciones ya estén disponibles; la app muestra la disponibilidad y los permisos antes de conectar.",
+                "ShopiDeck es un nombre comercial de BONILLA CARRENO ANDRES CAMILO, persona natural, Bogotá, Colombia. Este anexo complementa la Política de Privacidad general de ShopiDeck exclusivamente para Less Time Marketing. Ante diferencias específicas de esta app prevalece sobre la política general, sujeto a la ley imperativa y al DPA en obligaciones de encargado. Aquí no aplican los permisos, scoring, conservación de perfiles de clientes ni flujos de supresión de Bot Cleaner. La app muestra los permisos de cada plataforma antes de conectarla y solo usa las cuentas que conectas.",
                 "El operador y contacto de privacidad se identifican en la política general. ShopiDeck es responsable de la administración de cuenta, facturación, administración de conexiones, seguridad y sus comunicaciones de servicio; es encargado respecto de datos personales en materiales de tienda y marca e instrucciones de publicación tratados por cuenta del comerciante. Las redes actúan bajo sus propias condiciones para los datos que reciben. Conectar una cuenta no autoriza usar sus datos en otra app de ShopiDeck."
               ],
               "links": [
@@ -1700,7 +1700,7 @@
           "title": "SD: Less Time Marketing — Condiciones del servicio",
           "category": "Legal y privacidad",
           "effectiveDate": "21 de octubre de 2026",
-          "lastUpdated": "26 de octubre de 2026",
+          "lastUpdated": "3 de noviembre de 2026",
           "intro": "Condiciones específicas de generación de contenido con IA, programación de campañas, publicación social, planes y créditos de Less Time Marketing.",
           "sections": [
             {
@@ -1744,7 +1744,7 @@
               "id": "service-approval",
               "title": "2. Servicio, aprobación y publicación automática",
               "paragraphs": [
-                "Less Time Marketing genera textos, hashtags, imágenes, videos y subtítulos con IA de terceros a partir de productos, materiales de marca e indicaciones. Programa y publica en cuentas que conectas cuando la integración esté disponible y autorizada. Los resultados pueden contener errores: revisa veracidad, derechos y reglas de cada red antes de publicar.",
+                "Less Time Marketing genera textos, hashtags, imágenes, videos y subtítulos con IA de terceros a partir de productos, materiales de marca e indicaciones. Programa y publica en las cuentas profesionales de Instagram, Páginas de Facebook, cuentas de TikTok, canales de YouTube y perfiles de miembro de LinkedIn que conectas y autorizas. Los resultados pueden contener errores: revisa veracidad, derechos y reglas de cada red antes de publicar.",
                 "Por defecto no se publica nada sin tu aprobación. Si activas publicación automática para una campaña, la app aprueba las publicaciones elegibles una hora antes de la hora programada y pueden salir sin revisión individual. Puedes desactivarla. TikTok queda excluido: siempre debes aprobar cada publicación y elegir expresamente las opciones exigidas de privacidad, interacción, contenido comercial y confirmaciones de uso de música. La aprobación automática de esta app nunca autoriza supresiones automáticas en Bot Cleaner.",
                 "Los medios generados se guardan en Contenido → Archivos de tu tienda Shopify. La app borra los que ya no necesita mientras tenga autorización. Al desinstalar pierde el acceso y no puede borrar los Archivos restantes; debes gestionarlos en Shopify. Publicar en una red crea otra copia en esa plataforma que la desinstalación no elimina."
               ]

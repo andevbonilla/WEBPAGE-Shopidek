@@ -13,6 +13,8 @@ import {
   Globe,
   Images,
   Layers,
+  Link2,
+  Lock,
   Mail,
   Minus,
   PenLine,
@@ -391,6 +393,56 @@ export default async function LessTimeMarketingPage({ params }: PageProps) {
               </ul>
               <p className="mt-6 text-[11px] leading-relaxed text-white/60">* {copy.languagesNote}</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Connected accounts: what the app does with each platform's data (needed for platform reviews such as Google's). */}
+      <section id="connected-accounts" className="product-section scroll-mt-24 border-t border-brand-border bg-brand-card">
+        <div className="layout-container">
+          <ProductHeading eyebrow={copy.dataEyebrow} title={copy.dataTitle} description={copy.dataDescription} />
+          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+            {copy.platforms.map((platform) => (
+              <article key={platform.name} className="rounded-3xl border border-brand-border bg-brand-bg p-6">
+                <h3 className="flex items-center gap-2.5 font-display text-lg font-black">
+                  <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-app-soft text-app-ink"><Link2 className="h-4 w-4" aria-hidden="true" /></span>
+                  {platform.name}
+                </h3>
+                <dl className="mt-4 space-y-3 text-sm leading-relaxed">
+                  <div>
+                    <dt className="text-[11px] font-bold uppercase tracking-wider text-app-ink">{copy.platformUseLabel}</dt>
+                    <dd className="mt-1 text-brand-secondary">{platform.use}</dd>
+                  </div>
+                  <div>
+                    <dt className="text-[11px] font-bold uppercase tracking-wider text-app-ink">{copy.platformPermissionLabel}</dt>
+                    <dd className="mt-1 text-brand-secondary">{platform.permission}</dd>
+                  </div>
+                </dl>
+              </article>
+            ))}
+            <article className="rounded-3xl border border-app-ink bg-app-ink p-6 text-white">
+              <h3 className="flex items-center gap-2.5 font-display text-lg font-black">
+                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/15"><Lock className="h-4 w-4" aria-hidden="true" /></span>
+                {copy.dataEyebrow}
+              </h3>
+              <ul className="mt-4 space-y-3 text-sm leading-relaxed text-white/85">
+                {copy.dataPoints.map((point) => (
+                  <li key={point} className="flex items-start gap-2.5"><Check className="mt-0.5 h-4 w-4 shrink-0 text-brand-accent" aria-hidden="true" /><span>{point}</span></li>
+                ))}
+              </ul>
+            </article>
+          </div>
+          <div className="mt-8 rounded-3xl border border-app-border bg-app-wash p-6 sm:p-7">
+            <p className="text-sm leading-relaxed text-brand-secondary">{copy.limitedUse}</p>
+            <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-xs font-bold text-app-ink">
+              <li><a href={localizedPath(currentLocale, "/privacy/less-time-marketing")} className="underline-offset-4 hover:underline">{copy.dataLinks.privacy}</a></li>
+              <li><a href={localizedPath(currentLocale, "/terms/less-time-marketing")} className="underline-offset-4 hover:underline">{copy.dataLinks.terms}</a></li>
+              <li><a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer" className="underline-offset-4 hover:underline">{copy.dataLinks.googlePolicy}</a></li>
+              <li><a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer" className="underline-offset-4 hover:underline">{copy.dataLinks.youtubeTerms}</a></li>
+              <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="underline-offset-4 hover:underline">{copy.dataLinks.googlePrivacy}</a></li>
+              <li><a href="https://security.google.com/settings/security/permissions" target="_blank" rel="noopener noreferrer" className="underline-offset-4 hover:underline">{copy.dataLinks.revoke}</a></li>
+            </ul>
+            <p className="mt-4 text-[11px] leading-relaxed text-brand-muted">{copy.trademarks}</p>
           </div>
         </div>
       </section>

@@ -1363,14 +1363,14 @@
           "title": "SD: Less Time Marketing — Privacy Addendum",
           "category": "Legal and privacy",
           "effectiveDate": "October 21, 2026",
-          "lastUpdated": "October 26, 2026",
-          "intro": "How Less Time Marketing uses store, brand, and connected-account data to create, schedule, and publish content. This app does not read Shopify customers, orders, or payments. These practices apply only when you use this app or activate the relevant connection.",
+          "lastUpdated": "November 3, 2026",
+          "intro": "How Less Time Marketing uses store, brand, and connected-account data to create, schedule, and publish content to the Instagram, Facebook, TikTok, YouTube, and LinkedIn accounts you connect. For YouTube, the app uses YouTube API Services to identify your channel and upload the Shorts you approve. This app does not read Shopify customers, orders, or payments. These practices apply only when you use this app or activate the relevant connection.",
           "sections": [
             {
               "id": "scope",
               "title": "1. Scope, operator, and roles",
               "paragraphs": [
-                "ShopiDeck is a trade name of BONILLA CARRENO ANDRES CAMILO, a natural person (individual), Bogotá, Colombia. This addendum supplements the general ShopiDeck Privacy Policy exclusively for Less Time Marketing. For app-specific differences it prevails over the general policy, subject to mandatory law and the DPA for processor obligations. Bot Cleaner permissions, scoring, customer-profile retention, and suppression workflows do not apply here. Publishing these terms does not mean every integration is already available; availability and permissions are shown in the app before connection.",
+                "ShopiDeck is a trade name of BONILLA CARRENO ANDRES CAMILO, a natural person (individual), Bogotá, Colombia. This addendum supplements the general ShopiDeck Privacy Policy exclusively for Less Time Marketing. For app-specific differences it prevails over the general policy, subject to mandatory law and the DPA for processor obligations. Bot Cleaner permissions, scoring, customer-profile retention, and suppression workflows do not apply here. The app shows each platform's permissions before you connect it, and only the accounts you connect are used.",
                 "The operator and privacy contact are identified in the general policy. ShopiDeck is controller for account administration, billing, connection administration, security, and its own service communications; it is processor for personal data in store and brand materials and publishing instructions handled on the merchant's behalf. Social platforms act under their own terms for data they receive. A connection is not permission to use its data in another ShopiDeck app."
               ],
               "links": [
@@ -1700,7 +1700,7 @@
           "title": "SD: Less Time Marketing — Service Terms",
           "category": "Legal and privacy",
           "effectiveDate": "October 21, 2026",
-          "lastUpdated": "October 26, 2026",
+          "lastUpdated": "November 3, 2026",
           "intro": "App-specific conditions for AI content generation, campaign scheduling, social publishing, plans, and credits in Less Time Marketing.",
           "sections": [
             {
@@ -1744,7 +1744,7 @@
               "id": "service-approval",
               "title": "2. Service, approval, and automatic publishing",
               "paragraphs": [
-                "Less Time Marketing creates copy, hashtags, images, videos, and subtitles using third-party AI from store products, brand materials, and your prompts. It schedules and publishes to accounts you connect when the integration is available and authorized. AI output can contain errors: review accuracy, rights, and platform rules before publishing.",
+                "Less Time Marketing creates copy, hashtags, images, videos, and subtitles using third-party AI from store products, brand materials, and your prompts. It schedules and publishes to the Instagram professional accounts, Facebook Pages, TikTok accounts, YouTube channels, and LinkedIn member profiles you connect and authorize. AI output can contain errors: review accuracy, rights, and platform rules before publishing.",
                 "By default nothing is published without your approval. If you enable automatic publishing for a campaign, the app approves eligible posts one hour before their scheduled time and they may publish without individual review. You can disable it. TikTok is excluded: you must always approve each TikTok post and explicitly choose the required privacy, interaction, commercial-content, and music-use confirmations. Automatic approval in this app never authorizes automatic suppression in Bot Cleaner.",
                 "Generated media is saved in Content → Files in your Shopify store. The app deletes files it no longer needs while authorized. Once uninstalled it loses access and cannot delete remaining Shopify Files; you must manage them in Shopify. Publishing to a social network creates a separate platform copy that uninstalling does not remove."
               ]
