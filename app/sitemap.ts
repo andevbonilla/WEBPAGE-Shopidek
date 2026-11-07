@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/klaviyo-bot-cleaner",
     "/less-time-marketing",
+    "/retracto-y-pqr",
     "/help",
     "/blog",
     "/privacy",
@@ -24,6 +25,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       path,
       lastModified: /^\/(privacy|terms|dpa|subprocessors|data-deletion)(\/|$)/.test(path)
         ? new Date(LEGAL_UPDATED_ISO)
+        : path === "/retracto-y-pqr"
+        ? new Date("2026-11-07T00:00:00.000Z")
         : ["/less-time-marketing", "/klaviyo-bot-cleaner"].includes(path)
         ? new Date("2026-11-01T00:00:00.000Z")
         : ["", "/help"].includes(path)

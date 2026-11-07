@@ -15,6 +15,7 @@ import {
   BOTCLEANER_DISPLAY_NAME,
   SITE_LOGO_ALT,
   LESS_TIME_MARKETING_DISPLAY_NAME,
+  RETRACTO_DISPLAY_NAME,
 } from "../config";
 
 export default function Footer() {
@@ -80,6 +81,11 @@ export default function Footer() {
               <li>
                 <Link href="/klaviyo-bot-cleaner" className="hover:text-brand-accent transition-colors">
                   {BOTCLEANER_DISPLAY_NAME}
+                </Link>
+              </li>
+              <li>
+                <Link href="/retracto-y-pqr" className="hover:text-brand-accent transition-colors">
+                  {RETRACTO_DISPLAY_NAME}
                 </Link>
               </li>
               <li>

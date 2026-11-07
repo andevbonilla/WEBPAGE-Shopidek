@@ -8,7 +8,7 @@ import { AlertTriangle, ArrowRight, CheckCircle, Clock, HelpCircle, Search } fro
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { getFaqs } from "./faqData";
-import { TEAM_EMAIL, LEGAL_NAME, PRODUCT_NAME, SOCIAL_MARKETING_NAME, SEO_TOOL_NAME } from "../../config";
+import { TEAM_EMAIL, LEGAL_NAME, PRODUCT_NAME, SOCIAL_MARKETING_NAME, RETRACTO_NAME } from "../../config";
 
 type Locale = "en" | "es";
 
@@ -198,7 +198,7 @@ export default function HelpCenterPage() {
                       <label className="space-y-2"><span className="block text-xs font-bold uppercase tracking-wider">{t("fieldStoreDomain")}</span><input required placeholder="your-store.myshopify.com" value={contactForm.storeDomain} onChange={(event) => setContactForm({ ...contactForm, storeDomain: event.target.value })} className="w-full bg-brand-bg border border-brand-border p-3.5 rounded-xl text-sm focus:outline-none focus:border-brand-accent" /></label>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <label className="space-y-2"><span className="block text-xs font-bold uppercase tracking-wider">{t("fieldApp")}</span><select value={contactForm.app} onChange={(event) => setContactForm({ ...contactForm, app: event.target.value })} className="w-full bg-brand-bg border border-brand-border p-3.5 rounded-xl text-sm focus:outline-none focus:border-brand-accent"><option value="general">{t("general")}</option><option value="social-marketing">{SOCIAL_MARKETING_NAME}</option><option value="botcleaner">{PRODUCT_NAME}</option><option value="seo-that-sells">{SEO_TOOL_NAME}</option></select></label>
+                      <label className="space-y-2"><span className="block text-xs font-bold uppercase tracking-wider">{t("fieldApp")}</span><select value={contactForm.app} onChange={(event) => setContactForm({ ...contactForm, app: event.target.value })} className="w-full bg-brand-bg border border-brand-border p-3.5 rounded-xl text-sm focus:outline-none focus:border-brand-accent"><option value="general">{t("general")}</option><option value="social-marketing">{SOCIAL_MARKETING_NAME}</option><option value="botcleaner">{PRODUCT_NAME}</option><option value="retracto-y-pqr">{RETRACTO_NAME}</option></select></label>
                       <label className="space-y-2"><span className="block text-xs font-bold uppercase tracking-wider">{t("fieldSubject")}</span><input required value={contactForm.subject} onChange={(event) => setContactForm({ ...contactForm, subject: event.target.value })} className="w-full bg-brand-bg border border-brand-border p-3.5 rounded-xl text-sm focus:outline-none focus:border-brand-accent" /></label>
                     </div>
                     <label className="space-y-2 block"><span className="block text-xs font-bold uppercase tracking-wider">{t("fieldMessage")}</span><textarea required rows={6} value={contactForm.message} placeholder={t("fieldMessagePlaceholder")} onChange={(event) => setContactForm({ ...contactForm, message: event.target.value })} className="w-full bg-brand-bg border border-brand-border p-3.5 rounded-xl text-sm focus:outline-none focus:border-brand-accent" /></label>

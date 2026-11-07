@@ -42,7 +42,10 @@ export const SUPPORT_EMAIL = TEAM_EMAIL;
 export const PRIVACY_EMAIL = TEAM_EMAIL;
 export const PRODUCT_NAME = "SD: Klaviyo Bot Cleaner";
 export const SOCIAL_MARKETING_NAME = "SD: Less Time Marketing";
-export const SEO_TOOL_NAME = "SD: SEO That Sells";
+export const RETRACTO_NAME = "SD: Retracto y PQR";
+export const RETRACTO_DISPLAY_NAME = "Retracto y PQR";
+export const RETRACTO_ICON = `${BRAND_ASSET_BASE}/products/retracto-y-pqr/shopideck-retracto-y-pqr-icon.webp`;
+export const RETRACTO_ICON_SIZE = 1254;
 // Shorter names shown on each product's own landing page (no "SD:" prefix).
 export const BOTCLEANER_DISPLAY_NAME = "Klaviyo Bot Cleaner";
 export const LESS_TIME_MARKETING_DISPLAY_NAME = "Less Time Marketing";

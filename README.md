@@ -6,7 +6,25 @@ and Spanish. See [legal maintenance](docs/legal-maintenance.md) for routes, how 
 add another app, and factual/contractual items to verify before publication.
 
 The public catalog contains only SD: Less Time Marketing, SD: Klaviyo Bot Cleaner,
-and SD: SEO That Sells. The latter is a forthcoming concept, not an installable app.
+and SD: Retracto y PQR. Retracto y PQR replaces the retired SEO app concept.
+
+## SD: Retracto y PQR product page
+
+The landing is at `/retracto-y-pqr` and `/es/retracto-y-pqr`, with localized copy
+in the `Retracto` namespace of the EN/ES catalogs. It uses the shared product
+landing components and a Shopify green theme. The supplied Colombian-flag logo
+is optimized as WebP in `public/brand/products/retracto-y-pqr/`.
+The related article is at `/blog/retracto-y-pqr-shopify-colombia` (and `/es/blog/...`);
+its bilingual content lives in `app/[locale]/blog/retractoPost.ts`.
+
+Content follows the supplied November 2026 product summary. The app is presented
+as coming soon, pending real-store validation, production setup, and legal review.
+The planned price is US$15/month with a 14-day free trial, billed through Shopify.
+Information CTAs open an email to `team@shopideck.com` with the app in the subject;
+they do not reuse the marketing app's waitlist or imply installation is available.
+The hero is explicitly labelled as a conceptual workflow. Refunds remain a merchant
+action, and no legal-compliance guarantee is made. Product-specific legal addenda
+are still required before the new app processes customer data.
 
 ## SD: Less Time Marketing product page
 
@@ -42,8 +60,10 @@ Old paths `/social-marketing` and `/botcleaner` redirect permanently to
 
 App landing pages share ProductPage, ProductHero, ProductMonitor, ProductHeading, and ProductFaq
 in `app/components/products/ProductPage.tsx`. Only the icon-based theme and
-product content vary: blue for Bot Cleaner and purple for Less Time Marketing.
-Typography, spacing, card radii, and suite-orange primary buttons are shared.
+product content vary: blue for Bot Cleaner, purple for Less Time Marketing,
+and green for Retracto y PQR.
+Typography, spacing, and card radii are shared. Retracto y PQR uses green product
+CTAs; the other apps retain their suite-orange primary buttons.
 Bot Cleaner pricing and limits are unchanged.
 Heroes use centered, two-tone headings with a desktop monitor below the copy,
 not a side panel. Bot Cleaner displays its dashboard only once; upcoming apps

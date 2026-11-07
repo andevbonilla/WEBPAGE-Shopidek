@@ -84,7 +84,6 @@
     "prodSocialB1": "Campaigns tailored to your brand",
     "prodSocialB2": "Quality content for weeks or months",
     "prodSocialB3": "Review before scheduling",
-    "prodSeoDesc": "An upcoming app focused on SEO for Shopify stores: help potential customers discover your products through useful, purchase-oriented content. Scope and availability will be announced at launch.",
     "t1Quote": "Product status and capabilities are published as they become available.",
     "t1Author": "ShopiDeck",
     "t1Role": "Product team",
@@ -99,9 +98,10 @@
     "faq2Q": "Do the apps slow down my Shopify store?",
     "faq2A": "Klaviyo Bot Cleaner operates through Shopify Admin and backend APIs. It does not require editing your storefront theme or adding frontend scripts to your store. Other suite products will publish their technical scope when available.",
     "faq3Q": "How do I access upcoming suite apps?",
-    "faq3A": "The suite has three apps: SD: Less Time Marketing, SD: Klaviyo Bot Cleaner, and SD: SEO That Sells. Less Time Marketing is coming soon to the Shopify App Store and SEO That Sells is an upcoming app; neither is included in Klaviyo Bot Cleaner. Visit the Less Time Marketing page to join the waitlist.",
+    "faq3A": "The suite has three apps: SD: Less Time Marketing, SD: Klaviyo Bot Cleaner, and SD: Retracto y PQR. Bot Cleaner is available on the Shopify App Store. Less Time Marketing and Retracto y PQR are coming soon and are separate products. Visit each app page for its status and how to request information.",
     "faq4Q": "How is technical support handled?",
-    "faq4A": "Email support is available at team@shopideck.com during published support hours. Please include your store domain, the product involved, steps to reproduce the issue, and screenshots without API keys, passwords, tokens, or full customer lists. See our privacy policy for information about submitted data."
+    "faq4A": "Email support is available at team@shopideck.com during published support hours. Please include your store domain, the product involved, steps to reproduce the issue, and screenshots without API keys, passwords, tokens, or full customer lists. See our privacy policy for information about submitted data.",
+    "prodRetractoDesc": "Manage withdrawal requests and customer complaints in Colombia with case numbers, tracking, deadline alerts, and PDF/CSV case files. Organize customer service from Shopify while keeping decisions and refunds under your control. Coming soon."
   },
   "BotCleaner": {
     "heroLines": [
@@ -901,5 +901,146 @@
     "viewDetails": "View Details",
     "subprocessorsShopideck": "Providers and Subprocessors | ShopiDeck",
     "shopideckSubprocessorListForKlaviyoBotCleaner": "ShopiDeck provider register by website and app: purposes, data, roles, regions, and public documents."
+  },
+  "Retracto": {
+    "seoTitle": "Retracto y PQR | Customer service for Shopify Colombia",
+    "seoDescription": "Organize withdrawal requests, complaints, deadlines, and case records for your Shopify store in Colombia. Coming soon, with a planned US$15/month subscription.",
+    "iconAlt": "Retracto y PQR logo: cards with scales over the Colombian flag",
+    "heroLines": [
+      "Withdrawal requests and complaints.",
+      "A clearer process for your store."
+    ],
+    "subtitle": "One place to receive requests, assign case numbers, track deadlines, and organize records. Designed for Shopify stores selling to consumers in Colombia.",
+    "note": "Coming soon on Shopify. Launch is subject to store validation and legal review. An operational support tool; not legal advice.",
+    "contact": "Request information",
+    "how": "See how it works",
+    "contactSubject": "Information about SD: Retracto y PQR",
+    "pillars": [
+      "For stores in Colombia",
+      "Case numbers and tracking",
+      "Refunds under your control"
+    ],
+    "previewLabel": "Concept preview · Coming soon",
+    "previewTitle": "Every request, with its history.",
+    "previewDesc": "From the first message to the case resolution.",
+    "previewStages": [
+      "Receive and register",
+      "Review and respond",
+      "Keep the case record"
+    ],
+    "previewCaption": "Illustration of the planned workflow; not an app screenshot.",
+    "featuresEyebrow": "CUSTOMER SERVICE, ORGANIZED",
+    "featuresTitle": "Fewer scattered tasks. Clearer follow-through.",
+    "featuresDesc": "For store owners and customer service teams who want to handle requests without losing context across emails, spreadsheets, and orders.",
+    "features": [
+      {
+        "title": "Withdrawal requests in your store",
+        "description": "A public form and access from customer accounts. Order checks, delivery dates, and products with exclusions configured by the merchant."
+      },
+      {
+        "title": "Complaints with a case number",
+        "description": "Requests, complaints, claims, and suggestions with a case number, date, time, and up to three attachments. A clear starting point for every request."
+      },
+      {
+        "title": "Visible deadlines",
+        "description": "Business-day calculations with Colombian public holidays, deadline alerts, and a daily summary when requests or orders need attention."
+      },
+      {
+        "title": "Customer tracking",
+        "description": "Access through a link or a case number and email. Status, messages, history, and a way to add information without starting again."
+      },
+      {
+        "title": "PDF and CSV case files",
+        "description": "Events, responses, files, and authorizations collected by case or period to support your reviews and information requests."
+      },
+      {
+        "title": "Authorizations and deliveries",
+        "description": "Record the accepted text version, manage revocations, and review at-risk orders. Theme blocks for legal links, the SIC, and estimated delivery."
+      }
+    ],
+    "workflowEyebrow": "A CLEAR JOURNEY",
+    "workflowTitle": "From the request to the case record.",
+    "workflowDesc": "A workflow for your customer and your team, connected to Shopify orders.",
+    "steps": [
+      {
+        "title": "Configure your operation",
+        "description": "Complete your business details, data policy, delivery zones, exclusions, and authorization texts. Enable the blocks in your theme."
+      },
+      {
+        "title": "Receive the request",
+        "description": "The customer submits a withdrawal request or complaint, authorizes data processing, and receives a case number. Your store receives a notification."
+      },
+      {
+        "title": "Review and respond",
+        "description": "Check deadlines and history, respond with attachments, and approve creating a return when appropriate. The customer tracks the case on their page."
+      },
+      {
+        "title": "Resolve with context",
+        "description": "Issue the refund through Shopify when appropriate. The app detects the event and suggests closing the case; the record keeps its history."
+      }
+    ],
+    "controlTitle": "Your team keeps the decision.",
+    "controlItems": [
+      "The app records, alerts, and helps create a return. The merchant decides and issues the refund through Shopify.",
+      "Configured exclusions are shown to the customer without blocking submission of their request.",
+      "Texts, conditions, and applicable deadlines need legal review for each store. The app does not guarantee legal compliance or protection from penalties."
+    ],
+    "pricingEyebrow": "PLANNED PRICING",
+    "pricingTitle": "One plan. Every feature.",
+    "pricingDesc": "The launch proposal brings withdrawal requests and complaints together in one subscription.",
+    "planName": "Retracto y PQR",
+    "price": "US$15",
+    "period": "/ month",
+    "trial": "14-day free trial at launch",
+    "planFeatures": [
+      "Withdrawal requests and complaints with case numbers",
+      "Tracking, replies, and attachments",
+      "Alerts and daily pending-task summary",
+      "PDF and CSV case files",
+      "Authorizations and store theme blocks"
+    ],
+    "billingNote": "Planned billing through your Shopify invoice. The app is not yet available to install. Requesting information does not start a trial or subscription.",
+    "faqTitle": "Questions about Retracto y PQR",
+    "faqs": [
+      {
+        "question": "Who is it designed for?",
+        "answer": "Shopify stores selling to consumers in Colombia, especially brands with small teams handling their own customer service."
+      },
+      {
+        "question": "Can I install it now?",
+        "answer": "Not yet. The app is being prepared for launch. According to the product summary, real-store validation, production setup, and review by a Colombian lawyer are still pending. Contact us to request information."
+      },
+      {
+        "question": "Does the app issue refunds automatically?",
+        "answer": "No. The merchant reviews the request, decides, and issues the refund through Shopify. With approval, the app can create a return, detect the refund, and suggest closing the case."
+      },
+      {
+        "question": "What does a complaint include?",
+        "answer": "The planned workflow includes a case number, date and time, up to three attachments, notifications, and a tracking page with messages and history."
+      },
+      {
+        "question": "How does it help with deadlines?",
+        "answer": "The product includes business-day calculations with Colombian holidays, deadline tracking, and alerts. Configuration and application to individual cases require legal validation; different requests have different conditions."
+      },
+      {
+        "question": "What can my customer check?",
+        "answer": "Their request status, messages, and history through a tracking link or with their case number and email. They can also add information and manage revocation of authorizations."
+      },
+      {
+        "question": "How much will it cost?",
+        "answer": "The planned subscription is US$15 per month with every feature and a 14-day free trial. Billing will be through Shopify once the app is available."
+      },
+      {
+        "question": "Does it replace a lawyer?",
+        "answer": "No. It is an operational support tool for organizing requests, deadlines, and records. Legal texts, exclusions, and the rules applicable to your store should be reviewed with a Colombian lawyer."
+      }
+    ],
+    "faqMore": "Show more questions",
+    "faqLess": "Show fewer questions",
+    "articleTitle": "Clearer customer service starts with a process.",
+    "articleDesc": "Explore the Retracto y PQR workflow and what to prepare in your store before launch.",
+    "articleLabel": "Read the article",
+    "ctaTitle": "Give every request its place.",
+    "ctaDesc": "Discover the upcoming ShopiDeck app for organizing withdrawal requests, complaints, and case records in Colombia. Contact us to learn more about the launch."
   }
 }

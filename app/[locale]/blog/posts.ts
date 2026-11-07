@@ -1,4 +1,5 @@
 import { resolveLocale, type Locale } from "@/i18n/messages";
+import { getRetractoPost } from "./retractoPost";
 
 export interface Post {
   id: string;
@@ -17,12 +18,13 @@ export interface Post {
   imageAlt: string;
   imageWidth: number;
   imageHeight: number;
+  imageFit?: "cover" | "contain";
   imageCredit: { name: string; url: string };
   sources: { title: string; url: string }[];
   keywords: string[];
   author: string;
   authorRole: string;
-  cta: { product: "botcleaner" | "less-time-marketing"; title: string; description: string; label: string };
+  cta: { product: "botcleaner" | "less-time-marketing" | "retracto-y-pqr"; title: string; description: string; label: string };
   faq?: { question: string; answer: string }[];
 }
 
@@ -286,8 +288,8 @@ function buildPosts(articles: ArticleCopy[], locale: Locale): Post[] {
     authorRole: locale === "es" ? "Equipo de producto" : "Product team",
   }));
 }
-export const postsEN: Post[] = buildPosts(articlesEN, "en");
-export const postsES: Post[] = buildPosts(articlesES, "es");
+export const postsEN: Post[] = [getRetractoPost("en"), ...buildPosts(articlesEN, "en")];
+export const postsES: Post[] = [getRetractoPost("es"), ...buildPosts(articlesES, "es")];
 const postsByLocale = { en: postsEN, es: postsES };
 export function getPosts(locale: string): Post[] {
   return postsByLocale[resolveLocale(locale)];

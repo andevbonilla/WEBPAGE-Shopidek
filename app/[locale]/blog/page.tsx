@@ -137,7 +137,7 @@ export default async function BlogPage({
                       fill
                       priority
                       sizes="(max-width: 1024px) 100vw, 60vw"
-                      className="object-cover group-hover:scale-[1.015] transition-transform duration-500"
+                      className={`${featuredPost.imageFit === "contain" ? "object-contain bg-[#f4f9f2] p-6 sm:p-10" : "object-cover"} group-hover:scale-[1.015] transition-transform duration-500`}
                     />
                   </Link>
                 </div>
@@ -205,7 +205,7 @@ export default async function BlogPage({
                             alt={post.imageAlt}
                             fill
                             sizes="(max-width: 768px) 100vw, 40vw"
-                            className="object-cover group-hover:scale-[1.01] transition-transform duration-500"
+                            className={`${post.imageFit === "contain" ? "object-contain bg-[#f4f9f2] p-6" : "object-cover"} group-hover:scale-[1.01] transition-transform duration-500`}
                           />
                         </Link>
                       </div>

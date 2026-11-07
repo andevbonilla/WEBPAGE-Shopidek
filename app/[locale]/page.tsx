@@ -10,7 +10,8 @@ import {
   PRODUCT_NAME,
   BOTCLEANER_ICON,
   SOCIAL_MARKETING_NAME,
-  SEO_TOOL_NAME,
+  RETRACTO_NAME,
+  RETRACTO_ICON,
   SOCIAL_MARKETING_ICON_SMALL,
   getShopifyAppStoreUrl,
   SITE_LOGO,
@@ -104,14 +105,14 @@ export default async function Home({
       hasLanding: true,
     },
     {
-      id: "seo-that-sells",
-      name: SEO_TOOL_NAME,
-      icon: "",
-      description: t("prodSeoDesc"),
-      brandColor: "bg-brand-cream text-brand-main border-brand-accent/50",
-      link: "/help",
+      id: "retracto-y-pqr",
+      name: RETRACTO_NAME,
+      icon: RETRACTO_ICON,
+      description: t("prodRetractoDesc"),
+      brandColor: "bg-[#e6f3e9] text-[#006e52] border-[#95bf47]/30",
+      link: "/retracto-y-pqr",
       active: false,
-      hasLanding: false,
+      hasLanding: true,
     }
   ];
 

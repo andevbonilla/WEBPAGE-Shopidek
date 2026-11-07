@@ -84,7 +84,6 @@
     "prodSocialB1": "Campañas adaptadas a tu marca",
     "prodSocialB2": "Contenido de calidad para semanas o meses",
     "prodSocialB3": "Revisión antes de programar",
-    "prodSeoDesc": "Una próxima app enfocada en SEO para tiendas Shopify: ayuda a clientes potenciales a descubrir tus productos mediante contenido útil y orientado a la compra. El alcance y la disponibilidad se anunciarán en el lanzamiento.",
     "t1Quote": "El estado y las capacidades se publican a medida que están disponibles.",
     "t1Author": "ShopiDeck",
     "t1Role": "Equipo de producto",
@@ -99,9 +98,10 @@
     "faq2Q": "¿Las aplicaciones ralentizan mi tienda de Shopify?",
     "faq2A": "Klaviyo Bot Cleaner opera desde Shopify Admin y APIs de backend. No requiere editar el tema ni añadir scripts frontend a tu tienda. Los demás productos publicarán su alcance técnico cuando estén disponibles.",
     "faq3Q": "¿Cómo accedo a las próximas apps de la suite?",
-    "faq3A": "La suite tiene tres apps: SD: Less Time Marketing, SD: Klaviyo Bot Cleaner y SD: SEO That Sells. Less Time Marketing llegará pronto a la Shopify App Store y SEO That Sells es una próxima app; ninguna está incluida en Klaviyo Bot Cleaner. Visita la página de Less Time Marketing para unirte a la lista de espera.",
+    "faq3A": "La suite tiene tres apps: SD: Less Time Marketing, SD: Klaviyo Bot Cleaner y SD: Retracto y PQR. Bot Cleaner está disponible en Shopify App Store. Less Time Marketing y Retracto y PQR llegarán próximamente y se contratan por separado. Visita la página de cada app para conocer su estado y cómo solicitar información.",
     "faq4Q": "¿Cómo se maneja el soporte técnico?",
-    "faq4A": "El soporte por email está disponible en team@shopideck.com durante el horario publicado. Incluye el dominio de tu tienda, el producto, los pasos para reproducir el problema y capturas sin API keys, contraseñas, tokens ni listas completas de clientes. Consulta la política de privacidad para saber cómo se tratan los datos enviados."
+    "faq4A": "El soporte por email está disponible en team@shopideck.com durante el horario publicado. Incluye el dominio de tu tienda, el producto, los pasos para reproducir el problema y capturas sin API keys, contraseñas, tokens ni listas completas de clientes. Consulta la política de privacidad para saber cómo se tratan los datos enviados.",
+    "prodRetractoDesc": "Gestiona retractos y PQR en Colombia con radicados, seguimiento, alertas de plazos y expedientes PDF/CSV. Una app para organizar la atención al consumidor desde Shopify, con las decisiones y los reembolsos bajo tu control. Próximamente."
   },
   "BotCleaner": {
     "heroLines": [
@@ -901,5 +901,146 @@
     "viewDetails": "Ver detalles",
     "subprocessorsShopideck": "Proveedores y subencargados | ShopiDeck",
     "shopideckSubprocessorListForKlaviyoBotCleaner": "Registro de proveedores de ShopiDeck por sitio y app: finalidades, datos, roles, regiones y documentos públicos."
+  },
+  "Retracto": {
+    "seoTitle": "Retracto y PQR | Atención al consumidor en Shopify Colombia",
+    "seoDescription": "Organiza retractos, PQR, plazos y evidencias de tu tienda Shopify en Colombia. Conoce Retracto y PQR: próximamente, con un plan previsto de US$15/mes.",
+    "iconAlt": "Logo de Retracto y PQR: tarjetas con una balanza sobre la bandera de Colombia",
+    "heroLines": [
+      "Retractos y PQR en orden.",
+      "Más claridad para tu tienda."
+    ],
+    "subtitle": "Un solo lugar para recibir solicitudes, asignar radicados, seguir plazos y organizar evidencias. Pensada para tiendas Shopify que venden a consumidores en Colombia.",
+    "note": "Próximamente en Shopify. Lanzamiento sujeto a validaciones en tienda y revisión jurídica. Herramienta de apoyo operativo; no constituye asesoría legal.",
+    "contact": "Solicitar información",
+    "how": "Ver cómo funciona",
+    "contactSubject": "Información sobre SD: Retracto y PQR",
+    "pillars": [
+      "Para tiendas en Colombia",
+      "Radicados y seguimiento",
+      "Reembolsos bajo tu control"
+    ],
+    "previewLabel": "Vista conceptual · Próximamente",
+    "previewTitle": "Cada solicitud, con su historia.",
+    "previewDesc": "Desde el primer mensaje hasta el cierre del caso.",
+    "previewStages": [
+      "Recibe y radica",
+      "Revisa y responde",
+      "Conserva el expediente"
+    ],
+    "previewCaption": "Representación del flujo previsto; no es una captura de la app.",
+    "featuresEyebrow": "ATENCIÓN AL CONSUMIDOR, CON ORDEN",
+    "featuresTitle": "Menos tareas sueltas. Más seguimiento.",
+    "featuresDesc": "Para dueños y equipos de servicio al cliente que quieren atender solicitudes sin perder el contexto entre correos, hojas de cálculo y pedidos.",
+    "features": [
+      {
+        "title": "Retractos desde tu tienda",
+        "description": "Formulario público y acceso desde la cuenta del cliente. Consulta del pedido, fecha de entrega y productos con exclusiones configuradas por la tienda."
+      },
+      {
+        "title": "PQR con radicado",
+        "description": "Peticiones, quejas, reclamos y sugerencias con número de caso, fecha, hora y hasta tres adjuntos. Un punto de partida claro para cada solicitud."
+      },
+      {
+        "title": "Plazos a la vista",
+        "description": "Cálculo con días hábiles y festivos colombianos, alertas de vencimiento y resumen diario cuando hay solicitudes o pedidos pendientes."
+      },
+      {
+        "title": "Seguimiento para el cliente",
+        "description": "Consulta por enlace o por radicado y correo. Estado, mensajes, historial y espacio para agregar información sin empezar de cero."
+      },
+      {
+        "title": "Expedientes PDF y CSV",
+        "description": "Historial de eventos, respuestas, archivos y autorizaciones reunido por caso o periodo para apoyar tus revisiones y requerimientos."
+      },
+      {
+        "title": "Autorizaciones y entregas",
+        "description": "Registra la versión del texto aceptado, gestiona revocaciones y revisa pedidos en riesgo. Bloques del tema para enlaces legales, SIC y entrega estimada."
+      }
+    ],
+    "workflowEyebrow": "UN RECORRIDO CLARO",
+    "workflowTitle": "De la solicitud al expediente.",
+    "workflowDesc": "Un flujo para el cliente y tu equipo, conectado con los pedidos de Shopify.",
+    "steps": [
+      {
+        "title": "Configura tu operación",
+        "description": "Completa los datos de tu empresa, política de datos, zonas de entrega, exclusiones y textos de autorización. Activa los bloques en tu tema."
+      },
+      {
+        "title": "Recibe la solicitud",
+        "description": "El cliente envía un retracto o una PQR, autoriza el tratamiento de sus datos y recibe un radicado. La tienda recibe la notificación."
+      },
+      {
+        "title": "Revisa y responde",
+        "description": "Consulta plazos e historial, responde con adjuntos y, si corresponde, aprueba la creación de una devolución. El cliente sigue el caso en su página."
+      },
+      {
+        "title": "Cierra con contexto",
+        "description": "Realiza el reembolso desde Shopify cuando corresponda. La app detecta el evento y sugiere el cierre; el expediente conserva la trazabilidad."
+      }
+    ],
+    "controlTitle": "Tu equipo conserva la decisión.",
+    "controlItems": [
+      "La app registra, avisa y ayuda a crear la devolución. El comerciante decide y ejecuta el reembolso desde Shopify.",
+      "Las exclusiones configuradas se muestran al cliente sin bloquear la radicación de su solicitud.",
+      "Los textos, las condiciones y los plazos aplicables requieren revisión jurídica para la operación de cada tienda. La app no garantiza cumplimiento legal ni ausencia de sanciones."
+    ],
+    "pricingEyebrow": "PRECIO PREVISTO",
+    "pricingTitle": "Un plan. Todas las funciones.",
+    "pricingDesc": "La propuesta de lanzamiento reúne la operación de retractos y PQR en una sola suscripción.",
+    "planName": "Retracto y PQR",
+    "price": "US$15",
+    "period": "/ mes",
+    "trial": "14 días de prueba gratis al lanzamiento",
+    "planFeatures": [
+      "Retractos y PQR con radicado",
+      "Seguimiento, respuestas y adjuntos",
+      "Alertas y resumen diario de pendientes",
+      "Expedientes PDF y CSV",
+      "Autorizaciones y bloques para tu tienda"
+    ],
+    "billingNote": "Cobro previsto a través de la factura de Shopify. La app aún no está disponible para instalar. Solicitar información no inicia una prueba ni una suscripción.",
+    "faqTitle": "Preguntas sobre Retracto y PQR",
+    "faqs": [
+      {
+        "question": "¿Para quién está pensada?",
+        "answer": "Para tiendas Shopify que venden a consumidores en Colombia, especialmente marcas con equipos pequeños que gestionan directamente su atención al cliente."
+      },
+      {
+        "question": "¿Ya puedo instalarla?",
+        "answer": "Todavía no. La app está en preparación para el lanzamiento. Según el resumen del producto, faltan validaciones en una tienda real, la puesta en producción y la revisión de un abogado colombiano. Escríbenos para solicitar información."
+      },
+      {
+        "question": "¿La app hace reembolsos automáticamente?",
+        "answer": "No. El comerciante revisa la solicitud, decide y realiza el reembolso desde Shopify. La app puede crear una devolución con su aprobación, detectar el reembolso y sugerir cerrar el caso."
+      },
+      {
+        "question": "¿Qué incluye una PQR?",
+        "answer": "El flujo previsto incluye radicado, fecha y hora, hasta tres adjuntos, notificaciones y una página de seguimiento con mensajes e historial."
+      },
+      {
+        "question": "¿Cómo ayuda con los plazos?",
+        "answer": "El producto contempla cálculo de días hábiles con festivos colombianos, seguimiento de vencimientos y alertas. Su configuración y aplicación al caso concreto deben validarse jurídicamente; no todas las solicitudes tienen las mismas condiciones."
+      },
+      {
+        "question": "¿Qué podrá consultar mi cliente?",
+        "answer": "El estado de su solicitud, los mensajes y el historial desde el enlace de seguimiento o con su radicado y correo. También podrá aportar información y gestionar la revocación de autorizaciones."
+      },
+      {
+        "question": "¿Qué precio tendrá?",
+        "answer": "El plan previsto es de US$15 al mes con todas las funciones y 14 días de prueba gratis. El cobro se realizará a través de Shopify una vez esté disponible."
+      },
+      {
+        "question": "¿Sustituye la asesoría de un abogado?",
+        "answer": "No. Es una herramienta de apoyo operativo para organizar solicitudes, plazos y evidencias. Los textos legales, las exclusiones y las reglas aplicables a tu tienda deben revisarse con un abogado colombiano."
+      }
+    ],
+    "faqMore": "Ver más preguntas",
+    "faqLess": "Ver menos preguntas",
+    "articleTitle": "Una atención más clara empieza con un proceso.",
+    "articleDesc": "Conoce el flujo de Retracto y PQR y qué conviene preparar en tu tienda antes del lanzamiento.",
+    "articleLabel": "Leer el artículo",
+    "ctaTitle": "Pon cada solicitud en su lugar.",
+    "ctaDesc": "Conoce la próxima app de ShopiDeck para organizar retractos, PQR y evidencias en Colombia. Escríbenos para saber más sobre el lanzamiento."
   }
 }

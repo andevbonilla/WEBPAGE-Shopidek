@@ -226,16 +226,22 @@ export default async function BlogPostPage({ params }: PageProps) {
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 80vw"
-                className="object-cover"
+                className={post.imageFit === "contain" ? "object-contain bg-[#f4f9f2] p-6 sm:p-10" : "object-cover"}
               />
             </div>
 
             {/* Editorial Grid Layout (Left meta column / Right main content) */}
             <p className="mt-3 text-xs text-brand-muted">
-              {currentLocale === "es" ? "Foto: " : "Photo: "}
-              <a href={post.imageCredit.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-brand-main">{post.imageCredit.name}</a>
-              {" · "}
-              <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-brand-main">{currentLocale === "es" ? "Licencia Unsplash" : "Unsplash License"}</a>
+              {currentLocale === "es" ? "Imagen: " : "Image: "}
+              {post.imageCredit.url.startsWith("/") ? (
+                <Link href={post.imageCredit.url} className="underline underline-offset-4 hover:text-brand-main">{post.imageCredit.name}</Link>
+              ) : (
+                <>
+                  <a href={post.imageCredit.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-brand-main">{post.imageCredit.name}</a>
+                  {" · "}
+                  <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-brand-main">{currentLocale === "es" ? "Licencia Unsplash" : "Unsplash License"}</a>
+                </>
+              )}
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 pt-6">
               
@@ -331,7 +337,11 @@ export default async function BlogPostPage({ params }: PageProps) {
               </div>
 
               <div className="w-full md:w-auto flex-shrink-0">
-                {post.cta.product === "less-time-marketing" ? (
+                {post.cta.product === "retracto-y-pqr" ? (
+                  <Link href="/retracto-y-pqr" className="w-full md:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-[#006e52] px-6 py-3.5 text-xs font-bold text-white transition-colors hover:bg-[#005e46] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#006e52]">
+                    {post.cta.label}<ExternalLink className="cta-arrow h-4 w-4" aria-hidden="true" />
+                  </Link>
+                ) : post.cta.product === "less-time-marketing" ? (
                   <EarlyAccessButton label={post.cta.label} className="w-full md:w-auto" />
                 ) : (
                   <a

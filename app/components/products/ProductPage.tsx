@@ -8,13 +8,14 @@ import { FaqMore } from "./FaqMore";
 const themes = {
   botcleaner: { accent: "#2c8fe9", ink: "#185a9c", hover: "#164f89", soft: "#e8f3ff", wash: "#f5faff", border: "#b8d9f7", deep: "#152d45" },
   marketing: { accent: "#8b5cf6", ink: "#6130ae", hover: "#542994", soft: "#f0e7ff", wash: "#faf7ff", border: "#dac7fa", deep: "#28183e" },
+  retracto: { accent: "#95bf47", ink: "#006e52", hover: "#005e46", soft: "#e6f3e9", wash: "#f4f9f2", border: "#c4dfca", deep: "#153d31" },
 } as const;
 
 export function ProductPage({ theme, children }: { theme: keyof typeof themes; children: ReactNode }) {
   const colors = themes[theme];
   const style = Object.fromEntries(Object.entries(colors).map(([key, value]) => [`--app-${key}`, value])) as CSSProperties;
   return (
-    <div style={style} className="product-page flex min-h-screen flex-col bg-brand-bg">
+    <div style={style} data-product-theme={theme} className="product-page flex min-h-screen flex-col bg-brand-bg">
       <Navbar />
       <main className="flex-1">{children}</main>
       <Footer />
